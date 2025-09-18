@@ -1,0 +1,184 @@
+2025-09-15 15:06:32,724 - unstract.llmwhisperer.client_v2 - DEBUG - logging_level set to DEBUG
+2025-09-15 15:06:32,725 - unstract.llmwhisperer.client_v2 - DEBUG - base_url set to https://llmwhisperer-api.us-central.unstract.com/api/v2
+2025-09-15 15:07:02,209 - unstract.llmwhisperer.client_v2 - DEBUG - logging_level set to DEBUG
+2025-09-15 15:07:02,237 - unstract.llmwhisperer.client_v2 - DEBUG - base_url set to https://llmwhisperer-api.us-central.unstract.com/api/v2
+2025-09-15 15:07:02,780 - src.config.settings - INFO - Iniciando procesamiento de carpeta: data\pdfs
+2025-09-15 15:07:02,781 - src.config.settings - INFO - Encontrados 4 PDFs para procesar
+2025-09-15 15:07:02,782 - src.etl.pipeline - INFO - Iniciando procesamiento de: data\pdfs\bancoBogota_sumar.pdf
+2025-09-15 15:07:02,783 - src.etl.pipeline - INFO - Iniciando procesamiento de: data\pdfs\bancoDavivienda_Multiescala.pdf
+2025-09-15 15:07:02,784 - src.etl.pipeline - INFO - Iniciando procesamiento de: data\pdfs\bancolombia_fiducuenta.pdf
+2025-09-15 15:07:02,785 - src.etl.extract - INFO - Extrayendo texto de data\pdfs\bancoBogota_sumar.pdf (intento 1)
+2025-09-15 15:07:02,785 - src.etl.pipeline - INFO - Iniciando procesamiento de: data\pdfs\credicorpCapital_Alta Liquidez.pdf
+2025-09-15 15:07:02,785 - src.etl.extract - INFO - Extrayendo texto de data\pdfs\bancoDavivienda_Multiescala.pdf (intento 1)
+2025-09-15 15:07:02,785 - src.etl.extract - INFO - Extrayendo texto de data\pdfs\bancolombia_fiducuenta.pdf (intento 1)
+2025-09-15 15:07:02,786 - src.etl.extract - INFO - Extrayendo texto de data\pdfs\credicorpCapital_Alta Liquidez.pdf (intento 1)
+2025-09-15 15:07:02,786 - unstract.llmwhisperer.client_v2 - DEBUG - whisper called
+2025-09-15 15:07:02,786 - unstract.llmwhisperer.client_v2 - DEBUG - whisper called
+2025-09-15 15:07:02,787 - unstract.llmwhisperer.client_v2 - DEBUG - whisper called
+2025-09-15 15:07:02,787 - unstract.llmwhisperer.client_v2 - DEBUG - whisper called
+2025-09-15 15:07:02,787 - unstract.llmwhisperer.client_v2 - DEBUG - api_url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper
+2025-09-15 15:07:02,788 - unstract.llmwhisperer.client_v2 - DEBUG - api_url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper
+2025-09-15 15:07:02,788 - unstract.llmwhisperer.client_v2 - DEBUG - api_url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper
+2025-09-15 15:07:02,788 - unstract.llmwhisperer.client_v2 - DEBUG - api_url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper
+2025-09-15 15:07:02,789 - unstract.llmwhisperer.client_v2 - DEBUG - params: {'mode': 'form', 'output_mode': 'layout_preserving', 'page_seperator': '<<<', 'pages_to_extract': '', 'median_filter_size': 0, 'gaussian_blur_radius': 0, 'line_splitter_tolerance': 0.4, 'horizontal_stretch_factor': 1.0, 'mark_vertical_lines': False, 'mark_horizontal_lines': False, 'line_spitter_strategy': 'left-priority', 'add_line_nos': False, 'lang': 'eng', 'tag': 'default', 'filename': '', 'webhook_metadata': '', 'use_webhook': ''}
+2025-09-15 15:07:02,789 - unstract.llmwhisperer.client_v2 - DEBUG - params: {'mode': 'form', 'output_mode': 'layout_preserving', 'page_seperator': '<<<', 'pages_to_extract': '', 'median_filter_size': 0, 'gaussian_blur_radius': 0, 'line_splitter_tolerance': 0.4, 'horizontal_stretch_factor': 1.0, 'mark_vertical_lines': False, 'mark_horizontal_lines': False, 'line_spitter_strategy': 'left-priority', 'add_line_nos': False, 'lang': 'eng', 'tag': 'default', 'filename': '', 'webhook_metadata': '', 'use_webhook': ''}
+2025-09-15 15:07:02,789 - unstract.llmwhisperer.client_v2 - DEBUG - params: {'mode': 'form', 'output_mode': 'layout_preserving', 'page_seperator': '<<<', 'pages_to_extract': '', 'median_filter_size': 0, 'gaussian_blur_radius': 0, 'line_splitter_tolerance': 0.4, 'horizontal_stretch_factor': 1.0, 'mark_vertical_lines': False, 'mark_horizontal_lines': False, 'line_spitter_strategy': 'left-priority', 'add_line_nos': False, 'lang': 'eng', 'tag': 'default', 'filename': '', 'webhook_metadata': '', 'use_webhook': ''}
+2025-09-15 15:07:02,790 - unstract.llmwhisperer.client_v2 - DEBUG - params: {'mode': 'form', 'output_mode': 'layout_preserving', 'page_seperator': '<<<', 'pages_to_extract': '', 'median_filter_size': 0, 'gaussian_blur_radius': 0, 'line_splitter_tolerance': 0.4, 'horizontal_stretch_factor': 1.0, 'mark_vertical_lines': False, 'mark_horizontal_lines': False, 'line_spitter_strategy': 'left-priority', 'add_line_nos': False, 'lang': 'eng', 'tag': 'default', 'filename': '', 'webhook_metadata': '', 'use_webhook': ''}
+2025-09-15 15:07:03,343 - unstract.llmwhisperer.client_v2 - DEBUG - whisper_status called
+2025-09-15 15:07:03,344 - unstract.llmwhisperer.client_v2 - DEBUG - url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper-status
+2025-09-15 15:07:03,385 - unstract.llmwhisperer.client_v2 - DEBUG - whisper_status called
+2025-09-15 15:07:03,385 - unstract.llmwhisperer.client_v2 - DEBUG - url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper-status
+2025-09-15 15:07:03,426 - unstract.llmwhisperer.client_v2 - DEBUG - whisper_status called
+2025-09-15 15:07:03,427 - unstract.llmwhisperer.client_v2 - DEBUG - url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper-status
+2025-09-15 15:07:03,443 - unstract.llmwhisperer.client_v2 - DEBUG - whisper_status called
+2025-09-15 15:07:03,443 - unstract.llmwhisperer.client_v2 - DEBUG - url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper-status
+2025-09-15 15:07:08,563 - unstract.llmwhisperer.client_v2 - DEBUG - whisper_status called
+2025-09-15 15:07:08,564 - unstract.llmwhisperer.client_v2 - DEBUG - url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper-status
+2025-09-15 15:07:08,583 - unstract.llmwhisperer.client_v2 - DEBUG - whisper_status called
+2025-09-15 15:07:08,583 - unstract.llmwhisperer.client_v2 - DEBUG - url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper-status
+2025-09-15 15:07:08,683 - unstract.llmwhisperer.client_v2 - DEBUG - whisper_status called
+2025-09-15 15:07:08,684 - unstract.llmwhisperer.client_v2 - DEBUG - url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper-status
+2025-09-15 15:07:08,694 - unstract.llmwhisperer.client_v2 - DEBUG - whisper_status called
+2025-09-15 15:07:08,695 - unstract.llmwhisperer.client_v2 - DEBUG - url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper-status
+2025-09-15 15:07:13,768 - unstract.llmwhisperer.client_v2 - DEBUG - whisper_status called
+2025-09-15 15:07:13,768 - unstract.llmwhisperer.client_v2 - DEBUG - url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper-status
+2025-09-15 15:07:13,799 - unstract.llmwhisperer.client_v2 - DEBUG - whisper_status called
+2025-09-15 15:07:13,799 - unstract.llmwhisperer.client_v2 - DEBUG - url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper-status
+2025-09-15 15:07:13,907 - unstract.llmwhisperer.client_v2 - DEBUG - whisper_status called
+2025-09-15 15:07:13,907 - unstract.llmwhisperer.client_v2 - DEBUG - url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper-status
+2025-09-15 15:07:13,917 - unstract.llmwhisperer.client_v2 - DEBUG - whisper_status called
+2025-09-15 15:07:13,917 - unstract.llmwhisperer.client_v2 - DEBUG - url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper-status
+2025-09-15 15:07:13,983 - unstract.llmwhisperer.client_v2 - DEBUG - whisper_retrieve called
+2025-09-15 15:07:13,984 - unstract.llmwhisperer.client_v2 - DEBUG - url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper-retrieve
+2025-09-15 15:07:14,107 - unstract.llmwhisperer.client_v2 - DEBUG - whisper_retrieve called
+2025-09-15 15:07:14,107 - unstract.llmwhisperer.client_v2 - DEBUG - url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper-retrieve
+2025-09-15 15:07:14,129 - unstract.llmwhisperer.client_v2 - DEBUG - whisper_retrieve called
+2025-09-15 15:07:14,129 - unstract.llmwhisperer.client_v2 - DEBUG - url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper-retrieve
+2025-09-15 15:07:14,207 - src.etl.extract - INFO - Texto extraído exitosamente de data\pdfs\bancolombia_fiducuenta.pdf
+2025-09-15 15:07:14,208 - src.etl.extract - INFO - Procesando texto con Gemini para extraer JSON
+2025-09-15 15:07:14,208 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-09-15 15:07:14,299 - src.etl.extract - INFO - Texto extraído exitosamente de data\pdfs\bancoDavivienda_Multiescala.pdf
+2025-09-15 15:07:14,299 - src.etl.extract - INFO - Procesando texto con Gemini para extraer JSON
+2025-09-15 15:07:14,299 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-09-15 15:07:14,328 - src.etl.extract - INFO - Texto extraído exitosamente de data\pdfs\bancoBogota_sumar.pdf
+2025-09-15 15:07:14,329 - src.etl.extract - INFO - Procesando texto con Gemini para extraer JSON
+2025-09-15 15:07:14,329 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-09-15 15:07:18,966 - unstract.llmwhisperer.client_v2 - DEBUG - whisper_status called
+2025-09-15 15:07:18,967 - unstract.llmwhisperer.client_v2 - DEBUG - url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper-status
+2025-09-15 15:07:19,184 - unstract.llmwhisperer.client_v2 - DEBUG - whisper_retrieve called
+2025-09-15 15:07:19,185 - unstract.llmwhisperer.client_v2 - DEBUG - url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper-retrieve
+2025-09-15 15:07:19,405 - src.etl.extract - INFO - Texto extraído exitosamente de data\pdfs\credicorpCapital_Alta Liquidez.pdf
+2025-09-15 15:07:19,405 - src.etl.extract - INFO - Procesando texto con Gemini para extraer JSON
+2025-09-15 15:07:19,405 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-09-15 15:07:54,070 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2025-09-15 15:07:54,075 - google_genai.models - INFO - AFC remote call 1 is done.
+2025-09-15 15:07:54,076 - src.etl.extract - INFO - JSON extraído exitosamente
+2025-09-15 15:07:54,077 - src.etl.pipeline - ERROR - Error guardando JSON: unsupported operand type(s) for /: 'str' and 'str'
+2025-09-15 15:07:54,078 - src.etl.pipeline - ERROR - Error procesando data\pdfs\credicorpCapital_Alta Liquidez.pdf: unsupported operand type(s) for /: 'str' and 'str'
+2025-09-15 15:07:55,213 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2025-09-15 15:07:55,217 - google_genai.models - INFO - AFC remote call 1 is done.
+2025-09-15 15:07:55,218 - src.etl.extract - INFO - JSON extraído exitosamente
+2025-09-15 15:07:55,219 - src.etl.pipeline - ERROR - Error guardando JSON: unsupported operand type(s) for /: 'str' and 'str'
+2025-09-15 15:07:55,222 - src.etl.pipeline - ERROR - Error procesando data\pdfs\bancoDavivienda_Multiescala.pdf: unsupported operand type(s) for /: 'str' and 'str'
+2025-09-15 15:08:11,260 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2025-09-15 15:08:11,262 - google_genai.models - INFO - AFC remote call 1 is done.
+2025-09-15 15:08:11,263 - src.etl.extract - INFO - JSON extraído exitosamente
+2025-09-15 15:08:11,263 - src.etl.pipeline - ERROR - Error guardando JSON: unsupported operand type(s) for /: 'str' and 'str'
+2025-09-15 15:08:11,263 - src.etl.pipeline - ERROR - Error procesando data\pdfs\bancolombia_fiducuenta.pdf: unsupported operand type(s) for /: 'str' and 'str'
+2025-09-15 15:08:12,614 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2025-09-15 15:08:12,615 - google_genai.models - INFO - AFC remote call 1 is done.
+2025-09-15 15:08:12,616 - src.etl.extract - INFO - JSON extraído exitosamente
+2025-09-15 15:08:12,616 - src.etl.pipeline - ERROR - Error guardando JSON: unsupported operand type(s) for /: 'str' and 'str'
+2025-09-15 15:08:12,617 - src.etl.pipeline - ERROR - Error procesando data\pdfs\bancoBogota_sumar.pdf: unsupported operand type(s) for /: 'str' and 'str'
+2025-09-15 17:24:01,667 - unstract.llmwhisperer.client_v2 - DEBUG - logging_level set to DEBUG
+2025-09-15 17:24:01,669 - unstract.llmwhisperer.client_v2 - DEBUG - base_url set to https://llmwhisperer-api.us-central.unstract.com/api/v2
+2025-09-15 17:24:02,194 - src.config.settings - INFO - Iniciando procesamiento de carpeta: data\pdfs
+2025-09-15 17:24:02,194 - src.config.settings - INFO - Encontrados 4 PDFs para procesar
+2025-09-15 17:24:02,196 - src.etl.pipeline - INFO - Iniciando procesamiento de: data\pdfs\bancoBogota_sumar.pdf
+2025-09-15 17:24:02,196 - src.etl.pipeline - INFO - Iniciando procesamiento de: data\pdfs\bancoDavivienda_Multiescala.pdf
+2025-09-15 17:24:02,197 - src.etl.extract - INFO - Extrayendo texto de data\pdfs\bancoBogota_sumar.pdf (intento 1)
+2025-09-15 17:24:02,197 - src.etl.pipeline - INFO - Iniciando procesamiento de: data\pdfs\bancolombia_fiducuenta.pdf
+2025-09-15 17:24:02,197 - src.etl.extract - INFO - Extrayendo texto de data\pdfs\bancoDavivienda_Multiescala.pdf (intento 1)
+2025-09-15 17:24:02,197 - src.etl.pipeline - INFO - Iniciando procesamiento de: data\pdfs\credicorpCapital_Alta Liquidez.pdf
+2025-09-15 17:24:02,198 - unstract.llmwhisperer.client_v2 - DEBUG - whisper called
+2025-09-15 17:24:02,199 - src.etl.extract - INFO - Extrayendo texto de data\pdfs\bancolombia_fiducuenta.pdf (intento 1)
+2025-09-15 17:24:02,199 - unstract.llmwhisperer.client_v2 - DEBUG - whisper called
+2025-09-15 17:24:02,199 - src.etl.extract - INFO - Extrayendo texto de data\pdfs\credicorpCapital_Alta Liquidez.pdf (intento 1)
+2025-09-15 17:24:02,199 - unstract.llmwhisperer.client_v2 - DEBUG - api_url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper
+2025-09-15 17:24:02,200 - unstract.llmwhisperer.client_v2 - DEBUG - whisper called
+2025-09-15 17:24:02,200 - unstract.llmwhisperer.client_v2 - DEBUG - api_url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper
+2025-09-15 17:24:02,200 - unstract.llmwhisperer.client_v2 - DEBUG - whisper called
+2025-09-15 17:24:02,202 - unstract.llmwhisperer.client_v2 - DEBUG - params: {'mode': 'form', 'output_mode': 'layout_preserving', 'page_seperator': '<<<', 'pages_to_extract': '', 'median_filter_size': 0, 'gaussian_blur_radius': 0, 'line_splitter_tolerance': 0.4, 'horizontal_stretch_factor': 1.0, 'mark_vertical_lines': False, 'mark_horizontal_lines': False, 'line_spitter_strategy': 'left-priority', 'add_line_nos': False, 'lang': 'eng', 'tag': 'default', 'filename': '', 'webhook_metadata': '', 'use_webhook': ''}
+2025-09-15 17:24:02,202 - unstract.llmwhisperer.client_v2 - DEBUG - api_url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper
+2025-09-15 17:24:02,202 - unstract.llmwhisperer.client_v2 - DEBUG - params: {'mode': 'form', 'output_mode': 'layout_preserving', 'page_seperator': '<<<', 'pages_to_extract': '', 'median_filter_size': 0, 'gaussian_blur_radius': 0, 'line_splitter_tolerance': 0.4, 'horizontal_stretch_factor': 1.0, 'mark_vertical_lines': False, 'mark_horizontal_lines': False, 'line_spitter_strategy': 'left-priority', 'add_line_nos': False, 'lang': 'eng', 'tag': 'default', 'filename': '', 'webhook_metadata': '', 'use_webhook': ''}
+2025-09-15 17:24:02,202 - unstract.llmwhisperer.client_v2 - DEBUG - api_url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper
+2025-09-15 17:24:02,202 - unstract.llmwhisperer.client_v2 - DEBUG - params: {'mode': 'form', 'output_mode': 'layout_preserving', 'page_seperator': '<<<', 'pages_to_extract': '', 'median_filter_size': 0, 'gaussian_blur_radius': 0, 'line_splitter_tolerance': 0.4, 'horizontal_stretch_factor': 1.0, 'mark_vertical_lines': False, 'mark_horizontal_lines': False, 'line_spitter_strategy': 'left-priority', 'add_line_nos': False, 'lang': 'eng', 'tag': 'default', 'filename': '', 'webhook_metadata': '', 'use_webhook': ''}
+2025-09-15 17:24:02,202 - unstract.llmwhisperer.client_v2 - DEBUG - params: {'mode': 'form', 'output_mode': 'layout_preserving', 'page_seperator': '<<<', 'pages_to_extract': '', 'median_filter_size': 0, 'gaussian_blur_radius': 0, 'line_splitter_tolerance': 0.4, 'horizontal_stretch_factor': 1.0, 'mark_vertical_lines': False, 'mark_horizontal_lines': False, 'line_spitter_strategy': 'left-priority', 'add_line_nos': False, 'lang': 'eng', 'tag': 'default', 'filename': '', 'webhook_metadata': '', 'use_webhook': ''}
+2025-09-15 17:24:02,689 - unstract.llmwhisperer.client_v2 - DEBUG - whisper_status called
+2025-09-15 17:24:02,690 - unstract.llmwhisperer.client_v2 - DEBUG - url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper-status
+2025-09-15 17:24:02,767 - unstract.llmwhisperer.client_v2 - DEBUG - whisper_status called
+2025-09-15 17:24:02,768 - unstract.llmwhisperer.client_v2 - DEBUG - url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper-status
+2025-09-15 17:24:02,844 - unstract.llmwhisperer.client_v2 - DEBUG - whisper_status called
+2025-09-15 17:24:02,844 - unstract.llmwhisperer.client_v2 - DEBUG - url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper-status
+2025-09-15 17:24:02,849 - unstract.llmwhisperer.client_v2 - DEBUG - whisper_status called
+2025-09-15 17:24:02,850 - unstract.llmwhisperer.client_v2 - DEBUG - url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper-status
+2025-09-15 17:24:07,868 - unstract.llmwhisperer.client_v2 - DEBUG - whisper_status called
+2025-09-15 17:24:07,869 - unstract.llmwhisperer.client_v2 - DEBUG - url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper-status
+2025-09-15 17:24:07,966 - unstract.llmwhisperer.client_v2 - DEBUG - whisper_status called
+2025-09-15 17:24:07,967 - unstract.llmwhisperer.client_v2 - DEBUG - url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper-status
+2025-09-15 17:24:08,035 - unstract.llmwhisperer.client_v2 - DEBUG - whisper_status called
+2025-09-15 17:24:08,035 - unstract.llmwhisperer.client_v2 - DEBUG - url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper-status
+2025-09-15 17:24:08,056 - unstract.llmwhisperer.client_v2 - DEBUG - whisper_status called
+2025-09-15 17:24:08,056 - unstract.llmwhisperer.client_v2 - DEBUG - url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper-status
+2025-09-15 17:24:13,067 - unstract.llmwhisperer.client_v2 - DEBUG - whisper_status called
+2025-09-15 17:24:13,069 - unstract.llmwhisperer.client_v2 - DEBUG - url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper-status
+2025-09-15 17:24:13,172 - unstract.llmwhisperer.client_v2 - DEBUG - whisper_status called
+2025-09-15 17:24:13,172 - unstract.llmwhisperer.client_v2 - DEBUG - url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper-status
+2025-09-15 17:24:13,248 - unstract.llmwhisperer.client_v2 - DEBUG - whisper_status called
+2025-09-15 17:24:13,248 - unstract.llmwhisperer.client_v2 - DEBUG - url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper-status
+2025-09-15 17:24:13,261 - unstract.llmwhisperer.client_v2 - DEBUG - whisper_status called
+2025-09-15 17:24:13,262 - unstract.llmwhisperer.client_v2 - DEBUG - url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper-status
+2025-09-15 17:24:13,280 - unstract.llmwhisperer.client_v2 - DEBUG - whisper_retrieve called
+2025-09-15 17:24:13,281 - unstract.llmwhisperer.client_v2 - DEBUG - url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper-retrieve
+2025-09-15 17:24:13,366 - unstract.llmwhisperer.client_v2 - DEBUG - whisper_retrieve called
+2025-09-15 17:24:13,368 - unstract.llmwhisperer.client_v2 - DEBUG - url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper-retrieve
+2025-09-15 17:24:13,510 - src.etl.extract - INFO - Texto extraído exitosamente de data\pdfs\bancolombia_fiducuenta.pdf
+2025-09-15 17:24:13,511 - src.etl.extract - INFO - Procesando texto con Gemini para extraer JSON
+2025-09-15 17:24:13,511 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-09-15 17:24:13,576 - src.etl.extract - INFO - Texto extraído exitosamente de data\pdfs\bancoBogota_sumar.pdf
+2025-09-15 17:24:13,577 - src.etl.extract - INFO - Procesando texto con Gemini para extraer JSON
+2025-09-15 17:24:13,578 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-09-15 17:24:18,463 - unstract.llmwhisperer.client_v2 - DEBUG - whisper_status called
+2025-09-15 17:24:18,464 - unstract.llmwhisperer.client_v2 - DEBUG - url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper-status
+2025-09-15 17:24:18,478 - unstract.llmwhisperer.client_v2 - DEBUG - whisper_status called
+2025-09-15 17:24:18,478 - unstract.llmwhisperer.client_v2 - DEBUG - url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper-status
+2025-09-15 17:24:18,687 - unstract.llmwhisperer.client_v2 - DEBUG - whisper_retrieve called
+2025-09-15 17:24:18,688 - unstract.llmwhisperer.client_v2 - DEBUG - url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper-retrieve
+2025-09-15 17:24:18,702 - unstract.llmwhisperer.client_v2 - DEBUG - whisper_retrieve called
+2025-09-15 17:24:18,702 - unstract.llmwhisperer.client_v2 - DEBUG - url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper-retrieve
+2025-09-15 17:24:18,932 - src.etl.extract - INFO - Texto extraído exitosamente de data\pdfs\bancoDavivienda_Multiescala.pdf
+2025-09-15 17:24:18,933 - src.etl.extract - INFO - Procesando texto con Gemini para extraer JSON
+2025-09-15 17:24:18,933 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-09-15 17:24:18,945 - src.etl.extract - INFO - Texto extraído exitosamente de data\pdfs\credicorpCapital_Alta Liquidez.pdf
+2025-09-15 17:24:18,945 - src.etl.extract - INFO - Procesando texto con Gemini para extraer JSON
+2025-09-15 17:24:18,946 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-09-15 17:24:52,612 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2025-09-15 17:24:52,615 - google_genai.models - INFO - AFC remote call 1 is done.
+2025-09-15 17:24:52,615 - src.etl.extract - INFO - JSON extraído exitosamente
+2025-09-15 17:24:52,617 - src.etl.pipeline - INFO - JSON guardado en: data\json_raw\bancolombia_fiducuenta_20250915_172452.json
+2025-09-15 17:24:52,618 - src.etl.pipeline - INFO - Procesamiento completado exitosamente: data\pdfs\bancolombia_fiducuenta.pdf
+2025-09-15 17:24:55,885 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2025-09-15 17:24:55,888 - google_genai.models - INFO - AFC remote call 1 is done.
+2025-09-15 17:24:55,889 - src.etl.extract - INFO - JSON extraído exitosamente
+2025-09-15 17:24:55,893 - src.etl.pipeline - INFO - JSON guardado en: data\json_raw\bancoDavivienda_Multiescala_20250915_172455.json
+2025-09-15 17:24:55,894 - src.etl.pipeline - INFO - Procesamiento completado exitosamente: data\pdfs\bancoDavivienda_Multiescala.pdf
+2025-09-15 17:25:11,479 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2025-09-15 17:25:11,482 - google_genai.models - INFO - AFC remote call 1 is done.
+2025-09-15 17:25:11,483 - src.etl.extract - INFO - JSON extraído exitosamente
+2025-09-15 17:25:11,487 - src.etl.pipeline - INFO - JSON guardado en: data\json_raw\bancoBogota_sumar_20250915_172511.json
+2025-09-15 17:25:11,487 - src.etl.pipeline - INFO - Procesamiento completado exitosamente: data\pdfs\bancoBogota_sumar.pdf
+2025-09-15 17:25:19,140 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2025-09-15 17:25:19,144 - google_genai.models - INFO - AFC remote call 1 is done.
+2025-09-15 17:25:19,144 - src.etl.extract - INFO - JSON extraído exitosamente
+2025-09-15 17:25:19,151 - src.etl.pipeline - INFO - JSON guardado en: data\json_raw\credicorpCapital_Alta Liquidez_20250915_172519.json
+2025-09-15 17:25:19,151 - src.etl.pipeline - INFO - Procesamiento completado exitosamente: data\pdfs\credicorpCapital_Alta Liquidez.pdf

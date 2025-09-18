@@ -1,0 +1,251 @@
+{
+  "fic": {
+    "nombre_fic": "Fiducuenta",
+    "gestor": "Fiduciaria Bancolombia S.A.",
+    "custodio": "Cititrust Colombia S.A.",
+    "fecha_corte": "31/07/2025",
+    "politica_de_inversion": "El objetivo del fondo de inversión colectiva es proporcionar a los inversionistas un instrumento de inversión de renta fija de baja duración, con un perfil de riesgo conservador, cuyo propósito es la protección de capital en un horizonte de inversión de corto plazo.\nDurante agosto, se mantendrá la estrategia de subponderación en liquidez, mientras se incrementará gradualmente la exposición en deuda corporativa indexada a IBR e IPC, especialmente en plazos a los vencimientos menores a un año. Como contrapartida, se buscará reducir levemente la participación en deuda corporativa en tasa fija en aquellos tramos de la curva con spreads más apretados. En el corto plazo, el posicionamiento frente al riesgo de mercado se mantendrá ligeramente sobreponderado con respecto a su referente y a sus niveles actuales.\n*Para una descripción mas completa de los activos admisibles de inversión y demás políticas de administración del Fondo, remitirse al reglamento de la misma disponible en www.bancolombia.com"
+  },
+  "plazoDuracion": [
+    {
+      "plazo": "1 a 180 Días",
+      "participacion": 66.96
+    },
+    {
+      "plazo": "180 a 365 Días",
+      "participacion": 15.03
+    },
+    {
+      "plazo": "1-3 Años",
+      "participacion": 17.76
+    },
+    {
+      "plazo": "3-5 años",
+      "participacion": 0.25
+    },
+    {
+      "plazo": "Más de 5 Años",
+      "participacion": 0.0
+    }
+  ],
+  "composicion_portafolio": {
+    "por_activo": [
+      {
+        "activo": "DISPONIBLE",
+        "porcentaje_participacion": 20.89
+      },
+      {
+        "activo": "INVERSIONES Y OPERACIONES CON DERIVADOS",
+        "porcentaje_participacion": 79.1
+      },
+      {
+        "activo": "CUENTAS POR COBRAR",
+        "porcentaje_participacion": 0.01
+      }
+    ],
+    "por_tipo_de_renta": [
+      {
+        "tipo": "TASA FIJA",
+        "participacion": 151.87
+      },
+      {
+        "tipo": "CUENTA DE AHORROS",
+        "participacion": 20.43
+      },
+      {
+        "tipo": "IBR",
+        "participacion": 15.61
+      },
+      {
+        "tipo": "IPC",
+        "participacion": 8.95
+      },
+      {
+        "tipo": "AL DESCUENTO",
+        "participacion": 2.33
+      },
+      {
+        "tipo": "CUENTA CORRIENTE",
+        "participacion": 0.51
+      },
+      {
+        "tipo": "UVR",
+        "participacion": 10.31
+      }
+    ],
+    "por_sector_economico": [
+      {
+        "sector": "FINANCIERO",
+        "participacion": 62.34
+      },
+      {
+        "sector": "ENTIDADES PÚBLICAS INTERNACIONAL",
+        "participacion": 20.15
+      },
+      {
+        "sector": "ENTIDADES PÚBLICAS",
+        "participacion": 15.68
+      },
+      {
+        "sector": "FINANCIERO INTERNACIONAL",
+        "participacion": 1.67
+      },
+      {
+        "sector": "REAL",
+        "participacion": 0.16
+      }
+    ],
+    "por_pais_emisor": [
+      {
+        "pais": "COLOMBIA",
+        "participacion": 78.18
+      },
+      {
+        "pais": "EEUU",
+        "participacion": 20.37
+      }
+    ],
+    "por_moneda": [
+      {
+        "moneda": "PESOS",
+        "participacion": 77.61
+      },
+      {
+        "moneda": "DÓLAR",
+        "participacion": 22.08
+      },
+      {
+        "moneda": "UVR",
+        "participacion": 0.31
+      }
+    ],
+    "por_calificacion": [
+      {
+        "calificacion": "AAA",
+        "participacion": 35.87
+      },
+      {
+        "calificacion": "BRC1+",
+        "participacion": 23.38
+      },
+      {
+        "calificacion": "F1+ INTERNACIONAL",
+        "participacion": 16.18
+      },
+      {
+        "calificacion": "NACIÓN SIN CALIFICACIÓN",
+        "participacion": 15.4
+      },
+      {
+        "calificacion": "F1+",
+        "participacion": 2.62
+      },
+      {
+        "calificacion": "Aa1 INTERNACIONAL",
+        "participacion": 2.27
+      },
+      {
+        "calificacion": "A-1+ INTERNACIONAL",
+        "participacion": 1.79
+      },
+      {
+        "calificacion": "P-1 INTERNACIONAL",
+        "participacion": 0.89
+      },
+      {
+        "calificacion": "VRR1+",
+        "participacion": 0.59
+      },
+      {
+        "calificacion": "AA+ INTERNACIONAL",
+        "participacion": 0.46
+      },
+      {
+        "calificacion": "BB INTERNACIONAL",
+        "participacion": 0.26
+      },
+      {
+        "calificacion": "A+ INTERNACIONAL",
+        "participacion": 0.22
+      },
+      {
+        "calificacion": "AA+",
+        "participacion": 0.05
+      }
+    ]
+  },
+  "caracteristicas": {
+    "tipo": "Abierto sin pacto de permanencia",
+    "valor": 23232542.28,
+    "fecha_inicio_operaciones": "19/08/1992",
+    "no_unidades_en_circulacion": 528695398.109067
+  },
+  "calificacion": {
+    "calificacion": "S1/AAAf(col)",
+    "fecha_ultima_calificacion": "30/10/2024",
+    "entidad_calificadora": "Fitch Ratings Colombia S.A. SCV"
+  },
+  "principales_inversiones": [
+    {
+      "emisor": "DEPARTAMENTO DEL TESORO DE EE UU",
+      "participacion": "20.15%"
+    },
+    {
+      "emisor": "BANCO DE BOGOTÁ",
+      "participacion": "17.46%"
+    },
+    {
+      "emisor": "BANCO DAVIVIENDA",
+      "participacion": "13.91%"
+    },
+    {
+      "emisor": "BANCO DE LA REPUBLICA",
+      "participacion": "12.05%"
+    },
+    {
+      "emisor": "BBVA COLOMBIA",
+      "participacion": "7.18%"
+    },
+    {
+      "emisor": "FINDETER",
+      "participacion": "6.55%"
+    },
+    {
+      "emisor": "MINISTERIO DE HACIENDA",
+      "participacion": "3.61%"
+    },
+    {
+      "emisor": "BANCO POPULAR",
+      "participacion": "2.44%"
+    },
+    {
+      "emisor": "BANCO GNB SUDAMERIS",
+      "participacion": "2.38%"
+    },
+    {
+      "emisor": "BANCO COLPATRIA",
+      "participacion": "2.04%"
+    }
+  ],
+  "rentabilidad_volatilidad": [
+    {
+      "tipo_de_participacion": "Tipo C",
+      "rentabilidad_histórica_ea": {
+        "ultimo_mes": "10.076%",
+        "ultimos_6_meses": "8.501%",
+        "anio_corrido": "8.485%",
+        "ultimo_anio": "8.555%",
+        "ultimos_2_anios": "10.529%",
+        "ultimos_3_anios": "11.546%"
+      },
+      "volatilidad_historica": {
+        "ultimo_mes": "0.184%",
+        "ultimos_6_meses": "0.189%",
+        "anio_corrido": "0.187%",
+        "ultimo_anio": "0.250%",
+        "ultimos_2_anios": "0.478%",
+        "ultimos_3_anios": "0.476%"
+      }
+    }
+  ]
+}
