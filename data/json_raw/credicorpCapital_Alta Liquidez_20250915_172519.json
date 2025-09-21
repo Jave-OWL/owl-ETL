@@ -6,7 +6,7 @@
     "fecha_corte": "31/07/2025",
     "politica_de_inversion": "Alternativa de inversion ideal para las personas que buscan una inversion conservadora y de baja volatilidad, por medio de la cual preservar el capital, con la posibilidad de tener liquidez diaria. El Fondo invierte mayoritariamente en titulos de renta fija (CDTs, Bonos, TES, etc.) con alta calidad crediticia (calificacion minima grado de inversion), que tengan liquidez en el mercado secundario. Vencimiento promedio menor a 365 dias."
   },
-  "plazoDuracion": [
+  "plazo_duracion": [
     {
       "plazo": "1 a 180 Días",
       "participacion": 54.18
@@ -32,15 +32,15 @@
     "por_activo": [
       {
         "activo": "SIMULTANEA",
-        "porcentaje_participacion": 13.0
+        "participacion": 13.0
       },
       {
         "activo": "DISPONIBLE",
-        "porcentaje_participacion": 32.0
+        "participacion": 32.0
       },
       {
         "activo": "INVERSION",
-        "porcentaje_participacion": 55.0
+        "participacion": 55.0
       }
     ],
     "por_tipo_de_renta": [

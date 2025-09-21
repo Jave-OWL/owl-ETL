@@ -17,78 +17,89 @@ gemini_client = genai.Client(api_key=GEMINI_API_KEY)
 
 # Prompt base
 BASE_PROMPT = """
-Eres un asistente experto en extraer información financiera de Fondos de Inversión Colectiva (FICs) en Colombia.
-Recibirás como entrada texto plano extraído de un PDF que contiene la ficha técnica de un FIC.
+Eres un asistente experto en extraer información financiera de Fondos de Inversión Colectiva (FICs) en Colombia. 
+Recibirás como entrada texto plano extraído de un PDF que contiene la ficha técnica de un FIC. 
 Debes devolver un JSON estructurado con la información encontrada, siguiendo este esquema:
+
 {
-  "fic": {
-    "nombre_fic": "",
-    "gestor": "",
-    "custodio": "",
-    "fecha_corte": "",
-    "politica_de_inversion": ""
+  "fic"{
+	"nombre_fic" : "",
+	"gestor" : "",
+	"custodio" : "",
+	"fecha_corte" : null,
+	"politica_de_inversion" : ""
   },
-  "plazoDuracion": [
+
+  "plazo_duracion": [
     {"plazo": "", "participacion": 0.0}
   ],
+  
   "composicion_portafolio": {
     "por_activo": [
-      {"activo": "", "porcentaje_participacion": null}
+      {"activo": "", "participacion": 0.0}
     ],
     "por_tipo_de_renta": [
-      {"tipo": "", "participacion": null}
+      {"tipo": "", "participacion": 0.0}
     ],
     "por_sector_economico": [
-      {"sector": "", "participacion": null}
+      {"sector": "", "participacion": 0.0}
     ],
     "por_pais_emisor": [
-      {"pais": "", "participacion": null}
+      {"pais": "", "participacion": 0.0}
     ],
     "por_moneda": [
-      {"moneda": "", "participacion": null}
+      {"moneda": "", "participacion": 0.0}
     ],
     "por_calificacion": [
-      {"calificacion": "", "participacion": null}
+      {"calificacion": "", "participacion": 0.0}
     ]
   },
-  "caracteristicas": {
-    "tipo": "",
-    "valor": 0.0,
-    "fecha_inicio_operaciones": null,
-    "no_unidades_en_circulacion": 0.0
+  
+  "caracteristicas"{
+	"tipo" : "",
+	"valor" : 0.0,
+	"fecha_inicio_operaciones" : null,
+	"no_unidades_en_circulacion" : 0.0
   },
+  
   "calificacion": {
     "calificacion": "",
     "fecha_ultima_calificacion": null,
     "entidad_calificadora": ""
   },
+  
   "principales_inversiones": [
-    {"emisor": "", "participacion": ""}
+    {"emisor": "", "participacion": 0.0}
   ],
+
   "rentabilidad_volatilidad": [
-    {
-      "tipo_de_participacion": "",
-      "rentabilidad_histórica_ea": {
-        "ultimo_mes": "",
-        "ultimos_6_meses": "",
-        "anio_corrido": "",
-        "ultimo_anio": "",
-        "ultimos_2_anios": "",
-        "ultimos_3_anios": ""
-      },
-      "volatilidad_historica": {
-        "ultimo_mes": "",
-        "ultimos_6_meses": "",
-        "anio_corrido": "",
-        "ultimo_anio": "",
-        "ultimos_2_anios": "",
-        "ultimos_3_anios": ""
-      }
-    }
-  ]
+	{
+		"tipo_de_participacion": "",
+		"rentabilidad_histórica_ea": {
+			"ultimo_mes": 0.0,
+			"ultimos_6_meses": 0.0,
+			"anio_corrido": 0.0,
+			"ultimo_anio": 0.0,
+			"ultimos_2_anios": 0.0,
+			"ultimos_3_anios": 0.0
+		},
+		"volatilidad_historica": {
+			"ultimo_mes": 0.0,
+			"ultimos_6_meses": 0.0,
+			"anio_corrido": 0.0,
+			"ultimo_anio": 0.0,
+			"ultimos_2_anios": 0.0,
+			"ultimos_3_anios": 0.0
+		}
+	}
+  ],
+
 }
+
+
+
 Reglas:
-- Si no encuentras un dato, deja el valor como "".
+- Si no encuentras un dato, deja el valor como "", 0.0, null, segun corresponda.
 - Mantén los números en el formato del json float en cada caso.
 - No inventes información, solo usa lo que aparece en el texto.
 
