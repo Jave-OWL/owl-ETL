@@ -18,6 +18,7 @@ GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 # Paths - objetos Path
 PDF_BASE_PATH = Path(os.getenv("PDF_BASE_PATH", BASE_DIR / "data" / "pdfs"))
 JSON_RAW_PATH = Path(os.getenv("JSON_RAW_PATH", BASE_DIR / "data" / "json_raw"))
+JSON_TRANSFORMED_PATH = Path(os.getenv("JSON_TRANSFORMED_PATH", BASE_DIR / "data" / "json_transformed"))
 LOG_PATH = Path(os.getenv("LOG_PATH", BASE_DIR / "logs"))
 
 #URLs

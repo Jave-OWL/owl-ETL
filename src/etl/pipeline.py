@@ -77,12 +77,9 @@ def pipeline_per_pdf(pdf_path: str, save_raw_json: bool = True) -> dict:
             save_path = save_json_to_file(json_output, Path(pdf_path).name)
             logger.info(f"JSON crudo guardado en: {save_path}")
 
-        # 5. TRANSFORM: Limpiar y validar datos
-        transformed_data = transform_fic_data(raw_data)
-
-        # 6. TRANSFORM: Validar que la transformación fue exitosa  --esta f esta rara--
-        if not validar_datos_transformados(transformed_data):
-            raise ValueError("Los datos transformados no pasaron la validación")
+        # 5. TRANSFORM: Limpiar y validar datos (con información del archivo)
+        filename = Path(pdf_path).stem  # Obtener nombre sin extensión
+        transformed_data = transform_fic_data(raw_data, filename)
 
         # 7. LOAD: Guardar JSON transformado
         transformed_json = json.dumps(transformed_data, indent=2, ensure_ascii=False)

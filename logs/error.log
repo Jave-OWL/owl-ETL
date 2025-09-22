@@ -294,3 +294,272 @@
 2025-09-20 22:50:25,628 - src.etl.pipeline - INFO - JSON guardado en: data\json_raw\bancolombia_fiducuenta_20250920_225025.json
 2025-09-20 22:50:25,628 - src.etl.pipeline - INFO - Procesamiento completado exitosamente: data\pdfs\bancolombia_fiducuenta.pdf
 2025-09-20 22:50:25,629 - src.config.settings - INFO - Procesado exitosamente: bancolombia_fiducuenta.pdf
+2025-09-21 00:50:23,905 - src.config.settings - INFO - Iniciando transformación de carpeta: data\json_raw
+2025-09-21 00:50:23,908 - src.config.settings - INFO - Encontrados 4 JSONs para transformar
+2025-09-21 00:50:23,910 - src.config.settings - INFO - Transformando: bancoBogota_sumar_20250920_225025.json
+2025-09-21 00:50:23,910 - src.config.settings - INFO - Transformando: bancoDavivienda_Multiescala_20250920_225015.json
+2025-09-21 00:50:23,911 - src.config.settings - INFO - Transformando: bancolombia_fiducuenta_20250920_225025.json
+2025-09-21 00:50:23,912 - src.etl.transform - INFO - Iniciando transformación de datos FIC
+2025-09-21 00:50:23,913 - src.etl.transform - INFO - Iniciando transformación de datos FIC
+2025-09-21 00:50:23,914 - src.etl.transform - WARNING - Suma de por_tipo_de_renta fuera de rango: 124.23%
+2025-09-21 00:50:23,914 - src.etl.transform - INFO - Iniciando transformación de datos FIC
+2025-09-21 00:50:23,914 - src.etl.transform - WARNING - Suma de principales_inversiones fuera de rango: 95.63%
+2025-09-21 00:50:23,915 - src.etl.transform - WARNING - Suma de plazo_duracion fuera de rango: 124.75%
+2025-09-21 00:50:23,927 - src.etl.transform - WARNING - Suma de principales_inversiones fuera de rango: 73.47%
+2025-09-21 00:50:23,928 - src.etl.transform - WARNING - Suma de por_activo fuera de rango: 100.99%
+2025-09-21 00:50:23,929 - src.etl.transform - WARNING - Suma de por_tipo_de_renta fuera de rango: 260.50%
+2025-09-21 00:50:23,929 - src.etl.transform - WARNING - Suma de por_sector_economico fuera de rango: 115.84%
+2025-09-21 00:50:23,930 - src.etl.transform - WARNING - Suma de por_pais_emisor fuera de rango: 98.55%
+2025-09-21 00:50:23,930 - src.etl.transform - WARNING - Suma de por_moneda fuera de rango: 130.69%
+2025-09-21 00:50:23,930 - src.etl.transform - WARNING - Suma de por_calificacion fuera de rango: 344.51%
+2025-09-21 00:50:23,931 - src.etl.transform - WARNING - Suma de principales_inversiones fuera de rango: 87.77%
+2025-09-21 00:50:23,933 - src.etl.transform - INFO - Transformación de datos completada exitosamente
+2025-09-21 00:50:23,934 - src.etl.transform - INFO - Transformación de datos completada exitosamente
+2025-09-21 00:50:23,934 - src.etl.transform - INFO - Transformación de datos completada exitosamente
+2025-09-21 00:50:23,937 - src.config.settings - INFO - JSON transformado guardado: bancoDavivienda_Multiescala_20250920_225015_transformed.json
+2025-09-21 00:50:23,938 - src.config.settings - INFO - JSON transformado guardado: bancoBogota_sumar_20250920_225025_transformed.json
+2025-09-21 00:50:23,939 - src.config.settings - INFO - Transformando: credicorpCapital_Alta Liquidez_20250920_225021.json
+2025-09-21 00:50:23,939 - src.config.settings - INFO - Transformado exitosamente: bancoDavivienda_Multiescala_20250920_225015.json
+2025-09-21 00:50:23,939 - src.config.settings - INFO - JSON transformado guardado: bancolombia_fiducuenta_20250920_225025_transformed.json
+2025-09-21 00:50:23,940 - src.config.settings - INFO - Transformado exitosamente: bancoBogota_sumar_20250920_225025.json
+2025-09-21 00:50:23,940 - src.etl.transform - INFO - Iniciando transformación de datos FIC
+2025-09-21 00:50:23,941 - src.config.settings - INFO - Transformado exitosamente: bancolombia_fiducuenta_20250920_225025.json
+2025-09-21 00:50:23,941 - src.etl.transform - WARNING - Suma de por_tipo_de_renta fuera de rango: 199.00%
+2025-09-21 00:50:23,942 - src.etl.transform - WARNING - Suma de por_sector_economico fuera de rango: 199.00%
+2025-09-21 00:50:23,942 - src.etl.transform - WARNING - Suma de por_pais_emisor fuera de rango: 298.00%
+2025-09-21 00:50:23,942 - src.etl.transform - WARNING - Suma de por_calificacion fuera de rango: 407.00%
+2025-09-21 00:50:23,943 - src.etl.transform - WARNING - Suma de principales_inversiones fuera de rango: 76.31%
+2025-09-21 00:50:23,943 - src.etl.transform - INFO - Transformación de datos completada exitosamente
+2025-09-21 00:50:23,944 - src.config.settings - INFO - JSON transformado guardado: credicorpCapital_Alta Liquidez_20250920_225021_transformed.json
+2025-09-21 00:50:23,945 - src.config.settings - INFO - Transformado exitosamente: credicorpCapital_Alta Liquidez_20250920_225021.json
+2025-09-22 11:16:40,427 - src.config.settings - INFO - Iniciando transformación de carpeta: data\json_raw
+2025-09-22 11:16:40,429 - src.config.settings - INFO - Encontrados 4 JSONs para transformar
+2025-09-22 11:16:40,431 - src.config.settings - INFO - Transformando: bancoBogota_sumar_20250920_225025.json
+2025-09-22 11:16:40,431 - src.config.settings - INFO - Transformando: bancoDavivienda_Multiescala_20250920_225015.json
+2025-09-22 11:16:40,431 - src.config.settings - INFO - Transformando: bancolombia_fiducuenta_20250920_225025.json
+2025-09-22 11:16:40,433 - src.etl.transform - INFO - Iniciando transformación de datos FIC
+2025-09-22 11:16:40,433 - src.etl.transform - WARNING - Suma de por_tipo_de_renta fuera de rango: 124.23%
+2025-09-22 11:16:40,434 - src.etl.transform - INFO - Iniciando transformación de datos FIC
+2025-09-22 11:16:40,434 - src.etl.transform - WARNING - Suma de plazo_duracion fuera de rango: 124.75%
+2025-09-22 11:16:40,434 - src.etl.transform - WARNING - Suma de principales_inversiones fuera de rango: 73.47%
+2025-09-22 11:16:40,435 - src.etl.transform - WARNING - Suma de por_activo fuera de rango: 100.99%
+2025-09-22 11:16:40,440 - src.etl.transform - INFO - Transformación de datos completada exitosamente
+2025-09-22 11:16:40,449 - src.etl.transform - INFO - Iniciando transformación de datos FIC
+2025-09-22 11:16:40,460 - src.etl.transform - WARNING - Suma de por_tipo_de_renta fuera de rango: 260.50%
+2025-09-22 11:16:40,460 - src.etl.transform - WARNING - Suma de principales_inversiones fuera de rango: 95.63%
+2025-09-22 11:16:40,461 - src.etl.transform - WARNING - Suma de por_sector_economico fuera de rango: 115.84%
+2025-09-22 11:16:40,462 - src.etl.transform - INFO - Transformación de datos completada exitosamente
+2025-09-22 11:16:40,463 - src.etl.transform - WARNING - Suma de por_pais_emisor fuera de rango: 98.55%
+2025-09-22 11:16:40,463 - src.config.settings - INFO - JSON transformado guardado: bancoBogota_sumar_20250920_225025_transformed.json
+2025-09-22 11:16:40,463 - src.etl.transform - WARNING - Suma de por_moneda fuera de rango: 130.69%
+2025-09-22 11:16:40,465 - src.config.settings - INFO - Transformando: credicorpCapital_Alta Liquidez_20250920_225021.json
+2025-09-22 11:16:40,465 - src.config.settings - INFO - Transformado exitosamente: bancoBogota_sumar_20250920_225025.json
+2025-09-22 11:16:40,466 - src.etl.transform - WARNING - Suma de por_calificacion fuera de rango: 344.51%
+2025-09-22 11:16:40,466 - src.config.settings - INFO - JSON transformado guardado: bancoDavivienda_Multiescala_20250920_225015_transformed.json
+2025-09-22 11:16:40,466 - src.etl.transform - WARNING - Suma de principales_inversiones fuera de rango: 87.77%
+2025-09-22 11:16:40,467 - src.config.settings - INFO - Transformado exitosamente: bancoDavivienda_Multiescala_20250920_225015.json
+2025-09-22 11:16:40,467 - src.etl.transform - INFO - Transformación de datos completada exitosamente
+2025-09-22 11:16:40,468 - src.etl.transform - INFO - Iniciando transformación de datos FIC
+2025-09-22 11:16:40,468 - src.etl.transform - WARNING - Suma de por_tipo_de_renta fuera de rango: 199.00%
+2025-09-22 11:16:40,469 - src.etl.transform - WARNING - Suma de por_sector_economico fuera de rango: 199.00%
+2025-09-22 11:16:40,469 - src.config.settings - INFO - JSON transformado guardado: bancolombia_fiducuenta_20250920_225025_transformed.json
+2025-09-22 11:16:40,470 - src.etl.transform - WARNING - Suma de por_pais_emisor fuera de rango: 298.00%
+2025-09-22 11:16:40,470 - src.config.settings - INFO - Transformado exitosamente: bancolombia_fiducuenta_20250920_225025.json
+2025-09-22 11:16:40,470 - src.etl.transform - WARNING - Suma de por_calificacion fuera de rango: 407.00%
+2025-09-22 11:16:40,471 - src.etl.transform - WARNING - Suma de principales_inversiones fuera de rango: 76.31%
+2025-09-22 11:16:40,471 - src.etl.transform - INFO - Transformación de datos completada exitosamente
+2025-09-22 11:16:40,473 - src.config.settings - INFO - JSON transformado guardado: credicorpCapital_Alta Liquidez_20250920_225021_transformed.json
+2025-09-22 11:16:40,473 - src.config.settings - INFO - Transformado exitosamente: credicorpCapital_Alta Liquidez_20250920_225021.json
+2025-09-22 11:39:39,743 - src.config.settings - INFO - Iniciando transformación de carpeta: data\json_raw
+2025-09-22 11:39:39,743 - src.config.settings - INFO - Encontrados 4 JSONs para transformar
+2025-09-22 11:39:39,745 - src.config.settings - INFO - Transformando: bancoBogota_sumar_20250920_225025.json
+2025-09-22 11:39:39,745 - src.config.settings - INFO - Transformando: bancoDavivienda_Multiescala_20250920_225015.json
+2025-09-22 11:39:39,746 - src.config.settings - INFO - Transformando: bancolombia_fiducuenta_20250920_225025.json
+2025-09-22 11:39:39,747 - src.etl.transform - INFO - Iniciando transformación de datos FIC: desconocido
+2025-09-22 11:39:39,747 - src.etl.transform - INFO - Iniciando transformación de datos FIC: desconocido
+2025-09-22 11:39:39,748 - src.etl.transform - INFO - Iniciando transformación de datos FIC: desconocido
+2025-09-22 11:39:39,792 - src.etl.transform - INFO - Transformación de datos completada exitosamente: desconocido
+2025-09-22 11:39:39,794 - src.config.settings - INFO - JSON transformado guardado: bancoDavivienda_Multiescala_20250920_225015_transformed.json
+2025-09-22 11:39:39,799 - src.etl.transform - INFO - Transformación de datos completada exitosamente: desconocido
+2025-09-22 11:39:39,801 - src.config.settings - INFO - Transformando: credicorpCapital_Alta Liquidez_20250920_225021.json
+2025-09-22 11:39:39,801 - src.config.settings - INFO - Transformado exitosamente: bancoDavivienda_Multiescala_20250920_225015.json
+2025-09-22 11:39:39,803 - src.config.settings - INFO - JSON transformado guardado: bancoBogota_sumar_20250920_225025_transformed.json
+2025-09-22 11:39:39,803 - src.etl.transform - INFO - Iniciando transformación de datos FIC: desconocido
+2025-09-22 11:39:39,804 - src.config.settings - INFO - Transformado exitosamente: bancoBogota_sumar_20250920_225025.json
+2025-09-22 11:39:39,870 - src.etl.transform - INFO - Transformación de datos completada exitosamente: desconocido
+2025-09-22 11:39:39,871 - src.config.settings - INFO - JSON transformado guardado: credicorpCapital_Alta Liquidez_20250920_225021_transformed.json
+2025-09-22 11:39:39,872 - src.config.settings - INFO - Transformado exitosamente: credicorpCapital_Alta Liquidez_20250920_225021.json
+2025-09-22 11:39:39,882 - src.etl.transform - INFO - Transformación de datos completada exitosamente: desconocido
+2025-09-22 11:39:39,884 - src.config.settings - INFO - JSON transformado guardado: bancolombia_fiducuenta_20250920_225025_transformed.json
+2025-09-22 11:39:39,884 - src.config.settings - INFO - Transformado exitosamente: bancolombia_fiducuenta_20250920_225025.json
+2025-09-22 11:44:04,072 - src.config.settings - INFO - Iniciando transformación de carpeta: data\json_raw
+2025-09-22 11:44:04,073 - src.config.settings - INFO - Encontrados 4 JSONs para transformar
+2025-09-22 11:44:04,074 - src.config.settings - INFO - Transformando: bancoBogota_sumar_20250920_225025.json
+2025-09-22 11:44:04,074 - src.config.settings - INFO - Transformando: bancoDavivienda_Multiescala_20250920_225015.json
+2025-09-22 11:44:04,075 - src.config.settings - INFO - Transformando: bancolombia_fiducuenta_20250920_225025.json
+2025-09-22 11:44:04,075 - src.etl.transform - INFO - Iniciando transformación de datos FIC: desconocido
+2025-09-22 11:44:04,076 - src.etl.transform - INFO - Iniciando transformación de datos FIC: desconocido
+2025-09-22 11:44:04,076 - src.etl.transform - INFO - Iniciando transformación de datos FIC: desconocido
+2025-09-22 11:44:04,077 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: FONDO DE INVERSIÓN COLECTIVA ABIERTO SUMAR | Gestor: Fiduciaria Bogotá S.A. | Archivo: desconocido | Campo: por_tipo_de_renta | Suma: 124.23%
+2025-09-22 11:44:04,077 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: FONDO DE INVERSIÓN COLECTIVA RENTA FIJA MEDIANO PLAZO - MULTIESCALA | Gestor: Davivienda Corredores S.A. | Archivo: desconocido | Campo: principales_inversiones | Suma: 95.63%
+2025-09-22 11:44:04,077 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: Fiducuenta | Gestor: Fiduciaria Bancolombia S.A. | Archivo: desconocido | Campo: plazo_duracion | Suma: 124.75%
+2025-09-22 11:44:04,078 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: FONDO DE INVERSIÓN COLECTIVA ABIERTO SUMAR | Gestor: Fiduciaria Bogotá S.A. | Archivo: desconocido | Campo: principales_inversiones | Suma: 73.47%
+2025-09-22 11:44:04,078 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: Fiducuenta | Gestor: Fiduciaria Bancolombia S.A. | Archivo: desconocido | Campo: por_activo | Suma: 100.99%
+2025-09-22 11:44:04,079 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: Fiducuenta | Gestor: Fiduciaria Bancolombia S.A. | Archivo: desconocido | Campo: por_tipo_de_renta | Suma: 260.50%
+2025-09-22 11:44:04,080 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: Fiducuenta | Gestor: Fiduciaria Bancolombia S.A. | Archivo: desconocido | Campo: por_sector_economico | Suma: 115.84%
+2025-09-22 11:44:04,080 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: Fiducuenta | Gestor: Fiduciaria Bancolombia S.A. | Archivo: desconocido | Campo: por_pais_emisor | Suma: 98.55%
+2025-09-22 11:44:04,081 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: Fiducuenta | Gestor: Fiduciaria Bancolombia S.A. | Archivo: desconocido | Campo: por_moneda | Suma: 130.69%
+2025-09-22 11:44:04,083 - src.etl.transform - INFO - Transformación de datos completada exitosamente: desconocido
+2025-09-22 11:44:04,083 - src.etl.transform - INFO - Transformación de datos completada exitosamente: desconocido
+2025-09-22 11:44:04,083 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: Fiducuenta | Gestor: Fiduciaria Bancolombia S.A. | Archivo: desconocido | Campo: por_calificacion | Suma: 344.51%
+2025-09-22 11:44:04,084 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: Fiducuenta | Gestor: Fiduciaria Bancolombia S.A. | Archivo: desconocido | Campo: principales_inversiones | Suma: 87.77%
+2025-09-22 11:44:04,086 - src.config.settings - INFO - JSON transformado guardado: bancoDavivienda_Multiescala_20250920_225015_transformed.json
+2025-09-22 11:44:04,086 - src.etl.transform - INFO - Transformación de datos completada exitosamente: desconocido
+2025-09-22 11:44:04,087 - src.config.settings - INFO - JSON transformado guardado: bancoBogota_sumar_20250920_225025_transformed.json
+2025-09-22 11:44:04,087 - src.config.settings - INFO - Transformando: credicorpCapital_Alta Liquidez_20250920_225021.json
+2025-09-22 11:44:04,087 - src.config.settings - INFO - Transformado exitosamente: bancoDavivienda_Multiescala_20250920_225015.json
+2025-09-22 11:44:04,089 - src.config.settings - INFO - JSON transformado guardado: bancolombia_fiducuenta_20250920_225025_transformed.json
+2025-09-22 11:44:04,089 - src.config.settings - INFO - Transformado exitosamente: bancoBogota_sumar_20250920_225025.json
+2025-09-22 11:44:04,089 - src.etl.transform - INFO - Iniciando transformación de datos FIC: desconocido
+2025-09-22 11:44:04,089 - src.config.settings - INFO - Transformado exitosamente: bancolombia_fiducuenta_20250920_225025.json
+2025-09-22 11:44:04,090 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: CREDICORP CAPITAL ALTA LIQUIDEZ | Gestor: CREDICORP CAPITAL COLOMBIA S.A. | Archivo: desconocido | Campo: por_tipo_de_renta | Suma: 199.00%
+2025-09-22 11:44:04,090 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: CREDICORP CAPITAL ALTA LIQUIDEZ | Gestor: CREDICORP CAPITAL COLOMBIA S.A. | Archivo: desconocido | Campo: por_sector_economico | Suma: 199.00%
+2025-09-22 11:44:04,090 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: CREDICORP CAPITAL ALTA LIQUIDEZ | Gestor: CREDICORP CAPITAL COLOMBIA S.A. | Archivo: desconocido | Campo: por_pais_emisor | Suma: 298.00%
+2025-09-22 11:44:04,091 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: CREDICORP CAPITAL ALTA LIQUIDEZ | Gestor: CREDICORP CAPITAL COLOMBIA S.A. | Archivo: desconocido | Campo: por_calificacion | Suma: 407.00%
+2025-09-22 11:44:04,091 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: CREDICORP CAPITAL ALTA LIQUIDEZ | Gestor: CREDICORP CAPITAL COLOMBIA S.A. | Archivo: desconocido | Campo: principales_inversiones | Suma: 76.31%
+2025-09-22 11:44:04,092 - src.etl.transform - INFO - Transformación de datos completada exitosamente: desconocido
+2025-09-22 11:44:04,093 - src.config.settings - INFO - JSON transformado guardado: credicorpCapital_Alta Liquidez_20250920_225021_transformed.json
+2025-09-22 11:44:04,093 - src.config.settings - INFO - Transformado exitosamente: credicorpCapital_Alta Liquidez_20250920_225021.json
+2025-09-22 11:53:41,057 - unstract.llmwhisperer.client_v2 - DEBUG - logging_level set to DEBUG
+2025-09-22 11:53:41,058 - unstract.llmwhisperer.client_v2 - DEBUG - base_url set to https://llmwhisperer-api.us-central.unstract.com/api/v2
+2025-09-22 11:53:41,763 - src.config.settings - INFO - Iniciando procesamiento de carpeta: data\pdfs
+2025-09-22 11:53:41,764 - src.config.settings - INFO - Encontrados 4 PDFs para procesar
+2025-09-22 11:53:41,765 - src.etl.pipeline - INFO - Iniciando procesamiento de: data\pdfs\bancoBogota_sumar.pdf
+2025-09-22 11:53:41,765 - src.etl.pipeline - INFO - Iniciando procesamiento de: data\pdfs\bancoDavivienda_Multiescala.pdf
+2025-09-22 11:53:41,766 - src.etl.extract - INFO - Extrayendo texto de data\pdfs\bancoBogota_sumar.pdf (intento 1)
+2025-09-22 11:53:41,766 - src.etl.pipeline - INFO - Iniciando procesamiento de: data\pdfs\bancolombia_fiducuenta.pdf
+2025-09-22 11:53:41,766 - src.etl.extract - INFO - Extrayendo texto de data\pdfs\bancoDavivienda_Multiescala.pdf (intento 1)
+2025-09-22 11:53:41,766 - src.etl.pipeline - INFO - Iniciando procesamiento de: data\pdfs\credicorpCapital_Alta Liquidez.pdf
+2025-09-22 11:53:41,767 - unstract.llmwhisperer.client_v2 - DEBUG - whisper called
+2025-09-22 11:53:41,767 - src.etl.extract - INFO - Extrayendo texto de data\pdfs\bancolombia_fiducuenta.pdf (intento 1)
+2025-09-22 11:53:41,767 - unstract.llmwhisperer.client_v2 - DEBUG - whisper called
+2025-09-22 11:53:41,768 - src.etl.extract - INFO - Extrayendo texto de data\pdfs\credicorpCapital_Alta Liquidez.pdf (intento 1)
+2025-09-22 11:53:41,768 - unstract.llmwhisperer.client_v2 - DEBUG - api_url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper
+2025-09-22 11:53:41,768 - unstract.llmwhisperer.client_v2 - DEBUG - whisper called
+2025-09-22 11:53:41,768 - unstract.llmwhisperer.client_v2 - DEBUG - api_url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper
+2025-09-22 11:53:41,769 - unstract.llmwhisperer.client_v2 - DEBUG - whisper called
+2025-09-22 11:53:41,769 - unstract.llmwhisperer.client_v2 - DEBUG - params: {'mode': 'form', 'output_mode': 'layout_preserving', 'page_seperator': '<<<', 'pages_to_extract': '', 'median_filter_size': 0, 'gaussian_blur_radius': 0, 'line_splitter_tolerance': 0.4, 'horizontal_stretch_factor': 1.0, 'mark_vertical_lines': False, 'mark_horizontal_lines': False, 'line_spitter_strategy': 'left-priority', 'add_line_nos': False, 'lang': 'eng', 'tag': 'default', 'filename': '', 'webhook_metadata': '', 'use_webhook': ''}
+2025-09-22 11:53:41,770 - unstract.llmwhisperer.client_v2 - DEBUG - api_url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper
+2025-09-22 11:53:41,770 - unstract.llmwhisperer.client_v2 - DEBUG - params: {'mode': 'form', 'output_mode': 'layout_preserving', 'page_seperator': '<<<', 'pages_to_extract': '', 'median_filter_size': 0, 'gaussian_blur_radius': 0, 'line_splitter_tolerance': 0.4, 'horizontal_stretch_factor': 1.0, 'mark_vertical_lines': False, 'mark_horizontal_lines': False, 'line_spitter_strategy': 'left-priority', 'add_line_nos': False, 'lang': 'eng', 'tag': 'default', 'filename': '', 'webhook_metadata': '', 'use_webhook': ''}
+2025-09-22 11:53:41,770 - unstract.llmwhisperer.client_v2 - DEBUG - api_url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper
+2025-09-22 11:53:41,770 - unstract.llmwhisperer.client_v2 - DEBUG - params: {'mode': 'form', 'output_mode': 'layout_preserving', 'page_seperator': '<<<', 'pages_to_extract': '', 'median_filter_size': 0, 'gaussian_blur_radius': 0, 'line_splitter_tolerance': 0.4, 'horizontal_stretch_factor': 1.0, 'mark_vertical_lines': False, 'mark_horizontal_lines': False, 'line_spitter_strategy': 'left-priority', 'add_line_nos': False, 'lang': 'eng', 'tag': 'default', 'filename': '', 'webhook_metadata': '', 'use_webhook': ''}
+2025-09-22 11:53:41,771 - unstract.llmwhisperer.client_v2 - DEBUG - params: {'mode': 'form', 'output_mode': 'layout_preserving', 'page_seperator': '<<<', 'pages_to_extract': '', 'median_filter_size': 0, 'gaussian_blur_radius': 0, 'line_splitter_tolerance': 0.4, 'horizontal_stretch_factor': 1.0, 'mark_vertical_lines': False, 'mark_horizontal_lines': False, 'line_spitter_strategy': 'left-priority', 'add_line_nos': False, 'lang': 'eng', 'tag': 'default', 'filename': '', 'webhook_metadata': '', 'use_webhook': ''}
+2025-09-22 11:53:42,267 - unstract.llmwhisperer.client_v2 - DEBUG - whisper_status called
+2025-09-22 11:53:42,268 - unstract.llmwhisperer.client_v2 - DEBUG - url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper-status
+2025-09-22 11:53:42,368 - unstract.llmwhisperer.client_v2 - DEBUG - whisper_status called
+2025-09-22 11:53:42,369 - unstract.llmwhisperer.client_v2 - DEBUG - url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper-status
+2025-09-22 11:53:42,380 - unstract.llmwhisperer.client_v2 - DEBUG - whisper_status called
+2025-09-22 11:53:42,380 - unstract.llmwhisperer.client_v2 - DEBUG - url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper-status
+2025-09-22 11:53:42,408 - unstract.llmwhisperer.client_v2 - DEBUG - whisper_status called
+2025-09-22 11:53:42,409 - unstract.llmwhisperer.client_v2 - DEBUG - url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper-status
+2025-09-22 11:53:47,566 - unstract.llmwhisperer.client_v2 - DEBUG - whisper_status called
+2025-09-22 11:53:47,567 - unstract.llmwhisperer.client_v2 - DEBUG - url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper-status
+2025-09-22 11:53:47,579 - unstract.llmwhisperer.client_v2 - DEBUG - whisper_status called
+2025-09-22 11:53:47,580 - unstract.llmwhisperer.client_v2 - DEBUG - url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper-status
+2025-09-22 11:53:47,585 - unstract.llmwhisperer.client_v2 - DEBUG - whisper_status called
+2025-09-22 11:53:47,585 - unstract.llmwhisperer.client_v2 - DEBUG - url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper-status
+2025-09-22 11:53:47,720 - unstract.llmwhisperer.client_v2 - DEBUG - whisper_status called
+2025-09-22 11:53:47,720 - unstract.llmwhisperer.client_v2 - DEBUG - url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper-status
+2025-09-22 11:53:52,770 - unstract.llmwhisperer.client_v2 - DEBUG - whisper_status called
+2025-09-22 11:53:52,771 - unstract.llmwhisperer.client_v2 - DEBUG - url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper-status
+2025-09-22 11:53:52,782 - unstract.llmwhisperer.client_v2 - DEBUG - whisper_status called
+2025-09-22 11:53:52,783 - unstract.llmwhisperer.client_v2 - DEBUG - url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper-status
+2025-09-22 11:53:52,793 - unstract.llmwhisperer.client_v2 - DEBUG - whisper_status called
+2025-09-22 11:53:52,793 - unstract.llmwhisperer.client_v2 - DEBUG - url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper-status
+2025-09-22 11:53:52,952 - unstract.llmwhisperer.client_v2 - DEBUG - whisper_status called
+2025-09-22 11:53:52,953 - unstract.llmwhisperer.client_v2 - DEBUG - url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper-status
+2025-09-22 11:53:53,010 - unstract.llmwhisperer.client_v2 - DEBUG - whisper_retrieve called
+2025-09-22 11:53:53,011 - unstract.llmwhisperer.client_v2 - DEBUG - url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper-retrieve
+2025-09-22 11:53:53,014 - unstract.llmwhisperer.client_v2 - DEBUG - whisper_retrieve called
+2025-09-22 11:53:53,014 - unstract.llmwhisperer.client_v2 - DEBUG - url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper-retrieve
+2025-09-22 11:53:53,029 - unstract.llmwhisperer.client_v2 - DEBUG - whisper_retrieve called
+2025-09-22 11:53:53,030 - unstract.llmwhisperer.client_v2 - DEBUG - url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper-retrieve
+2025-09-22 11:53:53,269 - src.etl.extract - INFO - Texto extraído exitosamente de data\pdfs\credicorpCapital_Alta Liquidez.pdf
+2025-09-22 11:53:53,270 - src.etl.extract - INFO - Procesando texto con Gemini para extraer JSON
+2025-09-22 11:53:53,270 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-09-22 11:53:53,284 - src.etl.extract - INFO - Texto extraído exitosamente de data\pdfs\bancoDavivienda_Multiescala.pdf
+2025-09-22 11:53:53,285 - src.etl.extract - INFO - Procesando texto con Gemini para extraer JSON
+2025-09-22 11:53:53,285 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-09-22 11:53:53,335 - src.etl.extract - INFO - Texto extraído exitosamente de data\pdfs\bancoBogota_sumar.pdf
+2025-09-22 11:53:53,336 - src.etl.extract - INFO - Procesando texto con Gemini para extraer JSON
+2025-09-22 11:53:53,336 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-09-22 11:53:54,144 - unstract.llmwhisperer.client_v2 - DEBUG - whisper_retrieve called
+2025-09-22 11:53:54,146 - unstract.llmwhisperer.client_v2 - DEBUG - url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper-retrieve
+2025-09-22 11:53:54,357 - src.etl.extract - INFO - Texto extraído exitosamente de data\pdfs\bancolombia_fiducuenta.pdf
+2025-09-22 11:53:54,358 - src.etl.extract - INFO - Procesando texto con Gemini para extraer JSON
+2025-09-22 11:53:54,359 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-09-22 11:54:21,505 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2025-09-22 11:54:21,514 - google_genai.models - INFO - AFC remote call 1 is done.
+2025-09-22 11:54:21,515 - src.etl.extract - INFO - JSON extraído exitosamente
+2025-09-22 11:54:21,518 - src.etl.pipeline - INFO - JSON guardado en: data\json_raw\bancoDavivienda_Multiescala_20250922_115421.json
+2025-09-22 11:54:21,519 - src.etl.pipeline - INFO - Procesamiento completado exitosamente: data\pdfs\bancoDavivienda_Multiescala.pdf
+2025-09-22 11:54:21,519 - src.config.settings - INFO - Procesado exitosamente: bancoDavivienda_Multiescala.pdf
+2025-09-22 11:54:31,002 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2025-09-22 11:54:31,006 - google_genai.models - INFO - AFC remote call 1 is done.
+2025-09-22 11:54:31,006 - src.etl.extract - INFO - JSON extraído exitosamente
+2025-09-22 11:54:31,039 - src.etl.pipeline - INFO - JSON guardado en: data\json_raw\bancoBogota_sumar_20250922_115431.json
+2025-09-22 11:54:31,040 - src.etl.pipeline - INFO - Procesamiento completado exitosamente: data\pdfs\bancoBogota_sumar.pdf
+2025-09-22 11:54:31,041 - src.config.settings - INFO - Procesado exitosamente: bancoBogota_sumar.pdf
+2025-09-22 11:54:34,808 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2025-09-22 11:54:34,810 - google_genai.models - INFO - AFC remote call 1 is done.
+2025-09-22 11:54:34,810 - src.etl.extract - INFO - JSON extraído exitosamente
+2025-09-22 11:54:34,813 - src.etl.pipeline - INFO - JSON guardado en: data\json_raw\credicorpCapital_Alta Liquidez_20250922_115434.json
+2025-09-22 11:54:34,814 - src.etl.pipeline - INFO - Procesamiento completado exitosamente: data\pdfs\credicorpCapital_Alta Liquidez.pdf
+2025-09-22 11:54:34,814 - src.config.settings - INFO - Procesado exitosamente: credicorpCapital_Alta Liquidez.pdf
+2025-09-22 11:54:52,686 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2025-09-22 11:54:52,688 - google_genai.models - INFO - AFC remote call 1 is done.
+2025-09-22 11:54:52,689 - src.etl.extract - INFO - JSON extraído exitosamente
+2025-09-22 11:54:52,727 - src.etl.pipeline - INFO - JSON guardado en: data\json_raw\bancolombia_fiducuenta_20250922_115452.json
+2025-09-22 11:54:52,727 - src.etl.pipeline - INFO - Procesamiento completado exitosamente: data\pdfs\bancolombia_fiducuenta.pdf
+2025-09-22 11:54:52,727 - src.config.settings - INFO - Procesado exitosamente: bancolombia_fiducuenta.pdf
+2025-09-22 11:55:31,935 - src.config.settings - INFO - Iniciando transformación de carpeta: data\json_raw2
+2025-09-22 11:55:31,936 - src.config.settings - INFO - Encontrados 4 JSONs para transformar
+2025-09-22 11:55:31,937 - src.config.settings - INFO - Transformando: bancoBogota_sumar_20250922_115431.json
+2025-09-22 11:55:31,937 - src.config.settings - INFO - Transformando: bancoDavivienda_Multiescala_20250922_115421.json
+2025-09-22 11:55:31,938 - src.config.settings - INFO - Transformando: bancolombia_fiducuenta_20250922_115452.json
+2025-09-22 11:55:31,938 - src.etl.transform - INFO - Iniciando transformación de datos FIC: desconocido
+2025-09-22 11:55:31,939 - src.etl.transform - INFO - Iniciando transformación de datos FIC: desconocido
+2025-09-22 11:55:31,939 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: FONDO DE INVERSIÓN COLECTIVA ABIERTO SUMAR | Gestor: Fiduciaria Bogotá S.A. | Archivo: desconocido | Campo: por_tipo_de_renta | Suma: 209.36%
+2025-09-22 11:55:31,939 - src.etl.transform - INFO - Iniciando transformación de datos FIC: desconocido
+2025-09-22 11:55:31,939 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: FONDO DE INVERSIÓN COLECTIVA RENTA FIJA MEDIANO PLAZO - MULTIESCALA | Gestor: Davivienda Corredores S.A. | Archivo: desconocido | Campo: principales_inversiones | Suma: 95.63%
+2025-09-22 11:55:31,940 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: Fondo de Inversión Colectiva Fiducuenta | Gestor: Fiduciaria Bancolombia S.A. | Archivo: desconocido | Campo: plazo_duracion | Suma: 124.75%
+2025-09-22 11:55:31,940 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: FONDO DE INVERSIÓN COLECTIVA ABIERTO SUMAR | Gestor: Fiduciaria Bogotá S.A. | Archivo: desconocido | Campo: por_sector_economico | Suma: 195.04%
+2025-09-22 11:55:31,941 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: Fondo de Inversión Colectiva Fiducuenta | Gestor: Fiduciaria Bancolombia S.A. | Archivo: desconocido | Campo: por_activo | Suma: 100.99%
+2025-09-22 11:55:31,941 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: FONDO DE INVERSIÓN COLECTIVA ABIERTO SUMAR | Gestor: Fiduciaria Bogotá S.A. | Archivo: desconocido | Campo: por_moneda | Suma: 233.65%
+2025-09-22 11:55:31,942 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: Fondo de Inversión Colectiva Fiducuenta | Gestor: Fiduciaria Bancolombia S.A. | Archivo: desconocido | Campo: por_tipo_de_renta | Suma: 160.50%
+2025-09-22 11:55:31,942 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: FONDO DE INVERSIÓN COLECTIVA ABIERTO SUMAR | Gestor: Fiduciaria Bogotá S.A. | Archivo: desconocido | Campo: por_calificacion | Suma: 130.68%
+2025-09-22 11:55:31,942 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: Fondo de Inversión Colectiva Fiducuenta | Gestor: Fiduciaria Bancolombia S.A. | Archivo: desconocido | Campo: por_sector_economico | Suma: 115.84%
+2025-09-22 11:55:31,943 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: FONDO DE INVERSIÓN COLECTIVA ABIERTO SUMAR | Gestor: Fiduciaria Bogotá S.A. | Archivo: desconocido | Campo: principales_inversiones | Suma: 73.47%
+2025-09-22 11:55:31,943 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: Fondo de Inversión Colectiva Fiducuenta | Gestor: Fiduciaria Bancolombia S.A. | Archivo: desconocido | Campo: por_pais_emisor | Suma: 98.55%
+2025-09-22 11:55:31,944 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: Fondo de Inversión Colectiva Fiducuenta | Gestor: Fiduciaria Bancolombia S.A. | Archivo: desconocido | Campo: por_moneda | Suma: 130.69%
+2025-09-22 11:55:31,946 - src.etl.transform - INFO - Transformación de datos completada exitosamente: desconocido
+2025-09-22 11:55:31,946 - src.etl.transform - INFO - Transformación de datos completada exitosamente: desconocido
+2025-09-22 11:55:31,946 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: Fondo de Inversión Colectiva Fiducuenta | Gestor: Fiduciaria Bancolombia S.A. | Archivo: desconocido | Campo: por_calificacion | Suma: 344.51%
+2025-09-22 11:55:31,947 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: Fondo de Inversión Colectiva Fiducuenta | Gestor: Fiduciaria Bancolombia S.A. | Archivo: desconocido | Campo: principales_inversiones | Suma: 87.77%
+2025-09-22 11:55:31,949 - src.config.settings - INFO - JSON transformado guardado: bancoDavivienda_Multiescala_20250922_115421_transformed.json
+2025-09-22 11:55:31,950 - src.etl.transform - INFO - Transformación de datos completada exitosamente: desconocido
+2025-09-22 11:55:31,950 - src.config.settings - INFO - Transformando: credicorpCapital_Alta Liquidez_20250922_115434.json
+2025-09-22 11:55:31,950 - src.config.settings - INFO - JSON transformado guardado: bancoBogota_sumar_20250922_115431_transformed.json
+2025-09-22 11:55:31,950 - src.config.settings - INFO - Transformado exitosamente: bancoDavivienda_Multiescala_20250922_115421.json
+2025-09-22 11:55:31,951 - src.etl.transform - INFO - Iniciando transformación de datos FIC: desconocido
+2025-09-22 11:55:31,951 - src.config.settings - INFO - Transformado exitosamente: bancoBogota_sumar_20250922_115431.json
+2025-09-22 11:55:31,952 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: CREDICORP CAPITAL ALTA LIQUIDEZ | Gestor: CREDICORP CAPITAL COLOMBIA S.A. | Archivo: desconocido | Campo: por_tipo_de_renta | Suma: 199.00%
+2025-09-22 11:55:31,952 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: CREDICORP CAPITAL ALTA LIQUIDEZ | Gestor: CREDICORP CAPITAL COLOMBIA S.A. | Archivo: desconocido | Campo: por_sector_economico | Suma: 199.00%
+2025-09-22 11:55:31,953 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: CREDICORP CAPITAL ALTA LIQUIDEZ | Gestor: CREDICORP CAPITAL COLOMBIA S.A. | Archivo: desconocido | Campo: por_pais_emisor | Suma: 298.00%
+2025-09-22 11:55:31,953 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: CREDICORP CAPITAL ALTA LIQUIDEZ | Gestor: CREDICORP CAPITAL COLOMBIA S.A. | Archivo: desconocido | Campo: por_calificacion | Suma: 407.00%
+2025-09-22 11:55:31,953 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: CREDICORP CAPITAL ALTA LIQUIDEZ | Gestor: CREDICORP CAPITAL COLOMBIA S.A. | Archivo: desconocido | Campo: principales_inversiones | Suma: 76.31%
+2025-09-22 11:55:31,954 - src.etl.transform - INFO - Transformación de datos completada exitosamente: desconocido
+2025-09-22 11:55:31,994 - src.config.settings - INFO - JSON transformado guardado: bancolombia_fiducuenta_20250922_115452_transformed.json
+2025-09-22 11:55:31,996 - src.config.settings - INFO - Transformado exitosamente: bancolombia_fiducuenta_20250922_115452.json
+2025-09-22 11:55:31,996 - src.config.settings - INFO - JSON transformado guardado: credicorpCapital_Alta Liquidez_20250922_115434_transformed.json
+2025-09-22 11:55:31,996 - src.config.settings - INFO - Transformado exitosamente: credicorpCapital_Alta Liquidez_20250922_115434.json

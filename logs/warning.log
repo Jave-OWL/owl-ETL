@@ -14,3 +14,137 @@
 2025-09-15 15:08:12,616 - src.etl.pipeline - ERROR - Error guardando JSON: unsupported operand type(s) for /: 'str' and 'str'
 2025-09-15 15:08:12,617 - src.etl.pipeline - ERROR - Error procesando data\pdfs\bancoBogota_sumar.pdf: unsupported operand type(s) for /: 'str' and 'str'
 2025-09-15 15:08:12,617 - src.etl.pipeline - ERROR - Error procesando data\pdfs\bancoBogota_sumar.pdf: unsupported operand type(s) for /: 'str' and 'str'
+2025-09-21 00:50:23,914 - src.etl.transform - WARNING - Suma de por_tipo_de_renta fuera de rango: 124.23%
+2025-09-21 00:50:23,914 - src.etl.transform - WARNING - Suma de por_tipo_de_renta fuera de rango: 124.23%
+2025-09-21 00:50:23,914 - src.etl.transform - WARNING - Suma de principales_inversiones fuera de rango: 95.63%
+2025-09-21 00:50:23,914 - src.etl.transform - WARNING - Suma de principales_inversiones fuera de rango: 95.63%
+2025-09-21 00:50:23,915 - src.etl.transform - WARNING - Suma de plazo_duracion fuera de rango: 124.75%
+2025-09-21 00:50:23,915 - src.etl.transform - WARNING - Suma de plazo_duracion fuera de rango: 124.75%
+2025-09-21 00:50:23,927 - src.etl.transform - WARNING - Suma de principales_inversiones fuera de rango: 73.47%
+2025-09-21 00:50:23,927 - src.etl.transform - WARNING - Suma de principales_inversiones fuera de rango: 73.47%
+2025-09-21 00:50:23,928 - src.etl.transform - WARNING - Suma de por_activo fuera de rango: 100.99%
+2025-09-21 00:50:23,928 - src.etl.transform - WARNING - Suma de por_activo fuera de rango: 100.99%
+2025-09-21 00:50:23,929 - src.etl.transform - WARNING - Suma de por_tipo_de_renta fuera de rango: 260.50%
+2025-09-21 00:50:23,929 - src.etl.transform - WARNING - Suma de por_tipo_de_renta fuera de rango: 260.50%
+2025-09-21 00:50:23,929 - src.etl.transform - WARNING - Suma de por_sector_economico fuera de rango: 115.84%
+2025-09-21 00:50:23,929 - src.etl.transform - WARNING - Suma de por_sector_economico fuera de rango: 115.84%
+2025-09-21 00:50:23,930 - src.etl.transform - WARNING - Suma de por_pais_emisor fuera de rango: 98.55%
+2025-09-21 00:50:23,930 - src.etl.transform - WARNING - Suma de por_pais_emisor fuera de rango: 98.55%
+2025-09-21 00:50:23,930 - src.etl.transform - WARNING - Suma de por_moneda fuera de rango: 130.69%
+2025-09-21 00:50:23,930 - src.etl.transform - WARNING - Suma de por_moneda fuera de rango: 130.69%
+2025-09-21 00:50:23,930 - src.etl.transform - WARNING - Suma de por_calificacion fuera de rango: 344.51%
+2025-09-21 00:50:23,930 - src.etl.transform - WARNING - Suma de por_calificacion fuera de rango: 344.51%
+2025-09-21 00:50:23,931 - src.etl.transform - WARNING - Suma de principales_inversiones fuera de rango: 87.77%
+2025-09-21 00:50:23,931 - src.etl.transform - WARNING - Suma de principales_inversiones fuera de rango: 87.77%
+2025-09-21 00:50:23,941 - src.etl.transform - WARNING - Suma de por_tipo_de_renta fuera de rango: 199.00%
+2025-09-21 00:50:23,941 - src.etl.transform - WARNING - Suma de por_tipo_de_renta fuera de rango: 199.00%
+2025-09-21 00:50:23,942 - src.etl.transform - WARNING - Suma de por_sector_economico fuera de rango: 199.00%
+2025-09-21 00:50:23,942 - src.etl.transform - WARNING - Suma de por_sector_economico fuera de rango: 199.00%
+2025-09-21 00:50:23,942 - src.etl.transform - WARNING - Suma de por_pais_emisor fuera de rango: 298.00%
+2025-09-21 00:50:23,942 - src.etl.transform - WARNING - Suma de por_pais_emisor fuera de rango: 298.00%
+2025-09-21 00:50:23,942 - src.etl.transform - WARNING - Suma de por_calificacion fuera de rango: 407.00%
+2025-09-21 00:50:23,942 - src.etl.transform - WARNING - Suma de por_calificacion fuera de rango: 407.00%
+2025-09-21 00:50:23,943 - src.etl.transform - WARNING - Suma de principales_inversiones fuera de rango: 76.31%
+2025-09-21 00:50:23,943 - src.etl.transform - WARNING - Suma de principales_inversiones fuera de rango: 76.31%
+2025-09-22 11:16:40,433 - src.etl.transform - WARNING - Suma de por_tipo_de_renta fuera de rango: 124.23%
+2025-09-22 11:16:40,433 - src.etl.transform - WARNING - Suma de por_tipo_de_renta fuera de rango: 124.23%
+2025-09-22 11:16:40,434 - src.etl.transform - WARNING - Suma de plazo_duracion fuera de rango: 124.75%
+2025-09-22 11:16:40,434 - src.etl.transform - WARNING - Suma de plazo_duracion fuera de rango: 124.75%
+2025-09-22 11:16:40,434 - src.etl.transform - WARNING - Suma de principales_inversiones fuera de rango: 73.47%
+2025-09-22 11:16:40,434 - src.etl.transform - WARNING - Suma de principales_inversiones fuera de rango: 73.47%
+2025-09-22 11:16:40,435 - src.etl.transform - WARNING - Suma de por_activo fuera de rango: 100.99%
+2025-09-22 11:16:40,435 - src.etl.transform - WARNING - Suma de por_activo fuera de rango: 100.99%
+2025-09-22 11:16:40,460 - src.etl.transform - WARNING - Suma de por_tipo_de_renta fuera de rango: 260.50%
+2025-09-22 11:16:40,460 - src.etl.transform - WARNING - Suma de por_tipo_de_renta fuera de rango: 260.50%
+2025-09-22 11:16:40,460 - src.etl.transform - WARNING - Suma de principales_inversiones fuera de rango: 95.63%
+2025-09-22 11:16:40,460 - src.etl.transform - WARNING - Suma de principales_inversiones fuera de rango: 95.63%
+2025-09-22 11:16:40,461 - src.etl.transform - WARNING - Suma de por_sector_economico fuera de rango: 115.84%
+2025-09-22 11:16:40,461 - src.etl.transform - WARNING - Suma de por_sector_economico fuera de rango: 115.84%
+2025-09-22 11:16:40,463 - src.etl.transform - WARNING - Suma de por_pais_emisor fuera de rango: 98.55%
+2025-09-22 11:16:40,463 - src.etl.transform - WARNING - Suma de por_pais_emisor fuera de rango: 98.55%
+2025-09-22 11:16:40,463 - src.etl.transform - WARNING - Suma de por_moneda fuera de rango: 130.69%
+2025-09-22 11:16:40,463 - src.etl.transform - WARNING - Suma de por_moneda fuera de rango: 130.69%
+2025-09-22 11:16:40,466 - src.etl.transform - WARNING - Suma de por_calificacion fuera de rango: 344.51%
+2025-09-22 11:16:40,466 - src.etl.transform - WARNING - Suma de por_calificacion fuera de rango: 344.51%
+2025-09-22 11:16:40,466 - src.etl.transform - WARNING - Suma de principales_inversiones fuera de rango: 87.77%
+2025-09-22 11:16:40,466 - src.etl.transform - WARNING - Suma de principales_inversiones fuera de rango: 87.77%
+2025-09-22 11:16:40,468 - src.etl.transform - WARNING - Suma de por_tipo_de_renta fuera de rango: 199.00%
+2025-09-22 11:16:40,468 - src.etl.transform - WARNING - Suma de por_tipo_de_renta fuera de rango: 199.00%
+2025-09-22 11:16:40,469 - src.etl.transform - WARNING - Suma de por_sector_economico fuera de rango: 199.00%
+2025-09-22 11:16:40,469 - src.etl.transform - WARNING - Suma de por_sector_economico fuera de rango: 199.00%
+2025-09-22 11:16:40,470 - src.etl.transform - WARNING - Suma de por_pais_emisor fuera de rango: 298.00%
+2025-09-22 11:16:40,470 - src.etl.transform - WARNING - Suma de por_pais_emisor fuera de rango: 298.00%
+2025-09-22 11:16:40,470 - src.etl.transform - WARNING - Suma de por_calificacion fuera de rango: 407.00%
+2025-09-22 11:16:40,470 - src.etl.transform - WARNING - Suma de por_calificacion fuera de rango: 407.00%
+2025-09-22 11:16:40,471 - src.etl.transform - WARNING - Suma de principales_inversiones fuera de rango: 76.31%
+2025-09-22 11:16:40,471 - src.etl.transform - WARNING - Suma de principales_inversiones fuera de rango: 76.31%
+2025-09-22 11:44:04,077 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: FONDO DE INVERSIÓN COLECTIVA ABIERTO SUMAR | Gestor: Fiduciaria Bogotá S.A. | Archivo: desconocido | Campo: por_tipo_de_renta | Suma: 124.23%
+2025-09-22 11:44:04,077 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: FONDO DE INVERSIÓN COLECTIVA ABIERTO SUMAR | Gestor: Fiduciaria Bogotá S.A. | Archivo: desconocido | Campo: por_tipo_de_renta | Suma: 124.23%
+2025-09-22 11:44:04,077 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: FONDO DE INVERSIÓN COLECTIVA RENTA FIJA MEDIANO PLAZO - MULTIESCALA | Gestor: Davivienda Corredores S.A. | Archivo: desconocido | Campo: principales_inversiones | Suma: 95.63%
+2025-09-22 11:44:04,077 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: FONDO DE INVERSIÓN COLECTIVA RENTA FIJA MEDIANO PLAZO - MULTIESCALA | Gestor: Davivienda Corredores S.A. | Archivo: desconocido | Campo: principales_inversiones | Suma: 95.63%
+2025-09-22 11:44:04,077 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: Fiducuenta | Gestor: Fiduciaria Bancolombia S.A. | Archivo: desconocido | Campo: plazo_duracion | Suma: 124.75%
+2025-09-22 11:44:04,077 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: Fiducuenta | Gestor: Fiduciaria Bancolombia S.A. | Archivo: desconocido | Campo: plazo_duracion | Suma: 124.75%
+2025-09-22 11:44:04,078 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: FONDO DE INVERSIÓN COLECTIVA ABIERTO SUMAR | Gestor: Fiduciaria Bogotá S.A. | Archivo: desconocido | Campo: principales_inversiones | Suma: 73.47%
+2025-09-22 11:44:04,078 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: FONDO DE INVERSIÓN COLECTIVA ABIERTO SUMAR | Gestor: Fiduciaria Bogotá S.A. | Archivo: desconocido | Campo: principales_inversiones | Suma: 73.47%
+2025-09-22 11:44:04,078 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: Fiducuenta | Gestor: Fiduciaria Bancolombia S.A. | Archivo: desconocido | Campo: por_activo | Suma: 100.99%
+2025-09-22 11:44:04,078 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: Fiducuenta | Gestor: Fiduciaria Bancolombia S.A. | Archivo: desconocido | Campo: por_activo | Suma: 100.99%
+2025-09-22 11:44:04,079 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: Fiducuenta | Gestor: Fiduciaria Bancolombia S.A. | Archivo: desconocido | Campo: por_tipo_de_renta | Suma: 260.50%
+2025-09-22 11:44:04,079 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: Fiducuenta | Gestor: Fiduciaria Bancolombia S.A. | Archivo: desconocido | Campo: por_tipo_de_renta | Suma: 260.50%
+2025-09-22 11:44:04,080 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: Fiducuenta | Gestor: Fiduciaria Bancolombia S.A. | Archivo: desconocido | Campo: por_sector_economico | Suma: 115.84%
+2025-09-22 11:44:04,080 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: Fiducuenta | Gestor: Fiduciaria Bancolombia S.A. | Archivo: desconocido | Campo: por_sector_economico | Suma: 115.84%
+2025-09-22 11:44:04,080 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: Fiducuenta | Gestor: Fiduciaria Bancolombia S.A. | Archivo: desconocido | Campo: por_pais_emisor | Suma: 98.55%
+2025-09-22 11:44:04,080 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: Fiducuenta | Gestor: Fiduciaria Bancolombia S.A. | Archivo: desconocido | Campo: por_pais_emisor | Suma: 98.55%
+2025-09-22 11:44:04,081 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: Fiducuenta | Gestor: Fiduciaria Bancolombia S.A. | Archivo: desconocido | Campo: por_moneda | Suma: 130.69%
+2025-09-22 11:44:04,081 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: Fiducuenta | Gestor: Fiduciaria Bancolombia S.A. | Archivo: desconocido | Campo: por_moneda | Suma: 130.69%
+2025-09-22 11:44:04,083 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: Fiducuenta | Gestor: Fiduciaria Bancolombia S.A. | Archivo: desconocido | Campo: por_calificacion | Suma: 344.51%
+2025-09-22 11:44:04,083 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: Fiducuenta | Gestor: Fiduciaria Bancolombia S.A. | Archivo: desconocido | Campo: por_calificacion | Suma: 344.51%
+2025-09-22 11:44:04,084 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: Fiducuenta | Gestor: Fiduciaria Bancolombia S.A. | Archivo: desconocido | Campo: principales_inversiones | Suma: 87.77%
+2025-09-22 11:44:04,084 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: Fiducuenta | Gestor: Fiduciaria Bancolombia S.A. | Archivo: desconocido | Campo: principales_inversiones | Suma: 87.77%
+2025-09-22 11:44:04,090 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: CREDICORP CAPITAL ALTA LIQUIDEZ | Gestor: CREDICORP CAPITAL COLOMBIA S.A. | Archivo: desconocido | Campo: por_tipo_de_renta | Suma: 199.00%
+2025-09-22 11:44:04,090 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: CREDICORP CAPITAL ALTA LIQUIDEZ | Gestor: CREDICORP CAPITAL COLOMBIA S.A. | Archivo: desconocido | Campo: por_tipo_de_renta | Suma: 199.00%
+2025-09-22 11:44:04,090 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: CREDICORP CAPITAL ALTA LIQUIDEZ | Gestor: CREDICORP CAPITAL COLOMBIA S.A. | Archivo: desconocido | Campo: por_sector_economico | Suma: 199.00%
+2025-09-22 11:44:04,090 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: CREDICORP CAPITAL ALTA LIQUIDEZ | Gestor: CREDICORP CAPITAL COLOMBIA S.A. | Archivo: desconocido | Campo: por_sector_economico | Suma: 199.00%
+2025-09-22 11:44:04,090 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: CREDICORP CAPITAL ALTA LIQUIDEZ | Gestor: CREDICORP CAPITAL COLOMBIA S.A. | Archivo: desconocido | Campo: por_pais_emisor | Suma: 298.00%
+2025-09-22 11:44:04,090 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: CREDICORP CAPITAL ALTA LIQUIDEZ | Gestor: CREDICORP CAPITAL COLOMBIA S.A. | Archivo: desconocido | Campo: por_pais_emisor | Suma: 298.00%
+2025-09-22 11:44:04,091 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: CREDICORP CAPITAL ALTA LIQUIDEZ | Gestor: CREDICORP CAPITAL COLOMBIA S.A. | Archivo: desconocido | Campo: por_calificacion | Suma: 407.00%
+2025-09-22 11:44:04,091 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: CREDICORP CAPITAL ALTA LIQUIDEZ | Gestor: CREDICORP CAPITAL COLOMBIA S.A. | Archivo: desconocido | Campo: por_calificacion | Suma: 407.00%
+2025-09-22 11:44:04,091 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: CREDICORP CAPITAL ALTA LIQUIDEZ | Gestor: CREDICORP CAPITAL COLOMBIA S.A. | Archivo: desconocido | Campo: principales_inversiones | Suma: 76.31%
+2025-09-22 11:44:04,091 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: CREDICORP CAPITAL ALTA LIQUIDEZ | Gestor: CREDICORP CAPITAL COLOMBIA S.A. | Archivo: desconocido | Campo: principales_inversiones | Suma: 76.31%
+2025-09-22 11:55:31,939 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: FONDO DE INVERSIÓN COLECTIVA ABIERTO SUMAR | Gestor: Fiduciaria Bogotá S.A. | Archivo: desconocido | Campo: por_tipo_de_renta | Suma: 209.36%
+2025-09-22 11:55:31,939 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: FONDO DE INVERSIÓN COLECTIVA ABIERTO SUMAR | Gestor: Fiduciaria Bogotá S.A. | Archivo: desconocido | Campo: por_tipo_de_renta | Suma: 209.36%
+2025-09-22 11:55:31,939 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: FONDO DE INVERSIÓN COLECTIVA RENTA FIJA MEDIANO PLAZO - MULTIESCALA | Gestor: Davivienda Corredores S.A. | Archivo: desconocido | Campo: principales_inversiones | Suma: 95.63%
+2025-09-22 11:55:31,939 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: FONDO DE INVERSIÓN COLECTIVA RENTA FIJA MEDIANO PLAZO - MULTIESCALA | Gestor: Davivienda Corredores S.A. | Archivo: desconocido | Campo: principales_inversiones | Suma: 95.63%
+2025-09-22 11:55:31,940 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: Fondo de Inversión Colectiva Fiducuenta | Gestor: Fiduciaria Bancolombia S.A. | Archivo: desconocido | Campo: plazo_duracion | Suma: 124.75%
+2025-09-22 11:55:31,940 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: Fondo de Inversión Colectiva Fiducuenta | Gestor: Fiduciaria Bancolombia S.A. | Archivo: desconocido | Campo: plazo_duracion | Suma: 124.75%
+2025-09-22 11:55:31,940 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: FONDO DE INVERSIÓN COLECTIVA ABIERTO SUMAR | Gestor: Fiduciaria Bogotá S.A. | Archivo: desconocido | Campo: por_sector_economico | Suma: 195.04%
+2025-09-22 11:55:31,940 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: FONDO DE INVERSIÓN COLECTIVA ABIERTO SUMAR | Gestor: Fiduciaria Bogotá S.A. | Archivo: desconocido | Campo: por_sector_economico | Suma: 195.04%
+2025-09-22 11:55:31,941 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: Fondo de Inversión Colectiva Fiducuenta | Gestor: Fiduciaria Bancolombia S.A. | Archivo: desconocido | Campo: por_activo | Suma: 100.99%
+2025-09-22 11:55:31,941 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: Fondo de Inversión Colectiva Fiducuenta | Gestor: Fiduciaria Bancolombia S.A. | Archivo: desconocido | Campo: por_activo | Suma: 100.99%
+2025-09-22 11:55:31,941 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: FONDO DE INVERSIÓN COLECTIVA ABIERTO SUMAR | Gestor: Fiduciaria Bogotá S.A. | Archivo: desconocido | Campo: por_moneda | Suma: 233.65%
+2025-09-22 11:55:31,941 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: FONDO DE INVERSIÓN COLECTIVA ABIERTO SUMAR | Gestor: Fiduciaria Bogotá S.A. | Archivo: desconocido | Campo: por_moneda | Suma: 233.65%
+2025-09-22 11:55:31,942 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: Fondo de Inversión Colectiva Fiducuenta | Gestor: Fiduciaria Bancolombia S.A. | Archivo: desconocido | Campo: por_tipo_de_renta | Suma: 160.50%
+2025-09-22 11:55:31,942 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: Fondo de Inversión Colectiva Fiducuenta | Gestor: Fiduciaria Bancolombia S.A. | Archivo: desconocido | Campo: por_tipo_de_renta | Suma: 160.50%
+2025-09-22 11:55:31,942 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: FONDO DE INVERSIÓN COLECTIVA ABIERTO SUMAR | Gestor: Fiduciaria Bogotá S.A. | Archivo: desconocido | Campo: por_calificacion | Suma: 130.68%
+2025-09-22 11:55:31,942 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: FONDO DE INVERSIÓN COLECTIVA ABIERTO SUMAR | Gestor: Fiduciaria Bogotá S.A. | Archivo: desconocido | Campo: por_calificacion | Suma: 130.68%
+2025-09-22 11:55:31,942 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: Fondo de Inversión Colectiva Fiducuenta | Gestor: Fiduciaria Bancolombia S.A. | Archivo: desconocido | Campo: por_sector_economico | Suma: 115.84%
+2025-09-22 11:55:31,942 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: Fondo de Inversión Colectiva Fiducuenta | Gestor: Fiduciaria Bancolombia S.A. | Archivo: desconocido | Campo: por_sector_economico | Suma: 115.84%
+2025-09-22 11:55:31,943 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: FONDO DE INVERSIÓN COLECTIVA ABIERTO SUMAR | Gestor: Fiduciaria Bogotá S.A. | Archivo: desconocido | Campo: principales_inversiones | Suma: 73.47%
+2025-09-22 11:55:31,943 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: FONDO DE INVERSIÓN COLECTIVA ABIERTO SUMAR | Gestor: Fiduciaria Bogotá S.A. | Archivo: desconocido | Campo: principales_inversiones | Suma: 73.47%
+2025-09-22 11:55:31,943 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: Fondo de Inversión Colectiva Fiducuenta | Gestor: Fiduciaria Bancolombia S.A. | Archivo: desconocido | Campo: por_pais_emisor | Suma: 98.55%
+2025-09-22 11:55:31,943 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: Fondo de Inversión Colectiva Fiducuenta | Gestor: Fiduciaria Bancolombia S.A. | Archivo: desconocido | Campo: por_pais_emisor | Suma: 98.55%
+2025-09-22 11:55:31,944 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: Fondo de Inversión Colectiva Fiducuenta | Gestor: Fiduciaria Bancolombia S.A. | Archivo: desconocido | Campo: por_moneda | Suma: 130.69%
+2025-09-22 11:55:31,944 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: Fondo de Inversión Colectiva Fiducuenta | Gestor: Fiduciaria Bancolombia S.A. | Archivo: desconocido | Campo: por_moneda | Suma: 130.69%
+2025-09-22 11:55:31,946 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: Fondo de Inversión Colectiva Fiducuenta | Gestor: Fiduciaria Bancolombia S.A. | Archivo: desconocido | Campo: por_calificacion | Suma: 344.51%
+2025-09-22 11:55:31,946 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: Fondo de Inversión Colectiva Fiducuenta | Gestor: Fiduciaria Bancolombia S.A. | Archivo: desconocido | Campo: por_calificacion | Suma: 344.51%
+2025-09-22 11:55:31,947 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: Fondo de Inversión Colectiva Fiducuenta | Gestor: Fiduciaria Bancolombia S.A. | Archivo: desconocido | Campo: principales_inversiones | Suma: 87.77%
+2025-09-22 11:55:31,947 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: Fondo de Inversión Colectiva Fiducuenta | Gestor: Fiduciaria Bancolombia S.A. | Archivo: desconocido | Campo: principales_inversiones | Suma: 87.77%
+2025-09-22 11:55:31,952 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: CREDICORP CAPITAL ALTA LIQUIDEZ | Gestor: CREDICORP CAPITAL COLOMBIA S.A. | Archivo: desconocido | Campo: por_tipo_de_renta | Suma: 199.00%
+2025-09-22 11:55:31,952 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: CREDICORP CAPITAL ALTA LIQUIDEZ | Gestor: CREDICORP CAPITAL COLOMBIA S.A. | Archivo: desconocido | Campo: por_tipo_de_renta | Suma: 199.00%
+2025-09-22 11:55:31,952 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: CREDICORP CAPITAL ALTA LIQUIDEZ | Gestor: CREDICORP CAPITAL COLOMBIA S.A. | Archivo: desconocido | Campo: por_sector_economico | Suma: 199.00%
+2025-09-22 11:55:31,952 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: CREDICORP CAPITAL ALTA LIQUIDEZ | Gestor: CREDICORP CAPITAL COLOMBIA S.A. | Archivo: desconocido | Campo: por_sector_economico | Suma: 199.00%
+2025-09-22 11:55:31,953 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: CREDICORP CAPITAL ALTA LIQUIDEZ | Gestor: CREDICORP CAPITAL COLOMBIA S.A. | Archivo: desconocido | Campo: por_pais_emisor | Suma: 298.00%
+2025-09-22 11:55:31,953 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: CREDICORP CAPITAL ALTA LIQUIDEZ | Gestor: CREDICORP CAPITAL COLOMBIA S.A. | Archivo: desconocido | Campo: por_pais_emisor | Suma: 298.00%
+2025-09-22 11:55:31,953 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: CREDICORP CAPITAL ALTA LIQUIDEZ | Gestor: CREDICORP CAPITAL COLOMBIA S.A. | Archivo: desconocido | Campo: por_calificacion | Suma: 407.00%
+2025-09-22 11:55:31,953 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: CREDICORP CAPITAL ALTA LIQUIDEZ | Gestor: CREDICORP CAPITAL COLOMBIA S.A. | Archivo: desconocido | Campo: por_calificacion | Suma: 407.00%
+2025-09-22 11:55:31,953 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: CREDICORP CAPITAL ALTA LIQUIDEZ | Gestor: CREDICORP CAPITAL COLOMBIA S.A. | Archivo: desconocido | Campo: principales_inversiones | Suma: 76.31%
+2025-09-22 11:55:31,953 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: CREDICORP CAPITAL ALTA LIQUIDEZ | Gestor: CREDICORP CAPITAL COLOMBIA S.A. | Archivo: desconocido | Campo: principales_inversiones | Suma: 76.31%
