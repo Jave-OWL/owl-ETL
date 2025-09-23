@@ -34,7 +34,7 @@ def transform_fic_data(raw_data: Dict[str, Any], filename: str = "desconocido") 
         # Obtener información del FIC para logs contextuales
         fic_info = _obtener_info_fic(transformed_data, filename)
 
-        # 1. Transformar porcentajes a float y validar sumas
+        # 1. Transformar porcentajes (convertir a decimal si es necesario)
         transformed_data = _transform_porcentajes(transformed_data, fic_info)
 
         # 2. Validar y normalizar entidades calificadoras con coincidencia difusa
@@ -81,27 +81,44 @@ def _obtener_info_fic(data: Dict[str, Any], filename: str) -> Dict[str, str]:
 
 def _transform_porcentajes(data: Dict[str, Any], fic_info: Dict[str, str]) -> Dict[str, Any]:
     """
-    Transforma todos los porcentajes a float y valida que sumen 100%
+    Convierte porcentajes individualmente a formato decimal basado en análisis contextual
     """
     transformed = data.copy()
 
     # 1. Transformar plazo_duracion
     if 'plazo_duracion' in transformed and isinstance(transformed['plazo_duracion'], list):
         total_plazo = 0.0
+        valores_originales = []
+        valores_convertidos = []
+
+        # Analizar el patrón de valores en esta categoría - trae cada participacion de la lista plazo_duracion
+        valores = [item.get('participacion') for item in transformed['plazo_duracion']
+                   if item.get('participacion') is not None]
+
+        # Determinar el formato más probable para esta categoría
+        formato_categoria = _determinar_formato_categoria(valores)
+
         for item in transformed['plazo_duracion']:
             if 'participacion' in item:
-                item['participacion'] = _parse_porcentaje(item['participacion'])
+                valor_original = item['participacion']
+                # Convertir basado en el formato de la categoría
+                item['participacion'] = _convertir_porcentaje_inteligente(valor_original, formato_categoria)
                 if item['participacion'] is not None:
                     total_plazo += item['participacion']
+                    valores_originales.append(valor_original)
+                    valores_convertidos.append(item['participacion'])
 
-        # Validar suma de plazos (debe ser ~100%)
+        # Log detallado para debugging
+        logger.debug(f"🔍 {fic_info['nombre_fic']} - plazo_duracion ({formato_categoria}): "
+                     f"Original: {valores_originales} → Convertido: {valores_convertidos} → Suma: {total_plazo:.4f}")
+
+        # Validar suma de plazos (debe ser ~1.0 después de la conversión)
         _validar_suma_porcentajes(total_plazo, 'plazo_duracion', fic_info)
 
-    # 2. Transformar composicion_portafolio
+    # 2. Transformar composicion_portafolio - cada categoría por separado
     if 'composicion_portafolio' in transformed:
         comp = transformed['composicion_portafolio']
 
-        # Lista de todas las categorías de composición
         categorias = [
             'por_activo', 'por_tipo_de_renta', 'por_sector_economico',
             'por_pais_emisor', 'por_moneda', 'por_calificacion'
@@ -110,67 +127,208 @@ def _transform_porcentajes(data: Dict[str, Any], fic_info: Dict[str, str]) -> Di
         for categoria in categorias:
             if categoria in comp and isinstance(comp[categoria], list):
                 total_categoria = 0.0
+                valores_cat = [item.get('participacion') for item in comp[categoria]
+                               if item.get('participacion') is not None]
+
+                # Determinar formato para esta categoría específica
+                formato_cat = _determinar_formato_categoria(valores_cat)
+
                 for item in comp[categoria]:
                     if 'participacion' in item:
-                        item['participacion'] = _parse_porcentaje(item['participacion'])
+                        item['participacion'] = _convertir_porcentaje_inteligente(item['participacion'], formato_cat)
                         if item['participacion'] is not None:
                             total_categoria += item['participacion']
 
-                # Validar suma de categoría (solo si hay datos)
+                # Log y validación
+                if valores_cat:
+                    logger.debug(
+                        f"🔍 {fic_info['nombre_fic']} - {categoria} ({formato_cat}): Suma: {total_categoria:.4f}")
+
                 if total_categoria > 0:
                     _validar_suma_porcentajes(total_categoria, categoria, fic_info)
 
     # 3. Transformar principales_inversiones
     if 'principales_inversiones' in transformed and isinstance(transformed['principales_inversiones'], list):
         total_inversiones = 0.0
+        valores_inv = [inv.get('participacion') for inv in transformed['principales_inversiones']
+                       if inv.get('participacion') is not None]
+
+        formato_inv = _determinar_formato_categoria(valores_inv)
+
         for inversion in transformed['principales_inversiones']:
             if 'participacion' in inversion:
-                inversion['participacion'] = _parse_porcentaje(inversion['participacion'])
+                inversion['participacion'] = _convertir_porcentaje_inteligente(inversion['participacion'], formato_inv)
                 if inversion['participacion'] is not None:
                     total_inversiones += inversion['participacion']
 
-        # Validar suma de inversiones principales
+        if valores_inv:
+            logger.debug(
+                f"🔍 {fic_info['nombre_fic']} - principales_inversiones ({formato_inv}): Suma: {total_inversiones:.4f}")
+
         if total_inversiones > 0:
             _validar_suma_porcentajes(total_inversiones, 'principales_inversiones', fic_info)
 
-    # 4. Transformar rentabilidad_volatilidad (sin validar suma)
+    # 4. Transformar rentabilidad_volatilidad (siempre decimal, sin validación de suma)
     if 'rentabilidad_volatilidad' in transformed and isinstance(transformed['rentabilidad_volatilidad'], list):
         for rv in transformed['rentabilidad_volatilidad']:
             if 'rentabilidad_historica_ea' in rv:
                 rent = rv['rentabilidad_historica_ea']
                 for key in rent:
                     if rent[key] is not None:
-                        rent[key] = _parse_porcentaje(rent[key])
-
+                        # Rentabilidades: convertir si > 1.0
+                        rent[key] = _convertir_si_es_necesario(rent[key])
             if 'volatilidad_historica' in rv:
                 vol = rv['volatilidad_historica']
                 for key in vol:
                     if vol[key] is not None:
-                        vol[key] = _parse_porcentaje(vol[key])
+                        # Volatilidades: convertir si > 1.0
+                        vol[key] = _convertir_si_es_necesario(vol[key])
 
     return transformed
 
 
+def _determinar_formato_categoria(valores: List[float]) -> str:
+    """
+    Determina el formato más probable para una categoría basado en sus valores
+    """
+    if not valores:
+        return 'desconocido'
+
+    # Filtrar valores válidos
+    valores_validos = [v for v in valores if v is not None]
+    if not valores_validos:
+        return 'desconocido'
+
+    # Calcular suma actual
+    suma_actual = sum(valores_validos)
+
+    # Contar valores en diferentes rangos
+    count_mayores_1 = sum(1 for v in valores_validos if v > 1.0)
+    count_menores_1 = sum(1 for v in valores_validos if v <= 1.0)
+
+    # Si la mayoría de valores son > 1 y la suma está cerca de 100, es x100
+    if count_mayores_1 > count_menores_1 and 90 <= suma_actual <= 110:
+        return 'x100'
+    # Si la mayoría de valores son <= 1 y la suma está cerca de 1, es /100
+    elif count_menores_1 > count_mayores_1 and 0.9 <= suma_actual <= 1.1:
+        return '/100'
+    # Si la suma está cerca de 100, probablemente es x100
+    elif 90 <= suma_actual <= 110:
+        return 'x100'
+    # Si la suma está cerca de 1, probablemente es /100
+    elif 0.9 <= suma_actual <= 1.1:
+        return '/100'
+    else:
+        return 'desconocido'
+
+
+def _convertir_porcentaje_inteligente(value, formato_categoria: str) -> Optional[float]:
+    """
+    Convierte un porcentaje individual de manera inteligente
+    """
+    if value is None:
+        return None
+
+    if isinstance(value, (int, float)):
+        # Si el formato de la categoría es claro, seguirlo
+        if formato_categoria == 'x100':
+            # En categoría x100, dividir todos los valores entre 100
+            return round(value / 100.0, 6)
+        elif formato_categoria == '/100':
+            # En categoría /100, mantener todos los valores
+            return round(float(value), 6)
+        else:
+            # Formato desconocido, decidir individualmente
+            return _convertir_porcentaje_individual(value)
+
+    if isinstance(value, str):
+        try:
+            cleaned = re.sub(r'[^\d.,\-%]', '', value.strip())
+            cleaned = cleaned.replace(',', '.')
+            result = float(cleaned)
+
+            if formato_categoria == 'x100':
+                return round(result / 100.0, 6)
+            elif formato_categoria == '/100':
+                return round(result, 6)
+            else:
+                return _convertir_porcentaje_individual(result)
+
+        except (ValueError, TypeError):
+            logger.warning(f"No se pudo parsear porcentaje: {value}")
+            return None
+
+    return None
+
+
+def _convertir_porcentaje_individual(value) -> Optional[float]:
+    """
+    Conversión individual cuando no hay contexto de categoría
+    """
+    if value is None:
+        return None
+
+    if isinstance(value, (int, float)):
+        # Si el valor está entre 0.9 y 1.1, probablemente ya es decimal
+        if 0.9 <= abs(value) <= 1.1:
+            return round(float(value), 6)
+        # Si el valor está entre 90 y 110, probablemente es x100
+        elif 90 <= abs(value) <= 110:
+            return round(value / 100.0, 6)
+        # Para otros valores, usar regla general
+        elif abs(value) > 1.1:
+            return round(value / 100.0, 6)
+        else:
+            return round(float(value), 6)
+
+    return None
+
+
+def _convertir_si_es_necesario(value) -> Optional[float]:
+    """
+    Conversión simple para rentabilidad/volatilidad
+    """
+    if value is None:
+        return None
+
+    if isinstance(value, (int, float)):
+        if abs(value) > 1.0:
+            return round(value / 100.0, 6)
+        else:
+            return round(float(value), 6)
+
+    if isinstance(value, str):
+        try:
+            cleaned = re.sub(r'[^\d.,\-%]', '', value.strip())
+            cleaned = cleaned.replace(',', '.')
+            result = float(cleaned)
+
+            if abs(result) > 1.0:
+                return round(result / 100.0, 6)
+            else:
+                return round(result, 6)
+
+        except (ValueError, TypeError):
+            return None
+
+    return None
+
 def _validar_suma_porcentajes(suma: float, nombre_campo: str, fic_info: Dict[str, str]):
     """
-    Valida que la suma de porcentajes sea aproximadamente 100%
-
-    Args:
-        suma: Suma total de porcentajes
-        nombre_campo: Nombre del campo que se está validando
-        fic_info: Información del FIC para logs contextuales
+    Valida que la suma de porcentajes sea aproximadamente 1.0 (formato decimal)
     """
     gestor = fic_info['gestor']
     nombre_fic = fic_info['nombre_fic']
     filename = fic_info['filename']
 
-    if 99.5 <= suma <= 100.5:
-        logger.debug(f"✓ [{gestor}] {nombre_campo}: {suma:.2f}%")
+    # Validar que la suma esté cerca de 1.0 (formato decimal)
+    if 0.95 <= suma <= 1.05:
+        logger.debug(f"✓ [{gestor}] {nombre_campo}: {suma:.4f} (suma válida)")
     else:
         logger.warning(
             f"SUMA FUERA DE RANGO - FIC: {nombre_fic} | "
             f"Gestor: {gestor} | Archivo: {filename} | "
-            f"Campo: {nombre_campo} | Suma: {suma:.2f}%"
+            f"Campo: {nombre_campo} | Suma: {suma:.4f} (esperado ~1.0)"
         )
 
 
@@ -205,6 +363,7 @@ def _transform_entidades_calificadoras(data: Dict[str, Any], fic_info: Dict[str,
                 )
 
     return transformed
+
 
 def _buscar_coincidencia_difusa(texto: str, opciones: set, umbral: float = 0.8) -> Optional[str]:
     """
@@ -313,50 +472,6 @@ def _validar_estructura_general(data: Dict[str, Any]) -> Dict[str, Any]:
     return transformed
 
 
-# ===== FUNCIONES AUXILIARES MEJORADAS =====
-
-def _parse_porcentaje(value) -> Optional[float]:
-    """Convierte cualquier valor a porcentaje float (ya en notación porcentual)"""
-    if value is None:
-        return None
-    if isinstance(value, (int, float)):
-        # Verificar si está en notación decimal (0.15) o porcentual (15.0)
-        if 0 <= abs(value) <= 1.5:  # Si parece decimal
-            return round(value * 100, 4)
-        return round(float(value), 4)
-    if isinstance(value, str):
-        return _parse_porcentaje_str(value)
-    return None
-
-
-def _parse_porcentaje_str(value: str) -> Optional[float]:
-    """Convierte string de porcentaje a float (notación porcentual)"""
-    if not value or value == "":
-        return None
-
-    try:
-        # Remover caracteres no numéricos excepto punto, coma y signo negativo
-        cleaned = re.sub(r'[^\d.,\-%]', '', value.strip())
-        cleaned = cleaned.replace(',', '.')
-
-        # Remover % si existe
-        tiene_porcentaje = '%' in cleaned
-        cleaned = cleaned.replace('%', '')
-
-        # Convertir a float
-        result = float(cleaned)
-
-        # Si tenía % o el número es pequeño, asegurar notación porcentual
-        if tiene_porcentaje or abs(result) <= 1.5:
-            result = result * 100
-
-        return round(result, 4)
-
-    except (ValueError, TypeError):
-        logger.warning(f"No se pudo parsear porcentaje: {value}")
-        return None
-
-
 def _parse_numero(value) -> Optional[float]:
     """Convierte cualquier valor a número float"""
     if value is None:
@@ -404,10 +519,8 @@ def _parse_fecha_robusta(fecha_str: str) -> Optional[str]:
         except ValueError:
             continue
 
-    return None  # No log warning aquí, se maneja en la función llamadora
+    return None
 
-
-# ===== FUNCIÓN DE VALIDACIÓN RÁPIDA =====
 
 def validar_datos_transformados(data: Dict[str, Any]) -> bool:
     """

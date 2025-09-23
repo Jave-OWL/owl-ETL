@@ -9,15 +9,15 @@
   "plazo_duracion": [
     {
       "plazo": "1 a 180 Días",
-      "participacion": 54.18
+      "participacion": 0.5418
     },
     {
       "plazo": "180 a 365 Días",
-      "participacion": 41.63
+      "participacion": 0.4163
     },
     {
       "plazo": "1 a 3 Años",
-      "participacion": 4.19
+      "participacion": 0.0419
     },
     {
       "plazo": "3 a 5 Años",
@@ -32,55 +32,55 @@
     "por_activo": [
       {
         "activo": "INVERSION",
-        "participacion": 55.0
+        "participacion": 0.55
       },
       {
         "activo": "DISPONIBLE",
-        "participacion": 32.0
+        "participacion": 0.32
       },
       {
         "activo": "SIMULTANEA",
-        "participacion": 13.0
+        "participacion": 0.13
       }
     ],
     "por_tipo_de_renta": [
       {
         "tipo": "TASA FIJA",
-        "participacion": 43.0
+        "participacion": 0.43
       },
       {
         "tipo": "DISPONIBLE",
-        "participacion": 28.0
+        "participacion": 0.28
       },
       {
         "tipo": "IBR",
-        "participacion": 17.0
+        "participacion": 0.17
       },
       {
         "tipo": "IPC",
-        "participacion": 6.0
+        "participacion": 0.06
       },
       {
         "tipo": "TES TF",
-        "participacion": 5.0
+        "participacion": 0.05
       },
       {
         "tipo": "OTROS",
-        "participacion": 100.0
+        "participacion": 0.01
       }
     ],
     "por_sector_economico": [
       {
         "sector": "FINANCIERO",
-        "participacion": 72.0
+        "participacion": 0.72
       },
       {
         "sector": "NACION",
-        "participacion": 27.0
+        "participacion": 0.27
       },
       {
         "sector": "BANCOS INTERNACIONALES",
-        "participacion": 100.0
+        "participacion": 0.01
       },
       {
         "sector": "SECTOR REAL",
@@ -90,55 +90,55 @@
     "por_pais_emisor": [
       {
         "pais": "COLOMBIA",
-        "participacion": 98.0
+        "participacion": 0.98
       },
       {
         "pais": "ESTADOS UNIDOS DE AMERICA",
-        "participacion": 100.0
+        "participacion": 0.01
       },
       {
         "pais": "PANAMA",
-        "participacion": 100.0
+        "participacion": 0.01
       }
     ],
     "por_moneda": [
       {
         "moneda": "PESOS",
-        "participacion": 98.0
+        "participacion": 0.98
       },
       {
         "moneda": "TRM",
-        "participacion": 2.0
+        "participacion": 0.02
       }
     ],
     "por_calificacion": [
       {
         "calificacion": "BRCI+",
-        "participacion": 50.0
+        "participacion": 0.5
       },
       {
         "calificacion": "AAA",
-        "participacion": 19.0
+        "participacion": 0.19
       },
       {
         "calificacion": "BRC",
-        "participacion": 11.0
+        "participacion": 0.11
       },
       {
         "calificacion": "NACION",
-        "participacion": 27.0
+        "participacion": 0.27
       },
       {
         "calificacion": "AA+",
-        "participacion": 100.0
+        "participacion": 0.01
       },
       {
         "calificacion": "SIN",
-        "participacion": 100.0
+        "participacion": 0.01
       },
       {
         "calificacion": "NO REQUIERE",
-        "participacion": 100.0
+        "participacion": 0.01
       }
     ]
   },
@@ -157,43 +157,43 @@
   "principales_inversiones": [
     {
       "emisor": "BANCO DE OCCIDENTE",
-      "participacion": 14.87
+      "participacion": 0.1487
     },
     {
       "emisor": "COMPROMISOS DE REVENTA DE INV.",
-      "participacion": 11.49
+      "participacion": 0.1149
     },
     {
       "emisor": "BANCO DE BOGOTA",
-      "participacion": 10.01
+      "participacion": 0.1001
     },
     {
       "emisor": "FINANCIERA DE DESARROLLO TERRITORIAL S.A",
-      "participacion": 9.16
+      "participacion": 0.0916
     },
     {
       "emisor": "BANCO DAVIVIENDA",
-      "participacion": 6.93
+      "participacion": 0.0693
     },
     {
       "emisor": "BBVA COLOMBIA",
-      "participacion": 5.55
+      "participacion": 0.0555
     },
     {
       "emisor": "MINISTERIO DE HACIENDA Y CREDITO PUBLICO",
-      "participacion": 5.47
+      "participacion": 0.0547
     },
     {
       "emisor": "BANCO POPULAR S.A.",
-      "participacion": 5.1
+      "participacion": 0.051
     },
     {
       "emisor": "AV VILLAS S.A.",
-      "participacion": 4.37
+      "participacion": 0.0437
     },
     {
       "emisor": "BANCO SANTANDER DE NEGOCIOS COLOMBIA SA",
-      "participacion": 3.36
+      "participacion": 0.0336
     }
   ],
   "rentabilidad_volatilidad": [
@@ -208,12 +208,12 @@
         "ultimos_3_anios": 10.683
       },
       "volatilidad_historica": {
-        "ultimo_mes": 6.4,
-        "ultimos_6_meses": 6.7,
-        "anio_corrido": 6.5,
-        "ultimo_anio": 8.8,
-        "ultimos_2_anios": 31.0,
-        "ultimos_3_anios": 33.0
+        "ultimo_mes": 0.064,
+        "ultimos_6_meses": 0.067,
+        "anio_corrido": 0.065,
+        "ultimo_anio": 0.088,
+        "ultimos_2_anios": 0.31,
+        "ultimos_3_anios": 0.33
       }
     },
     {
@@ -227,12 +227,12 @@
         "ultimos_3_anios": 10.905
       },
       "volatilidad_historica": {
-        "ultimo_mes": 6.4,
-        "ultimos_6_meses": 6.7,
-        "anio_corrido": 6.5,
-        "ultimo_anio": 8.8,
-        "ultimos_2_anios": 31.0,
-        "ultimos_3_anios": 33.0
+        "ultimo_mes": 0.064,
+        "ultimos_6_meses": 0.067,
+        "anio_corrido": 0.065,
+        "ultimo_anio": 0.088,
+        "ultimos_2_anios": 0.31,
+        "ultimos_3_anios": 0.33
       }
     },
     {
@@ -246,12 +246,12 @@
         "ultimos_3_anios": 11.238
       },
       "volatilidad_historica": {
-        "ultimo_mes": 6.4,
-        "ultimos_6_meses": 6.7,
-        "anio_corrido": 6.5,
-        "ultimo_anio": 8.8,
-        "ultimos_2_anios": 31.0,
-        "ultimos_3_anios": 33.0
+        "ultimo_mes": 0.064,
+        "ultimos_6_meses": 0.067,
+        "anio_corrido": 0.065,
+        "ultimo_anio": 0.088,
+        "ultimos_2_anios": 0.31,
+        "ultimos_3_anios": 0.33
       }
     },
     {
@@ -265,12 +265,12 @@
         "ultimos_3_anios": 11.405
       },
       "volatilidad_historica": {
-        "ultimo_mes": 6.4,
-        "ultimos_6_meses": 6.7,
-        "anio_corrido": 6.5,
-        "ultimo_anio": 8.8,
-        "ultimos_2_anios": 31.0,
-        "ultimos_3_anios": 33.0
+        "ultimo_mes": 0.064,
+        "ultimos_6_meses": 0.067,
+        "anio_corrido": 0.065,
+        "ultimo_anio": 0.088,
+        "ultimos_2_anios": 0.31,
+        "ultimos_3_anios": 0.33
       }
     },
     {
@@ -284,12 +284,12 @@
         "ultimos_3_anios": 12.356
       },
       "volatilidad_historica": {
-        "ultimo_mes": 6.4,
-        "ultimos_6_meses": 6.7,
-        "anio_corrido": 6.5,
-        "ultimo_anio": 8.8,
-        "ultimos_2_anios": 31.0,
-        "ultimos_3_anios": 33.0
+        "ultimo_mes": 0.064,
+        "ultimos_6_meses": 0.067,
+        "anio_corrido": 0.065,
+        "ultimo_anio": 0.088,
+        "ultimos_2_anios": 0.31,
+        "ultimos_3_anios": 0.33
       }
     },
     {
@@ -303,9 +303,9 @@
         "ultimos_3_anios": 0.0
       },
       "volatilidad_historica": {
-        "ultimo_mes": 6.4,
-        "ultimos_6_meses": 6.7,
-        "anio_corrido": 6.5,
+        "ultimo_mes": 0.064,
+        "ultimos_6_meses": 0.067,
+        "anio_corrido": 0.065,
         "ultimo_anio": 0.0,
         "ultimos_2_anios": 0.0,
         "ultimos_3_anios": 0.0

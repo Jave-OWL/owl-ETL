@@ -9,88 +9,88 @@
   "plazo_duracion": [
     {
       "plazo": "1 a 180 Días",
-      "participacion": 9.03
+      "participacion": 0.0903
     },
     {
       "plazo": "180 a 360 Días",
-      "participacion": 26.92
+      "participacion": 0.2692
     },
     {
       "plazo": "1 a 3 Años",
-      "participacion": 44.85
+      "participacion": 0.4485
     },
     {
       "plazo": "3 a 5 Años",
-      "participacion": 4.94
+      "participacion": 0.0494
     },
     {
       "plazo": "Más de 5 Años",
-      "participacion": 14.26
+      "participacion": 0.1426
     }
   ],
   "composicion_portafolio": {
     "por_activo": [
       {
         "activo": "DISPONIBLE",
-        "participacion": 5.86
+        "participacion": 0.0586
       },
       {
         "activo": "INVERSIONES",
-        "participacion": 94.14
+        "participacion": 0.9414
       }
     ],
     "por_tipo_de_renta": [
       {
         "tipo": "Vista",
-        "participacion": 5.86
+        "participacion": 0.0586
       },
       {
         "tipo": "IBR",
-        "participacion": 7.93
+        "participacion": 0.0793
       },
       {
         "tipo": "IPC",
-        "participacion": 16.05
+        "participacion": 0.1605
       },
       {
         "tipo": "TF",
-        "participacion": 70.17
+        "participacion": 0.7017
       }
     ],
     "por_sector_economico": [
       {
         "sector": "FINANCIERO",
-        "participacion": 80.92
+        "participacion": 0.8092
       },
       {
         "sector": "PUBLICO",
-        "participacion": 16.63
+        "participacion": 0.1663
       },
       {
         "sector": "REAL",
-        "participacion": 2.45
+        "participacion": 0.0245
       }
     ],
     "por_pais_emisor": [
       {
         "pais": "COLOMBIA",
-        "participacion": 100.0
+        "participacion": 1.0
       }
     ],
     "por_moneda": [
       {
         "moneda": "PESOS",
-        "participacion": 100.0
+        "participacion": 1.0
       }
     ],
     "por_calificacion": [
       {
         "calificacion": "AAA",
-        "participacion": 83.37
+        "participacion": 0.8337
       },
       {
         "calificacion": "Nación",
-        "participacion": 16.63
+        "participacion": 0.1663
       }
     ]
   },
@@ -109,43 +109,43 @@
   "principales_inversiones": [
     {
       "emisor": "MINISTERIO DE HACIENDA Y CREDITO PUBLICO",
-      "participacion": 16.63
+      "participacion": 0.1663
     },
     {
       "emisor": "BCO. POPULAR",
-      "participacion": 13.03
+      "participacion": 0.1303
     },
     {
       "emisor": "FINANCIERA DE DESARROLLO TERRITORIAL S.A.",
-      "participacion": 12.94
+      "participacion": 0.1294
     },
     {
       "emisor": "BCO. DE BOGOTA",
-      "participacion": 12.74
+      "participacion": 0.1274
     },
     {
       "emisor": "BBVA COLOMBIA S.A.",
-      "participacion": 9.9
+      "participacion": 0.099
     },
     {
       "emisor": "BANCOLOMBIA S.A.",
-      "participacion": 8.86
+      "participacion": 0.0886
     },
     {
       "emisor": "BCO. DE OCCIDENTE",
-      "participacion": 8.57
+      "participacion": 0.0857
     },
     {
       "emisor": "BANCO COLPATRIA SCOTIABANK",
-      "participacion": 5.55
+      "participacion": 0.0555
     },
     {
       "emisor": "BANCO AV VILLAS S.A.",
-      "participacion": 4.54
+      "participacion": 0.0454
     },
     {
       "emisor": "CORFICOLOMBIANA",
-      "participacion": 2.87
+      "participacion": 0.0287
     }
   ],
   "rentabilidad_volatilidad": [
@@ -160,12 +160,12 @@
         "ultimos_3_anios": 12.642
       },
       "volatilidad_historica": {
-        "ultimo_mes": 63.0,
-        "ultimos_6_meses": 62.8,
-        "anio_corrido": 65.5,
-        "ultimo_anio": 75.4,
-        "ultimos_2_anios": 1.525,
-        "ultimos_3_anios": 140.8
+        "ultimo_mes": 0.63,
+        "ultimos_6_meses": 0.628,
+        "anio_corrido": 0.655,
+        "ultimo_anio": 0.754,
+        "ultimos_2_anios": 0.01525,
+        "ultimos_3_anios": 0.01408
       }
     },
     {
@@ -179,12 +179,12 @@
         "ultimos_3_anios": 12.642
       },
       "volatilidad_historica": {
-        "ultimo_mes": 63.0,
-        "ultimos_6_meses": 62.8,
-        "anio_corrido": 65.5,
-        "ultimo_anio": 75.4,
-        "ultimos_2_anios": 1.525,
-        "ultimos_3_anios": 140.8
+        "ultimo_mes": 0.63,
+        "ultimos_6_meses": 0.628,
+        "anio_corrido": 0.655,
+        "ultimo_anio": 0.754,
+        "ultimos_2_anios": 0.01525,
+        "ultimos_3_anios": 0.01408
       }
     },
     {
@@ -198,10 +198,10 @@
         "ultimos_3_anios": 0.0
       },
       "volatilidad_historica": {
-        "ultimo_mes": 63.0,
-        "ultimos_6_meses": 62.8,
-        "anio_corrido": 65.5,
-        "ultimo_anio": 75.4,
+        "ultimo_mes": 0.63,
+        "ultimos_6_meses": 0.628,
+        "anio_corrido": 0.655,
+        "ultimo_anio": 0.754,
         "ultimos_2_anios": 0.0,
         "ultimos_3_anios": 0.0
       }

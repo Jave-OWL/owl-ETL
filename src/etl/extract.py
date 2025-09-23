@@ -31,35 +31,35 @@ Debes devolver un JSON estructurado con la información encontrada, siguiendo es
   },
 
   "plazo_duracion": [
-    {"plazo": "", "participacion": ""}
+    {"plazo": "", "participacion": 0.0}
   ],
   
   "composicion_portafolio": {
     "por_activo": [
-      {"activo": "", "participacion": ""}
+      {"activo": "", "participacion": 0.0}
     ],
     "por_tipo_de_renta": [
-      {"tipo": "", "participacion": ""}
+      {"tipo": "", "participacion": 0.0}
     ],
     "por_sector_economico": [
-      {"sector": "", "participacion": ""}
+      {"sector": "", "participacion": 0.0}
     ],
     "por_pais_emisor": [
-      {"pais": "", "participacion": ""}
+      {"pais": "", "participacion": 0.0}
     ],
     "por_moneda": [
-      {"moneda": "", "participacion": ""}
+      {"moneda": "", "participacion": 0.0}
     ],
     "por_calificacion": [
-      {"calificacion": "", "participacion": ""}
+      {"calificacion": "", "participacion": 0.0}
     ]
   },
   
   "caracteristicas"{
 	"tipo" : "",
-	"valor" : "",
+	"valor" : 0.0,
 	"fecha_inicio_operaciones" : null,
-	"no_unidades_en_circulacion" : ""
+	"no_unidades_en_circulacion" : 0.0
   },
   
   "calificacion": {
@@ -69,27 +69,27 @@ Debes devolver un JSON estructurado con la información encontrada, siguiendo es
   },
   
   "principales_inversiones": [
-    {"emisor": "", "participacion": ""}
+    {"emisor": "", "participacion": 0.0}
   ],
 
   "rentabilidad_volatilidad": [
 	{
 		"tipo_de_participacion": "",
 		"rentabilidad_histórica_ea": {
-			"ultimo_mes": "",
-			"ultimos_6_meses": "",
-			"anio_corrido": "",
-			"ultimo_anio": "",
-			"ultimos_2_anios": "",
-			"ultimos_3_anios": ""
+			"ultimo_mes": 0.0,
+			"ultimos_6_meses": 0.0,
+			"anio_corrido": 0.0,
+			"ultimo_anio": 0.0,
+			"ultimos_2_anios": 0.0,
+			"ultimos_3_anios": 0.0
 		},
 		"volatilidad_historica": {
-			"ultimo_mes": "",
-			"ultimos_6_meses": "",
-			"anio_corrido": "",
-			"ultimo_anio": "",
-			"ultimos_2_anios": "",
-			"ultimos_3_anios": ""
+			"ultimo_mes": 0.0,
+			"ultimos_6_meses": 0.0,
+			"anio_corrido": 0.0,
+			"ultimo_anio": 0.0,
+			"ultimos_2_anios": 0.0,
+			"ultimos_3_anios": 0.0
 		}
 	}
   ],

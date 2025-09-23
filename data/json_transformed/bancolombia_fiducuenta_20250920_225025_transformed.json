@@ -9,19 +9,19 @@
   "plazo_duracion": [
     {
       "plazo": "1 a 180 Días",
-      "participacion": 66.96
+      "participacion": 0.6696
     },
     {
       "plazo": "180 a 365 Días",
-      "participacion": 15.03
+      "participacion": 0.1503
     },
     {
       "plazo": "1-3 Años",
-      "participacion": 17.76
+      "participacion": 0.1776
     },
     {
       "plazo": "3-5 años",
-      "participacion": 25.0
+      "participacion": 0.0025
     },
     {
       "plazo": "Más de 5 Años",
@@ -32,145 +32,145 @@
     "por_activo": [
       {
         "activo": "DISPONIBLE",
-        "participacion": 20.89
+        "participacion": 0.2089
       },
       {
         "activo": "INVERSIONES Y OPERACIONES CON DERIVADOS",
-        "participacion": 79.1
+        "participacion": 0.791
       },
       {
         "activo": "CUENTAS POR COBRAR",
-        "participacion": 1.0
+        "participacion": 0.0001
       }
     ],
     "por_tipo_de_renta": [
       {
         "tipo": "TASA FIJA",
-        "participacion": 151.87
+        "participacion": 1.5187
       },
       {
         "tipo": "CUENTA DE AHORROS",
-        "participacion": 20.43
+        "participacion": 0.2043
       },
       {
         "tipo": "IBR",
-        "participacion": 15.61
+        "participacion": 0.1561
       },
       {
         "tipo": "IPC",
-        "participacion": 8.95
+        "participacion": 0.0895
       },
       {
         "tipo": "AL DESCUENTO",
-        "participacion": 2.33
+        "participacion": 0.0233
       },
       {
         "tipo": "CUENTA CORRIENTE",
-        "participacion": 51.0
+        "participacion": 0.51
       },
       {
         "tipo": "UVR",
-        "participacion": 10.31
+        "participacion": 0.1031
       }
     ],
     "por_sector_economico": [
       {
         "sector": "FINANCIERO",
-        "participacion": 62.34
+        "participacion": 0.6234
       },
       {
         "sector": "ENTIDADES PÚBLICAS INTERNACIONAL",
-        "participacion": 20.15
+        "participacion": 0.2015
       },
       {
         "sector": "ENTIDADES PÚBLICAS",
-        "participacion": 15.68
+        "participacion": 0.1568
       },
       {
         "sector": "FINANCIERO INTERNACIONAL",
-        "participacion": 1.67
+        "participacion": 0.0167
       },
       {
         "sector": "REAL",
-        "participacion": 16.0
+        "participacion": 0.0016
       }
     ],
     "por_pais_emisor": [
       {
         "pais": "COLOMBIA",
-        "participacion": 78.18
+        "participacion": 0.7818
       },
       {
         "pais": "EEUU",
-        "participacion": 20.37
+        "participacion": 0.2037
       }
     ],
     "por_moneda": [
       {
         "moneda": "PESOS",
-        "participacion": 77.61
+        "participacion": 0.7761
       },
       {
         "moneda": "DÓLAR",
-        "participacion": 22.08
+        "participacion": 0.2208
       },
       {
         "moneda": "UVR",
-        "participacion": 31.0
+        "participacion": 0.0031
       }
     ],
     "por_calificacion": [
       {
         "calificacion": "AAA",
-        "participacion": 35.87
+        "participacion": 0.3587
       },
       {
         "calificacion": "BRC1+",
-        "participacion": 23.38
+        "participacion": 0.2338
       },
       {
         "calificacion": "F1+ INTERNACIONAL",
-        "participacion": 16.18
+        "participacion": 0.1618
       },
       {
         "calificacion": "NACIÓN SIN CALIFICACIÓN",
-        "participacion": 15.4
+        "participacion": 0.154
       },
       {
         "calificacion": "F1+",
-        "participacion": 2.62
+        "participacion": 0.0262
       },
       {
         "calificacion": "Aa1 INTERNACIONAL",
-        "participacion": 2.27
+        "participacion": 0.0227
       },
       {
         "calificacion": "A-1+ INTERNACIONAL",
-        "participacion": 1.79
+        "participacion": 0.0179
       },
       {
         "calificacion": "P-1 INTERNACIONAL",
-        "participacion": 89.0
+        "participacion": 0.0089
       },
       {
         "calificacion": "VRR1+",
-        "participacion": 59.0
+        "participacion": 0.0059
       },
       {
         "calificacion": "AA+ INTERNACIONAL",
-        "participacion": 46.0
+        "participacion": 0.0046
       },
       {
         "calificacion": "BB INTERNACIONAL",
-        "participacion": 26.0
+        "participacion": 0.0026
       },
       {
         "calificacion": "A+ INTERNACIONAL",
-        "participacion": 22.0
+        "participacion": 0.0022
       },
       {
         "calificacion": "AA+",
-        "participacion": 5.0
+        "participacion": 0.0005
       }
     ]
   },
@@ -189,43 +189,43 @@
   "principales_inversiones": [
     {
       "emisor": "DEPARTAMENTO DEL TESORO DE EE UU",
-      "participacion": 20.15
+      "participacion": 0.2015
     },
     {
       "emisor": "BANCO DE BOGOTÁ",
-      "participacion": 17.46
+      "participacion": 0.1746
     },
     {
       "emisor": "BANCO DAVIVIENDA",
-      "participacion": 13.91
+      "participacion": 0.1391
     },
     {
       "emisor": "BANCO DE LA REPUBLICA",
-      "participacion": 12.05
+      "participacion": 0.1205
     },
     {
       "emisor": "BBVA COLOMBIA",
-      "participacion": 7.18
+      "participacion": 0.0718
     },
     {
       "emisor": "FINDETER",
-      "participacion": 6.55
+      "participacion": 0.0655
     },
     {
       "emisor": "MINISTERIO DE HACIENDA",
-      "participacion": 3.61
+      "participacion": 0.0361
     },
     {
       "emisor": "BANCO POPULAR",
-      "participacion": 2.44
+      "participacion": 0.0244
     },
     {
       "emisor": "BANCO GNB SUDAMERIS",
-      "participacion": 2.38
+      "participacion": 0.0238
     },
     {
       "emisor": "BANCO COLPATRIA",
-      "participacion": 2.04
+      "participacion": 0.0204
     }
   ],
   "rentabilidad_volatilidad": [
@@ -240,12 +240,12 @@
         "ultimos_3_anios": 11.546
       },
       "volatilidad_historica": {
-        "ultimo_mes": 18.4,
-        "ultimos_6_meses": 18.9,
-        "anio_corrido": 18.7,
-        "ultimo_anio": 25.0,
-        "ultimos_2_anios": 47.8,
-        "ultimos_3_anios": 47.6
+        "ultimo_mes": 0.184,
+        "ultimos_6_meses": 0.189,
+        "anio_corrido": 0.187,
+        "ultimo_anio": 0.25,
+        "ultimos_2_anios": 0.478,
+        "ultimos_3_anios": 0.476
       }
     }
   ]
