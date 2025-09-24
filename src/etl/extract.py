@@ -75,7 +75,7 @@ Debes devolver un JSON estructurado con la información encontrada, siguiendo es
   "rentabilidad_volatilidad": [
 	{
 		"tipo_de_participacion": "",
-		"rentabilidad_histórica_ea": {
+		"rentabilidad_historica_ea": {
 			"ultimo_mes": 0.0,
 			"ultimos_6_meses": 0.0,
 			"anio_corrido": 0.0,

@@ -3,7 +3,7 @@
     "nombre_fic": "CREDICORP CAPITAL ALTA LIQUIDEZ",
     "gestor": "CREDICORP CAPITAL COLOMBIA S.A.",
     "custodio": "CITITRUST COLOMBIA S.A",
-    "fecha_corte": "31/07/2025",
+    "fecha_corte": "2025-07-31",
     "politica_de_inversion": "Alternativa de inversion ideal para las personas que buscan una inversion conservadora y de baja volatilidad, por medio de la cual preservar el capital, con la posibilidad de tener liquidez diaria. El Fondo invierte mayoritariamente en titulos de renta fija (CDTs, Bonos, TES, etc.) con alta calidad crediticia (calificacion minima grado de inversion), que tengan liquidez en el mercado secundario. Vencimiento promedio menor a 365 dias."
   },
   "plazo_duracion": [
@@ -145,12 +145,12 @@
   "caracteristicas": {
     "tipo": "FIC Abierto sin pacto de permanencia",
     "valor": 5282483.62,
-    "fecha_inicio_operaciones": "09/07/1998",
+    "fecha_inicio_operaciones": "1998-07-09",
     "no_unidades_en_circulacion": 500846081.347665
   },
   "calificacion": {
     "calificacion": "S1/AAAf (col)",
-    "fecha_ultima_calificacion": "28/05/2024",
+    "fecha_ultima_calificacion": "2024-05-28",
     "entidad_calificadora": "FITCH RATINGS"
   },
   "principales_inversiones": [
@@ -198,7 +198,7 @@
   "rentabilidad_volatilidad": [
     {
       "tipo_de_participacion": "A",
-      "rentabilidad_histórica_ea": {
+      "rentabilidad_historica_ea": {
         "ultimo_mes": 8.055,
         "ultimos_6_meses": 7.969,
         "anio_corrido": 7.945,
@@ -217,7 +217,7 @@
     },
     {
       "tipo_de_participacion": "B",
-      "rentabilidad_histórica_ea": {
+      "rentabilidad_historica_ea": {
         "ultimo_mes": 8.271,
         "ultimos_6_meses": 8.185,
         "anio_corrido": 8.161,
@@ -236,7 +236,7 @@
     },
     {
       "tipo_de_participacion": "C",
-      "rentabilidad_histórica_ea": {
+      "rentabilidad_historica_ea": {
         "ultimo_mes": 8.597,
         "ultimos_6_meses": 8.51,
         "anio_corrido": 8.486,
@@ -255,7 +255,7 @@
     },
     {
       "tipo_de_participacion": "D",
-      "rentabilidad_histórica_ea": {
+      "rentabilidad_historica_ea": {
         "ultimo_mes": 8.76,
         "ultimos_6_meses": 8.673,
         "anio_corrido": 8.648,
@@ -274,7 +274,7 @@
     },
     {
       "tipo_de_participacion": "E",
-      "rentabilidad_histórica_ea": {
+      "rentabilidad_historica_ea": {
         "ultimo_mes": 9.688,
         "ultimos_6_meses": 9.6,
         "anio_corrido": 9.576,
@@ -293,21 +293,21 @@
     },
     {
       "tipo_de_participacion": "F",
-      "rentabilidad_histórica_ea": {
+      "rentabilidad_historica_ea": {
         "ultimo_mes": 8.868,
         "ultimos_6_meses": 8.782,
         "anio_corrido": 8.757,
-        "ultimo_anio": "",
-        "ultimos_2_anios": "",
-        "ultimos_3_anios": ""
+        "ultimo_anio": 0.0,
+        "ultimos_2_anios": 0.0,
+        "ultimos_3_anios": 0.0
       },
       "volatilidad_historica": {
         "ultimo_mes": 0.064,
         "ultimos_6_meses": 0.067,
         "anio_corrido": 0.065,
-        "ultimo_anio": "",
-        "ultimos_2_anios": "",
-        "ultimos_3_anios": ""
+        "ultimo_anio": 0.0,
+        "ultimos_2_anios": 0.0,
+        "ultimos_3_anios": 0.0
       }
     }
   ]

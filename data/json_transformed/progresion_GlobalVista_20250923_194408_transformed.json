@@ -1,0 +1,188 @@
+{
+  "fic": {
+    "nombre_fic": "FIC GLOBAL VISTA",
+    "gestor": "Progresión S.A. Sociedad Comisionista de Bolsa",
+    "custodio": "S3 CACEIS",
+    "fecha_corte": "2025-01-31",
+    "politica_de_inversion": "Global Vista es un tipo de fondo abierto que pretende como objetivo ofrecer al público un portafolio de inversiones en valores de renta fija que permitan una alta conservación del capital y una rentabilidad que sea consistente con un nivel de riesgo conservador."
+  },
+  "plazo_duracion": [
+    {
+      "plazo": "1 a 180 días",
+      "participacion": 0.7019
+    },
+    {
+      "plazo": "180 a 365 días",
+      "participacion": 0.1562
+    },
+    {
+      "plazo": "1 a 3 años",
+      "participacion": 0.1099
+    },
+    {
+      "plazo": "3 a 5 años",
+      "participacion": 0.032
+    },
+    {
+      "plazo": "Más de 5 años",
+      "participacion": 0.0
+    }
+  ],
+  "composicion_portafolio": {
+    "por_activo": [
+      {
+        "activo": "Disponible",
+        "participacion": 0.20334
+      },
+      {
+        "activo": "Inversiones",
+        "participacion": 0.4953
+      },
+      {
+        "activo": "Simultanea Activa",
+        "participacion": 0.30136
+      }
+    ],
+    "por_tipo_de_renta": [
+      {
+        "tipo": "Cuentas Bancarias",
+        "participacion": 0.20334
+      },
+      {
+        "tipo": "Renta Fija",
+        "participacion": 0.72906
+      },
+      {
+        "tipo": "IBR",
+        "participacion": 0.05281
+      },
+      {
+        "tipo": "IPC",
+        "participacion": 0.01479
+      }
+    ],
+    "por_sector_economico": [
+      {
+        "sector": "Entidades Públicas",
+        "participacion": 0.03656
+      },
+      {
+        "sector": "Financiero",
+        "participacion": 0.95223
+      },
+      {
+        "sector": "Real",
+        "participacion": 0.01121
+      }
+    ],
+    "por_pais_emisor": [
+      {
+        "pais": "Colombia",
+        "participacion": 1.0
+      }
+    ],
+    "por_moneda": [
+      {
+        "moneda": "Peso Colombiano",
+        "participacion": 1.0
+      }
+    ],
+    "por_calificacion": [
+      {
+        "calificacion": "AA-",
+        "participacion": 0.14317
+      },
+      {
+        "calificacion": "AA+",
+        "participacion": 0.00051
+      },
+      {
+        "calificacion": "AAA",
+        "participacion": 0.4357
+      },
+      {
+        "calificacion": "BRC1+",
+        "participacion": 0.06905
+      },
+      {
+        "calificacion": "F1+",
+        "participacion": 0.35158
+      }
+    ]
+  },
+  "caracteristicas": {
+    "tipo": "Abierto sin pacto de permanencia",
+    "valor": 133337.91,
+    "fecha_inicio_operaciones": "2007-03-12",
+    "no_unidades_en_circulacion": 5378228.382589
+  },
+  "calificacion": {
+    "calificacion": "AAAf (Col)",
+    "fecha_ultima_calificacion": "2022-07-31",
+    "entidad_calificadora": "FITCH RATINGS",
+    "entidad_calificadora_normalizada": true
+  },
+  "principales_inversiones": [
+    {
+      "emisor": "BBVA COLOMBIA S.A",
+      "participacion": 0.1663
+    },
+    {
+      "emisor": "BANCO COOMEVA",
+      "participacion": 0.1432
+    },
+    {
+      "emisor": "BANCO DAVIVIENDA S.A",
+      "participacion": 0.11
+    },
+    {
+      "emisor": "Banco W S.A",
+      "participacion": 0.076
+    },
+    {
+      "emisor": "Banco De Bogota S.A",
+      "participacion": 0.0682
+    },
+    {
+      "emisor": "BANCOLOMBIA S.A.",
+      "participacion": 0.0673
+    },
+    {
+      "emisor": "Banco Popular SA",
+      "participacion": 0.0605
+    },
+    {
+      "emisor": "FINDETER",
+      "participacion": 0.0531
+    },
+    {
+      "emisor": "RCI COLOMBIA CIA FINANCIAMIENTO COMERCIAL",
+      "participacion": 0.0464
+    },
+    {
+      "emisor": "GOBIERNO REPUBLICA DE COLOMBIA",
+      "participacion": 0.0358
+    }
+  ],
+  "rentabilidad_volatilidad": [
+    {
+      "tipo_de_participacion": "FIC GLOBAL VISTA",
+      "rentabilidad_historica_ea": {
+        "ultimo_mes": 0.07885,
+        "ultimos_6_meses": 0.07291,
+        "anio_corrido": 0.07885,
+        "ultimo_anio": 0.08798,
+        "ultimos_2_anios": 0.11333,
+        "ultimos_3_anios": 0.09132
+      },
+      "volatilidad_historica": {
+        "ultimo_mes": 0.164,
+        "ultimos_6_meses": 0.277,
+        "anio_corrido": 0.164,
+        "ultimo_anio": 0.372,
+        "ultimos_2_anios": 0.435,
+        "ultimos_3_anios": 0.484
+      }
+    }
+  ]
+}

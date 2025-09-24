@@ -757,3 +757,255 @@
 2025-09-23 12:28:05,357 - src.etl.transform - INFO - Transformación de datos completada exitosamente: desconocido
 2025-09-23 12:28:05,358 - src.config.settings - INFO - JSON transformado guardado: credicorpCapital_Alta Liquidez_20250920_225021_transformed.json
 2025-09-23 12:28:05,359 - src.config.settings - INFO - Transformado exitosamente: credicorpCapital_Alta Liquidez_20250920_225021.json
+2025-09-23 19:42:35,089 - unstract.llmwhisperer.client_v2 - DEBUG - logging_level set to DEBUG
+2025-09-23 19:42:35,091 - unstract.llmwhisperer.client_v2 - DEBUG - base_url set to https://llmwhisperer-api.us-central.unstract.com/api/v2
+2025-09-23 19:42:35,769 - src.config.settings - INFO - Iniciando procesamiento de carpeta: data\pdfs
+2025-09-23 19:42:35,769 - src.config.settings - INFO - Encontrados 7 PDFs para procesar
+2025-09-23 19:42:35,771 - src.etl.pipeline - INFO - Iniciando procesamiento de: data\pdfs\bancoBogota_sumar.pdf
+2025-09-23 19:42:35,771 - src.etl.pipeline - INFO - Iniciando procesamiento de: data\pdfs\bancoDavivienda_Multiescala.pdf
+2025-09-23 19:42:35,772 - src.etl.extract - INFO - Extrayendo texto de data\pdfs\bancoBogota_sumar.pdf (intento 1)
+2025-09-23 19:42:35,772 - src.etl.pipeline - INFO - Iniciando procesamiento de: data\pdfs\bancolombia_fiducuenta.pdf
+2025-09-23 19:42:35,772 - src.etl.extract - INFO - Extrayendo texto de data\pdfs\bancoDavivienda_Multiescala.pdf (intento 1)
+2025-09-23 19:42:35,772 - src.etl.pipeline - INFO - Iniciando procesamiento de: data\pdfs\credicorpCapital_Alta Liquidez.pdf
+2025-09-23 19:42:35,772 - unstract.llmwhisperer.client_v2 - DEBUG - whisper called
+2025-09-23 19:42:35,773 - src.etl.pipeline - INFO - Iniciando procesamiento de: data\pdfs\fiduoccidente_PlazoFijo.pdf
+2025-09-23 19:42:35,773 - src.etl.extract - INFO - Extrayendo texto de data\pdfs\bancolombia_fiducuenta.pdf (intento 1)
+2025-09-23 19:42:35,773 - unstract.llmwhisperer.client_v2 - DEBUG - whisper called
+2025-09-23 19:42:35,774 - src.etl.extract - INFO - Extrayendo texto de data\pdfs\credicorpCapital_Alta Liquidez.pdf (intento 1)
+2025-09-23 19:42:35,774 - unstract.llmwhisperer.client_v2 - DEBUG - api_url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper
+2025-09-23 19:42:35,774 - src.etl.extract - INFO - Extrayendo texto de data\pdfs\fiduoccidente_PlazoFijo.pdf (intento 1)
+2025-09-23 19:42:35,774 - unstract.llmwhisperer.client_v2 - DEBUG - whisper called
+2025-09-23 19:42:35,775 - unstract.llmwhisperer.client_v2 - DEBUG - api_url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper
+2025-09-23 19:42:35,775 - unstract.llmwhisperer.client_v2 - DEBUG - whisper called
+2025-09-23 19:42:35,775 - unstract.llmwhisperer.client_v2 - DEBUG - params: {'mode': 'form', 'output_mode': 'layout_preserving', 'page_seperator': '<<<', 'pages_to_extract': '', 'median_filter_size': 0, 'gaussian_blur_radius': 0, 'line_splitter_tolerance': 0.4, 'horizontal_stretch_factor': 1.0, 'mark_vertical_lines': False, 'mark_horizontal_lines': False, 'line_spitter_strategy': 'left-priority', 'add_line_nos': False, 'lang': 'eng', 'tag': 'default', 'filename': '', 'webhook_metadata': '', 'use_webhook': ''}
+2025-09-23 19:42:35,775 - unstract.llmwhisperer.client_v2 - DEBUG - whisper called
+2025-09-23 19:42:35,776 - unstract.llmwhisperer.client_v2 - DEBUG - api_url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper
+2025-09-23 19:42:35,776 - unstract.llmwhisperer.client_v2 - DEBUG - params: {'mode': 'form', 'output_mode': 'layout_preserving', 'page_seperator': '<<<', 'pages_to_extract': '', 'median_filter_size': 0, 'gaussian_blur_radius': 0, 'line_splitter_tolerance': 0.4, 'horizontal_stretch_factor': 1.0, 'mark_vertical_lines': False, 'mark_horizontal_lines': False, 'line_spitter_strategy': 'left-priority', 'add_line_nos': False, 'lang': 'eng', 'tag': 'default', 'filename': '', 'webhook_metadata': '', 'use_webhook': ''}
+2025-09-23 19:42:35,776 - unstract.llmwhisperer.client_v2 - DEBUG - api_url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper
+2025-09-23 19:42:35,777 - unstract.llmwhisperer.client_v2 - DEBUG - api_url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper
+2025-09-23 19:42:35,777 - unstract.llmwhisperer.client_v2 - DEBUG - params: {'mode': 'form', 'output_mode': 'layout_preserving', 'page_seperator': '<<<', 'pages_to_extract': '', 'median_filter_size': 0, 'gaussian_blur_radius': 0, 'line_splitter_tolerance': 0.4, 'horizontal_stretch_factor': 1.0, 'mark_vertical_lines': False, 'mark_horizontal_lines': False, 'line_spitter_strategy': 'left-priority', 'add_line_nos': False, 'lang': 'eng', 'tag': 'default', 'filename': '', 'webhook_metadata': '', 'use_webhook': ''}
+2025-09-23 19:42:35,778 - unstract.llmwhisperer.client_v2 - DEBUG - params: {'mode': 'form', 'output_mode': 'layout_preserving', 'page_seperator': '<<<', 'pages_to_extract': '', 'median_filter_size': 0, 'gaussian_blur_radius': 0, 'line_splitter_tolerance': 0.4, 'horizontal_stretch_factor': 1.0, 'mark_vertical_lines': False, 'mark_horizontal_lines': False, 'line_spitter_strategy': 'left-priority', 'add_line_nos': False, 'lang': 'eng', 'tag': 'default', 'filename': '', 'webhook_metadata': '', 'use_webhook': ''}
+2025-09-23 19:42:35,778 - unstract.llmwhisperer.client_v2 - DEBUG - params: {'mode': 'form', 'output_mode': 'layout_preserving', 'page_seperator': '<<<', 'pages_to_extract': '', 'median_filter_size': 0, 'gaussian_blur_radius': 0, 'line_splitter_tolerance': 0.4, 'horizontal_stretch_factor': 1.0, 'mark_vertical_lines': False, 'mark_horizontal_lines': False, 'line_spitter_strategy': 'left-priority', 'add_line_nos': False, 'lang': 'eng', 'tag': 'default', 'filename': '', 'webhook_metadata': '', 'use_webhook': ''}
+2025-09-23 19:42:37,260 - unstract.llmwhisperer.client_v2 - DEBUG - whisper_status called
+2025-09-23 19:42:37,260 - unstract.llmwhisperer.client_v2 - DEBUG - url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper-status
+2025-09-23 19:42:37,598 - unstract.llmwhisperer.client_v2 - DEBUG - whisper_status called
+2025-09-23 19:42:37,599 - unstract.llmwhisperer.client_v2 - DEBUG - url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper-status
+2025-09-23 19:42:37,926 - unstract.llmwhisperer.client_v2 - DEBUG - whisper_status called
+2025-09-23 19:42:37,926 - unstract.llmwhisperer.client_v2 - DEBUG - url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper-status
+2025-09-23 19:42:38,332 - unstract.llmwhisperer.client_v2 - DEBUG - whisper_status called
+2025-09-23 19:42:38,333 - unstract.llmwhisperer.client_v2 - DEBUG - url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper-status
+2025-09-23 19:42:38,382 - unstract.llmwhisperer.client_v2 - DEBUG - whisper_status called
+2025-09-23 19:42:38,383 - unstract.llmwhisperer.client_v2 - DEBUG - url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper-status
+2025-09-23 19:42:43,066 - unstract.llmwhisperer.client_v2 - DEBUG - whisper_status called
+2025-09-23 19:42:43,067 - unstract.llmwhisperer.client_v2 - DEBUG - url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper-status
+2025-09-23 19:42:43,292 - unstract.llmwhisperer.client_v2 - DEBUG - whisper_status called
+2025-09-23 19:42:43,292 - unstract.llmwhisperer.client_v2 - DEBUG - url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper-status
+2025-09-23 19:42:43,381 - unstract.llmwhisperer.client_v2 - DEBUG - whisper_status called
+2025-09-23 19:42:43,382 - unstract.llmwhisperer.client_v2 - DEBUG - url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper-status
+2025-09-23 19:42:43,553 - unstract.llmwhisperer.client_v2 - DEBUG - whisper_status called
+2025-09-23 19:42:43,553 - unstract.llmwhisperer.client_v2 - DEBUG - url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper-status
+2025-09-23 19:42:43,570 - unstract.llmwhisperer.client_v2 - DEBUG - whisper_status called
+2025-09-23 19:42:43,570 - unstract.llmwhisperer.client_v2 - DEBUG - url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper-status
+2025-09-23 19:42:48,267 - unstract.llmwhisperer.client_v2 - DEBUG - whisper_status called
+2025-09-23 19:42:48,267 - unstract.llmwhisperer.client_v2 - DEBUG - url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper-status
+2025-09-23 19:42:48,448 - unstract.llmwhisperer.client_v2 - DEBUG - whisper_retrieve called
+2025-09-23 19:42:48,448 - unstract.llmwhisperer.client_v2 - DEBUG - url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper-retrieve
+2025-09-23 19:42:48,496 - unstract.llmwhisperer.client_v2 - DEBUG - whisper_status called
+2025-09-23 19:42:48,496 - unstract.llmwhisperer.client_v2 - DEBUG - url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper-status
+2025-09-23 19:42:48,571 - unstract.llmwhisperer.client_v2 - DEBUG - whisper_status called
+2025-09-23 19:42:48,571 - unstract.llmwhisperer.client_v2 - DEBUG - url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper-status
+2025-09-23 19:42:48,693 - unstract.llmwhisperer.client_v2 - DEBUG - whisper_retrieve called
+2025-09-23 19:42:48,693 - unstract.llmwhisperer.client_v2 - DEBUG - url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper-retrieve
+2025-09-23 19:42:48,709 - src.etl.extract - INFO - Texto extraído exitosamente de data\pdfs\bancolombia_fiducuenta.pdf
+2025-09-23 19:42:48,713 - src.etl.extract - INFO - Procesando texto con Gemini para extraer JSON
+2025-09-23 19:42:48,713 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-09-23 19:42:48,759 - unstract.llmwhisperer.client_v2 - DEBUG - whisper_retrieve called
+2025-09-23 19:42:48,779 - unstract.llmwhisperer.client_v2 - DEBUG - url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper-retrieve
+2025-09-23 19:42:48,780 - unstract.llmwhisperer.client_v2 - DEBUG - whisper_status called
+2025-09-23 19:42:48,785 - unstract.llmwhisperer.client_v2 - DEBUG - url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper-status
+2025-09-23 19:42:48,792 - unstract.llmwhisperer.client_v2 - DEBUG - whisper_status called
+2025-09-23 19:42:48,796 - unstract.llmwhisperer.client_v2 - DEBUG - url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper-status
+2025-09-23 19:42:48,960 - src.etl.extract - INFO - Texto extraído exitosamente de data\pdfs\credicorpCapital_Alta Liquidez.pdf
+2025-09-23 19:42:48,960 - src.etl.extract - INFO - Procesando texto con Gemini para extraer JSON
+2025-09-23 19:42:48,961 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-09-23 19:42:49,001 - unstract.llmwhisperer.client_v2 - DEBUG - whisper_retrieve called
+2025-09-23 19:42:49,001 - unstract.llmwhisperer.client_v2 - DEBUG - url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper-retrieve
+2025-09-23 19:42:49,052 - unstract.llmwhisperer.client_v2 - DEBUG - whisper_retrieve called
+2025-09-23 19:42:49,052 - unstract.llmwhisperer.client_v2 - DEBUG - url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper-retrieve
+2025-09-23 19:42:49,138 - src.etl.extract - INFO - Texto extraído exitosamente de data\pdfs\bancoBogota_sumar.pdf
+2025-09-23 19:42:49,139 - src.etl.extract - INFO - Procesando texto con Gemini para extraer JSON
+2025-09-23 19:42:49,139 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-09-23 19:42:49,227 - src.etl.extract - INFO - Texto extraído exitosamente de data\pdfs\fiduoccidente_PlazoFijo.pdf
+2025-09-23 19:42:49,228 - src.etl.extract - INFO - Procesando texto con Gemini para extraer JSON
+2025-09-23 19:42:49,228 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-09-23 19:42:49,346 - src.etl.extract - INFO - Texto extraído exitosamente de data\pdfs\bancoDavivienda_Multiescala.pdf
+2025-09-23 19:42:49,346 - src.etl.extract - INFO - Procesando texto con Gemini para extraer JSON
+2025-09-23 19:42:49,346 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-09-23 19:43:27,059 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2025-09-23 19:43:27,063 - google_genai.models - INFO - AFC remote call 1 is done.
+2025-09-23 19:43:27,064 - src.etl.extract - INFO - JSON extraído exitosamente
+2025-09-23 19:43:27,066 - src.etl.pipeline - INFO - JSON guardado en: data\json_raw\bancolombia_fiducuenta_20250923_194327.json
+2025-09-23 19:43:27,066 - src.etl.pipeline - INFO - Procesamiento completado exitosamente: data\pdfs\bancolombia_fiducuenta.pdf
+2025-09-23 19:43:27,067 - src.etl.pipeline - INFO - Iniciando procesamiento de: data\pdfs\Itau_CortoPlazo.pdf
+2025-09-23 19:43:27,067 - src.config.settings - INFO - Procesado exitosamente: bancolombia_fiducuenta.pdf
+2025-09-23 19:43:27,067 - src.etl.extract - INFO - Extrayendo texto de data\pdfs\Itau_CortoPlazo.pdf (intento 1)
+2025-09-23 19:43:27,068 - unstract.llmwhisperer.client_v2 - DEBUG - whisper called
+2025-09-23 19:43:27,069 - unstract.llmwhisperer.client_v2 - DEBUG - api_url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper
+2025-09-23 19:43:27,069 - unstract.llmwhisperer.client_v2 - DEBUG - params: {'mode': 'form', 'output_mode': 'layout_preserving', 'page_seperator': '<<<', 'pages_to_extract': '', 'median_filter_size': 0, 'gaussian_blur_radius': 0, 'line_splitter_tolerance': 0.4, 'horizontal_stretch_factor': 1.0, 'mark_vertical_lines': False, 'mark_horizontal_lines': False, 'line_spitter_strategy': 'left-priority', 'add_line_nos': False, 'lang': 'eng', 'tag': 'default', 'filename': '', 'webhook_metadata': '', 'use_webhook': ''}
+2025-09-23 19:43:27,451 - unstract.llmwhisperer.client_v2 - DEBUG - whisper_status called
+2025-09-23 19:43:27,452 - unstract.llmwhisperer.client_v2 - DEBUG - url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper-status
+2025-09-23 19:43:31,604 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2025-09-23 19:43:31,606 - google_genai.models - INFO - AFC remote call 1 is done.
+2025-09-23 19:43:31,606 - src.etl.extract - INFO - JSON extraído exitosamente
+2025-09-23 19:43:31,608 - src.etl.pipeline - INFO - JSON guardado en: data\json_raw\credicorpCapital_Alta Liquidez_20250923_194331.json
+2025-09-23 19:43:31,609 - src.etl.pipeline - INFO - Procesamiento completado exitosamente: data\pdfs\credicorpCapital_Alta Liquidez.pdf
+2025-09-23 19:43:31,609 - src.etl.pipeline - INFO - Iniciando procesamiento de: data\pdfs\progresion_GlobalVista.pdf
+2025-09-23 19:43:31,609 - src.config.settings - INFO - Procesado exitosamente: credicorpCapital_Alta Liquidez.pdf
+2025-09-23 19:43:31,609 - src.etl.extract - INFO - Extrayendo texto de data\pdfs\progresion_GlobalVista.pdf (intento 1)
+2025-09-23 19:43:31,609 - unstract.llmwhisperer.client_v2 - DEBUG - whisper called
+2025-09-23 19:43:31,610 - unstract.llmwhisperer.client_v2 - DEBUG - api_url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper
+2025-09-23 19:43:31,610 - unstract.llmwhisperer.client_v2 - DEBUG - params: {'mode': 'form', 'output_mode': 'layout_preserving', 'page_seperator': '<<<', 'pages_to_extract': '', 'median_filter_size': 0, 'gaussian_blur_radius': 0, 'line_splitter_tolerance': 0.4, 'horizontal_stretch_factor': 1.0, 'mark_vertical_lines': False, 'mark_horizontal_lines': False, 'line_spitter_strategy': 'left-priority', 'add_line_nos': False, 'lang': 'eng', 'tag': 'default', 'filename': '', 'webhook_metadata': '', 'use_webhook': ''}
+2025-09-23 19:43:31,959 - unstract.llmwhisperer.client_v2 - DEBUG - whisper_status called
+2025-09-23 19:43:31,960 - unstract.llmwhisperer.client_v2 - DEBUG - url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper-status
+2025-09-23 19:43:32,640 - unstract.llmwhisperer.client_v2 - DEBUG - whisper_status called
+2025-09-23 19:43:32,640 - unstract.llmwhisperer.client_v2 - DEBUG - url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper-status
+2025-09-23 19:43:37,161 - unstract.llmwhisperer.client_v2 - DEBUG - whisper_status called
+2025-09-23 19:43:37,161 - unstract.llmwhisperer.client_v2 - DEBUG - url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper-status
+2025-09-23 19:43:37,829 - unstract.llmwhisperer.client_v2 - DEBUG - whisper_status called
+2025-09-23 19:43:37,829 - unstract.llmwhisperer.client_v2 - DEBUG - url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper-status
+2025-09-23 19:43:38,030 - unstract.llmwhisperer.client_v2 - DEBUG - whisper_retrieve called
+2025-09-23 19:43:38,031 - unstract.llmwhisperer.client_v2 - DEBUG - url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper-retrieve
+2025-09-23 19:43:38,248 - src.etl.extract - INFO - Texto extraído exitosamente de data\pdfs\Itau_CortoPlazo.pdf
+2025-09-23 19:43:38,249 - src.etl.extract - INFO - Procesando texto con Gemini para extraer JSON
+2025-09-23 19:43:38,249 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-09-23 19:43:40,863 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2025-09-23 19:43:40,864 - google_genai.models - INFO - AFC remote call 1 is done.
+2025-09-23 19:43:40,864 - src.etl.extract - INFO - JSON extraído exitosamente
+2025-09-23 19:43:40,866 - src.etl.pipeline - INFO - JSON guardado en: data\json_raw\bancoBogota_sumar_20250923_194340.json
+2025-09-23 19:43:40,867 - src.etl.pipeline - INFO - Procesamiento completado exitosamente: data\pdfs\bancoBogota_sumar.pdf
+2025-09-23 19:43:40,867 - src.config.settings - INFO - Procesado exitosamente: bancoBogota_sumar.pdf
+2025-09-23 19:43:42,356 - unstract.llmwhisperer.client_v2 - DEBUG - whisper_status called
+2025-09-23 19:43:42,357 - unstract.llmwhisperer.client_v2 - DEBUG - url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper-status
+2025-09-23 19:43:42,545 - unstract.llmwhisperer.client_v2 - DEBUG - whisper_retrieve called
+2025-09-23 19:43:42,545 - unstract.llmwhisperer.client_v2 - DEBUG - url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper-retrieve
+2025-09-23 19:43:42,778 - src.etl.extract - INFO - Texto extraído exitosamente de data\pdfs\progresion_GlobalVista.pdf
+2025-09-23 19:43:42,779 - src.etl.extract - INFO - Procesando texto con Gemini para extraer JSON
+2025-09-23 19:43:42,779 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-09-23 19:44:04,571 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2025-09-23 19:44:04,573 - google_genai.models - INFO - AFC remote call 1 is done.
+2025-09-23 19:44:04,574 - src.etl.extract - INFO - JSON extraído exitosamente
+2025-09-23 19:44:04,576 - src.etl.pipeline - INFO - JSON guardado en: data\json_raw\fiduoccidente_PlazoFijo_20250923_194404.json
+2025-09-23 19:44:04,577 - src.etl.pipeline - INFO - Procesamiento completado exitosamente: data\pdfs\fiduoccidente_PlazoFijo.pdf
+2025-09-23 19:44:04,578 - src.config.settings - INFO - Procesado exitosamente: fiduoccidente_PlazoFijo.pdf
+2025-09-23 19:44:08,527 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2025-09-23 19:44:08,529 - google_genai.models - INFO - AFC remote call 1 is done.
+2025-09-23 19:44:08,529 - src.etl.extract - INFO - JSON extraído exitosamente
+2025-09-23 19:44:08,530 - src.etl.pipeline - INFO - JSON guardado en: data\json_raw\progresion_GlobalVista_20250923_194408.json
+2025-09-23 19:44:08,531 - src.etl.pipeline - INFO - Procesamiento completado exitosamente: data\pdfs\progresion_GlobalVista.pdf
+2025-09-23 19:44:08,531 - src.config.settings - INFO - Procesado exitosamente: progresion_GlobalVista.pdf
+2025-09-23 19:44:14,965 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2025-09-23 19:44:14,966 - google_genai.models - INFO - AFC remote call 1 is done.
+2025-09-23 19:44:14,967 - src.etl.extract - INFO - JSON extraído exitosamente
+2025-09-23 19:44:14,970 - src.etl.pipeline - INFO - JSON guardado en: data\json_raw\Itau_CortoPlazo_20250923_194414.json
+2025-09-23 19:44:14,970 - src.etl.pipeline - INFO - Procesamiento completado exitosamente: data\pdfs\Itau_CortoPlazo.pdf
+2025-09-23 19:44:14,970 - src.config.settings - INFO - Procesado exitosamente: Itau_CortoPlazo.pdf
+2025-09-23 19:44:27,744 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2025-09-23 19:44:27,746 - google_genai.models - INFO - AFC remote call 1 is done.
+2025-09-23 19:44:27,747 - src.etl.extract - INFO - JSON extraído exitosamente
+2025-09-23 19:44:27,749 - src.etl.pipeline - INFO - JSON guardado en: data\json_raw\bancoDavivienda_Multiescala_20250923_194427.json
+2025-09-23 19:44:27,749 - src.etl.pipeline - INFO - Procesamiento completado exitosamente: data\pdfs\bancoDavivienda_Multiescala.pdf
+2025-09-23 19:44:27,750 - src.config.settings - INFO - Procesado exitosamente: bancoDavivienda_Multiescala.pdf
+2025-09-23 19:55:15,765 - src.config.settings - INFO - Iniciando transformación de carpeta: data\json_raw
+2025-09-23 19:55:15,766 - src.config.settings - INFO - Encontrados 7 JSONs para transformar
+2025-09-23 19:55:15,768 - src.config.settings - INFO - Transformando: bancoBogota_sumar_20250923_194340.json
+2025-09-23 19:55:15,768 - src.config.settings - INFO - Transformando: bancoDavivienda_Multiescala_20250923_194427.json
+2025-09-23 19:55:15,769 - src.config.settings - INFO - Transformando: bancolombia_fiducuenta_20250923_194327.json
+2025-09-23 19:55:15,770 - src.etl.transform - INFO - Iniciando transformación de datos FIC: desconocido
+2025-09-23 19:55:15,775 - src.etl.transform - INFO - Transformación de datos completada exitosamente: desconocido
+2025-09-23 19:55:15,776 - src.config.settings - INFO - JSON transformado guardado: bancoDavivienda_Multiescala_20250923_194427_transformed.json
+2025-09-23 19:55:15,777 - src.config.settings - INFO - Transformando: credicorpCapital_Alta Liquidez_20250923_194331.json
+2025-09-23 19:55:15,777 - src.config.settings - INFO - Transformado exitosamente: bancoDavivienda_Multiescala_20250923_194427.json
+2025-09-23 19:55:15,792 - src.etl.transform - INFO - Iniciando transformación de datos FIC: desconocido
+2025-09-23 19:55:15,792 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: FONDO DE INVERSIÓN COLECTIVA ABIERTO SUMAR | Gestor: Fiduciaria Bogotá S.A. | Archivo: desconocido | Campo: principales_inversiones | Suma: 0.7347 (esperado ~1.0)
+2025-09-23 19:55:15,797 - src.etl.transform - INFO - Iniciando transformación de datos FIC: desconocido
+2025-09-23 19:55:15,798 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: Fondo de Inversión Colectiva Capital Fiducuenta | Gestor: Fiduciaria Bancolombia S.A. | Archivo: desconocido | Campo: por_tipo_de_renta | Suma: 1.6050 (esperado ~1.0)
+2025-09-23 19:55:15,800 - src.etl.transform - INFO - Iniciando transformación de datos FIC: desconocido
+2025-09-23 19:55:15,801 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: CREDICORP CAPITAL ALTA LIQUIDEZ | Gestor: CREDICORP CAPITAL COLOMBIA S.A. | Archivo: desconocido | Campo: por_calificacion | Suma: 1.1000 (esperado ~1.0)
+2025-09-23 19:55:15,815 - src.etl.transform - INFO - Transformación de datos completada exitosamente: desconocido
+2025-09-23 19:55:15,815 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: Fondo de Inversión Colectiva Capital Fiducuenta | Gestor: Fiduciaria Bancolombia S.A. | Archivo: desconocido | Campo: principales_inversiones | Suma: 0.8777 (esperado ~1.0)
+2025-09-23 19:55:15,816 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: CREDICORP CAPITAL ALTA LIQUIDEZ | Gestor: CREDICORP CAPITAL COLOMBIA S.A. | Archivo: desconocido | Campo: principales_inversiones | Suma: 0.7631 (esperado ~1.0)
+2025-09-23 19:55:15,816 - src.etl.transform - INFO - Transformación de datos completada exitosamente: desconocido
+2025-09-23 19:55:15,818 - src.etl.transform - INFO - Transformación de datos completada exitosamente: desconocido
+2025-09-23 19:55:15,818 - src.config.settings - INFO - JSON transformado guardado: bancoBogota_sumar_20250923_194340_transformed.json
+2025-09-23 19:55:15,819 - src.config.settings - INFO - Transformando: fiduoccidente_PlazoFijo_20250923_194404.json
+2025-09-23 19:55:15,819 - src.config.settings - INFO - Transformado exitosamente: bancoBogota_sumar_20250923_194340.json
+2025-09-23 19:55:15,821 - src.config.settings - INFO - JSON transformado guardado: credicorpCapital_Alta Liquidez_20250923_194331_transformed.json
+2025-09-23 19:55:15,821 - src.config.settings - INFO - JSON transformado guardado: bancolombia_fiducuenta_20250923_194327_transformed.json
+2025-09-23 19:55:15,821 - src.config.settings - INFO - Transformando: Itau_CortoPlazo_20250923_194414.json
+2025-09-23 19:55:15,822 - src.config.settings - INFO - Transformado exitosamente: credicorpCapital_Alta Liquidez_20250923_194331.json
+2025-09-23 19:55:15,822 - src.config.settings - INFO - Transformando: progresion_GlobalVista_20250923_194408.json
+2025-09-23 19:55:15,822 - src.config.settings - INFO - Transformado exitosamente: bancolombia_fiducuenta_20250923_194327.json
+2025-09-23 19:55:15,830 - src.etl.transform - INFO - Iniciando transformación de datos FIC: desconocido
+2025-09-23 19:55:15,831 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: META PLANEADA | Gestor: FIDUCIARIA DE OCCIDENTE S.A. | Archivo: desconocido | Campo: principales_inversiones | Suma: 0.6803 (esperado ~1.0)
+2025-09-23 19:55:15,831 - src.etl.transform - INFO - Iniciando transformación de datos FIC: desconocido
+2025-09-23 19:55:15,832 - src.etl.transform - INFO - Transformación de datos completada exitosamente: desconocido
+2025-09-23 19:55:15,832 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: Fondo de Inversión Colectiva Abierto Itaú Corto Plazo | Gestor: Itaú Comisionista de Bolsa S.A. | Archivo: desconocido | Campo: principales_inversiones | Suma: 0.9224 (esperado ~1.0)
+2025-09-23 19:55:15,834 - src.etl.transform - WARNING - FECHA NO VÁLIDA - FIC: Fondo de Inversión Colectiva Abierto Itaú Corto Plazo | Gestor: Itaú Comisionista de Bolsa S.A. | Campo: fic.fecha_corte | Valor: 31-jul-25
+2025-09-23 19:55:15,834 - src.config.settings - INFO - JSON transformado guardado: fiduoccidente_PlazoFijo_20250923_194404_transformed.json
+2025-09-23 19:55:15,835 - src.etl.transform - WARNING - FECHA NO VÁLIDA - FIC: Fondo de Inversión Colectiva Abierto Itaú Corto Plazo | Gestor: Itaú Comisionista de Bolsa S.A. | Campo: calificacion.fecha_ultima_calificacion | Valor: jul-25
+2025-09-23 19:55:15,835 - src.config.settings - INFO - Transformado exitosamente: fiduoccidente_PlazoFijo_20250923_194404.json
+2025-09-23 19:55:15,836 - src.etl.transform - INFO - Transformación de datos completada exitosamente: desconocido
+2025-09-23 19:55:15,837 - src.config.settings - INFO - JSON transformado guardado: Itau_CortoPlazo_20250923_194414_transformed.json
+2025-09-23 19:55:15,838 - src.config.settings - INFO - Transformado exitosamente: Itau_CortoPlazo_20250923_194414.json
+2025-09-23 19:55:15,842 - src.etl.transform - INFO - Iniciando transformación de datos FIC: desconocido
+2025-09-23 19:55:15,842 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: FIC GLOBAL VISTA | Gestor: Progresión S.A. Sociedad Comisionista de Bolsa | Archivo: desconocido | Campo: principales_inversiones | Suma: 0.8268 (esperado ~1.0)
+2025-09-23 19:55:15,843 - src.etl.transform - INFO - Transformación de datos completada exitosamente: desconocido
+2025-09-23 19:55:15,844 - src.config.settings - INFO - JSON transformado guardado: progresion_GlobalVista_20250923_194408_transformed.json
+2025-09-23 19:55:15,844 - src.config.settings - INFO - Transformado exitosamente: progresion_GlobalVista_20250923_194408.json
+2025-09-23 20:03:52,068 - src.config.settings - INFO - Iniciando transformación de carpeta: data\json_raw
+2025-09-23 20:03:52,069 - src.config.settings - INFO - Encontrados 7 JSONs para transformar
+2025-09-23 20:03:52,070 - src.config.settings - INFO - Transformando: bancoBogota_sumar_20250923_194340.json
+2025-09-23 20:03:52,070 - src.config.settings - INFO - Transformando: bancoDavivienda_Multiescala_20250923_194427.json
+2025-09-23 20:03:52,071 - src.config.settings - INFO - Transformando: bancolombia_fiducuenta_20250923_194327.json
+2025-09-23 20:03:52,071 - src.etl.transform - INFO - Iniciando transformación de datos FIC: desconocido
+2025-09-23 20:03:52,072 - src.etl.transform - INFO - Iniciando transformación de datos FIC: desconocido
+2025-09-23 20:03:52,072 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: FONDO DE INVERSIÓN COLECTIVA ABIERTO SUMAR | Gestor: Fiduciaria Bogotá S.A. | Archivo: desconocido | Campo: principales_inversiones | Suma: 0.7347 (esperado ~1.0)
+2025-09-23 20:03:52,073 - src.etl.transform - INFO - Iniciando transformación de datos FIC: desconocido
+2025-09-23 20:03:52,074 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: Fondo de Inversión Colectiva Capital Fiducuenta | Gestor: Fiduciaria Bancolombia S.A. | Archivo: desconocido | Campo: por_tipo_de_renta | Suma: 1.6050 (esperado ~1.0)
+2025-09-23 20:03:52,074 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: Fondo de Inversión Colectiva Capital Fiducuenta | Gestor: Fiduciaria Bancolombia S.A. | Archivo: desconocido | Campo: principales_inversiones | Suma: 0.8777 (esperado ~1.0)
+2025-09-23 20:03:52,078 - src.etl.transform - INFO - Transformación de datos completada exitosamente: desconocido
+2025-09-23 20:03:52,078 - src.etl.transform - INFO - Transformación de datos completada exitosamente: desconocido
+2025-09-23 20:03:52,079 - src.etl.transform - INFO - Transformación de datos completada exitosamente: desconocido
+2025-09-23 20:03:52,080 - src.config.settings - INFO - JSON transformado guardado: bancoDavivienda_Multiescala_20250923_194427_transformed.json
+2025-09-23 20:03:52,081 - src.config.settings - INFO - Transformando: credicorpCapital_Alta Liquidez_20250923_194331.json
+2025-09-23 20:03:52,081 - src.config.settings - INFO - Transformado exitosamente: bancoDavivienda_Multiescala_20250923_194427.json
+2025-09-23 20:03:52,081 - src.config.settings - INFO - JSON transformado guardado: bancoBogota_sumar_20250923_194340_transformed.json
+2025-09-23 20:03:52,081 - src.config.settings - INFO - JSON transformado guardado: bancolombia_fiducuenta_20250923_194327_transformed.json
+2025-09-23 20:03:52,083 - src.etl.transform - INFO - Iniciando transformación de datos FIC: desconocido
+2025-09-23 20:03:52,083 - src.config.settings - INFO - Transformando: fiduoccidente_PlazoFijo_20250923_194404.json
+2025-09-23 20:03:52,083 - src.config.settings - INFO - Transformado exitosamente: bancoBogota_sumar_20250923_194340.json
+2025-09-23 20:03:52,083 - src.config.settings - INFO - Transformando: Itau_CortoPlazo_20250923_194414.json
+2025-09-23 20:03:52,084 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: CREDICORP CAPITAL ALTA LIQUIDEZ | Gestor: CREDICORP CAPITAL COLOMBIA S.A. | Archivo: desconocido | Campo: por_calificacion | Suma: 1.1000 (esperado ~1.0)
+2025-09-23 20:03:52,084 - src.config.settings - INFO - Transformado exitosamente: bancolombia_fiducuenta_20250923_194327.json
+2025-09-23 20:03:52,084 - src.etl.transform - INFO - Iniciando transformación de datos FIC: desconocido
+2025-09-23 20:03:52,085 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: CREDICORP CAPITAL ALTA LIQUIDEZ | Gestor: CREDICORP CAPITAL COLOMBIA S.A. | Archivo: desconocido | Campo: principales_inversiones | Suma: 0.7631 (esperado ~1.0)
+2025-09-23 20:03:52,085 - src.etl.transform - INFO - Iniciando transformación de datos FIC: desconocido
+2025-09-23 20:03:52,085 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: META PLANEADA | Gestor: FIDUCIARIA DE OCCIDENTE S.A. | Archivo: desconocido | Campo: principales_inversiones | Suma: 0.6803 (esperado ~1.0)
+2025-09-23 20:03:52,086 - src.etl.transform - INFO - Transformación de datos completada exitosamente: desconocido
+2025-09-23 20:03:52,086 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: Fondo de Inversión Colectiva Abierto Itaú Corto Plazo | Gestor: Itaú Comisionista de Bolsa S.A. | Archivo: desconocido | Campo: principales_inversiones | Suma: 0.9224 (esperado ~1.0)
+2025-09-23 20:03:52,086 - src.etl.transform - INFO - Transformación de datos completada exitosamente: desconocido
+2025-09-23 20:03:52,087 - src.etl.transform - WARNING - FECHA NO VÁLIDA - FIC: Fondo de Inversión Colectiva Abierto Itaú Corto Plazo | Gestor: Itaú Comisionista de Bolsa S.A. | Campo: fic.fecha_corte | Valor: 31-jul-25
+2025-09-23 20:03:52,088 - src.config.settings - INFO - JSON transformado guardado: credicorpCapital_Alta Liquidez_20250923_194331_transformed.json
+2025-09-23 20:03:52,088 - src.etl.transform - WARNING - FECHA NO VÁLIDA - FIC: Fondo de Inversión Colectiva Abierto Itaú Corto Plazo | Gestor: Itaú Comisionista de Bolsa S.A. | Campo: calificacion.fecha_ultima_calificacion | Valor: jul-25
+2025-09-23 20:03:52,089 - src.config.settings - INFO - Transformando: progresion_GlobalVista_20250923_194408.json
+2025-09-23 20:03:52,089 - src.config.settings - INFO - Transformado exitosamente: credicorpCapital_Alta Liquidez_20250923_194331.json
+2025-09-23 20:03:52,089 - src.config.settings - INFO - JSON transformado guardado: fiduoccidente_PlazoFijo_20250923_194404_transformed.json
+2025-09-23 20:03:52,089 - src.etl.transform - INFO - Transformación de datos completada exitosamente: desconocido
+2025-09-23 20:03:52,089 - src.etl.transform - INFO - Iniciando transformación de datos FIC: desconocido
+2025-09-23 20:03:52,090 - src.config.settings - INFO - Transformado exitosamente: fiduoccidente_PlazoFijo_20250923_194404.json
+2025-09-23 20:03:52,090 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: FIC GLOBAL VISTA | Gestor: Progresión S.A. Sociedad Comisionista de Bolsa | Archivo: desconocido | Campo: principales_inversiones | Suma: 0.8268 (esperado ~1.0)
+2025-09-23 20:03:52,091 - src.config.settings - INFO - JSON transformado guardado: Itau_CortoPlazo_20250923_194414_transformed.json
+2025-09-23 20:03:52,091 - src.etl.transform - INFO - Transformación de datos completada exitosamente: desconocido
+2025-09-23 20:03:52,091 - src.config.settings - INFO - Transformado exitosamente: Itau_CortoPlazo_20250923_194414.json
+2025-09-23 20:03:52,092 - src.config.settings - INFO - JSON transformado guardado: progresion_GlobalVista_20250923_194408_transformed.json
+2025-09-23 20:03:52,092 - src.config.settings - INFO - Transformado exitosamente: progresion_GlobalVista_20250923_194408.json

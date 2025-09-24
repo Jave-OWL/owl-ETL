@@ -59,16 +59,16 @@
     ],
     "por_sector_economico": [
       {
-        "sector": "FINANCIERO",
-        "participacion": 0.8092
-      },
-      {
-        "sector": "PUBLICO",
+        "sector": "I FINANCIERO",
         "participacion": 0.1663
       },
       {
         "sector": "REAL",
         "participacion": 0.0245
+      },
+      {
+        "sector": "PUBLICO",
+        "participacion": 0.8092
       }
     ],
     "por_pais_emisor": [
@@ -86,11 +86,11 @@
     "por_calificacion": [
       {
         "calificacion": "AAA",
-        "participacion": 0.8337
+        "participacion": 0.1663
       },
       {
         "calificacion": "Nación",
-        "participacion": 0.1663
+        "participacion": 0.8337
       }
     ]
   },
@@ -103,12 +103,11 @@
   "calificacion": {
     "calificacion": "F AAA / 3",
     "fecha_ultima_calificacion": "2025-02-21",
-    "entidad_calificadora": "BRC INVESTOR SERVICES",
-    "entidad_calificadora_normalizada": true
+    "entidad_calificadora": "BRC Investors Servic"
   },
   "principales_inversiones": [
     {
-      "emisor": "MINISTERIO DE HACIENDA Y CREDITO PUBLICO",
+      "emisor": "MINISTERIO DE HACIENDA Y CREDITO PUBLIC",
       "participacion": 0.1663
     },
     {
@@ -116,7 +115,7 @@
       "participacion": 0.1303
     },
     {
-      "emisor": "FINANCIERA DE DESARROLLO TERRITORIAL S.A.",
+      "emisor": "FINANCIERA DE DESARROLLO TERRITORIAL S.",
       "participacion": 0.1294
     },
     {
@@ -150,60 +149,60 @@
   ],
   "rentabilidad_volatilidad": [
     {
-      "tipo_de_participacion": "TP A",
-      "rentabilidad_histórica_ea": {
-        "ultimo_mes": 16.342,
-        "ultimos_6_meses": 9.682,
-        "anio_corrido": 9.58,
-        "ultimo_anio": 8.902,
-        "ultimos_2_anios": 11.794,
-        "ultimos_3_anios": 12.642
+      "tipo_de_participacion": "Participación A",
+      "rentabilidad_historica_ea": {
+        "ultimo_mes": 0.16342,
+        "ultimos_6_meses": 0.09682,
+        "anio_corrido": 0.0958,
+        "ultimo_anio": 0.08902,
+        "ultimos_2_anios": 0.11794,
+        "ultimos_3_anios": 0.12642
       },
       "volatilidad_historica": {
-        "ultimo_mes": 0.63,
-        "ultimos_6_meses": 0.628,
-        "anio_corrido": 0.655,
-        "ultimo_anio": 0.754,
+        "ultimo_mes": 0.0063,
+        "ultimos_6_meses": 0.00628,
+        "anio_corrido": 0.00655,
+        "ultimo_anio": 0.00754,
         "ultimos_2_anios": 0.01525,
         "ultimos_3_anios": 0.01408
       }
     },
     {
-      "tipo_de_participacion": "TP B",
-      "rentabilidad_histórica_ea": {
-        "ultimo_mes": 16.342,
-        "ultimos_6_meses": 9.682,
-        "anio_corrido": 9.58,
-        "ultimo_anio": 8.902,
-        "ultimos_2_anios": 11.794,
-        "ultimos_3_anios": 12.642
+      "tipo_de_participacion": "Participación B",
+      "rentabilidad_historica_ea": {
+        "ultimo_mes": 0.16342,
+        "ultimos_6_meses": 0.09682,
+        "anio_corrido": 0.0958,
+        "ultimo_anio": 0.08902,
+        "ultimos_2_anios": 0.11794,
+        "ultimos_3_anios": 0.12642
       },
       "volatilidad_historica": {
-        "ultimo_mes": 0.63,
-        "ultimos_6_meses": 0.628,
-        "anio_corrido": 0.655,
-        "ultimo_anio": 0.754,
+        "ultimo_mes": 0.0063,
+        "ultimos_6_meses": 0.00628,
+        "anio_corrido": 0.00655,
+        "ultimo_anio": 0.00754,
         "ultimos_2_anios": 0.01525,
         "ultimos_3_anios": 0.01408
       }
     },
     {
-      "tipo_de_participacion": "TP C",
-      "rentabilidad_histórica_ea": {
-        "ultimo_mes": 18.086,
-        "ultimos_6_meses": 11.327,
-        "anio_corrido": 11.223,
-        "ultimo_anio": 10.535,
-        "ultimos_2_anios": 0.0,
-        "ultimos_3_anios": 0.0
+      "tipo_de_participacion": "Participación C",
+      "rentabilidad_historica_ea": {
+        "ultimo_mes": 0.18086,
+        "ultimos_6_meses": 0.11327,
+        "anio_corrido": 0.11223,
+        "ultimo_anio": 0.10535,
+        "ultimos_2_anios": null,
+        "ultimos_3_anios": null
       },
       "volatilidad_historica": {
-        "ultimo_mes": 0.63,
-        "ultimos_6_meses": 0.628,
-        "anio_corrido": 0.655,
-        "ultimo_anio": 0.754,
-        "ultimos_2_anios": 0.0,
-        "ultimos_3_anios": 0.0
+        "ultimo_mes": 0.0063,
+        "ultimos_6_meses": 0.00628,
+        "anio_corrido": 0.00655,
+        "ultimo_anio": 0.00754,
+        "ultimos_2_anios": null,
+        "ultimos_3_anios": null
       }
     }
   ]

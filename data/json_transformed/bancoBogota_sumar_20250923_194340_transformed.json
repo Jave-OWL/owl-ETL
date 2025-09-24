@@ -4,7 +4,7 @@
     "gestor": "Fiduciaria Bogotá S.A.",
     "custodio": "Cititrust",
     "fecha_corte": "2025-07-31",
-    "politica_de_inversion": "Alternativa de inversión a la vista con perfil de riesgo conservador que se encuentra calificada por BRC Standard & Poor's con F AAA/2/BRC1+ por su alta calidad crediticia y su baja sensibilidad ante la volatilidad del mercado. La mayor parte de su portafolio se encuentra invertido en títulos de renta fija con vencimientos de corto a mediano plazo. La mayoría de las inversiones se realizan indexadas al IPC, IBR y DTF para darle estabilidad a la TIR del portafolio. Se realizan inversiones en sintéticos de dólar que otorgan mayor rendimiento que las inversiones tradicionales en tasa fija. Se mantienen posiciones en TES. La mayoría de las inversiones tienen vencimiento entre 90 días y dos años."
+    "politica_de_inversion": "Alternativa de inversión a la vista con perfil de riesgo conservador que se encuentra calificada por BRC Standar & Poor's con F AAA/2/BRC1+ por su alta calidad crediticia y su baja sensibilidad ante la volatilidad del mercado. La mayor parte de su portafolio se encuentra invertido en títulos de renta fija con vencimientos de corto a mediano plazo. La mayoría de las inversiones se realizan indexadas al IPC, IBR y DTF para darle estabilidad a la TIR del portafolio. Se realizan inversiones en sintéticos de dólar que otorgan mayor rendimiento que las inversiones tradicionales en tasa fija. Se mantienen posiciones en TES. La mayoría de las inversiones tienen vencimiento entre 90 días y dos años."
   },
   "plazo_duracion": [
     {
@@ -41,12 +41,12 @@
     ],
     "por_tipo_de_renta": [
       {
-        "tipo": "UVR",
-        "participacion": 0.0135
-      },
-      {
         "tipo": "Fondos de Inversión",
         "participacion": 0.0682
+      },
+      {
+        "tipo": "UVR",
+        "participacion": 0.0135
       },
       {
         "tipo": "IBR",
@@ -63,10 +63,6 @@
       {
         "tipo": "Tasa Fija",
         "participacion": 0.4354
-      },
-      {
-        "tipo": "F1+",
-        "participacion": 0.2423
       }
     ],
     "por_sector_economico": [
@@ -155,7 +151,8 @@
   "calificacion": {
     "calificacion": "FAAA/2",
     "fecha_ultima_calificacion": "2024-09-09",
-    "entidad_calificadora": "BRC Standard & Poor's"
+    "entidad_calificadora": "STANDARD & POOR'S",
+    "entidad_calificadora_normalizada": true
   },
   "principales_inversiones": [
     {
@@ -201,8 +198,8 @@
   ],
   "rentabilidad_volatilidad": [
     {
-      "tipo_de_participacion": "TP 1 Inversionista I",
-      "rentabilidad_histórica_ea": {
+      "tipo_de_participacion": "Inversionista I",
+      "rentabilidad_historica_ea": {
         "ultimo_mes": 0.08678,
         "ultimos_6_meses": 0.07675,
         "anio_corrido": 0.07888,
@@ -220,8 +217,8 @@
       }
     },
     {
-      "tipo_de_participacion": "TP 2 Inversionista II",
-      "rentabilidad_histórica_ea": {
+      "tipo_de_participacion": "Inversionista II",
+      "rentabilidad_historica_ea": {
         "ultimo_mes": 0.08785,
         "ultimos_6_meses": 0.07783,
         "anio_corrido": 0.07978,
@@ -239,8 +236,8 @@
       }
     },
     {
-      "tipo_de_participacion": "TP 3 Inversionista III",
-      "rentabilidad_histórica_ea": {
+      "tipo_de_participacion": "Inversionista III",
+      "rentabilidad_historica_ea": {
         "ultimo_mes": 0.08892,
         "ultimos_6_meses": 0.07888,
         "anio_corrido": 0.08083,
@@ -258,8 +255,8 @@
       }
     },
     {
-      "tipo_de_participacion": "TP 4 Inversionista IV",
-      "rentabilidad_histórica_ea": {
+      "tipo_de_participacion": "Inversionista IV",
+      "rentabilidad_historica_ea": {
         "ultimo_mes": 0.08999,
         "ultimos_6_meses": 0.08002,
         "anio_corrido": 0.08196,
@@ -277,8 +274,8 @@
       }
     },
     {
-      "tipo_de_participacion": "TP 5 Inversionista V",
-      "rentabilidad_histórica_ea": {
+      "tipo_de_participacion": "Inversionista V",
+      "rentabilidad_historica_ea": {
         "ultimo_mes": 0.09971,
         "ultimos_6_meses": 0.08957,
         "anio_corrido": 0.09153,
@@ -296,8 +293,8 @@
       }
     },
     {
-      "tipo_de_participacion": "TP 6 Inmobiliaria",
-      "rentabilidad_histórica_ea": {
+      "tipo_de_participacion": "Inmobiliaria",
+      "rentabilidad_historica_ea": {
         "ultimo_mes": 0.07873,
         "ultimos_6_meses": 0.0687,
         "anio_corrido": 0.07062,
@@ -315,8 +312,8 @@
       }
     },
     {
-      "tipo_de_participacion": "TP 7 Administración I",
-      "rentabilidad_histórica_ea": {
+      "tipo_de_participacion": "Administración I",
+      "rentabilidad_historica_ea": {
         "ultimo_mes": 0.08678,
         "ultimos_6_meses": 0.07675,
         "anio_corrido": 0.0787,
@@ -334,8 +331,8 @@
       }
     },
     {
-      "tipo_de_participacion": "TP 8 Administración II",
-      "rentabilidad_histórica_ea": {
+      "tipo_de_participacion": "Administración II",
+      "rentabilidad_historica_ea": {
         "ultimo_mes": 0.08838,
         "ultimos_6_meses": 0.07834,
         "anio_corrido": 0.08028,
@@ -353,8 +350,8 @@
       }
     },
     {
-      "tipo_de_participacion": "TP 9 Administración III",
-      "rentabilidad_histórica_ea": {
+      "tipo_de_participacion": "Administración III",
+      "rentabilidad_historica_ea": {
         "ultimo_mes": 0.09412,
         "ultimos_6_meses": 0.08328,
         "anio_corrido": 0.08521,
@@ -372,8 +369,8 @@
       }
     },
     {
-      "tipo_de_participacion": "TP 10 Educativo",
-      "rentabilidad_histórica_ea": {
+      "tipo_de_participacion": "Educativo",
+      "rentabilidad_historica_ea": {
         "ultimo_mes": 0.103,
         "ultimos_6_meses": 0.09282,
         "anio_corrido": 0.09479,
@@ -391,8 +388,8 @@
       }
     },
     {
-      "tipo_de_participacion": "TP 11 Inversionista Profesional",
-      "rentabilidad_histórica_ea": {
+      "tipo_de_participacion": "Inversionista Profesional",
+      "rentabilidad_historica_ea": {
         "ultimo_mes": 0.09863,
         "ultimos_6_meses": 0.08851,
         "anio_corrido": 0.09047,
