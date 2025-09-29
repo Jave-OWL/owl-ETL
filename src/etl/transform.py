@@ -389,38 +389,6 @@ def _buscar_coincidencia_difusa(texto: str, opciones: set, umbral: float = 0.8) 
     return None
 
 
-def _transform_fechas(data: Dict[str, Any], fic_info: Dict[str, str]) -> Dict[str, Any]:
-    """
-    Transforma y valida formatos de fecha de manera más robusta
-    """
-    transformed = data.copy()
-    gestor = fic_info['gestor']
-
-    # Campos de fecha a transformar
-    campos_fecha = [
-        ('fic', 'fecha_corte'),
-        ('caracteristicas', 'fecha_inicio_operaciones'),
-        ('calificacion', 'fecha_ultima_calificacion')
-    ]
-
-    for seccion, campo in campos_fecha:
-        if seccion in transformed and campo in transformed[seccion]:
-            fecha_val = transformed[seccion][campo]
-            if fecha_val and isinstance(fecha_val, str):
-                fecha_parseada = _parse_fecha_robusta(fecha_val)
-                if fecha_parseada:
-                    transformed[seccion][campo] = fecha_parseada
-                    logger.debug(f"✓ [{gestor}] Fecha {seccion}.{campo} normalizada: {fecha_val} → {fecha_parseada}")
-                else:
-                    logger.warning(
-                        f"FECHA NO VÁLIDA - FIC: {fic_info['nombre_fic']} | "
-                        f"Gestor: {gestor} | Campo: {seccion}.{campo} | "
-                        f"Valor: {fecha_val}"
-                    )
-
-    return transformed
-
-
 def _transform_valores_numericos(data: Dict[str, Any]) -> Dict[str, Any]:
     """
     Transforma y valida valores numéricos
@@ -493,24 +461,124 @@ def _parse_numero(value) -> Optional[float]:
 def _parse_fecha_robusta(fecha_str: str) -> Optional[str]:
     """
     Intenta parsear diferentes formatos de fecha de manera robusta
+    Incluye formatos como 'jul-25', '31-jul-25', etc.
     """
     if not fecha_str:
         return None
 
-    # Limpiar la fecha
-    fecha_limpia = fecha_str.strip()
+    # Limpiar la fecha y estandarizar
+    fecha_limpia = fecha_str.strip().lower()
 
-    # Formatos comunes en Colombia y estándares
-    formatos = [
+    # Mapeo de meses en español a números
+    meses_espanol = {
+        'ene': '01', 'enero': '01',
+        'feb': '02', 'febrero': '02',
+        'mar': '03', 'marzo': '03',
+        'abr': '04', 'abril': '04',
+        'may': '05', 'mayo': '05',
+        'jun': '06', 'junio': '06',
+        'jul': '07', 'julio': '07',
+        'ago': '08', 'agosto': '08',
+        'sep': '09', 'septiembre': '09',
+        'oct': '10', 'octubre': '10',
+        'nov': '11', 'noviembre': '11',
+        'dic': '12', 'diciembre': '12'
+    }
+
+    # Intentar diferentes patrones
+
+    # Patrón 1: "jul-25" o "jul-2025"
+    patron_mes_anio = r'^([a-z]+)-(\d{2,4})$'
+    match_mes_anio = re.match(patron_mes_anio, fecha_limpia)
+    if match_mes_anio:
+        mes_str = match_mes_anio.group(1)
+        anio_str = match_mes_anio.group(2)
+
+        if mes_str in meses_espanol:
+            mes_num = meses_espanol[mes_str]
+            # Manejar año (si es 2 dígitos, asumir 2000+)
+            if len(anio_str) == 2:
+                anio_num = f"20{anio_str}"
+            else:
+                anio_num = anio_str
+
+            # Para formato mes-año, usar el primer día del mes
+            return f"{anio_num}-{mes_num}-01"
+
+    # Patrón 2: "31-jul-25" o "31-jul-2025"
+    patron_dia_mes_anio = r'^(\d{1,2})-([a-z]+)-(\d{2,4})$'
+    match_dia_mes_anio = re.match(patron_dia_mes_anio, fecha_limpia)
+    if match_dia_mes_anio:
+        dia_str = match_dia_mes_anio.group(1)
+        mes_str = match_dia_mes_anio.group(2)
+        anio_str = match_dia_mes_anio.group(3)
+
+        if mes_str in meses_espanol:
+            mes_num = meses_espanol[mes_str]
+            # Manejar año (si es 2 dígitos, asumir 2000+)
+            if len(anio_str) == 2:
+                anio_num = f"20{anio_str}"
+            else:
+                anio_num = anio_str
+
+            # Validar día
+            try:
+                dia_num = int(dia_str)
+                if 1 <= dia_num <= 31:
+                    return f"{anio_num}-{mes_num}-{dia_num:02d}"
+            except ValueError:
+                pass
+
+    # Patrón 3: "jul/25" o "jul/2025"
+    patron_mes_anio_slash = r'^([a-z]+)/(\d{2,4})$'
+    match_mes_anio_slash = re.match(patron_mes_anio_slash, fecha_limpia)
+    if match_mes_anio_slash:
+        mes_str = match_mes_anio_slash.group(1)
+        anio_str = match_mes_anio_slash.group(2)
+
+        if mes_str in meses_espanol:
+            mes_num = meses_espanol[mes_str]
+            if len(anio_str) == 2:
+                anio_num = f"20{anio_str}"
+            else:
+                anio_num = anio_str
+
+            return f"{anio_num}-{mes_num}-01"
+
+    # Patrón 4: "31/jul/25" o "31/jul/2025"
+    patron_dia_mes_anio_slash = r'^(\d{1,2})/([a-z]+)/(\d{2,4})$'
+    match_dia_mes_anio_slash = re.match(patron_dia_mes_anio_slash, fecha_limpia)
+    if match_dia_mes_anio_slash:
+        dia_str = match_dia_mes_anio_slash.group(1)
+        mes_str = match_dia_mes_anio_slash.group(2)
+        anio_str = match_dia_mes_anio_slash.group(3)
+
+        if mes_str in meses_espanol:
+            mes_num = meses_espanol[mes_str]
+            if len(anio_str) == 2:
+                anio_num = f"20{anio_str}"
+            else:
+                anio_num = anio_str
+
+            try:
+                dia_num = int(dia_str)
+                if 1 <= dia_num <= 31:
+                    return f"{anio_num}-{mes_num}-{dia_num:02d}"
+            except ValueError:
+                pass
+
+    # Formatos comunes en Colombia y estándares (backup)
+    formatos_tradicionales = [
         '%d/%m/%Y',  # 31/07/2025
         '%Y-%m-%d',  # 2025-07-31
         '%d-%m-%Y',  # 31-07-2025
         '%m/%d/%Y',  # 07/31/2025
         '%d/%m/%y',  # 31/07/25
         '%Y/%m/%d',  # 2025/07/31
+        '%d-%m-%y',  # 31-07-25
     ]
 
-    for formato in formatos:
+    for formato in formatos_tradicionales:
         try:
             fecha_dt = datetime.strptime(fecha_limpia, formato)
             # Validar que sea una fecha razonable (después de 1990)
@@ -520,6 +588,38 @@ def _parse_fecha_robusta(fecha_str: str) -> Optional[str]:
             continue
 
     return None
+
+
+def _transform_fechas(data: Dict[str, Any], fic_info: Dict[str, str]) -> Dict[str, Any]:
+    """
+    Transforma y valida formatos de fecha de manera más robusta
+    """
+    transformed = data.copy()
+    gestor = fic_info['gestor']
+
+    # Campos de fecha a transformar
+    campos_fecha = [
+        ('fic', 'fecha_corte'),
+        ('caracteristicas', 'fecha_inicio_operaciones'),
+        ('calificacion', 'fecha_ultima_calificacion')
+    ]
+
+    for seccion, campo in campos_fecha:
+        if seccion in transformed and campo in transformed[seccion]:
+            fecha_val = transformed[seccion][campo]
+            if fecha_val and isinstance(fecha_val, str):
+                fecha_parseada = _parse_fecha_robusta(fecha_val)
+                if fecha_parseada:
+                    transformed[seccion][campo] = fecha_parseada
+                    logger.debug(f"✓ [{gestor}] Fecha {seccion}.{campo} normalizada: {fecha_val} → {fecha_parseada}")
+                else:
+                    logger.warning(
+                        f"FECHA NO VÁLIDA - FIC: {fic_info['nombre_fic']} | "
+                        f"Gestor: {gestor} | Campo: {seccion}.{campo} | "
+                        f"Valor: {fecha_val}"
+                    )
+
+    return transformed
 
 
 def validar_datos_transformados(data: Dict[str, Any]) -> bool:

@@ -3,7 +3,7 @@
     "nombre_fic": "Fondo de Inversión Colectiva Abierto Itaú Corto Plazo",
     "gestor": "Itaú Comisionista de Bolsa S.A.",
     "custodio": "S3 Caceis Colombia S.A.",
-    "fecha_corte": "31-jul-25",
+    "fecha_corte": "2025-07-31",
     "politica_de_inversion": "El objetivo del fondo es ser una alternativa de inversión en títulos de renta fija, en moneda local y de corto plazo, orientado a inversionistas que requieren disponibilidad de sus recursos a la vista, y tienen como prioridad salvaguardar su capital. El portafolio de inversión del fondo estará compuesto por los siguientes activos: 1. Valores inscritos en el Registro Nacional de Valores y Emisores, RNVE. 2. Valores emitidos por entidades bancarias del exterior que cumplan con las restricciones de calificación crediticia descritas en el presente reglamento 3. Valores emitidos por empresas extranjeras del sector real que cumplan con las restricciones de calificación crediticia descritas en el presente reglamento. 4. Bonos emitidos en el exterior por organismos multilaterales de crédito, gobiernos o entidades públicas. 5.Participación en fondos extranjeros que cumplan con la política de inversión del FIC correspondiente, incluyendo fondos representativos de índices de renta fija incluidos los ETFs (por sus siglas en inglés Exchange Traded Funds). 6. Participaciones en Fics abiertos sin pacto de permanencia, cuya política de inversión considere como activos admisibles únicamente los mencionados en los literales anteriores. 7. Se podrá realizar operaciones con Instrumentos financieros derivados con fines de cobertura."
   },
   "plazo_duracion": [
@@ -114,8 +114,8 @@
   },
   "calificacion": {
     "calificacion": "F AAA/2",
-    "fecha_ultima_calificacion": "jul-25",
-    "entidad_calificadora": "BRC",
+    "fecha_ultima_calificacion": "2025-07-01",
+    "entidad_calificadora": "S&P",
     "entidad_calificadora_normalizada": true
   },
   "principales_inversiones": [

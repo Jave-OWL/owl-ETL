@@ -8,6 +8,7 @@ import logging
 import sys
 from pathlib import Path
 from concurrent.futures import ThreadPoolExecutor, as_completed
+from src.etl.load import load_existing_json_to_database
 
 # Añadir src al path
 src_path = Path(__file__).parent.parent / "src"
@@ -19,7 +20,7 @@ from src.config.settings import JSON_RAW_PATH, setup_logging
 logger = setup_logging()
 
 
-def transform_single_json(json_path: Path, output_dir: Path) -> dict:
+def transform_single_json(json_path: Path, output_dir: Path, load_to_db: bool = True) -> dict:
     """
     Transforma un solo archivo JSON
 
@@ -38,6 +39,7 @@ def transform_single_json(json_path: Path, output_dir: Path) -> dict:
             raw_data = json.load(f)
 
         # 2. Aplicar transformación
+        filename = json_path.stem  # Nombre sin extensión
         transformed_data = transform_fic_data(raw_data)
 
         # 3. Validar transformación
@@ -48,6 +50,11 @@ def transform_single_json(json_path: Path, output_dir: Path) -> dict:
         output_path = output_dir / f"{json_path.stem}_transformed.json"
         with open(output_path, 'w', encoding='utf-8') as f:
             json.dump(transformed_data, f, indent=2, ensure_ascii=False)
+
+        # 5. Cargar a base de datos si se solicita
+        if load_to_db:
+            fic_id = load_existing_json_to_database(transformed_data, filename)
+            logger.info(f"JSON cargado a PostgreSQL - FIC ID: {fic_id}")
 
         logger.info(f"JSON transformado guardado: {output_path.name}")
         return transformed_data

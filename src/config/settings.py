@@ -14,6 +14,12 @@ LLMWHISPERER_API_KEY = os.getenv("LLMWHISPERER_API_KEY")
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 
 # Database
+POSTGRES_HOST = os.getenv("POSTGRES_HOST", "localhost")
+POSTGRES_PORT = os.getenv("POSTGRES_PORT", "5432")
+POSTGRES_DB = os.getenv("POSTGRES_DB", "OWL")
+POSTGRES_USER = os.getenv("POSTGRES_USER", "postgres")
+POSTGRES_PASSWORD = os.getenv("POSTGRES_PASSWORD", "")
+
 
 # Paths - objetos Path
 PDF_BASE_PATH = Path(os.getenv("PDF_BASE_PATH", BASE_DIR / "data" / "pdfs"))

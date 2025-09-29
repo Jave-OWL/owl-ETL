@@ -6,13 +6,14 @@ from .extract import extract_text_from_pdf, extract_json_from_text
 from .load import save_json_to_file
 from .transform import transform_fic_data, validar_datos_transformados
 from src.config.settings import JSON_RAW_PATH
+from .load import load_to_database
 
 logger = logging.getLogger(__name__)
 
 
 def process_single_pdf(pdf_path: str, save_raw_json: bool = True) -> dict:
     """
-    Procesa un solo PDF y extrae la información estructurada
+    Procesa un solo PDF y extrae la información estructurada - hasta STAGE
 
     Args:
         pdf_path: Ruta al archivo PDF a procesar
@@ -56,7 +57,7 @@ def process_single_pdf(pdf_path: str, save_raw_json: bool = True) -> dict:
 
 
 
-def pipeline_per_pdf(pdf_path: str, save_raw_json: bool = True) -> dict:
+def pipeline_per_pdf(pdf_path: str, save_raw_json: bool = True, load_to_db: bool = True) -> dict:
     """
     Procesa un solo PDF y extrae la información estructurada
     """
@@ -86,7 +87,10 @@ def pipeline_per_pdf(pdf_path: str, save_raw_json: bool = True) -> dict:
         save_path_transformed = save_json_to_file(transformed_json, Path(pdf_path).name, "_transformed")
         logger.info(f"JSON transformado guardado en: {save_path_transformed}")
 
-        # 8. LOAD: (Futuro) Subir a PostgreSQL
+        # 8. LOAD: Subir a PostgreSQL
+        if load_to_db:
+            fic_id = load_to_database(transformed_data, filename)
+            logger.info(f"Datos cargados a PostgreSQL - FIC ID: {fic_id}")
 
         logger.info(f"Procesamiento completado exitosamente: {pdf_path}")
         return transformed_data
