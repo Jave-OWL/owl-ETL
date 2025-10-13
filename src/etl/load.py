@@ -85,7 +85,6 @@ def load_to_database(transformed_data: Dict[str, Any], filename: str = "desconoc
         # 7. Insertar rentabilidad y volatilidad
         _insert_rentabilidad_volatilidad(session, transformed_data, fic_id)
 
-        ######################################################## REVISAR PORQUE ESO NO SE DEBE GUARDAR AQUI
         # 8. Guardar JSON transformado como backup
         _insert_raw_json(session, transformed_data, fic_id, 'transformed', filename)
 

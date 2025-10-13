@@ -75,7 +75,7 @@ JSON_TRANSFORMED_PATH=./data/json_transformed
 
 ### 1. Crear tablas en PostgreSQL (primera vez)
 ```bash
-py scripts/create_tables.py
+py -m src.scripts.create_tables
 ```
 
 ### 2. Pipeline completo (PDF → JSON → BD)

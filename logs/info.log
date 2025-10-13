@@ -1152,3 +1152,188 @@
 2025-09-29 15:23:44,117 - src.etl.load - INFO - Datos cargados exitosamente a PostgreSQL - FIC ID: 7
 2025-09-29 15:23:44,123 - src.config.settings - INFO - JSON transformado guardado: progresion_GlobalVista_20250923_194408_transformed.json
 2025-09-29 15:23:44,123 - src.config.settings - INFO - Transformado exitosamente: progresion_GlobalVista_20250923_194408.json
+2025-10-12 10:51:08,417 - src.config.db - INFO - Conexión a PostgreSQL exitosa
+2025-10-12 10:51:08,556 - src.config.db - INFO - Tablas de PostgreSQL creadas/verificadas exitosamente
+2025-10-12 11:00:14,451 - src.config.db - INFO - Conexión a PostgreSQL exitosa
+2025-10-12 11:00:14,560 - src.config.db - INFO - Tablas de PostgreSQL creadas/verificadas exitosamente
+2025-10-12 11:27:20,859 - src.config.db - INFO - Conexión a PostgreSQL exitosa
+2025-10-12 11:27:20,972 - src.config.db - INFO - Tablas de PostgreSQL creadas/verificadas exitosamente
+2025-10-12 13:22:43,181 - src.config.settings - INFO - Iniciando transformación de carpeta: data\json_raw
+2025-10-12 13:22:43,216 - src.config.settings - INFO - Encontrados 7 JSONs para transformar
+2025-10-12 13:22:43,217 - src.config.settings - INFO - Transformando: bancoBogota_sumar_20250923_194340.json
+2025-10-12 13:22:43,218 - src.config.settings - INFO - Transformando: bancoDavivienda_Multiescala_20250923_194427.json
+2025-10-12 13:22:43,218 - src.config.settings - INFO - Transformando: bancolombia_fiducuenta_20250923_194327.json
+2025-10-12 13:22:43,218 - src.config.settings - INFO - Transformando: credicorpCapital_Alta Liquidez_20250923_194331.json
+2025-10-12 13:22:43,218 - src.config.settings - INFO - Transformando: fiduoccidente_PlazoFijo_20250923_194404.json
+2025-10-12 13:22:43,221 - src.etl.transform - INFO - Iniciando transformación de datos FIC: desconocido
+2025-10-12 13:22:43,222 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: CREDICORP CAPITAL ALTA LIQUIDEZ | Gestor: CREDICORP CAPITAL COLOMBIA S.A. | Archivo: desconocido | Campo: por_calificacion | Suma: 1.1000 (esperado ~1.0)
+2025-10-12 13:22:43,230 - src.etl.transform - INFO - Iniciando transformación de datos FIC: desconocido
+2025-10-12 13:22:43,231 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: FONDO DE INVERSIÓN COLECTIVA ABIERTO SUMAR | Gestor: Fiduciaria Bogotá S.A. | Archivo: desconocido | Campo: principales_inversiones | Suma: 0.7347 (esperado ~1.0)
+2025-10-12 13:22:43,236 - src.etl.transform - INFO - Iniciando transformación de datos FIC: desconocido
+2025-10-12 13:22:43,237 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: Fondo de Inversión Colectiva Capital Fiducuenta | Gestor: Fiduciaria Bancolombia S.A. | Archivo: desconocido | Campo: por_tipo_de_renta | Suma: 1.6050 (esperado ~1.0)
+2025-10-12 13:22:43,240 - src.etl.transform - INFO - Iniciando transformación de datos FIC: desconocido
+2025-10-12 13:22:43,245 - src.etl.transform - INFO - Transformación de datos completada exitosamente: desconocido
+2025-10-12 13:22:43,248 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: CREDICORP CAPITAL ALTA LIQUIDEZ | Gestor: CREDICORP CAPITAL COLOMBIA S.A. | Archivo: desconocido | Campo: principales_inversiones | Suma: 0.7631 (esperado ~1.0)
+2025-10-12 13:22:43,248 - src.etl.transform - INFO - Transformación de datos completada exitosamente: desconocido
+2025-10-12 13:22:43,249 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: Fondo de Inversión Colectiva Capital Fiducuenta | Gestor: Fiduciaria Bancolombia S.A. | Archivo: desconocido | Campo: principales_inversiones | Suma: 0.8777 (esperado ~1.0)
+2025-10-12 13:22:43,276 - src.etl.transform - INFO - Iniciando transformación de datos FIC: desconocido
+2025-10-12 13:22:43,277 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: META PLANEADA | Gestor: FIDUCIARIA DE OCCIDENTE S.A. | Archivo: desconocido | Campo: principales_inversiones | Suma: 0.6803 (esperado ~1.0)
+2025-10-12 13:22:43,288 - src.etl.transform - INFO - Transformación de datos completada exitosamente: desconocido
+2025-10-12 13:22:43,288 - src.etl.transform - INFO - Transformación de datos completada exitosamente: desconocido
+2025-10-12 13:22:43,289 - src.etl.transform - INFO - Transformación de datos completada exitosamente: desconocido
+2025-10-12 13:22:43,476 - src.etl.load - INFO - Datos cargados exitosamente a PostgreSQL - FIC ID: 4
+2025-10-12 13:22:43,477 - src.etl.load - INFO - Datos cargados exitosamente a PostgreSQL - FIC ID: 1
+2025-10-12 13:22:43,477 - src.etl.load - INFO - Datos cargados exitosamente a PostgreSQL - FIC ID: 2
+2025-10-12 13:22:43,478 - src.config.settings - INFO - JSON cargado a PostgreSQL - FIC ID: 4
+2025-10-12 13:22:43,478 - src.etl.load - INFO - Datos cargados exitosamente a PostgreSQL - FIC ID: 5
+2025-10-12 13:22:43,478 - src.config.settings - INFO - JSON cargado a PostgreSQL - FIC ID: 1
+2025-10-12 13:22:43,479 - src.config.settings - INFO - JSON cargado a PostgreSQL - FIC ID: 2
+2025-10-12 13:22:43,479 - src.etl.load - INFO - Datos cargados exitosamente a PostgreSQL - FIC ID: 3
+2025-10-12 13:22:43,479 - src.config.settings - INFO - JSON transformado guardado: fiduoccidente_PlazoFijo_20250923_194404_transformed.json
+2025-10-12 13:22:43,479 - src.config.settings - INFO - JSON cargado a PostgreSQL - FIC ID: 5
+2025-10-12 13:22:43,479 - src.config.settings - INFO - JSON transformado guardado: bancolombia_fiducuenta_20250923_194327_transformed.json
+2025-10-12 13:22:43,480 - src.config.settings - INFO - JSON transformado guardado: bancoDavivienda_Multiescala_20250923_194427_transformed.json
+2025-10-12 13:22:43,480 - src.config.settings - INFO - JSON cargado a PostgreSQL - FIC ID: 3
+2025-10-12 13:22:43,480 - src.config.settings - INFO - Transformando: Itau_CortoPlazo_20250923_194414.json
+2025-10-12 13:22:43,480 - src.config.settings - INFO - Transformado exitosamente: fiduoccidente_PlazoFijo_20250923_194404.json
+2025-10-12 13:22:43,481 - src.config.settings - INFO - JSON transformado guardado: bancoBogota_sumar_20250923_194340_transformed.json
+2025-10-12 13:22:43,481 - src.config.settings - INFO - Transformando: progresion_GlobalVista_20250923_194408.json
+2025-10-12 13:22:43,481 - src.config.settings - INFO - JSON transformado guardado: credicorpCapital_Alta Liquidez_20250923_194331_transformed.json
+2025-10-12 13:22:43,481 - src.config.settings - INFO - Transformado exitosamente: bancolombia_fiducuenta_20250923_194327.json
+2025-10-12 13:22:43,482 - src.config.settings - INFO - Transformado exitosamente: bancoDavivienda_Multiescala_20250923_194427.json
+2025-10-12 13:22:43,482 - src.config.settings - INFO - Transformado exitosamente: bancoBogota_sumar_20250923_194340.json
+2025-10-12 13:22:43,483 - src.config.settings - INFO - Transformado exitosamente: credicorpCapital_Alta Liquidez_20250923_194331.json
+2025-10-12 13:22:43,577 - src.etl.transform - INFO - Iniciando transformación de datos FIC: desconocido
+2025-10-12 13:22:43,579 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: Fondo de Inversión Colectiva Abierto Itaú Corto Plazo | Gestor: Itaú Comisionista de Bolsa S.A. | Archivo: desconocido | Campo: principales_inversiones | Suma: 0.9224 (esperado ~1.0)
+2025-10-12 13:22:43,580 - src.etl.transform - INFO - Transformación de datos completada exitosamente: desconocido
+2025-10-12 13:22:43,584 - src.etl.transform - INFO - Iniciando transformación de datos FIC: desconocido
+2025-10-12 13:22:43,584 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: FIC GLOBAL VISTA | Gestor: Progresión S.A. Sociedad Comisionista de Bolsa | Archivo: desconocido | Campo: principales_inversiones | Suma: 0.8268 (esperado ~1.0)
+2025-10-12 13:22:43,585 - src.etl.transform - INFO - Transformación de datos completada exitosamente: desconocido
+2025-10-12 13:22:43,597 - src.etl.load - INFO - Datos cargados exitosamente a PostgreSQL - FIC ID: 6
+2025-10-12 13:22:43,597 - src.config.settings - INFO - JSON cargado a PostgreSQL - FIC ID: 6
+2025-10-12 13:22:43,599 - src.config.settings - INFO - JSON transformado guardado: Itau_CortoPlazo_20250923_194414_transformed.json
+2025-10-12 13:22:43,599 - src.config.settings - INFO - Transformado exitosamente: Itau_CortoPlazo_20250923_194414.json
+2025-10-12 13:22:43,601 - src.etl.load - INFO - Datos cargados exitosamente a PostgreSQL - FIC ID: 7
+2025-10-12 13:22:43,601 - src.config.settings - INFO - JSON cargado a PostgreSQL - FIC ID: 7
+2025-10-12 13:22:43,601 - src.config.settings - INFO - JSON transformado guardado: progresion_GlobalVista_20250923_194408_transformed.json
+2025-10-12 13:22:43,602 - src.config.settings - INFO - Transformado exitosamente: progresion_GlobalVista_20250923_194408.json
+2025-10-12 15:18:07,220 - src.config.db - INFO - Conexión a PostgreSQL exitosa
+2025-10-12 15:18:07,302 - src.config.db - ERROR - Error creando tablas: Foreign key associated with column 'fic_recomendado.usuario_id' could not find table 'usuarios' with which to generate a foreign key to target column 'id'
+2025-10-12 15:18:13,273 - src.config.settings - INFO - Iniciando transformación de carpeta: data\json_raw
+2025-10-12 15:18:13,274 - src.config.settings - INFO - Encontrados 7 JSONs para transformar
+2025-10-12 15:18:13,275 - src.config.settings - INFO - Transformando: bancoBogota_sumar_20250923_194340.json
+2025-10-12 15:18:13,275 - src.config.settings - INFO - Transformando: bancoDavivienda_Multiescala_20250923_194427.json
+2025-10-12 15:18:13,276 - src.config.settings - INFO - Transformando: bancolombia_fiducuenta_20250923_194327.json
+2025-10-12 15:18:13,277 - src.config.settings - INFO - Transformando: credicorpCapital_Alta Liquidez_20250923_194331.json
+2025-10-12 15:18:13,278 - src.config.settings - INFO - Transformando: fiduoccidente_PlazoFijo_20250923_194404.json
+2025-10-12 15:18:13,279 - src.etl.transform - INFO - Iniciando transformación de datos FIC: desconocido
+2025-10-12 15:18:13,280 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: CREDICORP CAPITAL ALTA LIQUIDEZ | Gestor: CREDICORP CAPITAL COLOMBIA S.A. | Archivo: desconocido | Campo: por_calificacion | Suma: 1.1000 (esperado ~1.0)
+2025-10-12 15:18:13,281 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: CREDICORP CAPITAL ALTA LIQUIDEZ | Gestor: CREDICORP CAPITAL COLOMBIA S.A. | Archivo: desconocido | Campo: principales_inversiones | Suma: 0.7631 (esperado ~1.0)
+2025-10-12 15:18:13,285 - src.etl.transform - INFO - Transformación de datos completada exitosamente: desconocido
+2025-10-12 15:18:13,288 - src.etl.load - ERROR - Error cargando datos a PostgreSQL: Could not determine join condition between parent/child tables on relationship Usuario.recomendado - there are no foreign keys linking these tables.  Ensure that referencing columns are associated with a ForeignKey or ForeignKeyConstraint, or specify a 'primaryjoin' expression.
+2025-10-12 15:18:13,289 - src.config.settings - ERROR - Error transformando credicorpCapital_Alta Liquidez_20250923_194331.json: Could not determine join condition between parent/child tables on relationship Usuario.recomendado - there are no foreign keys linking these tables.  Ensure that referencing columns are associated with a ForeignKey or ForeignKeyConstraint, or specify a 'primaryjoin' expression.
+2025-10-12 15:18:13,289 - src.config.settings - INFO - Transformando: Itau_CortoPlazo_20250923_194414.json
+2025-10-12 15:18:13,290 - src.config.settings - ERROR - Error transformando credicorpCapital_Alta Liquidez_20250923_194331.json: Could not determine join condition between parent/child tables on relationship Usuario.recomendado - there are no foreign keys linking these tables.  Ensure that referencing columns are associated with a ForeignKey or ForeignKeyConstraint, or specify a 'primaryjoin' expression.
+2025-10-12 15:18:13,290 - src.etl.transform - INFO - Iniciando transformación de datos FIC: desconocido
+2025-10-12 15:18:13,291 - src.etl.transform - INFO - Transformación de datos completada exitosamente: desconocido
+2025-10-12 15:18:13,293 - src.etl.load - ERROR - Error cargando datos a PostgreSQL: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[Usuario(usuario)]'. Original exception was: Could not determine join condition between parent/child tables on relationship Usuario.recomendado - there are no foreign keys linking these tables.  Ensure that referencing columns are associated with a ForeignKey or ForeignKeyConstraint, or specify a 'primaryjoin' expression.
+2025-10-12 15:18:13,294 - src.config.settings - ERROR - Error transformando bancoDavivienda_Multiescala_20250923_194427.json: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[Usuario(usuario)]'. Original exception was: Could not determine join condition between parent/child tables on relationship Usuario.recomendado - there are no foreign keys linking these tables.  Ensure that referencing columns are associated with a ForeignKey or ForeignKeyConstraint, or specify a 'primaryjoin' expression.
+2025-10-12 15:18:13,295 - src.config.settings - INFO - Transformando: progresion_GlobalVista_20250923_194408.json
+2025-10-12 15:18:13,295 - src.config.settings - ERROR - Error transformando bancoDavivienda_Multiescala_20250923_194427.json: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[Usuario(usuario)]'. Original exception was: Could not determine join condition between parent/child tables on relationship Usuario.recomendado - there are no foreign keys linking these tables.  Ensure that referencing columns are associated with a ForeignKey or ForeignKeyConstraint, or specify a 'primaryjoin' expression.
+2025-10-12 15:18:13,296 - src.etl.transform - INFO - Iniciando transformación de datos FIC: desconocido
+2025-10-12 15:18:13,298 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: Fondo de Inversión Colectiva Capital Fiducuenta | Gestor: Fiduciaria Bancolombia S.A. | Archivo: desconocido | Campo: por_tipo_de_renta | Suma: 1.6050 (esperado ~1.0)
+2025-10-12 15:18:13,299 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: Fondo de Inversión Colectiva Capital Fiducuenta | Gestor: Fiduciaria Bancolombia S.A. | Archivo: desconocido | Campo: principales_inversiones | Suma: 0.8777 (esperado ~1.0)
+2025-10-12 15:18:13,299 - src.etl.transform - INFO - Transformación de datos completada exitosamente: desconocido
+2025-10-12 15:18:13,301 - src.etl.load - ERROR - Error cargando datos a PostgreSQL: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[Usuario(usuario)]'. Original exception was: Could not determine join condition between parent/child tables on relationship Usuario.recomendado - there are no foreign keys linking these tables.  Ensure that referencing columns are associated with a ForeignKey or ForeignKeyConstraint, or specify a 'primaryjoin' expression.
+2025-10-12 15:18:13,301 - src.etl.transform - INFO - Iniciando transformación de datos FIC: desconocido
+2025-10-12 15:18:13,302 - src.config.settings - ERROR - Error transformando bancolombia_fiducuenta_20250923_194327.json: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[Usuario(usuario)]'. Original exception was: Could not determine join condition between parent/child tables on relationship Usuario.recomendado - there are no foreign keys linking these tables.  Ensure that referencing columns are associated with a ForeignKey or ForeignKeyConstraint, or specify a 'primaryjoin' expression.
+2025-10-12 15:18:13,302 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: Fondo de Inversión Colectiva Abierto Itaú Corto Plazo | Gestor: Itaú Comisionista de Bolsa S.A. | Archivo: desconocido | Campo: principales_inversiones | Suma: 0.9224 (esperado ~1.0)
+2025-10-12 15:18:13,303 - src.config.settings - ERROR - Error transformando bancolombia_fiducuenta_20250923_194327.json: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[Usuario(usuario)]'. Original exception was: Could not determine join condition between parent/child tables on relationship Usuario.recomendado - there are no foreign keys linking these tables.  Ensure that referencing columns are associated with a ForeignKey or ForeignKeyConstraint, or specify a 'primaryjoin' expression.
+2025-10-12 15:18:13,303 - src.etl.transform - INFO - Transformación de datos completada exitosamente: desconocido
+2025-10-12 15:18:13,305 - src.etl.transform - INFO - Iniciando transformación de datos FIC: desconocido
+2025-10-12 15:18:13,305 - src.etl.load - ERROR - Error cargando datos a PostgreSQL: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[Usuario(usuario)]'. Original exception was: Could not determine join condition between parent/child tables on relationship Usuario.recomendado - there are no foreign keys linking these tables.  Ensure that referencing columns are associated with a ForeignKey or ForeignKeyConstraint, or specify a 'primaryjoin' expression.
+2025-10-12 15:18:13,306 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: FIC GLOBAL VISTA | Gestor: Progresión S.A. Sociedad Comisionista de Bolsa | Archivo: desconocido | Campo: principales_inversiones | Suma: 0.8268 (esperado ~1.0)
+2025-10-12 15:18:13,306 - src.config.settings - ERROR - Error transformando Itau_CortoPlazo_20250923_194414.json: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[Usuario(usuario)]'. Original exception was: Could not determine join condition between parent/child tables on relationship Usuario.recomendado - there are no foreign keys linking these tables.  Ensure that referencing columns are associated with a ForeignKey or ForeignKeyConstraint, or specify a 'primaryjoin' expression.
+2025-10-12 15:18:13,307 - src.etl.transform - INFO - Transformación de datos completada exitosamente: desconocido
+2025-10-12 15:18:13,308 - src.config.settings - ERROR - Error transformando Itau_CortoPlazo_20250923_194414.json: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[Usuario(usuario)]'. Original exception was: Could not determine join condition between parent/child tables on relationship Usuario.recomendado - there are no foreign keys linking these tables.  Ensure that referencing columns are associated with a ForeignKey or ForeignKeyConstraint, or specify a 'primaryjoin' expression.
+2025-10-12 15:18:13,309 - src.etl.load - ERROR - Error cargando datos a PostgreSQL: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[Usuario(usuario)]'. Original exception was: Could not determine join condition between parent/child tables on relationship Usuario.recomendado - there are no foreign keys linking these tables.  Ensure that referencing columns are associated with a ForeignKey or ForeignKeyConstraint, or specify a 'primaryjoin' expression.
+2025-10-12 15:18:13,309 - src.etl.transform - INFO - Iniciando transformación de datos FIC: desconocido
+2025-10-12 15:18:13,310 - src.config.settings - ERROR - Error transformando progresion_GlobalVista_20250923_194408.json: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[Usuario(usuario)]'. Original exception was: Could not determine join condition between parent/child tables on relationship Usuario.recomendado - there are no foreign keys linking these tables.  Ensure that referencing columns are associated with a ForeignKey or ForeignKeyConstraint, or specify a 'primaryjoin' expression.
+2025-10-12 15:18:13,310 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: META PLANEADA | Gestor: FIDUCIARIA DE OCCIDENTE S.A. | Archivo: desconocido | Campo: principales_inversiones | Suma: 0.6803 (esperado ~1.0)
+2025-10-12 15:18:13,311 - src.config.settings - ERROR - Error transformando progresion_GlobalVista_20250923_194408.json: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[Usuario(usuario)]'. Original exception was: Could not determine join condition between parent/child tables on relationship Usuario.recomendado - there are no foreign keys linking these tables.  Ensure that referencing columns are associated with a ForeignKey or ForeignKeyConstraint, or specify a 'primaryjoin' expression.
+2025-10-12 15:18:13,311 - src.etl.transform - INFO - Transformación de datos completada exitosamente: desconocido
+2025-10-12 15:18:13,313 - src.etl.transform - INFO - Iniciando transformación de datos FIC: desconocido
+2025-10-12 15:18:13,313 - src.etl.load - ERROR - Error cargando datos a PostgreSQL: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[Usuario(usuario)]'. Original exception was: Could not determine join condition between parent/child tables on relationship Usuario.recomendado - there are no foreign keys linking these tables.  Ensure that referencing columns are associated with a ForeignKey or ForeignKeyConstraint, or specify a 'primaryjoin' expression.
+2025-10-12 15:18:13,314 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: FONDO DE INVERSIÓN COLECTIVA ABIERTO SUMAR | Gestor: Fiduciaria Bogotá S.A. | Archivo: desconocido | Campo: principales_inversiones | Suma: 0.7347 (esperado ~1.0)
+2025-10-12 15:18:13,314 - src.config.settings - ERROR - Error transformando fiduoccidente_PlazoFijo_20250923_194404.json: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[Usuario(usuario)]'. Original exception was: Could not determine join condition between parent/child tables on relationship Usuario.recomendado - there are no foreign keys linking these tables.  Ensure that referencing columns are associated with a ForeignKey or ForeignKeyConstraint, or specify a 'primaryjoin' expression.
+2025-10-12 15:18:13,314 - src.etl.transform - INFO - Transformación de datos completada exitosamente: desconocido
+2025-10-12 15:18:13,316 - src.config.settings - ERROR - Error transformando fiduoccidente_PlazoFijo_20250923_194404.json: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[Usuario(usuario)]'. Original exception was: Could not determine join condition between parent/child tables on relationship Usuario.recomendado - there are no foreign keys linking these tables.  Ensure that referencing columns are associated with a ForeignKey or ForeignKeyConstraint, or specify a 'primaryjoin' expression.
+2025-10-12 15:18:13,318 - src.etl.load - ERROR - Error cargando datos a PostgreSQL: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[Usuario(usuario)]'. Original exception was: Could not determine join condition between parent/child tables on relationship Usuario.recomendado - there are no foreign keys linking these tables.  Ensure that referencing columns are associated with a ForeignKey or ForeignKeyConstraint, or specify a 'primaryjoin' expression.
+2025-10-12 15:18:13,318 - src.config.settings - ERROR - Error transformando bancoBogota_sumar_20250923_194340.json: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[Usuario(usuario)]'. Original exception was: Could not determine join condition between parent/child tables on relationship Usuario.recomendado - there are no foreign keys linking these tables.  Ensure that referencing columns are associated with a ForeignKey or ForeignKeyConstraint, or specify a 'primaryjoin' expression.
+2025-10-12 15:18:13,319 - src.config.settings - ERROR - Error transformando bancoBogota_sumar_20250923_194340.json: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[Usuario(usuario)]'. Original exception was: Could not determine join condition between parent/child tables on relationship Usuario.recomendado - there are no foreign keys linking these tables.  Ensure that referencing columns are associated with a ForeignKey or ForeignKeyConstraint, or specify a 'primaryjoin' expression.
+2025-10-12 15:19:47,924 - src.config.db - INFO - Conexión a PostgreSQL exitosa
+2025-10-12 15:19:47,972 - src.config.db - ERROR - Error creando tablas: Foreign key associated with column 'fic_recomendado.usuario_id' could not find table 'usuarios' with which to generate a foreign key to target column 'id'
+2025-10-12 15:20:47,236 - src.config.db - INFO - Conexión a PostgreSQL exitosa
+2025-10-12 15:20:47,368 - src.config.db - INFO - Tablas de PostgreSQL creadas/verificadas exitosamente
+2025-10-12 15:20:51,363 - src.config.settings - INFO - Iniciando transformación de carpeta: data\json_raw
+2025-10-12 15:20:51,363 - src.config.settings - INFO - Encontrados 7 JSONs para transformar
+2025-10-12 15:20:51,364 - src.config.settings - INFO - Transformando: bancoBogota_sumar_20250923_194340.json
+2025-10-12 15:20:51,364 - src.config.settings - INFO - Transformando: bancoDavivienda_Multiescala_20250923_194427.json
+2025-10-12 15:20:51,365 - src.etl.transform - INFO - Iniciando transformación de datos FIC: desconocido
+2025-10-12 15:20:51,366 - src.config.settings - INFO - Transformando: bancolombia_fiducuenta_20250923_194327.json
+2025-10-12 15:20:51,366 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: FONDO DE INVERSIÓN COLECTIVA ABIERTO SUMAR | Gestor: Fiduciaria Bogotá S.A. | Archivo: desconocido | Campo: principales_inversiones | Suma: 0.7347 (esperado ~1.0)
+2025-10-12 15:20:51,367 - src.config.settings - INFO - Transformando: credicorpCapital_Alta Liquidez_20250923_194331.json
+2025-10-12 15:20:51,367 - src.config.settings - INFO - Transformando: fiduoccidente_PlazoFijo_20250923_194404.json
+2025-10-12 15:20:51,368 - src.etl.transform - INFO - Iniciando transformación de datos FIC: desconocido
+2025-10-12 15:20:51,369 - src.etl.transform - INFO - Iniciando transformación de datos FIC: desconocido
+2025-10-12 15:20:51,369 - src.etl.transform - INFO - Iniciando transformación de datos FIC: desconocido
+2025-10-12 15:20:51,370 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: Fondo de Inversión Colectiva Capital Fiducuenta | Gestor: Fiduciaria Bancolombia S.A. | Archivo: desconocido | Campo: por_tipo_de_renta | Suma: 1.6050 (esperado ~1.0)
+2025-10-12 15:20:51,370 - src.etl.transform - INFO - Iniciando transformación de datos FIC: desconocido
+2025-10-12 15:20:51,371 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: CREDICORP CAPITAL ALTA LIQUIDEZ | Gestor: CREDICORP CAPITAL COLOMBIA S.A. | Archivo: desconocido | Campo: por_calificacion | Suma: 1.1000 (esperado ~1.0)
+2025-10-12 15:20:51,372 - src.etl.transform - INFO - Transformación de datos completada exitosamente: desconocido
+2025-10-12 15:20:51,372 - src.etl.transform - INFO - Transformación de datos completada exitosamente: desconocido
+2025-10-12 15:20:51,372 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: Fondo de Inversión Colectiva Capital Fiducuenta | Gestor: Fiduciaria Bancolombia S.A. | Archivo: desconocido | Campo: principales_inversiones | Suma: 0.8777 (esperado ~1.0)
+2025-10-12 15:20:51,373 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: META PLANEADA | Gestor: FIDUCIARIA DE OCCIDENTE S.A. | Archivo: desconocido | Campo: principales_inversiones | Suma: 0.6803 (esperado ~1.0)
+2025-10-12 15:20:51,373 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: CREDICORP CAPITAL ALTA LIQUIDEZ | Gestor: CREDICORP CAPITAL COLOMBIA S.A. | Archivo: desconocido | Campo: principales_inversiones | Suma: 0.7631 (esperado ~1.0)
+2025-10-12 15:20:51,374 - src.etl.transform - INFO - Transformación de datos completada exitosamente: desconocido
+2025-10-12 15:20:51,408 - src.etl.transform - INFO - Transformación de datos completada exitosamente: desconocido
+2025-10-12 15:20:51,409 - src.etl.transform - INFO - Transformación de datos completada exitosamente: desconocido
+2025-10-12 15:20:51,511 - src.etl.load - INFO - Datos cargados exitosamente a PostgreSQL - FIC ID: 2
+2025-10-12 15:20:51,512 - src.etl.load - INFO - Datos cargados exitosamente a PostgreSQL - FIC ID: 1
+2025-10-12 15:20:51,512 - src.etl.load - INFO - Datos cargados exitosamente a PostgreSQL - FIC ID: 5
+2025-10-12 15:20:51,512 - src.etl.load - INFO - Datos cargados exitosamente a PostgreSQL - FIC ID: 3
+2025-10-12 15:20:51,512 - src.config.settings - INFO - JSON cargado a PostgreSQL - FIC ID: 2
+2025-10-12 15:20:51,513 - src.config.settings - INFO - JSON cargado a PostgreSQL - FIC ID: 1
+2025-10-12 15:20:51,513 - src.config.settings - INFO - JSON cargado a PostgreSQL - FIC ID: 5
+2025-10-12 15:20:51,514 - src.config.settings - INFO - JSON cargado a PostgreSQL - FIC ID: 3
+2025-10-12 15:20:51,514 - src.config.settings - INFO - JSON transformado guardado: bancolombia_fiducuenta_20250923_194327_transformed.json
+2025-10-12 15:20:51,514 - src.etl.load - INFO - Datos cargados exitosamente a PostgreSQL - FIC ID: 4
+2025-10-12 15:20:51,514 - src.config.settings - INFO - JSON transformado guardado: bancoDavivienda_Multiescala_20250923_194427_transformed.json
+2025-10-12 15:20:51,514 - src.config.settings - INFO - JSON transformado guardado: fiduoccidente_PlazoFijo_20250923_194404_transformed.json
+2025-10-12 15:20:51,514 - src.config.settings - INFO - JSON transformado guardado: bancoBogota_sumar_20250923_194340_transformed.json
+2025-10-12 15:20:51,514 - src.config.settings - INFO - Transformando: Itau_CortoPlazo_20250923_194414.json
+2025-10-12 15:20:51,514 - src.config.settings - INFO - Transformado exitosamente: bancolombia_fiducuenta_20250923_194327.json
+2025-10-12 15:20:51,514 - src.config.settings - INFO - JSON cargado a PostgreSQL - FIC ID: 4
+2025-10-12 15:20:51,514 - src.config.settings - INFO - Transformando: progresion_GlobalVista_20250923_194408.json
+2025-10-12 15:20:51,516 - src.config.settings - INFO - JSON transformado guardado: credicorpCapital_Alta Liquidez_20250923_194331_transformed.json
+2025-10-12 15:20:51,516 - src.config.settings - INFO - Transformado exitosamente: bancoDavivienda_Multiescala_20250923_194427.json
+2025-10-12 15:20:51,517 - src.etl.transform - INFO - Iniciando transformación de datos FIC: desconocido
+2025-10-12 15:20:51,517 - src.config.settings - INFO - Transformado exitosamente: fiduoccidente_PlazoFijo_20250923_194404.json
+2025-10-12 15:20:51,517 - src.etl.transform - INFO - Iniciando transformación de datos FIC: desconocido
+2025-10-12 15:20:51,517 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: Fondo de Inversión Colectiva Abierto Itaú Corto Plazo | Gestor: Itaú Comisionista de Bolsa S.A. | Archivo: desconocido | Campo: principales_inversiones | Suma: 0.9224 (esperado ~1.0)
+2025-10-12 15:20:51,518 - src.config.settings - INFO - Transformado exitosamente: bancoBogota_sumar_20250923_194340.json
+2025-10-12 15:20:51,518 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: FIC GLOBAL VISTA | Gestor: Progresión S.A. Sociedad Comisionista de Bolsa | Archivo: desconocido | Campo: principales_inversiones | Suma: 0.8268 (esperado ~1.0)
+2025-10-12 15:20:51,518 - src.etl.transform - INFO - Transformación de datos completada exitosamente: desconocido
+2025-10-12 15:20:51,519 - src.config.settings - INFO - Transformado exitosamente: credicorpCapital_Alta Liquidez_20250923_194331.json
+2025-10-12 15:20:51,519 - src.etl.transform - INFO - Transformación de datos completada exitosamente: desconocido
+2025-10-12 15:20:51,532 - src.etl.load - INFO - Datos cargados exitosamente a PostgreSQL - FIC ID: 6
+2025-10-12 15:20:51,533 - src.config.settings - INFO - JSON cargado a PostgreSQL - FIC ID: 6
+2025-10-12 15:20:51,533 - src.etl.load - INFO - Datos cargados exitosamente a PostgreSQL - FIC ID: 7
+2025-10-12 15:20:51,533 - src.config.settings - INFO - JSON transformado guardado: Itau_CortoPlazo_20250923_194414_transformed.json
+2025-10-12 15:20:51,534 - src.config.settings - INFO - JSON cargado a PostgreSQL - FIC ID: 7
+2025-10-12 15:20:51,534 - src.config.settings - INFO - Transformado exitosamente: Itau_CortoPlazo_20250923_194414.json
+2025-10-12 15:20:51,534 - src.config.settings - INFO - JSON transformado guardado: progresion_GlobalVista_20250923_194408_transformed.json
+2025-10-12 15:20:51,534 - src.config.settings - INFO - Transformado exitosamente: progresion_GlobalVista_20250923_194408.json
+2025-10-12 15:20:58,842 - src.config.settings - INFO - Usuarios creados: Admin ID=1, User ID=2
+2025-10-12 15:20:58,854 - src.config.settings - INFO - Favoritos creados: Admin=5 FICs, User=2 FICs
+2025-10-12 15:20:58,861 - src.config.settings - INFO - Verificación: Admin=5 favoritos, User=2 favoritos
