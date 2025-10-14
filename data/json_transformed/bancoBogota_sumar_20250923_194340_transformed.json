@@ -4,7 +4,8 @@
     "gestor": "Fiduciaria Bogotá S.A.",
     "custodio": "Cititrust",
     "fecha_corte": "2025-07-31",
-    "politica_de_inversion": "Alternativa de inversión a la vista con perfil de riesgo conservador que se encuentra calificada por BRC Standar & Poor's con F AAA/2/BRC1+ por su alta calidad crediticia y su baja sensibilidad ante la volatilidad del mercado. La mayor parte de su portafolio se encuentra invertido en títulos de renta fija con vencimientos de corto a mediano plazo. La mayoría de las inversiones se realizan indexadas al IPC, IBR y DTF para darle estabilidad a la TIR del portafolio. Se realizan inversiones en sintéticos de dólar que otorgan mayor rendimiento que las inversiones tradicionales en tasa fija. Se mantienen posiciones en TES. La mayoría de las inversiones tienen vencimiento entre 90 días y dos años."
+    "politica_de_inversion": "Alternativa de inversión a la vista con perfil de riesgo conservador que se encuentra calificada por BRC Standar & Poor's con F AAA/2/BRC1+ por su alta calidad crediticia y su baja sensibilidad ante la volatilidad del mercado. La mayor parte de su portafolio se encuentra invertido en títulos de renta fija con vencimientos de corto a mediano plazo. La mayoría de las inversiones se realizan indexadas al IPC, IBR y DTF para darle estabilidad a la TIR del portafolio. Se realizan inversiones en sintéticos de dólar que otorgan mayor rendimiento que las inversiones tradicionales en tasa fija. Se mantienen posiciones en TES. La mayoría de las inversiones tienen vencimiento entre 90 días y dos años.",
+    "tipo": "Renta Fija"
   },
   "plazo_duracion": [
     {

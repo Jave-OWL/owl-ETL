@@ -4,7 +4,8 @@
     "gestor": "Progresión S.A. Sociedad Comisionista de Bolsa",
     "custodio": "S3 CACEIS",
     "fecha_corte": "2025-01-31",
-    "politica_de_inversion": "Global Vista es un tipo de fondo abierto que pretende como objetivo ofrecer al público un portafolio de inversiones en valores de renta fija que permitan una alta conservación del capital y una rentabilidad que sea consistente con un nivel de riesgo conservador."
+    "politica_de_inversion": "Global Vista es un tipo de fondo abierto que pretende como objetivo ofrecer al público un portafolio de inversiones en valores de renta fija que permitan una alta conservación del capital y una rentabilidad que sea consistente con un nivel de riesgo conservador.",
+    "tipo": "Renta Fija"
   },
   "plazo_duracion": [
     {
@@ -119,7 +120,7 @@
   "calificacion": {
     "calificacion": "AAAf (Col)",
     "fecha_ultima_calificacion": "2022-07-31",
-    "entidad_calificadora": "FITCH RATINGS",
+    "entidad_calificadora": "FITCH",
     "entidad_calificadora_normalizada": true
   },
   "principales_inversiones": [

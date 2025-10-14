@@ -46,7 +46,10 @@ def transform_fic_data(raw_data: Dict[str, Any], filename: str = "desconocido") 
         # 4. Transformar valores numéricos
         transformed_data = _transform_valores_numericos(transformed_data)
 
-        # 5. Validar estructura general
+        # 5. Transformar valores numéricos
+        transformed_data = _transform_tipo_fic(transformed_data, fic_info)
+
+        # 6. Validar estructura general
         transformed_data = _validar_estructura_general(transformed_data)
 
         logger.info(f"Transformación de datos completada exitosamente: {filename}")
@@ -56,6 +59,85 @@ def transform_fic_data(raw_data: Dict[str, Any], filename: str = "desconocido") 
         logger.error(f"Error en transformación de datos [{filename}]: {str(e)}")
         raise
 
+
+def _extraer_tipo_fic(fic_data: Dict[str, Any]) -> str:
+    """
+    Extrae el tipo de FIC (Renta Fija, Renta Variable, Mixta, Alternativa)
+    basándose en el texto de política_de_inversion
+    """
+    if 'fic' not in fic_data:
+        return "Desconocido"
+
+    politica = fic_data['fic'].get('politica_de_inversion', '').lower()
+
+    # Palabras clave para cada tipo
+    palabras_clave = {
+        "Renta Fija": [
+            'renta fija', 'bonos', 'cdt', 'certificado de depósito', 'tes',
+            'títulos de deuda', 'deuda pública', 'tasa fija', 'fixed income',
+            'instrumentos de deuda', 'papeles comerciales', 'obligaciones'
+        ],
+        "Renta Variable": [
+            'renta variable', 'acciones', 'equity', 'bolsa de valores',
+            'mercado accionario', 'stocks', 'índices accionarios',
+            'participaciones', 'capitalización bursátil'
+        ],
+        "Mixta": [
+            'mixta', 'balanced', 'balanceado', 'combinado',
+            'renta fija y variable', 'fija y variable', 'diversificado',
+            'multiactivo', 'multi-activo'
+        ],
+        "Alternativa": [
+            'alternativa', 'alternative', 'hedge fund', 'fondos de cobertura',
+            'private equity', 'capital privado', 'inmobiliario', 'real estate',
+            'commodities', 'materias primas', 'infraestructura', 'derivados',
+            'divisas', 'forex', 'opciones', 'futuros'
+        ]
+    }
+
+    # Contar ocurrencias de cada tipo
+    conteo_tipos = {tipo: 0 for tipo in palabras_clave}
+
+    for tipo, palabras in palabras_clave.items():
+        for palabra in palabras:
+            if palabra in politica:
+                conteo_tipos[tipo] += 1
+
+    # Determinar el tipo con más coincidencias
+    tipo_detectado = max(conteo_tipos.items(), key=lambda x: x[1])
+
+    if tipo_detectado[1] > 0:
+        return tipo_detectado[0]
+
+    # Si no se detecta por palabras clave, usar lógica basada en contenido
+    if 'renta fija' in politica and 'renta variable' in politica:
+        return "Mixta"
+    elif 'renta fija' in politica:
+        return "Renta Fija"
+    elif 'renta variable' in politica:
+        return "Renta Variable"
+    elif any(palabra in politica for palabra in ['alternativa', 'hedge', 'private equity', 'inmobiliario']):
+        return "Alternativa"
+
+    return "Desconocido"
+
+
+def _transform_tipo_fic(data: Dict[str, Any], fic_info: Dict[str, str]) -> Dict[str, Any]:
+    """
+    Extrae y asigna el tipo de FIC basado en la política de inversión
+    """
+    transformed = data.copy()
+
+    if 'fic' in transformed:
+        tipo_fic = _extraer_tipo_fic(transformed)
+        transformed['fic']['tipo'] = tipo_fic
+
+        # Log informativo
+        gestor = fic_info['gestor']
+        nombre_fic = fic_info['nombre_fic']
+        logger.info(f"Tipo detectado para {nombre_fic}: {tipo_fic}")
+
+    return transformed
 
 def _obtener_info_fic(data: Dict[str, Any], filename: str) -> Dict[str, str]:
     """

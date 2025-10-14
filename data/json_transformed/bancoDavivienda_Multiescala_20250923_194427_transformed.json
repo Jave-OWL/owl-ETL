@@ -4,7 +4,8 @@
     "gestor": "Davivienda Corredores S.A.",
     "custodio": "Cititrust Colombia S.A.",
     "fecha_corte": "2025-07-31",
-    "politica_de_inversion": "El objetivo del Fondo es ofrecer al público un instrumento de inversión en activos de renta fija de Colombia con estrategias de inversión consistentes con un nivel de riesgo conservador, que busca la estabilidad del capital en el largo plazo. Los activos aceptables para invertir son: -Valores de contenido crediticio inscritos en el RNVE -Valores de deuda pública emitidos o garantizados por la Nación, por el Banco de la República o por el fondo de garantías de las instituciones financieras FOGAFIN -Títulos o valores emitidos en procesos de titularización -Operaciones de derivados con fines de inversión"
+    "politica_de_inversion": "El objetivo del Fondo es ofrecer al público un instrumento de inversión en activos de renta fija de Colombia con estrategias de inversión consistentes con un nivel de riesgo conservador, que busca la estabilidad del capital en el largo plazo. Los activos aceptables para invertir son: -Valores de contenido crediticio inscritos en el RNVE -Valores de deuda pública emitidos o garantizados por la Nación, por el Banco de la República o por el fondo de garantías de las instituciones financieras FOGAFIN -Títulos o valores emitidos en procesos de titularización -Operaciones de derivados con fines de inversión",
+    "tipo": "Renta Fija"
   },
   "plazo_duracion": [
     {

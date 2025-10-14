@@ -4,7 +4,8 @@
     "gestor": "FIDUCIARIA DE OCCIDENTE S.A.",
     "custodio": "CITI TRUST COLOMBIA S.A.",
     "fecha_corte": "2025-07-31",
-    "politica_de_inversion": "Este modelo de portafolio es apropiado para inversionistas con alta tolerancia a la volatilidad. Es un portafolio que busca apreciación del capital en el largo plazo, exponiéndose a las variaciones del mercado en el corto plazo. Se enfoca en la búsqueda de mayores retornos a través de inversiones en renta variable, mayor duración de las inversiones en renta fija y oportunidades tácticas en el corto plazo."
+    "politica_de_inversion": "Este modelo de portafolio es apropiado para inversionistas con alta tolerancia a la volatilidad. Es un portafolio que busca apreciación del capital en el largo plazo, exponiéndose a las variaciones del mercado en el corto plazo. Se enfoca en la búsqueda de mayores retornos a través de inversiones en renta variable, mayor duración de las inversiones en renta fija y oportunidades tácticas en el corto plazo.",
+    "tipo": "Renta Fija"
   },
   "plazo_duracion": [
     {

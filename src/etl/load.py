@@ -114,7 +114,8 @@ def _insert_fic_data(session: Session, data: Dict[str, Any], filename: str) -> i
         gestor=fic_data.get('gestor', ''),
         custodio=fic_data.get('custodio'),
         fecha_corte=fic_data.get('fecha_corte'),
-        politica_de_inversion=fic_data.get('politica_de_inversion')
+        politica_de_inversion=fic_data.get('politica_de_inversion'),
+        tipo=fic_data.get('tipo', ''),
     )
 
     session.add(nuevo_fic)

@@ -4,7 +4,8 @@
     "gestor": "Fiduciaria Bancolombia S.A.",
     "custodio": "Cititrust Colombia S.A.",
     "fecha_corte": "2025-07-31",
-    "politica_de_inversion": "El objetivo del fondo de inversión colectiva es proporcionar a los inversionistas un instrumento de inversión de renta fija de baja duración, con un perfil de riesgo conservador, cuyo propósito es la protección de capital en un horizonte de inversión de corto plazo. Durante agosto, se mantendrá la estrategia de subponderación en liquidez, mientras se incrementará gradualmente la exposición en deuda corporativa indexada a IBR e IPC, especialmente en plazos a los vencimientos menores a un año. Como contrapartida, se buscará reducir levemente la participación en deuda corporativa en tasa fija en aquellos tramos de la curva con spreads más apretados. En el corto plazo, el posicionamiento frente al riesgo de mercado se mantendrá ligeramente sobreponderado con respecto a su referente y a sus niveles actuales. *Para una descripción mas completa de los activos admisibles de inversión y demás políticas de administración del Fondo, remitirse al reglamento de la misma disponible en www.bancolombia.com"
+    "politica_de_inversion": "El objetivo del fondo de inversión colectiva es proporcionar a los inversionistas un instrumento de inversión de renta fija de baja duración, con un perfil de riesgo conservador, cuyo propósito es la protección de capital en un horizonte de inversión de corto plazo. Durante agosto, se mantendrá la estrategia de subponderación en liquidez, mientras se incrementará gradualmente la exposición en deuda corporativa indexada a IBR e IPC, especialmente en plazos a los vencimientos menores a un año. Como contrapartida, se buscará reducir levemente la participación en deuda corporativa en tasa fija en aquellos tramos de la curva con spreads más apretados. En el corto plazo, el posicionamiento frente al riesgo de mercado se mantendrá ligeramente sobreponderado con respecto a su referente y a sus niveles actuales. *Para una descripción mas completa de los activos admisibles de inversión y demás políticas de administración del Fondo, remitirse al reglamento de la misma disponible en www.bancolombia.com",
+    "tipo": "Renta Fija"
   },
   "plazo_duracion": [
     {
@@ -183,7 +184,7 @@
   "calificacion": {
     "calificacion": "S1/AAAf(col)",
     "fecha_ultima_calificacion": "2024-10-30",
-    "entidad_calificadora": "FITCH RATINGS",
+    "entidad_calificadora": "FITCH",
     "entidad_calificadora_normalizada": true
   },
   "principales_inversiones": [
