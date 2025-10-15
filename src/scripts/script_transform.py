@@ -266,6 +266,33 @@ def transform_json_folder(input_dir: Path, output_dir: Path, max_workers: int = 
     return results
 
 
+
+def create_skip_list_from_validation(validation_results: dict, output_path: Path):
+    """
+    Crea un archivo de lista de exclusión basado en resultados de validación
+
+    Args:
+        validation_results: Resultados de validación de fechas
+        output_path: Ruta donde guardar el archivo de exclusión
+    """
+    try:
+        with open(output_path, 'w', encoding='utf-8') as f:
+            f.write("# Lista de archivos con fechas no coincidentes\n")
+            f.write("# Generado automáticamente desde validación de fechas\n\n")
+
+            for filename in validation_results.get('mismatched_files', []):
+                # Guardar solo el nombre base para mayor flexibilidad
+                base_name = filename.replace('_transformed.json', '')
+                f.write(f"{base_name}\n")
+
+        logger.info(f"Lista de exclusión creada: {output_path}")
+        print(f"Lista de exclusión creada: {output_path}")
+
+    except Exception as e:
+        logger.error(f"Error creando lista de exclusión: {str(e)}")
+        raise
+
+
 def main():
     """Función principal del script"""
     parser = argparse.ArgumentParser(description='Transformar JSONs existentes de FICs')
@@ -317,6 +344,11 @@ def main():
 
             # 2. Validar fechas de todos los archivos transformados
             validation_results = validate_transformed_files_with_folder(input_dir, output_dir)
+
+
+            if validation_results['mismatched_files']:
+                skip_list_path = output_dir / "skip_list.txt"
+                create_skip_list_from_validation(validation_results, skip_list_path)
 
             # Mostrar resumen completo
             print("\n" + "=" * 60)
