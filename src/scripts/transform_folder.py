@@ -51,8 +51,6 @@ def transform_single_json(json_path: Path, output_dir: Path, load_to_db: bool = 
         with open(output_path, 'w', encoding='utf-8') as f:
             json.dump(transformed_data, f, indent=2, ensure_ascii=False)
 
-        #todo : comprobar que sea del mes que es
-
         # 5. Cargar a base de datos si se solicita
         if load_to_db:
             fic_id = load_existing_json_to_database(transformed_data, filename)

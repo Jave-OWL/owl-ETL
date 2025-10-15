@@ -1,0 +1,211 @@
+{
+  "fic": {
+    "nombre_fic": "FONDO DE INVERSIÓN COLECTIVA RENTA FIJA MEDIANO PLAZO - MULTIESCALA",
+    "gestor": "Davivienda Corredores S.A.",
+    "custodio": "Cititrust Colombia S.A.",
+    "fecha_corte": "2025-07-31",
+    "politica_de_inversion": "El objetivo del Fondo es ofrecer al público un instrumento de inversión en activos de renta fija de Colombia con estrategias de inversión consistentes con un nivel de riesgo conservador, que busca la estabilidad del capital en el largo plazo. Los activos aceptables para invertir son: -Valores de contenido crediticio inscritos en el RNVE -Valores de deuda pública emitidos o garantizados por la Nación, por el Banco de la República o por el fondo de garantías de las instituciones financieras FOGAFIN -Títulos o valores emitidos en procesos de titularización -Operaciones de derivados con fines de inversión",
+    "tipo": "Renta Fija"
+  },
+  "plazo_duracion": [
+    {
+      "plazo": "1 a 180 Días",
+      "participacion": 0.0903
+    },
+    {
+      "plazo": "180 a 360 Días",
+      "participacion": 0.2692
+    },
+    {
+      "plazo": "1 a 3 Años",
+      "participacion": 0.4485
+    },
+    {
+      "plazo": "3 a 5 Años",
+      "participacion": 0.0494
+    },
+    {
+      "plazo": "Más de 5 Años",
+      "participacion": 0.1426
+    }
+  ],
+  "composicion_portafolio": {
+    "por_activo": [
+      {
+        "activo": "DISPONIBLE",
+        "participacion": 0.0586
+      },
+      {
+        "activo": "INVERSIONES",
+        "participacion": 0.9414
+      }
+    ],
+    "por_tipo_de_renta": [
+      {
+        "tipo": "Vista",
+        "participacion": 0.0586
+      },
+      {
+        "tipo": "IBR",
+        "participacion": 0.0793
+      },
+      {
+        "tipo": "IPC",
+        "participacion": 0.1605
+      },
+      {
+        "tipo": "TF",
+        "participacion": 0.7017
+      }
+    ],
+    "por_sector_economico": [
+      {
+        "sector": "I FINANCIERO",
+        "participacion": 0.1663
+      },
+      {
+        "sector": "REAL",
+        "participacion": 0.0245
+      },
+      {
+        "sector": "PUBLICO",
+        "participacion": 0.8092
+      }
+    ],
+    "por_pais_emisor": [
+      {
+        "pais": "COLOMBIA",
+        "participacion": 1.0
+      }
+    ],
+    "por_moneda": [
+      {
+        "moneda": "PESOS",
+        "participacion": 1.0
+      }
+    ],
+    "por_calificacion": [
+      {
+        "calificacion": "AAA",
+        "participacion": 0.1663
+      },
+      {
+        "calificacion": "Nación",
+        "participacion": 0.8337
+      }
+    ]
+  },
+  "caracteristicas": {
+    "tipo": "Fondo de Inversión Colectiva Abierto con Pacto de Permanencia",
+    "valor": 357681.51,
+    "fecha_inicio_operaciones": "2005-08-29",
+    "no_unidades_en_circulacion": 11969659.12
+  },
+  "calificacion": {
+    "calificacion": "F AAA / 3",
+    "fecha_ultima_calificacion": "2025-02-21",
+    "entidad_calificadora": "BRC INVESTOR SERVICES",
+    "entidad_calificadora_normalizada": true
+  },
+  "principales_inversiones": [
+    {
+      "emisor": "MINISTERIO DE HACIENDA Y CREDITO PUBLIC",
+      "participacion": 0.1663
+    },
+    {
+      "emisor": "BCO. POPULAR",
+      "participacion": 0.1303
+    },
+    {
+      "emisor": "FINANCIERA DE DESARROLLO TERRITORIAL S.",
+      "participacion": 0.1294
+    },
+    {
+      "emisor": "BCO. DE BOGOTA",
+      "participacion": 0.1274
+    },
+    {
+      "emisor": "BBVA COLOMBIA S.A.",
+      "participacion": 0.099
+    },
+    {
+      "emisor": "BANCOLOMBIA S.A.",
+      "participacion": 0.0886
+    },
+    {
+      "emisor": "BCO. DE OCCIDENTE",
+      "participacion": 0.0857
+    },
+    {
+      "emisor": "BANCO COLPATRIA SCOTIABANK",
+      "participacion": 0.0555
+    },
+    {
+      "emisor": "BANCO AV VILLAS S.A.",
+      "participacion": 0.0454
+    },
+    {
+      "emisor": "CORFICOLOMBIANA",
+      "participacion": 0.0287
+    }
+  ],
+  "rentabilidad_volatilidad": [
+    {
+      "tipo_de_participacion": "Participación A",
+      "rentabilidad_historica_ea": {
+        "ultimo_mes": 0.16342,
+        "ultimos_6_meses": 0.09682,
+        "anio_corrido": 0.0958,
+        "ultimo_anio": 0.08902,
+        "ultimos_2_anios": 0.11794,
+        "ultimos_3_anios": 0.12642
+      },
+      "volatilidad_historica": {
+        "ultimo_mes": 0.0063,
+        "ultimos_6_meses": 0.00628,
+        "anio_corrido": 0.00655,
+        "ultimo_anio": 0.00754,
+        "ultimos_2_anios": 0.01525,
+        "ultimos_3_anios": 0.01408
+      }
+    },
+    {
+      "tipo_de_participacion": "Participación B",
+      "rentabilidad_historica_ea": {
+        "ultimo_mes": 0.16342,
+        "ultimos_6_meses": 0.09682,
+        "anio_corrido": 0.0958,
+        "ultimo_anio": 0.08902,
+        "ultimos_2_anios": 0.11794,
+        "ultimos_3_anios": 0.12642
+      },
+      "volatilidad_historica": {
+        "ultimo_mes": 0.0063,
+        "ultimos_6_meses": 0.00628,
+        "anio_corrido": 0.00655,
+        "ultimo_anio": 0.00754,
+        "ultimos_2_anios": 0.01525,
+        "ultimos_3_anios": 0.01408
+      }
+    },
+    {
+      "tipo_de_participacion": "Participación C",
+      "rentabilidad_historica_ea": {
+        "ultimo_mes": 0.18086,
+        "ultimos_6_meses": 0.11327,
+        "anio_corrido": 0.11223,
+        "ultimo_anio": 0.10535,
+        "ultimos_2_anios": null,
+        "ultimos_3_anios": null
+      },
+      "volatilidad_historica": {
+        "ultimo_mes": 0.0063,
+        "ultimos_6_meses": 0.00628,
+        "anio_corrido": 0.00655,
+        "ultimo_anio": 0.00754,
+        "ultimos_2_anios": null,
+        "ultimos_3_anios": null
+      }
+    }
+  ]
+}

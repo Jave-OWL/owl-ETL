@@ -46,10 +46,13 @@ def transform_fic_data(raw_data: Dict[str, Any], filename: str = "desconocido") 
         # 4. Transformar valores numéricos
         transformed_data = _transform_valores_numericos(transformed_data)
 
-        # 5. Transformar valores numéricos
+        # 5. Agregar tipo fic
         transformed_data = _transform_tipo_fic(transformed_data, fic_info)
 
-        # 6. Validar estructura general
+        # 6. Transformar caracteristicas valor
+        # transformed_data = _transform_valores_monetarios(transformed_data, fic_info)
+
+        # 7. Validar estructura general
         transformed_data = _validar_estructura_general(transformed_data)
 
         logger.info(f"Transformación de datos completada exitosamente: {filename}")
@@ -58,7 +61,6 @@ def transform_fic_data(raw_data: Dict[str, Any], filename: str = "desconocido") 
     except Exception as e:
         logger.error(f"Error en transformación de datos [{filename}]: {str(e)}")
         raise
-
 
 def _extraer_tipo_fic(fic_data: Dict[str, Any]) -> str:
     """

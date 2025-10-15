@@ -1,0 +1,212 @@
+{
+  "fic": {
+    "nombre_fic": "META PLANEADA",
+    "gestor": "FIDUCIARIA DE OCCIDENTE S.A.",
+    "custodio": "CITI TRUST COLOMBIA S.A.",
+    "fecha_corte": "2025-07-31",
+    "politica_de_inversion": "Este modelo de portafolio es apropiado para inversionistas con alta tolerancia a la volatilidad. Es un portafolio que busca apreciación del capital en el largo plazo, exponiéndose a las variaciones del mercado en el corto plazo. Se enfoca en la búsqueda de mayores retornos a través de inversiones en renta variable, mayor duración de las inversiones en renta fija y oportunidades tácticas en el corto plazo.",
+    "tipo": "Renta Fija"
+  },
+  "plazo_duracion": [
+    {
+      "plazo": "1 a 180 días",
+      "participacion": 0.3225
+    },
+    {
+      "plazo": "180 a 365 días",
+      "participacion": 0.3584
+    },
+    {
+      "plazo": "1 a 3 años",
+      "participacion": 0.2715
+    },
+    {
+      "plazo": "3 a 5 años",
+      "participacion": 0.0296
+    },
+    {
+      "plazo": "Más de 5 años",
+      "participacion": 0.018
+    }
+  ],
+  "composicion_portafolio": {
+    "por_activo": [
+      {
+        "activo": "Inversiones",
+        "participacion": 0.90626
+      },
+      {
+        "activo": "Caja",
+        "participacion": 0.09374
+      }
+    ],
+    "por_tipo_de_renta": [
+      {
+        "tipo": "Tasa Fija Nacional",
+        "participacion": 0.62352
+      },
+      {
+        "tipo": "Fondos de Inversión Colectiva",
+        "participacion": 0.10861
+      },
+      {
+        "tipo": "Caja",
+        "participacion": 0.09374
+      },
+      {
+        "tipo": "IPC",
+        "participacion": 0.08083
+      },
+      {
+        "tipo": "IBR",
+        "participacion": 0.06691
+      },
+      {
+        "tipo": "Titulos al descuento",
+        "participacion": 0.02639
+      }
+    ],
+    "por_sector_economico": [
+      {
+        "sector": "Financiero",
+        "participacion": 0.87116
+      },
+      {
+        "sector": "Entidades Públicas",
+        "participacion": 0.09371
+      },
+      {
+        "sector": "Real",
+        "participacion": 0.03513
+      }
+    ],
+    "por_pais_emisor": [
+      {
+        "pais": "Colombia",
+        "participacion": 0.99995
+      },
+      {
+        "pais": "Estados Unidos de América",
+        "participacion": 5e-05
+      }
+    ],
+    "por_moneda": [
+      {
+        "moneda": "Peso Colombiano",
+        "participacion": 0.99995
+      },
+      {
+        "moneda": "Dólar",
+        "participacion": 5e-05
+      }
+    ],
+    "por_calificacion": [
+      {
+        "calificacion": "BRC 1+",
+        "participacion": 0.37313
+      },
+      {
+        "calificacion": "AAA",
+        "participacion": 0.24744
+      },
+      {
+        "calificacion": "F1+",
+        "participacion": 0.15425
+      },
+      {
+        "calificacion": "Nación",
+        "participacion": 0.09371
+      },
+      {
+        "calificacion": "VrR 1+",
+        "participacion": 0.08139
+      },
+      {
+        "calificacion": "Sin Calificación",
+        "participacion": 0.03345
+      },
+      {
+        "calificacion": "AA+",
+        "participacion": 0.01659
+      },
+      {
+        "calificacion": "P-1",
+        "participacion": 5e-05
+      }
+    ]
+  },
+  "caracteristicas": {
+    "tipo": "Abierta Con Pacto de Permanencia",
+    "valor": 75196280.0,
+    "fecha_inicio_operaciones": "2020-01-13",
+    "no_unidades_en_circulacion": 5236773.679264
+  },
+  "calificacion": {
+    "calificacion": "",
+    "fecha_ultima_calificacion": null,
+    "entidad_calificadora": ""
+  },
+  "principales_inversiones": [
+    {
+      "emisor": "Banco Davivienda S A",
+      "participacion": 0.1092
+    },
+    {
+      "emisor": "Direccion Del Tesoro Nacional",
+      "participacion": 0.0937
+    },
+    {
+      "emisor": "Itau",
+      "participacion": 0.0882
+    },
+    {
+      "emisor": "La Hipotecaria C.F.C",
+      "participacion": 0.074
+    },
+    {
+      "emisor": "Banco de Occidente",
+      "participacion": 0.062
+    },
+    {
+      "emisor": "Banco de Bogota",
+      "participacion": 0.0564
+    },
+    {
+      "emisor": "Banco Caja Social S A",
+      "participacion": 0.0543
+    },
+    {
+      "emisor": "Financiera de Desarrollo Territorial S A Findeter",
+      "participacion": 0.0536
+    },
+    {
+      "emisor": "Rci",
+      "participacion": 0.0477
+    },
+    {
+      "emisor": "Banco de Comercio Exterior de Colombia",
+      "participacion": 0.0412
+    }
+  ],
+  "rentabilidad_volatilidad": [
+    {
+      "tipo_de_participacion": "TIPO DE PARTICIPACIÓN A - 800",
+      "rentabilidad_historica_ea": {
+        "ultimo_mes": 0.10303,
+        "ultimos_6_meses": 0.08968,
+        "anio_corrido": 0.09063,
+        "ultimo_anio": 0.08704,
+        "ultimos_2_anios": 0.10748,
+        "ultimos_3_anios": 0.11546
+      },
+      "volatilidad_historica": {
+        "ultimo_mes": 0.00236,
+        "ultimos_6_meses": 0.00335,
+        "anio_corrido": 0.00357,
+        "ultimo_anio": 0.00402,
+        "ultimos_2_anios": 0.00651,
+        "ultimos_3_anios": 0.00601
+      }
+    }
+  ]
+}
