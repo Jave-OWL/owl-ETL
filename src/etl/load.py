@@ -17,28 +17,55 @@ from src.config.db import (
 logger = logging.getLogger(__name__)
 
 
-def save_json_to_file(json_data: str, original_filename: str) -> str:
+def save_json_to_file(json_data: str, original_filename: str, source_folder: str = None) -> str:
     """
     Guarda el JSON extraído en la carpeta designada
 
     Args:
         json_data: JSON string a guardar
         original_filename: Nombre del archivo original para naming
+        source_folder: Ruta de la carpeta fuente para extraer banco y fecha
 
     Returns:
         Ruta donde se guardó el archivo
     """
     try:
-        # Crear nombre de archivo único con timestamp
-        nombre_banco =
+        # Extraer información de la carpeta fuente
+        if source_folder:
+            folder_path = Path(source_folder)
+            # Obtener el nombre de la carpeta padre (ej: "bancoDeBogota_2025")
+            parent_folder_name = folder_path.parent.name if folder_path.parent.name else folder_path.name
+
+            # Extraer nombre del banco (quitar el año)
+            nombre_banco = parent_folder_name.split('_')[0]  # "bancoDeBogota_2025" -> "bancoDeBogota"
+
+            # Extraer año y mes de la estructura de carpetas
+            año = parent_folder_name.split('_')[1] if '_' in parent_folder_name else "0000"
+            mes = folder_path.name  # "07"
+
+        else:
+            # Valores por defecto si no se proporciona source_folder
+            nombre_banco = "unknown"
+            año = "0000"
+            mes = "00"
+
+        # Nombre del fondo (sin extensión .pdf)
         nombre_fondo = Path(original_filename).stem
+
+        # Crear nombre de archivo
         json_filename = f"{nombre_banco}_{nombre_fondo}_raw.json"
-        json_path =  / json_filename
+
+        # Crear ruta de destino: data/json_raw_año_mes/
+        json_dir = Path("data") / f"json_raw_{año}_{mes}"
+        json_dir.mkdir(parents=True, exist_ok=True)
+
+        json_path = json_dir / json_filename
 
         # Guardar el JSON
         with open(json_path, 'w', encoding='utf-8') as f:
             json.dump(json.loads(json_data), f, indent=2, ensure_ascii=False)
 
+        logger.info(f"JSON guardado en: {json_path}")
         return str(json_path)
 
     except Exception as e:

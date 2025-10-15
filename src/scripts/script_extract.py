@@ -18,12 +18,13 @@ from src.config.settings import PDF_BASE_PATH, setup_logging
 logger = setup_logging()
 
 
-def process_single_pdf(pdf_path: str, save_raw_json: bool = True) -> dict:
+def process_single_pdf(pdf_path: str, source_folder: str = None, save_raw_json: bool = True) -> dict:
     """
     Procesa un solo PDF y extrae la información estructurada - hasta STAGE
 
     Args:
         pdf_path: Ruta al archivo PDF a procesar
+        source_folder: Carpeta fuente para extraer banco y fecha
         save_raw_json: Si se debe guardar el JSON crudo en archivo
 
     Returns:
@@ -43,7 +44,7 @@ def process_single_pdf(pdf_path: str, save_raw_json: bool = True) -> dict:
 
         # 4. Guardar JSON crudo si se solicita
         if save_raw_json:
-            save_path = save_json_to_file(json_output, Path(pdf_path).name) #.name accede al nombre del archivo
+            save_path = save_json_to_file(json_output, Path(pdf_path).name, source_folder) #.name accede al nombre del archivo
             logger.info(f"JSON guardado en: {save_path}")
 
         logger.info(f"Procesamiento completado exitosamente: {pdf_path}")
@@ -52,7 +53,6 @@ def process_single_pdf(pdf_path: str, save_raw_json: bool = True) -> dict:
     except Exception as e:
         logger.error(f"Error procesando {pdf_path}: {str(e)}")
         raise
-
 
 
 def process_folder(pdf_folder: Path, max_workers: int = 3) -> dict:
@@ -87,7 +87,7 @@ def process_folder(pdf_folder: Path, max_workers: int = 3) -> dict:
     with ThreadPoolExecutor(max_workers=max_workers) as executor:
         # Crear futures para todos los archivos
         future_to_file = {
-            executor.submit(process_single_pdf, str(pdf_file)): pdf_file
+            executor.submit(process_single_pdf, str(pdf_file), str(pdf_folder)): pdf_file
             for pdf_file in pdf_files
         }
 
@@ -119,6 +119,7 @@ def validate_pdf_path(pdf_path: str) -> bool:
     path = Path(pdf_path)
     return path.exists() and path.is_file() and path.suffix.lower() == '.pdf'
 
+
 def main():
     """Función principal del script"""
     parser = argparse.ArgumentParser(description='Procesar PDFs de FICs y extraer información estructurada')
@@ -137,7 +138,9 @@ def main():
             # Procesar un solo archivo
             if validate_pdf_path(args.single):
                 logger.info(f"Procesando archivo individual: {args.single}")
-                result = process_single_pdf(args.single)
+                # Para archivo individual, usar la carpeta padre como source
+                source_folder = str(Path(args.single).parent)
+                result = process_single_pdf(args.single, source_folder)
                 logger.info(f"Procesamiento completado: {args.single}")
                 print(f"Archivo procesado exitosamente: {args.single}")
             else:
@@ -181,6 +184,7 @@ def main():
         logger.error(f"Error en procesamiento: {str(e)}")
         print(f"Error: {str(e)}")
         sys.exit(1)
+
 
 if __name__ == "__main__":
     main()
