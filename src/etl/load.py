@@ -30,13 +30,10 @@ def save_json_to_file(json_data: str, original_filename: str) -> str:
     """
     try:
         # Crear nombre de archivo único con timestamp
-        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-        base_name = Path(original_filename).stem
-        json_filename = f"{base_name}_{timestamp}.json"
-        json_path = JSON_RAW_PATH / json_filename
-
-        # Asegurar que la carpeta existe
-        JSON_RAW_PATH.mkdir(parents=True, exist_ok=True)
+        nombre_banco =
+        nombre_fondo = Path(original_filename).stem
+        json_filename = f"{nombre_banco}_{nombre_fondo}_raw.json"
+        json_path =  / json_filename
 
         # Guardar el JSON
         with open(json_path, 'w', encoding='utf-8') as f:
