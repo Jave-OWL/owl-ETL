@@ -3028,3 +3028,474 @@
 2025-10-14 19:54:19,900 - src.etl.load - INFO - Datos cargados exitosamente a PostgreSQL - FIC ID: 90
 2025-10-14 19:54:19,900 - src.config.settings - INFO - JSON cargado a PostgreSQL - FIC ID: 90
 2025-10-14 19:54:19,900 - src.config.settings - INFO - Cargado exitosamente: Itau_CortoPlazo_20250923_194414_transformed.json
+2025-10-16 10:38:06,456 - unstract.llmwhisperer.client_v2 - DEBUG - logging_level set to DEBUG
+2025-10-16 10:38:06,505 - unstract.llmwhisperer.client_v2 - DEBUG - base_url set to https://llmwhisperer-api.us-central.unstract.com/api/v2
+2025-10-16 10:38:08,277 - src.config.settings - INFO - Iniciando procesamiento de carpeta: ..\owl-web-scraping\fichasTecnicas\bancoDeBogota_2025\07
+2025-10-16 10:38:08,277 - src.config.settings - INFO - Encontrados 1 PDFs para procesar
+2025-10-16 10:38:08,278 - src.config.settings - INFO - Iniciando procesamiento de: ..\owl-web-scraping\fichasTecnicas\bancoDeBogota_2025\07\sumar.pdf
+2025-10-16 10:38:08,279 - src.etl.extract - INFO - Extrayendo texto de ..\owl-web-scraping\fichasTecnicas\bancoDeBogota_2025\07\sumar.pdf (intento 1)
+2025-10-16 10:38:08,279 - unstract.llmwhisperer.client_v2 - DEBUG - whisper called
+2025-10-16 10:38:08,279 - unstract.llmwhisperer.client_v2 - DEBUG - api_url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper
+2025-10-16 10:38:08,280 - unstract.llmwhisperer.client_v2 - DEBUG - params: {'mode': 'form', 'output_mode': 'layout_preserving', 'page_seperator': '<<<', 'pages_to_extract': '', 'median_filter_size': 0, 'gaussian_blur_radius': 0, 'line_splitter_tolerance': 0.4, 'horizontal_stretch_factor': 1.0, 'mark_vertical_lines': False, 'mark_horizontal_lines': False, 'line_spitter_strategy': 'left-priority', 'add_line_nos': False, 'lang': 'eng', 'tag': 'default', 'filename': '', 'webhook_metadata': '', 'use_webhook': ''}
+2025-10-16 10:38:09,185 - unstract.llmwhisperer.client_v2 - DEBUG - whisper_status called
+2025-10-16 10:38:09,185 - unstract.llmwhisperer.client_v2 - DEBUG - url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper-status
+2025-10-16 10:38:14,902 - unstract.llmwhisperer.client_v2 - DEBUG - whisper_status called
+2025-10-16 10:38:14,904 - unstract.llmwhisperer.client_v2 - DEBUG - url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper-status
+2025-10-16 10:38:21,332 - unstract.llmwhisperer.client_v2 - DEBUG - whisper_status called
+2025-10-16 10:38:21,332 - unstract.llmwhisperer.client_v2 - DEBUG - url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper-status
+2025-10-16 10:38:21,904 - unstract.llmwhisperer.client_v2 - DEBUG - whisper_retrieve called
+2025-10-16 10:38:21,905 - unstract.llmwhisperer.client_v2 - DEBUG - url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper-retrieve
+2025-10-16 10:38:22,461 - src.etl.extract - INFO - Texto extra�do exitosamente de ..\owl-web-scraping\fichasTecnicas\bancoDeBogota_2025\07\sumar.pdf
+2025-10-16 10:38:22,461 - src.etl.extract - INFO - Procesando texto con Gemini para extraer JSON
+2025-10-16 10:38:22,461 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-10-16 10:39:24,198 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2025-10-16 10:39:24,202 - google_genai.models - INFO - AFC remote call 1 is done.
+2025-10-16 10:39:24,203 - src.etl.extract - INFO - JSON extra�do exitosamente
+2025-10-16 10:39:24,282 - src.etl.load - INFO - JSON guardado en: data\json_raw_2025_07\bancoDeBogota_sumar_raw.json
+2025-10-16 10:39:24,283 - src.config.settings - INFO - JSON guardado en: data\json_raw_2025_07\bancoDeBogota_sumar_raw.json
+2025-10-16 10:39:24,283 - src.config.settings - INFO - Procesamiento completado exitosamente: ..\owl-web-scraping\fichasTecnicas\bancoDeBogota_2025\07\sumar.pdf
+2025-10-16 10:39:24,283 - src.config.settings - INFO - Procesado exitosamente: sumar.pdf
+2025-10-16 11:18:18,038 - unstract.llmwhisperer.client_v2 - DEBUG - logging_level set to DEBUG
+2025-10-16 11:18:18,077 - unstract.llmwhisperer.client_v2 - DEBUG - base_url set to https://llmwhisperer-api.us-central.unstract.com/api/v2
+2025-10-16 11:18:19,515 - src.config.settings - INFO - Iniciando procesamiento de carpeta: ..\owl-web-scraping\fichasTecnicas\credicorpCapital_2025\07
+2025-10-16 11:18:19,515 - src.config.settings - INFO - Encontrados 1 PDFs para procesar
+2025-10-16 11:18:19,516 - src.config.settings - INFO - Iniciando procesamiento de: ..\owl-web-scraping\fichasTecnicas\credicorpCapital_2025\07\altaLiquidez.pdf
+2025-10-16 11:18:19,517 - src.etl.extract - INFO - Extrayendo texto de ..\owl-web-scraping\fichasTecnicas\credicorpCapital_2025\07\altaLiquidez.pdf (intento 1)
+2025-10-16 11:18:19,517 - unstract.llmwhisperer.client_v2 - DEBUG - whisper called
+2025-10-16 11:18:19,517 - unstract.llmwhisperer.client_v2 - DEBUG - api_url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper
+2025-10-16 11:18:19,518 - unstract.llmwhisperer.client_v2 - DEBUG - params: {'mode': 'form', 'output_mode': 'layout_preserving', 'page_seperator': '<<<', 'pages_to_extract': '', 'median_filter_size': 0, 'gaussian_blur_radius': 0, 'line_splitter_tolerance': 0.4, 'horizontal_stretch_factor': 1.0, 'mark_vertical_lines': False, 'mark_horizontal_lines': False, 'line_spitter_strategy': 'left-priority', 'add_line_nos': False, 'lang': 'eng', 'tag': 'default', 'filename': '', 'webhook_metadata': '', 'use_webhook': ''}
+2025-10-16 11:18:20,670 - unstract.llmwhisperer.client_v2 - DEBUG - whisper_status called
+2025-10-16 11:18:20,671 - unstract.llmwhisperer.client_v2 - DEBUG - url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper-status
+2025-10-16 11:18:26,311 - unstract.llmwhisperer.client_v2 - DEBUG - whisper_status called
+2025-10-16 11:18:26,311 - unstract.llmwhisperer.client_v2 - DEBUG - url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper-status
+2025-10-16 11:18:31,926 - unstract.llmwhisperer.client_v2 - DEBUG - whisper_status called
+2025-10-16 11:18:31,927 - unstract.llmwhisperer.client_v2 - DEBUG - url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper-status
+2025-10-16 11:18:32,579 - unstract.llmwhisperer.client_v2 - DEBUG - whisper_retrieve called
+2025-10-16 11:18:32,580 - unstract.llmwhisperer.client_v2 - DEBUG - url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper-retrieve
+2025-10-16 11:18:33,310 - src.etl.extract - INFO - Texto extra�do exitosamente de ..\owl-web-scraping\fichasTecnicas\credicorpCapital_2025\07\altaLiquidez.pdf
+2025-10-16 11:18:33,311 - src.etl.extract - INFO - Procesando texto con Gemini para extraer JSON
+2025-10-16 11:18:33,311 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-10-16 11:19:23,399 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2025-10-16 11:19:23,407 - google_genai.models - INFO - AFC remote call 1 is done.
+2025-10-16 11:19:23,409 - src.etl.extract - INFO - JSON extra�do exitosamente
+2025-10-16 11:19:23,414 - src.etl.load - INFO - JSON guardado en: data\json_raw_2025_07\credicorpCapital_altaLiquidez_raw.json
+2025-10-16 11:19:23,414 - src.config.settings - INFO - JSON guardado en: data\json_raw_2025_07\credicorpCapital_altaLiquidez_raw.json
+2025-10-16 11:19:23,415 - src.config.settings - INFO - Procesamiento completado exitosamente: ..\owl-web-scraping\fichasTecnicas\credicorpCapital_2025\07\altaLiquidez.pdf
+2025-10-16 11:19:23,415 - src.config.settings - INFO - Procesado exitosamente: altaLiquidez.pdf
+2025-10-16 16:54:08,210 - unstract.llmwhisperer.client_v2 - DEBUG - logging_level set to DEBUG
+2025-10-16 16:54:08,313 - unstract.llmwhisperer.client_v2 - DEBUG - base_url set to https://llmwhisperer-api.us-central.unstract.com/api/v2
+2025-10-16 17:09:49,262 - unstract.llmwhisperer.client_v2 - DEBUG - logging_level set to DEBUG
+2025-10-16 17:09:49,333 - unstract.llmwhisperer.client_v2 - DEBUG - base_url set to https://llmwhisperer-api.us-central.unstract.com/api/v2
+2025-10-16 17:09:49,993 - src.config.settings - INFO - Iniciando procesamiento de carpeta: /opt/airflow/owl-web-scraping/fichasTecnicas/bancoDeBogota_2025/07
+2025-10-16 17:09:50,003 - src.config.settings - INFO - Encontrados 1 PDFs para procesar
+2025-10-16 17:09:50,004 - src.config.settings - INFO - Iniciando procesamiento de: /opt/airflow/owl-web-scraping/fichasTecnicas/bancoDeBogota_2025/07/sumar.pdf
+2025-10-16 17:09:50,005 - src.etl.extract - INFO - Extrayendo texto de /opt/airflow/owl-web-scraping/fichasTecnicas/bancoDeBogota_2025/07/sumar.pdf (intento 1)
+2025-10-16 17:09:50,006 - unstract.llmwhisperer.client_v2 - DEBUG - whisper called
+2025-10-16 17:09:50,006 - unstract.llmwhisperer.client_v2 - DEBUG - api_url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper
+2025-10-16 17:09:50,008 - unstract.llmwhisperer.client_v2 - DEBUG - params: {'mode': 'form', 'output_mode': 'layout_preserving', 'page_seperator': '<<<', 'pages_to_extract': '', 'median_filter_size': 0, 'gaussian_blur_radius': 0, 'line_splitter_tolerance': 0.4, 'horizontal_stretch_factor': 1.0, 'mark_vertical_lines': False, 'mark_horizontal_lines': False, 'line_spitter_strategy': 'left-priority', 'add_line_nos': False, 'lang': 'eng', 'tag': 'default', 'filename': '', 'webhook_metadata': '', 'use_webhook': ''}
+2025-10-16 17:09:51,747 - unstract.llmwhisperer.client_v2 - DEBUG - whisper_status called
+2025-10-16 17:09:51,748 - unstract.llmwhisperer.client_v2 - DEBUG - url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper-status
+2025-10-16 17:09:57,149 - unstract.llmwhisperer.client_v2 - DEBUG - whisper_status called
+2025-10-16 17:09:57,151 - unstract.llmwhisperer.client_v2 - DEBUG - url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper-status
+2025-10-16 17:10:02,586 - unstract.llmwhisperer.client_v2 - DEBUG - whisper_status called
+2025-10-16 17:10:02,611 - unstract.llmwhisperer.client_v2 - DEBUG - url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper-status
+2025-10-16 17:10:03,059 - unstract.llmwhisperer.client_v2 - DEBUG - whisper_retrieve called
+2025-10-16 17:10:03,061 - unstract.llmwhisperer.client_v2 - DEBUG - url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper-retrieve
+2025-10-16 17:10:03,606 - src.etl.extract - INFO - Texto extraído exitosamente de /opt/airflow/owl-web-scraping/fichasTecnicas/bancoDeBogota_2025/07/sumar.pdf
+2025-10-16 17:10:03,607 - src.etl.extract - INFO - Procesando texto con Gemini para extraer JSON
+2025-10-16 17:10:03,608 - src.etl.extract - ERROR - Error procesando texto con Gemini: module 'google.generativeai' has no attribute 'generate_content'
+2025-10-16 17:10:03,662 - src.config.settings - ERROR - Error procesando /opt/airflow/owl-web-scraping/fichasTecnicas/bancoDeBogota_2025/07/sumar.pdf: module 'google.generativeai' has no attribute 'generate_content'
+2025-10-16 17:10:03,694 - src.config.settings - ERROR - Error procesando sumar.pdf: module 'google.generativeai' has no attribute 'generate_content'
+2025-10-16 17:11:58,295 - unstract.llmwhisperer.client_v2 - DEBUG - logging_level set to DEBUG
+2025-10-16 17:11:58,296 - unstract.llmwhisperer.client_v2 - DEBUG - base_url set to https://llmwhisperer-api.us-central.unstract.com/api/v2
+2025-10-16 17:11:58,552 - src.config.settings - INFO - Iniciando procesamiento de carpeta: /opt/airflow/owl-web-scraping/fichasTecnicas/bancoDeBogota_2025/07
+2025-10-16 17:11:58,558 - src.config.settings - INFO - Encontrados 1 PDFs para procesar
+2025-10-16 17:11:58,559 - src.config.settings - INFO - Iniciando procesamiento de: /opt/airflow/owl-web-scraping/fichasTecnicas/bancoDeBogota_2025/07/sumar.pdf
+2025-10-16 17:11:58,559 - src.etl.extract - INFO - Extrayendo texto de /opt/airflow/owl-web-scraping/fichasTecnicas/bancoDeBogota_2025/07/sumar.pdf (intento 1)
+2025-10-16 17:11:58,560 - unstract.llmwhisperer.client_v2 - DEBUG - whisper called
+2025-10-16 17:11:58,561 - unstract.llmwhisperer.client_v2 - DEBUG - api_url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper
+2025-10-16 17:11:58,562 - unstract.llmwhisperer.client_v2 - DEBUG - params: {'mode': 'form', 'output_mode': 'layout_preserving', 'page_seperator': '<<<', 'pages_to_extract': '', 'median_filter_size': 0, 'gaussian_blur_radius': 0, 'line_splitter_tolerance': 0.4, 'horizontal_stretch_factor': 1.0, 'mark_vertical_lines': False, 'mark_horizontal_lines': False, 'line_spitter_strategy': 'left-priority', 'add_line_nos': False, 'lang': 'eng', 'tag': 'default', 'filename': '', 'webhook_metadata': '', 'use_webhook': ''}
+2025-10-16 17:11:59,184 - unstract.llmwhisperer.client_v2 - DEBUG - whisper_status called
+2025-10-16 17:11:59,185 - unstract.llmwhisperer.client_v2 - DEBUG - url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper-status
+2025-10-16 17:12:04,436 - unstract.llmwhisperer.client_v2 - DEBUG - whisper_status called
+2025-10-16 17:12:04,438 - unstract.llmwhisperer.client_v2 - DEBUG - url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper-status
+2025-10-16 17:12:09,694 - unstract.llmwhisperer.client_v2 - DEBUG - whisper_status called
+2025-10-16 17:12:09,695 - unstract.llmwhisperer.client_v2 - DEBUG - url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper-status
+2025-10-16 17:12:09,918 - unstract.llmwhisperer.client_v2 - DEBUG - whisper_retrieve called
+2025-10-16 17:12:09,919 - unstract.llmwhisperer.client_v2 - DEBUG - url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper-retrieve
+2025-10-16 17:12:10,184 - src.etl.extract - INFO - Texto extraído exitosamente de /opt/airflow/owl-web-scraping/fichasTecnicas/bancoDeBogota_2025/07/sumar.pdf
+2025-10-16 17:12:10,185 - src.etl.extract - INFO - Procesando texto con Gemini para extraer JSON
+2025-10-16 17:13:30,165 - src.etl.extract - INFO - JSON extraído exitosamente
+2025-10-16 17:13:30,383 - src.etl.load - INFO - JSON guardado en: data/json_raw_2025_07/bancoDeBogota_sumar_raw.json
+2025-10-16 17:13:30,407 - src.config.settings - INFO - JSON guardado en: data/json_raw_2025_07/bancoDeBogota_sumar_raw.json
+2025-10-16 17:13:30,496 - src.config.settings - INFO - Procesamiento completado exitosamente: /opt/airflow/owl-web-scraping/fichasTecnicas/bancoDeBogota_2025/07/sumar.pdf
+2025-10-16 17:13:30,609 - src.config.settings - INFO - Procesado exitosamente: sumar.pdf
+2025-10-16 17:20:04,796 - unstract.llmwhisperer.client_v2 - DEBUG - logging_level set to DEBUG
+2025-10-16 17:20:04,977 - unstract.llmwhisperer.client_v2 - DEBUG - base_url set to https://llmwhisperer-api.us-central.unstract.com/api/v2
+2025-10-16 17:20:05,033 - unstract.llmwhisperer.client_v2 - DEBUG - logging_level set to DEBUG
+2025-10-16 17:20:05,037 - unstract.llmwhisperer.client_v2 - DEBUG - base_url set to https://llmwhisperer-api.us-central.unstract.com/api/v2
+2025-10-16 17:20:05,043 - unstract.llmwhisperer.client_v2 - DEBUG - logging_level set to DEBUG
+2025-10-16 17:20:05,044 - unstract.llmwhisperer.client_v2 - DEBUG - base_url set to https://llmwhisperer-api.us-central.unstract.com/api/v2
+2025-10-16 17:20:05,099 - unstract.llmwhisperer.client_v2 - DEBUG - logging_level set to DEBUG
+2025-10-16 17:20:05,102 - unstract.llmwhisperer.client_v2 - DEBUG - base_url set to https://llmwhisperer-api.us-central.unstract.com/api/v2
+2025-10-16 17:20:05,113 - unstract.llmwhisperer.client_v2 - DEBUG - logging_level set to DEBUG
+2025-10-16 17:20:05,136 - unstract.llmwhisperer.client_v2 - DEBUG - base_url set to https://llmwhisperer-api.us-central.unstract.com/api/v2
+2025-10-16 17:20:05,393 - unstract.llmwhisperer.client_v2 - DEBUG - logging_level set to DEBUG
+2025-10-16 17:20:05,395 - unstract.llmwhisperer.client_v2 - DEBUG - base_url set to https://llmwhisperer-api.us-central.unstract.com/api/v2
+2025-10-16 17:20:05,422 - unstract.llmwhisperer.client_v2 - DEBUG - logging_level set to DEBUG
+2025-10-16 17:20:05,425 - unstract.llmwhisperer.client_v2 - DEBUG - base_url set to https://llmwhisperer-api.us-central.unstract.com/api/v2
+2025-10-16 17:20:05,762 - unstract.llmwhisperer.client_v2 - DEBUG - logging_level set to DEBUG
+2025-10-16 17:20:05,765 - unstract.llmwhisperer.client_v2 - DEBUG - base_url set to https://llmwhisperer-api.us-central.unstract.com/api/v2
+2025-10-16 17:20:06,033 - src.config.settings - INFO - Iniciando procesamiento de carpeta: /opt/airflow/owl-web-scraping/fichasTecnicas/bancolombia_2025/07
+2025-10-16 17:20:06,042 - src.config.settings - INFO - Encontrados 1 PDFs para procesar
+2025-10-16 17:20:06,044 - src.config.settings - INFO - Iniciando procesamiento de: /opt/airflow/owl-web-scraping/fichasTecnicas/bancolombia_2025/07/fiducuenta.pdf
+2025-10-16 17:20:06,046 - src.etl.extract - INFO - Extrayendo texto de /opt/airflow/owl-web-scraping/fichasTecnicas/bancolombia_2025/07/fiducuenta.pdf (intento 1)
+2025-10-16 17:20:06,047 - unstract.llmwhisperer.client_v2 - DEBUG - whisper called
+2025-10-16 17:20:06,048 - unstract.llmwhisperer.client_v2 - DEBUG - api_url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper
+2025-10-16 17:20:06,050 - unstract.llmwhisperer.client_v2 - DEBUG - params: {'mode': 'form', 'output_mode': 'layout_preserving', 'page_seperator': '<<<', 'pages_to_extract': '', 'median_filter_size': 0, 'gaussian_blur_radius': 0, 'line_splitter_tolerance': 0.4, 'horizontal_stretch_factor': 1.0, 'mark_vertical_lines': False, 'mark_horizontal_lines': False, 'line_spitter_strategy': 'left-priority', 'add_line_nos': False, 'lang': 'eng', 'tag': 'default', 'filename': '', 'webhook_metadata': '', 'use_webhook': ''}
+2025-10-16 17:20:06,055 - src.config.settings - INFO - Iniciando procesamiento de carpeta: /opt/airflow/owl-web-scraping/fichasTecnicas/bancoDeBogota_2025/07
+2025-10-16 17:20:06,069 - src.config.settings - INFO - Encontrados 1 PDFs para procesar
+2025-10-16 17:20:06,072 - src.config.settings - INFO - Iniciando procesamiento de: /opt/airflow/owl-web-scraping/fichasTecnicas/bancoDeBogota_2025/07/sumar.pdf
+2025-10-16 17:20:06,073 - src.etl.extract - INFO - Extrayendo texto de /opt/airflow/owl-web-scraping/fichasTecnicas/bancoDeBogota_2025/07/sumar.pdf (intento 1)
+2025-10-16 17:20:06,075 - unstract.llmwhisperer.client_v2 - DEBUG - whisper called
+2025-10-16 17:20:06,077 - unstract.llmwhisperer.client_v2 - DEBUG - api_url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper
+2025-10-16 17:20:06,079 - unstract.llmwhisperer.client_v2 - DEBUG - params: {'mode': 'form', 'output_mode': 'layout_preserving', 'page_seperator': '<<<', 'pages_to_extract': '', 'median_filter_size': 0, 'gaussian_blur_radius': 0, 'line_splitter_tolerance': 0.4, 'horizontal_stretch_factor': 1.0, 'mark_vertical_lines': False, 'mark_horizontal_lines': False, 'line_spitter_strategy': 'left-priority', 'add_line_nos': False, 'lang': 'eng', 'tag': 'default', 'filename': '', 'webhook_metadata': '', 'use_webhook': ''}
+2025-10-16 17:20:06,287 - src.config.settings - INFO - Iniciando procesamiento de carpeta: /opt/airflow/owl-web-scraping/fichasTecnicas/progresion_2025/07
+2025-10-16 17:20:06,287 - src.config.settings - INFO - Iniciando procesamiento de carpeta: /opt/airflow/owl-web-scraping/fichasTecnicas/davivienda_2025/07
+2025-10-16 17:20:06,293 - src.config.settings - INFO - Encontrados 1 PDFs para procesar
+2025-10-16 17:20:06,293 - src.config.settings - INFO - Encontrados 1 PDFs para procesar
+2025-10-16 17:20:06,294 - src.config.settings - INFO - Iniciando procesamiento de: /opt/airflow/owl-web-scraping/fichasTecnicas/progresion_2025/07/globalVista.pdf
+2025-10-16 17:20:06,294 - src.config.settings - INFO - Iniciando procesamiento de: /opt/airflow/owl-web-scraping/fichasTecnicas/davivienda_2025/07/multiescala.pdf
+2025-10-16 17:20:06,295 - src.etl.extract - INFO - Extrayendo texto de /opt/airflow/owl-web-scraping/fichasTecnicas/davivienda_2025/07/multiescala.pdf (intento 1)
+2025-10-16 17:20:06,295 - src.etl.extract - INFO - Extrayendo texto de /opt/airflow/owl-web-scraping/fichasTecnicas/progresion_2025/07/globalVista.pdf (intento 1)
+2025-10-16 17:20:06,296 - unstract.llmwhisperer.client_v2 - DEBUG - whisper called
+2025-10-16 17:20:06,296 - unstract.llmwhisperer.client_v2 - DEBUG - whisper called
+2025-10-16 17:20:06,296 - unstract.llmwhisperer.client_v2 - DEBUG - api_url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper
+2025-10-16 17:20:06,297 - unstract.llmwhisperer.client_v2 - DEBUG - api_url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper
+2025-10-16 17:20:06,297 - unstract.llmwhisperer.client_v2 - DEBUG - params: {'mode': 'form', 'output_mode': 'layout_preserving', 'page_seperator': '<<<', 'pages_to_extract': '', 'median_filter_size': 0, 'gaussian_blur_radius': 0, 'line_splitter_tolerance': 0.4, 'horizontal_stretch_factor': 1.0, 'mark_vertical_lines': False, 'mark_horizontal_lines': False, 'line_spitter_strategy': 'left-priority', 'add_line_nos': False, 'lang': 'eng', 'tag': 'default', 'filename': '', 'webhook_metadata': '', 'use_webhook': ''}
+2025-10-16 17:20:06,297 - unstract.llmwhisperer.client_v2 - DEBUG - params: {'mode': 'form', 'output_mode': 'layout_preserving', 'page_seperator': '<<<', 'pages_to_extract': '', 'median_filter_size': 0, 'gaussian_blur_radius': 0, 'line_splitter_tolerance': 0.4, 'horizontal_stretch_factor': 1.0, 'mark_vertical_lines': False, 'mark_horizontal_lines': False, 'line_spitter_strategy': 'left-priority', 'add_line_nos': False, 'lang': 'eng', 'tag': 'default', 'filename': '', 'webhook_metadata': '', 'use_webhook': ''}
+2025-10-16 17:20:06,595 - src.config.settings - INFO - Iniciando procesamiento de carpeta: /opt/airflow/owl-web-scraping/fichasTecnicas/bancoDeOccidenteFiduoccidente_2025/07
+2025-10-16 17:20:06,595 - src.config.settings - INFO - Iniciando procesamiento de carpeta: /opt/airflow/owl-web-scraping/fichasTecnicas/credicorpCapital_2025/07
+2025-10-16 17:20:06,603 - src.config.settings - INFO - Encontrados 1 PDFs para procesar
+2025-10-16 17:20:06,604 - src.config.settings - INFO - Encontrados 1 PDFs para procesar
+2025-10-16 17:20:06,605 - src.config.settings - INFO - Iniciando procesamiento de: /opt/airflow/owl-web-scraping/fichasTecnicas/credicorpCapital_2025/07/altaLiquidez.pdf
+2025-10-16 17:20:06,606 - src.config.settings - INFO - Iniciando procesamiento de: /opt/airflow/owl-web-scraping/fichasTecnicas/bancoDeOccidenteFiduoccidente_2025/07/plazoFijo.pdf
+2025-10-16 17:20:06,606 - src.etl.extract - INFO - Extrayendo texto de /opt/airflow/owl-web-scraping/fichasTecnicas/credicorpCapital_2025/07/altaLiquidez.pdf (intento 1)
+2025-10-16 17:20:06,606 - src.etl.extract - INFO - Extrayendo texto de /opt/airflow/owl-web-scraping/fichasTecnicas/bancoDeOccidenteFiduoccidente_2025/07/plazoFijo.pdf (intento 1)
+2025-10-16 17:20:06,607 - unstract.llmwhisperer.client_v2 - DEBUG - whisper called
+2025-10-16 17:20:06,608 - unstract.llmwhisperer.client_v2 - DEBUG - whisper called
+2025-10-16 17:20:06,608 - unstract.llmwhisperer.client_v2 - DEBUG - api_url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper
+2025-10-16 17:20:06,608 - unstract.llmwhisperer.client_v2 - DEBUG - api_url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper
+2025-10-16 17:20:06,608 - unstract.llmwhisperer.client_v2 - DEBUG - params: {'mode': 'form', 'output_mode': 'layout_preserving', 'page_seperator': '<<<', 'pages_to_extract': '', 'median_filter_size': 0, 'gaussian_blur_radius': 0, 'line_splitter_tolerance': 0.4, 'horizontal_stretch_factor': 1.0, 'mark_vertical_lines': False, 'mark_horizontal_lines': False, 'line_spitter_strategy': 'left-priority', 'add_line_nos': False, 'lang': 'eng', 'tag': 'default', 'filename': '', 'webhook_metadata': '', 'use_webhook': ''}
+2025-10-16 17:20:06,609 - unstract.llmwhisperer.client_v2 - DEBUG - params: {'mode': 'form', 'output_mode': 'layout_preserving', 'page_seperator': '<<<', 'pages_to_extract': '', 'median_filter_size': 0, 'gaussian_blur_radius': 0, 'line_splitter_tolerance': 0.4, 'horizontal_stretch_factor': 1.0, 'mark_vertical_lines': False, 'mark_horizontal_lines': False, 'line_spitter_strategy': 'left-priority', 'add_line_nos': False, 'lang': 'eng', 'tag': 'default', 'filename': '', 'webhook_metadata': '', 'use_webhook': ''}
+2025-10-16 17:20:07,156 - src.config.settings - INFO - Iniciando procesamiento de carpeta: /opt/airflow/owl-web-scraping/fichasTecnicas/bbva_2025/07
+2025-10-16 17:20:07,209 - src.config.settings - WARNING - No se encontraron PDFs en: /opt/airflow/owl-web-scraping/fichasTecnicas/bbva_2025/07
+2025-10-16 17:20:07,469 - src.config.settings - INFO - Iniciando procesamiento de carpeta: /opt/airflow/owl-web-scraping/fichasTecnicas/itau_2025/07
+2025-10-16 17:20:07,474 - src.config.settings - INFO - Encontrados 1 PDFs para procesar
+2025-10-16 17:20:07,475 - src.config.settings - INFO - Iniciando procesamiento de: /opt/airflow/owl-web-scraping/fichasTecnicas/itau_2025/07/moneyMarket.pdf
+2025-10-16 17:20:07,476 - src.etl.extract - INFO - Extrayendo texto de /opt/airflow/owl-web-scraping/fichasTecnicas/itau_2025/07/moneyMarket.pdf (intento 1)
+2025-10-16 17:20:07,478 - unstract.llmwhisperer.client_v2 - DEBUG - whisper called
+2025-10-16 17:20:07,478 - unstract.llmwhisperer.client_v2 - DEBUG - api_url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper
+2025-10-16 17:20:07,479 - unstract.llmwhisperer.client_v2 - DEBUG - params: {'mode': 'form', 'output_mode': 'layout_preserving', 'page_seperator': '<<<', 'pages_to_extract': '', 'median_filter_size': 0, 'gaussian_blur_radius': 0, 'line_splitter_tolerance': 0.4, 'horizontal_stretch_factor': 1.0, 'mark_vertical_lines': False, 'mark_horizontal_lines': False, 'line_spitter_strategy': 'left-priority', 'add_line_nos': False, 'lang': 'eng', 'tag': 'default', 'filename': '', 'webhook_metadata': '', 'use_webhook': ''}
+2025-10-16 17:20:07,795 - unstract.llmwhisperer.client_v2 - DEBUG - whisper_status called
+2025-10-16 17:20:07,800 - unstract.llmwhisperer.client_v2 - DEBUG - url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper-status
+2025-10-16 17:20:07,878 - unstract.llmwhisperer.client_v2 - DEBUG - whisper_status called
+2025-10-16 17:20:07,878 - unstract.llmwhisperer.client_v2 - DEBUG - whisper_status called
+2025-10-16 17:20:07,878 - unstract.llmwhisperer.client_v2 - DEBUG - whisper_status called
+2025-10-16 17:20:07,878 - unstract.llmwhisperer.client_v2 - DEBUG - whisper_status called
+2025-10-16 17:20:07,888 - unstract.llmwhisperer.client_v2 - DEBUG - url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper-status
+2025-10-16 17:20:07,888 - unstract.llmwhisperer.client_v2 - DEBUG - url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper-status
+2025-10-16 17:20:07,888 - unstract.llmwhisperer.client_v2 - DEBUG - url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper-status
+2025-10-16 17:20:07,888 - unstract.llmwhisperer.client_v2 - DEBUG - url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper-status
+2025-10-16 17:20:08,065 - unstract.llmwhisperer.client_v2 - DEBUG - whisper_status called
+2025-10-16 17:20:08,071 - unstract.llmwhisperer.client_v2 - DEBUG - url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper-status
+2025-10-16 17:20:08,145 - unstract.llmwhisperer.client_v2 - DEBUG - whisper_status called
+2025-10-16 17:20:08,146 - unstract.llmwhisperer.client_v2 - DEBUG - url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper-status
+2025-10-16 17:20:13,114 - unstract.llmwhisperer.client_v2 - DEBUG - whisper_status called
+2025-10-16 17:20:13,115 - unstract.llmwhisperer.client_v2 - DEBUG - url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper-status
+2025-10-16 17:20:13,122 - unstract.llmwhisperer.client_v2 - DEBUG - whisper_status called
+2025-10-16 17:20:13,124 - unstract.llmwhisperer.client_v2 - DEBUG - url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper-status
+2025-10-16 17:20:13,146 - unstract.llmwhisperer.client_v2 - DEBUG - whisper_status called
+2025-10-16 17:20:13,147 - unstract.llmwhisperer.client_v2 - DEBUG - url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper-status
+2025-10-16 17:20:13,151 - unstract.llmwhisperer.client_v2 - DEBUG - whisper_status called
+2025-10-16 17:20:13,155 - unstract.llmwhisperer.client_v2 - DEBUG - url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper-status
+2025-10-16 17:20:13,228 - unstract.llmwhisperer.client_v2 - DEBUG - whisper_status called
+2025-10-16 17:20:13,229 - unstract.llmwhisperer.client_v2 - DEBUG - url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper-status
+2025-10-16 17:20:13,268 - unstract.llmwhisperer.client_v2 - DEBUG - whisper_status called
+2025-10-16 17:20:13,270 - unstract.llmwhisperer.client_v2 - DEBUG - url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper-status
+2025-10-16 17:20:13,348 - unstract.llmwhisperer.client_v2 - DEBUG - whisper_status called
+2025-10-16 17:20:13,349 - unstract.llmwhisperer.client_v2 - DEBUG - url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper-status
+2025-10-16 17:20:18,400 - unstract.llmwhisperer.client_v2 - DEBUG - whisper_status called
+2025-10-16 17:20:18,403 - unstract.llmwhisperer.client_v2 - DEBUG - url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper-status
+2025-10-16 17:20:18,411 - unstract.llmwhisperer.client_v2 - DEBUG - whisper_status called
+2025-10-16 17:20:18,414 - unstract.llmwhisperer.client_v2 - DEBUG - url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper-status
+2025-10-16 17:20:18,419 - unstract.llmwhisperer.client_v2 - DEBUG - whisper_status called
+2025-10-16 17:20:18,422 - unstract.llmwhisperer.client_v2 - DEBUG - whisper_status called
+2025-10-16 17:20:18,424 - unstract.llmwhisperer.client_v2 - DEBUG - url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper-status
+2025-10-16 17:20:18,425 - unstract.llmwhisperer.client_v2 - DEBUG - url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper-status
+2025-10-16 17:20:18,462 - unstract.llmwhisperer.client_v2 - DEBUG - whisper_status called
+2025-10-16 17:20:18,463 - unstract.llmwhisperer.client_v2 - DEBUG - url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper-status
+2025-10-16 17:20:18,582 - unstract.llmwhisperer.client_v2 - DEBUG - whisper_status called
+2025-10-16 17:20:18,584 - unstract.llmwhisperer.client_v2 - DEBUG - url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper-status
+2025-10-16 17:20:18,596 - unstract.llmwhisperer.client_v2 - DEBUG - whisper_status called
+2025-10-16 17:20:18,597 - unstract.llmwhisperer.client_v2 - DEBUG - url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper-status
+2025-10-16 17:20:18,744 - unstract.llmwhisperer.client_v2 - DEBUG - whisper_retrieve called
+2025-10-16 17:20:18,745 - unstract.llmwhisperer.client_v2 - DEBUG - url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper-retrieve
+2025-10-16 17:20:18,756 - unstract.llmwhisperer.client_v2 - DEBUG - whisper_retrieve called
+2025-10-16 17:20:18,757 - unstract.llmwhisperer.client_v2 - DEBUG - url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper-retrieve
+2025-10-16 17:20:18,770 - unstract.llmwhisperer.client_v2 - DEBUG - whisper_retrieve called
+2025-10-16 17:20:18,771 - unstract.llmwhisperer.client_v2 - DEBUG - url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper-retrieve
+2025-10-16 17:20:18,773 - unstract.llmwhisperer.client_v2 - DEBUG - whisper_retrieve called
+2025-10-16 17:20:18,774 - unstract.llmwhisperer.client_v2 - DEBUG - url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper-retrieve
+2025-10-16 17:20:18,788 - unstract.llmwhisperer.client_v2 - DEBUG - whisper_retrieve called
+2025-10-16 17:20:18,791 - unstract.llmwhisperer.client_v2 - DEBUG - url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper-retrieve
+2025-10-16 17:20:19,057 - src.etl.extract - INFO - Texto extraído exitosamente de /opt/airflow/owl-web-scraping/fichasTecnicas/davivienda_2025/07/multiescala.pdf
+2025-10-16 17:20:19,058 - src.etl.extract - INFO - Procesando texto con Gemini para extraer JSON
+2025-10-16 17:20:19,058 - src.etl.extract - INFO - Texto extraído exitosamente de /opt/airflow/owl-web-scraping/fichasTecnicas/bancoDeOccidenteFiduoccidente_2025/07/plazoFijo.pdf
+2025-10-16 17:20:19,059 - src.etl.extract - INFO - Procesando texto con Gemini para extraer JSON
+2025-10-16 17:20:19,095 - src.etl.extract - INFO - Texto extraído exitosamente de /opt/airflow/owl-web-scraping/fichasTecnicas/itau_2025/07/moneyMarket.pdf
+2025-10-16 17:20:19,096 - src.etl.extract - INFO - Texto extraído exitosamente de /opt/airflow/owl-web-scraping/fichasTecnicas/progresion_2025/07/globalVista.pdf
+2025-10-16 17:20:19,096 - src.etl.extract - INFO - Procesando texto con Gemini para extraer JSON
+2025-10-16 17:20:19,096 - src.etl.extract - INFO - Procesando texto con Gemini para extraer JSON
+2025-10-16 17:20:19,128 - src.etl.extract - INFO - Texto extraído exitosamente de /opt/airflow/owl-web-scraping/fichasTecnicas/bancolombia_2025/07/fiducuenta.pdf
+2025-10-16 17:20:19,129 - src.etl.extract - INFO - Procesando texto con Gemini para extraer JSON
+2025-10-16 17:20:23,825 - unstract.llmwhisperer.client_v2 - DEBUG - whisper_status called
+2025-10-16 17:20:23,827 - unstract.llmwhisperer.client_v2 - DEBUG - url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper-status
+2025-10-16 17:20:23,910 - unstract.llmwhisperer.client_v2 - DEBUG - whisper_status called
+2025-10-16 17:20:23,911 - unstract.llmwhisperer.client_v2 - DEBUG - url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper-status
+2025-10-16 17:20:24,076 - unstract.llmwhisperer.client_v2 - DEBUG - whisper_retrieve called
+2025-10-16 17:20:24,078 - unstract.llmwhisperer.client_v2 - DEBUG - url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper-retrieve
+2025-10-16 17:20:24,111 - unstract.llmwhisperer.client_v2 - DEBUG - whisper_retrieve called
+2025-10-16 17:20:24,112 - unstract.llmwhisperer.client_v2 - DEBUG - url: https://llmwhisperer-api.us-central.unstract.com/api/v2/whisper-retrieve
+2025-10-16 17:20:24,344 - src.etl.extract - INFO - Texto extraído exitosamente de /opt/airflow/owl-web-scraping/fichasTecnicas/bancoDeBogota_2025/07/sumar.pdf
+2025-10-16 17:20:24,346 - src.etl.extract - INFO - Procesando texto con Gemini para extraer JSON
+2025-10-16 17:20:24,433 - src.etl.extract - INFO - Texto extraído exitosamente de /opt/airflow/owl-web-scraping/fichasTecnicas/credicorpCapital_2025/07/altaLiquidez.pdf
+2025-10-16 17:20:24,434 - src.etl.extract - INFO - Procesando texto con Gemini para extraer JSON
+2025-10-16 17:20:53,894 - src.etl.extract - INFO - JSON extraído exitosamente
+2025-10-16 17:20:53,903 - src.etl.load - INFO - JSON guardado en: data/json_raw_2025_07/progresion_globalVista_raw.json
+2025-10-16 17:20:53,904 - src.config.settings - INFO - JSON guardado en: data/json_raw_2025_07/progresion_globalVista_raw.json
+2025-10-16 17:20:53,905 - src.config.settings - INFO - Procesamiento completado exitosamente: /opt/airflow/owl-web-scraping/fichasTecnicas/progresion_2025/07/globalVista.pdf
+2025-10-16 17:20:53,907 - src.config.settings - INFO - Procesado exitosamente: globalVista.pdf
+2025-10-16 17:20:57,874 - src.etl.extract - INFO - JSON extraído exitosamente
+2025-10-16 17:20:57,903 - src.etl.load - INFO - JSON guardado en: data/json_raw_2025_07/bancolombia_fiducuenta_raw.json
+2025-10-16 17:20:57,904 - src.config.settings - INFO - JSON guardado en: data/json_raw_2025_07/bancolombia_fiducuenta_raw.json
+2025-10-16 17:20:57,906 - src.config.settings - INFO - Procesamiento completado exitosamente: /opt/airflow/owl-web-scraping/fichasTecnicas/bancolombia_2025/07/fiducuenta.pdf
+2025-10-16 17:20:57,907 - src.config.settings - INFO - Procesado exitosamente: fiducuenta.pdf
+2025-10-16 17:21:01,536 - src.etl.extract - INFO - JSON extraído exitosamente
+2025-10-16 17:21:01,631 - src.etl.load - INFO - JSON guardado en: data/json_raw_2025_07/bancoDeOccidenteFiduoccidente_plazoFijo_raw.json
+2025-10-16 17:21:01,631 - src.config.settings - INFO - JSON guardado en: data/json_raw_2025_07/bancoDeOccidenteFiduoccidente_plazoFijo_raw.json
+2025-10-16 17:21:01,632 - src.config.settings - INFO - Procesamiento completado exitosamente: /opt/airflow/owl-web-scraping/fichasTecnicas/bancoDeOccidenteFiduoccidente_2025/07/plazoFijo.pdf
+2025-10-16 17:21:01,633 - src.config.settings - INFO - Procesado exitosamente: plazoFijo.pdf
+2025-10-16 17:21:01,842 - src.etl.extract - INFO - JSON extraído exitosamente
+2025-10-16 17:21:01,854 - src.etl.load - INFO - JSON guardado en: data/json_raw_2025_07/davivienda_multiescala_raw.json
+2025-10-16 17:21:01,855 - src.config.settings - INFO - JSON guardado en: data/json_raw_2025_07/davivienda_multiescala_raw.json
+2025-10-16 17:21:01,856 - src.config.settings - INFO - Procesamiento completado exitosamente: /opt/airflow/owl-web-scraping/fichasTecnicas/davivienda_2025/07/multiescala.pdf
+2025-10-16 17:21:01,857 - src.config.settings - INFO - Procesado exitosamente: multiescala.pdf
+2025-10-16 17:21:06,901 - src.etl.extract - INFO - JSON extraído exitosamente
+2025-10-16 17:21:07,259 - src.etl.load - INFO - JSON guardado en: data/json_raw_2025_07/itau_moneyMarket_raw.json
+2025-10-16 17:21:07,260 - src.config.settings - INFO - JSON guardado en: data/json_raw_2025_07/itau_moneyMarket_raw.json
+2025-10-16 17:21:07,260 - src.config.settings - INFO - Procesamiento completado exitosamente: /opt/airflow/owl-web-scraping/fichasTecnicas/itau_2025/07/moneyMarket.pdf
+2025-10-16 17:21:07,261 - src.config.settings - INFO - Procesado exitosamente: moneyMarket.pdf
+2025-10-16 17:21:11,160 - src.etl.extract - INFO - JSON extraído exitosamente
+2025-10-16 17:21:11,174 - src.etl.load - INFO - JSON guardado en: data/json_raw_2025_07/credicorpCapital_altaLiquidez_raw.json
+2025-10-16 17:21:11,176 - src.config.settings - INFO - JSON guardado en: data/json_raw_2025_07/credicorpCapital_altaLiquidez_raw.json
+2025-10-16 17:21:11,178 - src.config.settings - INFO - Procesamiento completado exitosamente: /opt/airflow/owl-web-scraping/fichasTecnicas/credicorpCapital_2025/07/altaLiquidez.pdf
+2025-10-16 17:21:11,179 - src.config.settings - INFO - Procesado exitosamente: altaLiquidez.pdf
+2025-10-16 17:21:42,940 - src.etl.extract - INFO - JSON extraído exitosamente
+2025-10-16 17:21:42,981 - src.etl.load - INFO - JSON guardado en: data/json_raw_2025_07/bancoDeBogota_sumar_raw.json
+2025-10-16 17:21:42,982 - src.config.settings - INFO - JSON guardado en: data/json_raw_2025_07/bancoDeBogota_sumar_raw.json
+2025-10-16 17:21:42,982 - src.config.settings - INFO - Procesamiento completado exitosamente: /opt/airflow/owl-web-scraping/fichasTecnicas/bancoDeBogota_2025/07/sumar.pdf
+2025-10-16 17:21:42,983 - src.config.settings - INFO - Procesado exitosamente: sumar.pdf
+2025-10-16 17:21:46,821 - src.config.settings - INFO - Iniciando transformación de carpeta: data/json_raw_2025_07
+2025-10-16 17:21:46,834 - src.config.settings - INFO - Encontrados 7 JSONs para transformar
+2025-10-16 17:21:46,836 - src.config.settings - INFO - Transformando: bancoDeBogota_sumar_raw.json
+2025-10-16 17:21:46,837 - src.config.settings - INFO - Transformando: bancoDeOccidenteFiduoccidente_plazoFijo_raw.json
+2025-10-16 17:21:46,837 - src.config.settings - INFO - Transformando: bancolombia_fiducuenta_raw.json
+2025-10-16 17:21:46,840 - src.etl.transform - INFO - Iniciando transformación de datos FIC: desconocido
+2025-10-16 17:21:46,841 - src.etl.transform - INFO - Iniciando transformación de datos FIC: desconocido
+2025-10-16 17:21:46,841 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: FONDO DE INVERSIÓN COLECTIVA ABIERTO SUMAR | Gestor: Fiduciaria Bogotá S.A. | Archivo: desconocido | Campo: principales_inversiones | Suma: 0.7347 (esperado ~1.0)
+2025-10-16 17:21:46,841 - src.etl.transform - INFO - Iniciando transformación de datos FIC: desconocido
+2025-10-16 17:21:46,842 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: FIC META PLANEADA | Gestor: FIDUCIARIA DE OCCIDENTE S.A. | Archivo: desconocido | Campo: principales_inversiones | Suma: 0.6803 (esperado ~1.0)
+2025-10-16 17:21:46,842 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: Fiducuenta | Gestor: Fiduciaria Bancolombia S.A. | Archivo: desconocido | Campo: por_tipo_de_renta | Suma: 0.5966 (esperado ~1.0)
+2025-10-16 17:21:46,845 - src.etl.transform - WARNING - ENTIDAD NO RECONOCIDA - FIC: FIC META PLANEADA | Gestor: FIDUCIARIA DE OCCIDENTE S.A. | Archivo: desconocido | Entidad: N/A
+2025-10-16 17:21:46,849 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: Fiducuenta | Gestor: Fiduciaria Bancolombia S.A. | Archivo: desconocido | Campo: principales_inversiones | Suma: 0.8777 (esperado ~1.0)
+2025-10-16 17:21:46,942 - src.etl.transform - INFO - Tipo detectado para FONDO DE INVERSIÓN COLECTIVA ABIERTO SUMAR: Renta Fija
+2025-10-16 17:21:46,942 - src.etl.transform - INFO - Tipo detectado para FIC META PLANEADA: Renta Fija
+2025-10-16 17:21:46,942 - src.etl.transform - INFO - Tipo detectado para Fiducuenta: Renta Fija
+2025-10-16 17:21:46,944 - src.etl.transform - INFO - Transformación de datos completada exitosamente: desconocido
+2025-10-16 17:21:46,944 - src.etl.transform - INFO - Transformación de datos completada exitosamente: desconocido
+2025-10-16 17:21:46,945 - src.etl.transform - INFO - Transformación de datos completada exitosamente: desconocido
+2025-10-16 17:21:46,955 - src.config.settings - INFO - JSON transformado guardado: bancoDeBogota_sumar_raw_transformed.json
+2025-10-16 17:21:46,956 - src.config.settings - INFO - Transformando: credicorpCapital_altaLiquidez_raw.json
+2025-10-16 17:21:46,956 - src.config.settings - INFO - Transformado exitosamente: bancoDeBogota_sumar_raw.json
+2025-10-16 17:21:46,961 - src.etl.transform - INFO - Iniciando transformación de datos FIC: desconocido
+2025-10-16 17:21:46,961 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: CREDICORP CAPITAL ALTA LIQUIDEZ | Gestor: CREDICORP CAPITAL COLOMBIA S.A. | Archivo: desconocido | Campo: por_calificacion | Suma: 1.1000 (esperado ~1.0)
+2025-10-16 17:21:46,962 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: CREDICORP CAPITAL ALTA LIQUIDEZ | Gestor: CREDICORP CAPITAL COLOMBIA S.A. | Archivo: desconocido | Campo: principales_inversiones | Suma: 0.7631 (esperado ~1.0)
+2025-10-16 17:21:46,963 - src.etl.transform - INFO - Tipo detectado para CREDICORP CAPITAL ALTA LIQUIDEZ: Renta Fija
+2025-10-16 17:21:46,964 - src.etl.transform - INFO - Transformación de datos completada exitosamente: desconocido
+2025-10-16 17:21:46,976 - src.config.settings - INFO - JSON transformado guardado: bancoDeOccidenteFiduoccidente_plazoFijo_raw_transformed.json
+2025-10-16 17:21:46,977 - src.config.settings - INFO - Transformando: davivienda_multiescala_raw.json
+2025-10-16 17:21:46,978 - src.config.settings - INFO - Transformado exitosamente: bancoDeOccidenteFiduoccidente_plazoFijo_raw.json
+2025-10-16 17:21:46,979 - src.config.settings - INFO - JSON transformado guardado: bancolombia_fiducuenta_raw_transformed.json
+2025-10-16 17:21:46,980 - src.config.settings - INFO - Transformando: itau_moneyMarket_raw.json
+2025-10-16 17:21:46,980 - src.config.settings - INFO - Transformado exitosamente: bancolombia_fiducuenta_raw.json
+2025-10-16 17:21:46,980 - src.config.settings - INFO - JSON transformado guardado: credicorpCapital_altaLiquidez_raw_transformed.json
+2025-10-16 17:21:46,982 - src.config.settings - INFO - Transformando: progresion_globalVista_raw.json
+2025-10-16 17:21:46,982 - src.etl.transform - INFO - Iniciando transformación de datos FIC: desconocido
+2025-10-16 17:21:46,982 - src.config.settings - INFO - Transformado exitosamente: credicorpCapital_altaLiquidez_raw.json
+2025-10-16 17:21:46,983 - src.etl.transform - INFO - Tipo detectado para FONDO DE INVERSIÓN COLECTIVA RENTA FIJA MEDIANO PLAZO - MULTIESCALA: Renta Fija
+2025-10-16 17:21:46,985 - src.etl.transform - INFO - Transformación de datos completada exitosamente: desconocido
+2025-10-16 17:21:46,985 - src.etl.transform - INFO - Iniciando transformación de datos FIC: desconocido
+2025-10-16 17:21:46,985 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: Fondo de Inversión Colectiva Itaú Money Market | Gestor: Itaú Comisionista de Bolsa S.A. | Archivo: desconocido | Campo: principales_inversiones | Suma: 0.8848 (esperado ~1.0)
+2025-10-16 17:21:46,986 - src.etl.transform - INFO - Iniciando transformación de datos FIC: desconocido
+2025-10-16 17:21:46,987 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: FIC GLOBAL VISTA | Gestor: Progresión S.A. Sociedad Comisionista de Bolsa | Archivo: desconocido | Campo: principales_inversiones | Suma: 0.8268 (esperado ~1.0)
+2025-10-16 17:21:46,987 - src.etl.transform - INFO - Tipo detectado para Fondo de Inversión Colectiva Itaú Money Market: Renta Fija
+2025-10-16 17:21:46,990 - src.etl.transform - WARNING - FECHA NO VÁLIDA - FIC: FIC GLOBAL VISTA | Gestor: Progresión S.A. Sociedad Comisionista de Bolsa | Campo: calificacion.fecha_ultima_calificacion | Valor: Julio de 2022
+2025-10-16 17:21:46,990 - src.etl.transform - INFO - Transformación de datos completada exitosamente: desconocido
+2025-10-16 17:21:46,991 - src.config.settings - INFO - JSON transformado guardado: davivienda_multiescala_raw_transformed.json
+2025-10-16 17:21:46,992 - src.etl.transform - INFO - Tipo detectado para FIC GLOBAL VISTA: Renta Fija
+2025-10-16 17:21:46,992 - src.config.settings - INFO - Transformado exitosamente: davivienda_multiescala_raw.json
+2025-10-16 17:21:46,993 - src.etl.transform - INFO - Transformación de datos completada exitosamente: desconocido
+2025-10-16 17:21:46,995 - src.config.settings - INFO - JSON transformado guardado: itau_moneyMarket_raw_transformed.json
+2025-10-16 17:21:46,996 - src.config.settings - INFO - Transformado exitosamente: itau_moneyMarket_raw.json
+2025-10-16 17:21:46,997 - src.config.settings - INFO - JSON transformado guardado: progresion_globalVista_raw_transformed.json
+2025-10-16 17:21:46,997 - src.config.settings - INFO - Transformado exitosamente: progresion_globalVista_raw.json
+2025-10-16 17:21:47,001 - src.config.settings - INFO - Validando 7 archivos transformados contra carpeta: json_raw_2025_07
+2025-10-16 17:21:47,002 - src.config.settings - INFO - Fecha extraída de carpeta 'json_raw_2025_07': 2025-07
+2025-10-16 17:21:47,005 - src.config.settings - INFO - Fecha extraída de carpeta 'json_raw_2025_07': 2025-07
+2025-10-16 17:21:47,005 - src.config.settings - INFO - Fechas coinciden: carpeta(2025-07) = JSON(2025-07)
+2025-10-16 17:21:47,007 - src.config.settings - INFO - Fecha extraída de carpeta 'json_raw_2025_07': 2025-07
+2025-10-16 17:21:47,008 - src.config.settings - INFO - Fechas coinciden: carpeta(2025-07) = JSON(2025-07)
+2025-10-16 17:21:47,050 - src.config.settings - INFO - Fecha extraída de carpeta 'json_raw_2025_07': 2025-07
+2025-10-16 17:21:47,050 - src.config.settings - INFO - Fechas coinciden: carpeta(2025-07) = JSON(2025-07)
+2025-10-16 17:21:47,058 - src.config.settings - INFO - Fecha extraída de carpeta 'json_raw_2025_07': 2025-07
+2025-10-16 17:21:47,059 - src.config.settings - INFO - Fechas coinciden: carpeta(2025-07) = JSON(2025-07)
+2025-10-16 17:21:47,065 - src.config.settings - INFO - Fecha extraída de carpeta 'json_raw_2025_07': 2025-07
+2025-10-16 17:21:47,065 - src.config.settings - INFO - Fechas coinciden: carpeta(2025-07) = JSON(2025-07)
+2025-10-16 17:21:47,068 - src.config.settings - INFO - Fecha extraída de carpeta 'json_raw_2025_07': 2025-07
+2025-10-16 17:21:47,068 - src.config.settings - INFO - Fechas coinciden: carpeta(2025-07) = JSON(2025-07)
+2025-10-16 17:21:47,071 - src.config.settings - INFO - Fecha extraída de carpeta 'json_raw_2025_07': 2025-07
+2025-10-16 17:21:47,071 - src.config.settings - ERROR - FECHAS NO COINCIDEN: carpeta(2025-07) vs JSON(2025-01)
+2025-10-16 17:21:47,075 - src.config.settings - INFO - Lista de exclusión creada: data/json_transformed_2025_07/skip_list.txt
+2025-10-16 17:21:47,075 - src.config.settings - INFO - Fecha extraída de carpeta 'json_raw_2025_07': 2025-07
+2025-10-16 17:21:50,818 - src.config.settings - INFO - Leídos 1 archivos para omitir de: data/json_transformed_2025_07/skip_list.txt
+2025-10-16 17:21:50,819 - src.config.settings - INFO - Iniciando carga desde: data/json_transformed_2025_07
+2025-10-16 17:21:50,820 - src.config.settings - INFO - Total de archivos a omitir: 1
+2025-10-16 17:21:50,829 - src.config.settings - INFO - Encontrados 7 JSONs transformados para cargar
+2025-10-16 17:21:50,830 - src.config.settings - INFO - Archivos a omitir: 1
+2025-10-16 17:21:50,832 - src.config.settings - INFO - Cargando: bancoDeBogota_sumar_raw_transformed.json
+2025-10-16 17:21:50,832 - src.config.settings - INFO - Cargando: bancoDeOccidenteFiduoccidente_plazoFijo_raw_transformed.json
+2025-10-16 17:21:50,834 - src.config.settings - INFO - Cargando: bancolombia_fiducuenta_raw_transformed.json
+2025-10-16 17:21:50,860 - src.etl.load - ERROR - Error cargando datos a PostgreSQL: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+2025-10-16 17:21:50,861 - src.etl.load - ERROR - Error cargando datos a PostgreSQL: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+2025-10-16 17:21:50,864 - src.config.settings - ERROR - Error cargando bancolombia_fiducuenta_raw_transformed.json: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+2025-10-16 17:21:50,924 - src.config.settings - ERROR - Error cargando bancoDeBogota_sumar_raw_transformed.json: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+2025-10-16 17:21:50,926 - src.config.settings - INFO - Cargando: credicorpCapital_altaLiquidez_raw_transformed.json
+2025-10-16 17:21:50,926 - src.config.settings - ERROR - Error cargando bancolombia_fiducuenta_raw_transformed.json: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+2025-10-16 17:21:50,926 - src.config.settings - INFO - Cargando: davivienda_multiescala_raw_transformed.json
+2025-10-16 17:21:50,928 - src.config.settings - ERROR - Error cargando bancoDeBogota_sumar_raw_transformed.json: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+2025-10-16 17:21:50,938 - src.etl.load - ERROR - Error cargando datos a PostgreSQL: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+2025-10-16 17:21:50,940 - src.config.settings - ERROR - Error cargando bancoDeOccidenteFiduoccidente_plazoFijo_raw_transformed.json: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+2025-10-16 17:21:50,942 - src.config.settings - INFO - Cargando: itau_moneyMarket_raw_transformed.json
+2025-10-16 17:21:50,942 - src.config.settings - ERROR - Error cargando bancoDeOccidenteFiduoccidente_plazoFijo_raw_transformed.json: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+2025-10-16 17:21:50,969 - src.etl.load - ERROR - Error cargando datos a PostgreSQL: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+2025-10-16 17:21:50,972 - src.config.settings - ERROR - Error cargando davivienda_multiescala_raw_transformed.json: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+2025-10-16 17:21:50,973 - src.config.settings - INFO - Omitiendo archivo (en lista de exclusión): progresion_globalVista_raw_transformed.json
+2025-10-16 17:21:50,973 - src.config.settings - ERROR - Error cargando davivienda_multiescala_raw_transformed.json: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+2025-10-16 17:21:50,975 - src.config.settings - INFO - Omitido: progresion_globalVista_raw_transformed.json
+2025-10-16 17:21:51,049 - src.etl.load - ERROR - Error cargando datos a PostgreSQL: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+2025-10-16 17:21:51,050 - src.etl.load - ERROR - Error cargando datos a PostgreSQL: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+2025-10-16 17:21:51,052 - src.config.settings - ERROR - Error cargando itau_moneyMarket_raw_transformed.json: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+2025-10-16 17:21:51,053 - src.config.settings - ERROR - Error cargando credicorpCapital_altaLiquidez_raw_transformed.json: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+2025-10-16 17:21:51,055 - src.config.settings - ERROR - Error cargando itau_moneyMarket_raw_transformed.json: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+2025-10-16 17:21:51,058 - src.config.settings - ERROR - Error cargando credicorpCapital_altaLiquidez_raw_transformed.json: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)

@@ -3,9 +3,8 @@
     "nombre_fic": "FIC GLOBAL VISTA",
     "gestor": "Progresión S.A. Sociedad Comisionista de Bolsa",
     "custodio": "S3 CACEIS",
-    "fecha_corte": "2025-01-31",
-    "politica_de_inversion": "Global Vista es un tipo de fondo abierto que pretende como objetivo ofrecer al público un portafolio de inversiones en valores de renta fija que permitan una alta conservación del capital y una rentabilidad que sea consistente con un nivel de riesgo conservador.",
-    "tipo": "Renta Fija"
+    "fecha_corte": "31/01/2025",
+    "politica_de_inversion": "Global Vista es un tipo de fondo abierto que pretende como objetivo ofrecer al público un portafolio de inversiones en valores de renta fija que permitan una alta conservación del capital y una rentabilidad que sea consistente con un nivel de riesgo conservador."
   },
   "plazo_duracion": [
     {
@@ -46,7 +45,7 @@
     ],
     "por_tipo_de_renta": [
       {
-        "tipo": "Cuentas Bancarias",
+        "tipo": "Ctas Bancarias",
         "participacion": 0.20334
       },
       {
@@ -78,7 +77,7 @@
     ],
     "por_pais_emisor": [
       {
-        "pais": "Colombia",
+        "pais": "COLOMBIA",
         "participacion": 1.0
       }
     ],
@@ -90,11 +89,11 @@
     ],
     "por_calificacion": [
       {
-        "calificacion": "AA-",
+        "calificacion": "AA -",
         "participacion": 0.14317
       },
       {
-        "calificacion": "AA+",
+        "calificacion": "AA +",
         "participacion": 0.00051
       },
       {
@@ -113,15 +112,14 @@
   },
   "caracteristicas": {
     "tipo": "Abierto sin pacto de permanencia",
-    "valor": 133337.91,
-    "fecha_inicio_operaciones": "2007-03-12",
+    "valor": 24792.162706,
+    "fecha_inicio_operaciones": "12/03/2007",
     "no_unidades_en_circulacion": 5378228.382589
   },
   "calificacion": {
-    "calificacion": "AAAf (Col)",
-    "fecha_ultima_calificacion": "2022-07-31",
-    "entidad_calificadora": "FITCH RATINGS",
-    "entidad_calificadora_normalizada": true
+    "calificacion": "S2 AAAf (Col)",
+    "fecha_ultima_calificacion": "Julio de 2022",
+    "entidad_calificadora": "Fitch Ratings Colombia S.A."
   },
   "principales_inversiones": [
     {
@@ -177,12 +175,12 @@
         "ultimos_3_anios": 0.09132
       },
       "volatilidad_historica": {
-        "ultimo_mes": 0.164,
-        "ultimos_6_meses": 0.277,
-        "anio_corrido": 0.164,
-        "ultimo_anio": 0.372,
-        "ultimos_2_anios": 0.435,
-        "ultimos_3_anios": 0.484
+        "ultimo_mes": 0.00164,
+        "ultimos_6_meses": 0.00277,
+        "anio_corrido": 0.00164,
+        "ultimo_anio": 0.00372,
+        "ultimos_2_anios": 0.00435,
+        "ultimos_3_anios": 0.00484
       }
     }
   ]

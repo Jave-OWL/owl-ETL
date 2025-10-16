@@ -1100,3 +1100,249 @@
 2025-10-14 19:49:52,558 - src.config.settings - ERROR - Carpeta no encontrada: json_transformed_2025_07
 2025-10-14 19:50:13,941 - src.config.settings - WARNING - Archivo de lista de exclusi髇 no encontrado: data\skip_list.txt
 2025-10-14 19:50:13,941 - src.config.settings - WARNING - Archivo de lista de exclusi髇 no encontrado: data\skip_list.txt
+2025-10-16 17:10:03,608 - src.etl.extract - ERROR - Error procesando texto con Gemini: module 'google.generativeai' has no attribute 'generate_content'
+2025-10-16 17:10:03,608 - src.etl.extract - ERROR - Error procesando texto con Gemini: module 'google.generativeai' has no attribute 'generate_content'
+2025-10-16 17:10:03,662 - src.config.settings - ERROR - Error procesando /opt/airflow/owl-web-scraping/fichasTecnicas/bancoDeBogota_2025/07/sumar.pdf: module 'google.generativeai' has no attribute 'generate_content'
+2025-10-16 17:10:03,662 - src.config.settings - ERROR - Error procesando /opt/airflow/owl-web-scraping/fichasTecnicas/bancoDeBogota_2025/07/sumar.pdf: module 'google.generativeai' has no attribute 'generate_content'
+2025-10-16 17:10:03,694 - src.config.settings - ERROR - Error procesando sumar.pdf: module 'google.generativeai' has no attribute 'generate_content'
+2025-10-16 17:10:03,694 - src.config.settings - ERROR - Error procesando sumar.pdf: module 'google.generativeai' has no attribute 'generate_content'
+2025-10-16 17:20:07,209 - src.config.settings - WARNING - No se encontraron PDFs en: /opt/airflow/owl-web-scraping/fichasTecnicas/bbva_2025/07
+2025-10-16 17:20:07,209 - src.config.settings - WARNING - No se encontraron PDFs en: /opt/airflow/owl-web-scraping/fichasTecnicas/bbva_2025/07
+2025-10-16 17:21:46,841 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: FONDO DE INVERSI脫N COLECTIVA ABIERTO SUMAR | Gestor: Fiduciaria Bogot谩 S.A. | Archivo: desconocido | Campo: principales_inversiones | Suma: 0.7347 (esperado ~1.0)
+2025-10-16 17:21:46,841 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: FONDO DE INVERSI脫N COLECTIVA ABIERTO SUMAR | Gestor: Fiduciaria Bogot谩 S.A. | Archivo: desconocido | Campo: principales_inversiones | Suma: 0.7347 (esperado ~1.0)
+2025-10-16 17:21:46,842 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: FIC META PLANEADA | Gestor: FIDUCIARIA DE OCCIDENTE S.A. | Archivo: desconocido | Campo: principales_inversiones | Suma: 0.6803 (esperado ~1.0)
+2025-10-16 17:21:46,842 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: FIC META PLANEADA | Gestor: FIDUCIARIA DE OCCIDENTE S.A. | Archivo: desconocido | Campo: principales_inversiones | Suma: 0.6803 (esperado ~1.0)
+2025-10-16 17:21:46,842 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: Fiducuenta | Gestor: Fiduciaria Bancolombia S.A. | Archivo: desconocido | Campo: por_tipo_de_renta | Suma: 0.5966 (esperado ~1.0)
+2025-10-16 17:21:46,842 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: Fiducuenta | Gestor: Fiduciaria Bancolombia S.A. | Archivo: desconocido | Campo: por_tipo_de_renta | Suma: 0.5966 (esperado ~1.0)
+2025-10-16 17:21:46,845 - src.etl.transform - WARNING - ENTIDAD NO RECONOCIDA - FIC: FIC META PLANEADA | Gestor: FIDUCIARIA DE OCCIDENTE S.A. | Archivo: desconocido | Entidad: N/A
+2025-10-16 17:21:46,845 - src.etl.transform - WARNING - ENTIDAD NO RECONOCIDA - FIC: FIC META PLANEADA | Gestor: FIDUCIARIA DE OCCIDENTE S.A. | Archivo: desconocido | Entidad: N/A
+2025-10-16 17:21:46,849 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: Fiducuenta | Gestor: Fiduciaria Bancolombia S.A. | Archivo: desconocido | Campo: principales_inversiones | Suma: 0.8777 (esperado ~1.0)
+2025-10-16 17:21:46,849 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: Fiducuenta | Gestor: Fiduciaria Bancolombia S.A. | Archivo: desconocido | Campo: principales_inversiones | Suma: 0.8777 (esperado ~1.0)
+2025-10-16 17:21:46,961 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: CREDICORP CAPITAL ALTA LIQUIDEZ | Gestor: CREDICORP CAPITAL COLOMBIA S.A. | Archivo: desconocido | Campo: por_calificacion | Suma: 1.1000 (esperado ~1.0)
+2025-10-16 17:21:46,961 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: CREDICORP CAPITAL ALTA LIQUIDEZ | Gestor: CREDICORP CAPITAL COLOMBIA S.A. | Archivo: desconocido | Campo: por_calificacion | Suma: 1.1000 (esperado ~1.0)
+2025-10-16 17:21:46,962 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: CREDICORP CAPITAL ALTA LIQUIDEZ | Gestor: CREDICORP CAPITAL COLOMBIA S.A. | Archivo: desconocido | Campo: principales_inversiones | Suma: 0.7631 (esperado ~1.0)
+2025-10-16 17:21:46,962 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: CREDICORP CAPITAL ALTA LIQUIDEZ | Gestor: CREDICORP CAPITAL COLOMBIA S.A. | Archivo: desconocido | Campo: principales_inversiones | Suma: 0.7631 (esperado ~1.0)
+2025-10-16 17:21:46,985 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: Fondo de Inversi贸n Colectiva Ita煤 Money Market | Gestor: Ita煤 Comisionista de Bolsa S.A. | Archivo: desconocido | Campo: principales_inversiones | Suma: 0.8848 (esperado ~1.0)
+2025-10-16 17:21:46,985 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: Fondo de Inversi贸n Colectiva Ita煤 Money Market | Gestor: Ita煤 Comisionista de Bolsa S.A. | Archivo: desconocido | Campo: principales_inversiones | Suma: 0.8848 (esperado ~1.0)
+2025-10-16 17:21:46,987 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: FIC GLOBAL VISTA | Gestor: Progresi贸n S.A. Sociedad Comisionista de Bolsa | Archivo: desconocido | Campo: principales_inversiones | Suma: 0.8268 (esperado ~1.0)
+2025-10-16 17:21:46,987 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: FIC GLOBAL VISTA | Gestor: Progresi贸n S.A. Sociedad Comisionista de Bolsa | Archivo: desconocido | Campo: principales_inversiones | Suma: 0.8268 (esperado ~1.0)
+2025-10-16 17:21:46,990 - src.etl.transform - WARNING - FECHA NO V脕LIDA - FIC: FIC GLOBAL VISTA | Gestor: Progresi贸n S.A. Sociedad Comisionista de Bolsa | Campo: calificacion.fecha_ultima_calificacion | Valor: Julio de 2022
+2025-10-16 17:21:46,990 - src.etl.transform - WARNING - FECHA NO V脕LIDA - FIC: FIC GLOBAL VISTA | Gestor: Progresi贸n S.A. Sociedad Comisionista de Bolsa | Campo: calificacion.fecha_ultima_calificacion | Valor: Julio de 2022
+2025-10-16 17:21:47,071 - src.config.settings - ERROR - FECHAS NO COINCIDEN: carpeta(2025-07) vs JSON(2025-01)
+2025-10-16 17:21:47,071 - src.config.settings - ERROR - FECHAS NO COINCIDEN: carpeta(2025-07) vs JSON(2025-01)
+2025-10-16 17:21:50,860 - src.etl.load - ERROR - Error cargando datos a PostgreSQL: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+2025-10-16 17:21:50,861 - src.etl.load - ERROR - Error cargando datos a PostgreSQL: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+2025-10-16 17:21:50,860 - src.etl.load - ERROR - Error cargando datos a PostgreSQL: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+2025-10-16 17:21:50,861 - src.etl.load - ERROR - Error cargando datos a PostgreSQL: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+2025-10-16 17:21:50,864 - src.config.settings - ERROR - Error cargando bancolombia_fiducuenta_raw_transformed.json: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+2025-10-16 17:21:50,924 - src.config.settings - ERROR - Error cargando bancoDeBogota_sumar_raw_transformed.json: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+2025-10-16 17:21:50,864 - src.config.settings - ERROR - Error cargando bancolombia_fiducuenta_raw_transformed.json: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+2025-10-16 17:21:50,924 - src.config.settings - ERROR - Error cargando bancoDeBogota_sumar_raw_transformed.json: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+2025-10-16 17:21:50,926 - src.config.settings - ERROR - Error cargando bancolombia_fiducuenta_raw_transformed.json: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+2025-10-16 17:21:50,926 - src.config.settings - ERROR - Error cargando bancolombia_fiducuenta_raw_transformed.json: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+2025-10-16 17:21:50,928 - src.config.settings - ERROR - Error cargando bancoDeBogota_sumar_raw_transformed.json: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+2025-10-16 17:21:50,928 - src.config.settings - ERROR - Error cargando bancoDeBogota_sumar_raw_transformed.json: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+2025-10-16 17:21:50,938 - src.etl.load - ERROR - Error cargando datos a PostgreSQL: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+2025-10-16 17:21:50,938 - src.etl.load - ERROR - Error cargando datos a PostgreSQL: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+2025-10-16 17:21:50,940 - src.config.settings - ERROR - Error cargando bancoDeOccidenteFiduoccidente_plazoFijo_raw_transformed.json: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+2025-10-16 17:21:50,940 - src.config.settings - ERROR - Error cargando bancoDeOccidenteFiduoccidente_plazoFijo_raw_transformed.json: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+2025-10-16 17:21:50,942 - src.config.settings - ERROR - Error cargando bancoDeOccidenteFiduoccidente_plazoFijo_raw_transformed.json: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+2025-10-16 17:21:50,942 - src.config.settings - ERROR - Error cargando bancoDeOccidenteFiduoccidente_plazoFijo_raw_transformed.json: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+2025-10-16 17:21:50,969 - src.etl.load - ERROR - Error cargando datos a PostgreSQL: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+2025-10-16 17:21:50,969 - src.etl.load - ERROR - Error cargando datos a PostgreSQL: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+2025-10-16 17:21:50,972 - src.config.settings - ERROR - Error cargando davivienda_multiescala_raw_transformed.json: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+2025-10-16 17:21:50,972 - src.config.settings - ERROR - Error cargando davivienda_multiescala_raw_transformed.json: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+2025-10-16 17:21:50,973 - src.config.settings - ERROR - Error cargando davivienda_multiescala_raw_transformed.json: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+2025-10-16 17:21:50,973 - src.config.settings - ERROR - Error cargando davivienda_multiescala_raw_transformed.json: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+2025-10-16 17:21:51,049 - src.etl.load - ERROR - Error cargando datos a PostgreSQL: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+2025-10-16 17:21:51,050 - src.etl.load - ERROR - Error cargando datos a PostgreSQL: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+2025-10-16 17:21:51,049 - src.etl.load - ERROR - Error cargando datos a PostgreSQL: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+2025-10-16 17:21:51,050 - src.etl.load - ERROR - Error cargando datos a PostgreSQL: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+2025-10-16 17:21:51,052 - src.config.settings - ERROR - Error cargando itau_moneyMarket_raw_transformed.json: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+2025-10-16 17:21:51,053 - src.config.settings - ERROR - Error cargando credicorpCapital_altaLiquidez_raw_transformed.json: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+2025-10-16 17:21:51,052 - src.config.settings - ERROR - Error cargando itau_moneyMarket_raw_transformed.json: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+2025-10-16 17:21:51,053 - src.config.settings - ERROR - Error cargando credicorpCapital_altaLiquidez_raw_transformed.json: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+2025-10-16 17:21:51,055 - src.config.settings - ERROR - Error cargando itau_moneyMarket_raw_transformed.json: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+2025-10-16 17:21:51,055 - src.config.settings - ERROR - Error cargando itau_moneyMarket_raw_transformed.json: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+2025-10-16 17:21:51,058 - src.config.settings - ERROR - Error cargando credicorpCapital_altaLiquidez_raw_transformed.json: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+2025-10-16 17:21:51,058 - src.config.settings - ERROR - Error cargando credicorpCapital_altaLiquidez_raw_transformed.json: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)

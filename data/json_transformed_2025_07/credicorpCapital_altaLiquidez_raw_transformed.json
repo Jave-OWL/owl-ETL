@@ -118,20 +118,20 @@
         "participacion": 0.01
       },
       {
-        "calificacion": "NACION",
-        "participacion": 0.27
-      },
-      {
-        "calificacion": "NO REQUIERE",
-        "participacion": 0.01
-      },
-      {
         "calificacion": "AA+",
         "participacion": 0.01
       },
       {
+        "calificacion": "NACION",
+        "participacion": 0.27
+      },
+      {
         "calificacion": "AAA",
         "participacion": 0.19
+      },
+      {
+        "calificacion": "NO REQUIERE",
+        "participacion": 0.01
       },
       {
         "calificacion": "BRC",
@@ -209,12 +209,12 @@
         "ultimos_3_anios": 0.10683
       },
       "volatilidad_historica": {
-        "ultimo_mes": 0.064,
-        "ultimos_6_meses": 0.067,
-        "anio_corrido": 0.065,
-        "ultimo_anio": 0.088,
-        "ultimos_2_anios": 0.31,
-        "ultimos_3_anios": 0.33
+        "ultimo_mes": 0.00064,
+        "ultimos_6_meses": 0.00067,
+        "anio_corrido": 0.00065,
+        "ultimo_anio": 0.00088,
+        "ultimos_2_anios": 0.0031,
+        "ultimos_3_anios": 0.0033
       }
     },
     {
@@ -228,12 +228,12 @@
         "ultimos_3_anios": 0.10905
       },
       "volatilidad_historica": {
-        "ultimo_mes": 0.064,
-        "ultimos_6_meses": 0.067,
-        "anio_corrido": 0.065,
-        "ultimo_anio": 0.088,
-        "ultimos_2_anios": 0.31,
-        "ultimos_3_anios": 0.33
+        "ultimo_mes": 0.00064,
+        "ultimos_6_meses": 0.00067,
+        "anio_corrido": 0.00065,
+        "ultimo_anio": 0.00088,
+        "ultimos_2_anios": 0.0031,
+        "ultimos_3_anios": 0.0033
       }
     },
     {
@@ -247,12 +247,12 @@
         "ultimos_3_anios": 0.11238
       },
       "volatilidad_historica": {
-        "ultimo_mes": 0.064,
-        "ultimos_6_meses": 0.067,
-        "anio_corrido": 0.065,
-        "ultimo_anio": 0.088,
-        "ultimos_2_anios": 0.31,
-        "ultimos_3_anios": 0.33
+        "ultimo_mes": 0.00064,
+        "ultimos_6_meses": 0.00067,
+        "anio_corrido": 0.00065,
+        "ultimo_anio": 0.00088,
+        "ultimos_2_anios": 0.0031,
+        "ultimos_3_anios": 0.0033
       }
     },
     {
@@ -266,12 +266,12 @@
         "ultimos_3_anios": 0.11405
       },
       "volatilidad_historica": {
-        "ultimo_mes": 0.064,
-        "ultimos_6_meses": 0.067,
-        "anio_corrido": 0.065,
-        "ultimo_anio": 0.088,
-        "ultimos_2_anios": 0.31,
-        "ultimos_3_anios": 0.33
+        "ultimo_mes": 0.00064,
+        "ultimos_6_meses": 0.00067,
+        "anio_corrido": 0.00065,
+        "ultimo_anio": 0.00088,
+        "ultimos_2_anios": 0.0031,
+        "ultimos_3_anios": 0.0033
       }
     },
     {
@@ -285,12 +285,12 @@
         "ultimos_3_anios": 0.12356
       },
       "volatilidad_historica": {
-        "ultimo_mes": 0.064,
-        "ultimos_6_meses": 0.067,
-        "anio_corrido": 0.065,
-        "ultimo_anio": 0.088,
-        "ultimos_2_anios": 0.31,
-        "ultimos_3_anios": 0.33
+        "ultimo_mes": 0.00064,
+        "ultimos_6_meses": 0.00067,
+        "anio_corrido": 0.00065,
+        "ultimo_anio": 0.00088,
+        "ultimos_2_anios": 0.0031,
+        "ultimos_3_anios": 0.0033
       }
     },
     {
@@ -304,9 +304,9 @@
         "ultimos_3_anios": 0.0
       },
       "volatilidad_historica": {
-        "ultimo_mes": 0.064,
-        "ultimos_6_meses": 0.067,
-        "anio_corrido": 0.065,
+        "ultimo_mes": 0.00064,
+        "ultimos_6_meses": 0.00067,
+        "anio_corrido": 0.00065,
         "ultimo_anio": 0.0,
         "ultimos_2_anios": 0.0,
         "ultimos_3_anios": 0.0

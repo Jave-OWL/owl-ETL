@@ -1,210 +1,210 @@
 {
   "fic": {
-    "nombre_fic": "META PLANEADA",
+    "nombre_fic": "FIC META PLANEADA",
     "gestor": "FIDUCIARIA DE OCCIDENTE S.A.",
     "custodio": "CITI TRUST COLOMBIA S.A.",
-    "fecha_corte": "2025-07-31",
+    "fecha_corte": "31/07/2025",
     "politica_de_inversion": "Este modelo de portafolio es apropiado para inversionistas con alta tolerancia a la volatilidad. Es un portafolio que busca apreciación del capital en el largo plazo, exponiéndose a las variaciones del mercado en el corto plazo. Se enfoca en la búsqueda de mayores retornos a través de inversiones en renta variable, mayor duración de las inversiones en renta fija y oportunidades tácticas en el corto plazo."
   },
   "plazo_duracion": [
     {
       "plazo": "1 a 180 días",
-      "participacion": 0.3225
+      "participacion": 32.25
     },
     {
       "plazo": "180 a 365 días",
-      "participacion": 0.3584
+      "participacion": 35.84
     },
     {
       "plazo": "1 a 3 años",
-      "participacion": 0.2715
+      "participacion": 27.15
     },
     {
       "plazo": "3 a 5 años",
-      "participacion": 0.0296
+      "participacion": 2.96
     },
     {
       "plazo": "Más de 5 años",
-      "participacion": 0.018
+      "participacion": 1.8
     }
   ],
   "composicion_portafolio": {
     "por_activo": [
       {
         "activo": "Inversiones",
-        "participacion": 0.90626
+        "participacion": 90.626
       },
       {
         "activo": "Caja",
-        "participacion": 0.09374
+        "participacion": 9.374
       }
     ],
     "por_tipo_de_renta": [
       {
         "tipo": "Tasa Fija Nacional",
-        "participacion": 0.62352
+        "participacion": 62.352
       },
       {
         "tipo": "Fondos de Inversión Colectiva",
-        "participacion": 0.10861
+        "participacion": 10.861
       },
       {
         "tipo": "Caja",
-        "participacion": 0.09374
+        "participacion": 9.374
       },
       {
         "tipo": "IPC",
-        "participacion": 0.08083
+        "participacion": 8.083
       },
       {
         "tipo": "IBR",
-        "participacion": 0.06691
+        "participacion": 6.691
       },
       {
         "tipo": "Titulos al descuento",
-        "participacion": 0.02639
+        "participacion": 2.639
       }
     ],
     "por_sector_economico": [
       {
         "sector": "Financiero",
-        "participacion": 0.87116
+        "participacion": 87.116
       },
       {
         "sector": "Entidades Públicas",
-        "participacion": 0.09371
+        "participacion": 9.371
       },
       {
         "sector": "Real",
-        "participacion": 0.03513
+        "participacion": 3.513
       }
     ],
     "por_pais_emisor": [
       {
         "pais": "Colombia",
-        "participacion": 0.99995
+        "participacion": 99.995
       },
       {
         "pais": "Estados Unidos de América",
-        "participacion": 5e-05
+        "participacion": 0.005
       }
     ],
     "por_moneda": [
       {
         "moneda": "Peso Colombiano",
-        "participacion": 0.99995
+        "participacion": 99.995
       },
       {
         "moneda": "Dólar",
-        "participacion": 5e-05
+        "participacion": 0.005
       }
     ],
     "por_calificacion": [
       {
         "calificacion": "BRC 1+",
-        "participacion": 0.37313
+        "participacion": 37.313
       },
       {
         "calificacion": "AAA",
-        "participacion": 0.24744
+        "participacion": 24.744
       },
       {
         "calificacion": "F1+",
-        "participacion": 0.15425
+        "participacion": 15.425
       },
       {
         "calificacion": "Nación",
-        "participacion": 0.09371
+        "participacion": 9.371
       },
       {
         "calificacion": "VrR 1+",
-        "participacion": 0.08139
+        "participacion": 8.139
       },
       {
         "calificacion": "Sin Calificación",
-        "participacion": 0.03345
+        "participacion": 3.345
       },
       {
         "calificacion": "AA+",
-        "participacion": 0.01659
+        "participacion": 1.659
       },
       {
         "calificacion": "P-1",
-        "participacion": 5e-05
+        "participacion": 0.005
       }
     ]
   },
   "caracteristicas": {
     "tipo": "Abierta Con Pacto de Permanencia",
-    "valor": 75196280.0,
-    "fecha_inicio_operaciones": "2020-01-13",
+    "valor": 14343.651788,
+    "fecha_inicio_operaciones": "13/01/2020",
     "no_unidades_en_circulacion": 5236773.679264
   },
   "calificacion": {
-    "calificacion": "",
+    "calificacion": "N/A",
     "fecha_ultima_calificacion": null,
-    "entidad_calificadora": ""
+    "entidad_calificadora": "N/A"
   },
   "principales_inversiones": [
     {
       "emisor": "Banco Davivienda S A",
-      "participacion": 0.1092
+      "participacion": 10.92
     },
     {
       "emisor": "Direccion Del Tesoro Nacional",
-      "participacion": 0.0937
+      "participacion": 9.37
     },
     {
       "emisor": "Itau",
-      "participacion": 0.0882
+      "participacion": 8.82
     },
     {
       "emisor": "La Hipotecaria C.F.C",
-      "participacion": 0.074
+      "participacion": 7.4
     },
     {
       "emisor": "Banco de Occidente",
-      "participacion": 0.062
+      "participacion": 6.2
     },
     {
       "emisor": "Banco de Bogota",
-      "participacion": 0.0564
+      "participacion": 5.64
     },
     {
       "emisor": "Banco Caja Social S A",
-      "participacion": 0.0543
+      "participacion": 5.43
     },
     {
       "emisor": "Financiera de Desarrollo Territorial S A Findeter",
-      "participacion": 0.0536
+      "participacion": 5.36
     },
     {
       "emisor": "Rci",
-      "participacion": 0.0477
+      "participacion": 4.77
     },
     {
       "emisor": "Banco de Comercio Exterior de Colombia",
-      "participacion": 0.0412
+      "participacion": 4.12
     }
   ],
   "rentabilidad_volatilidad": [
     {
       "tipo_de_participacion": "TIPO DE PARTICIPACIÓN A - 800",
       "rentabilidad_historica_ea": {
-        "ultimo_mes": 0.10303,
-        "ultimos_6_meses": 0.08968,
-        "anio_corrido": 0.09063,
-        "ultimo_anio": 0.08704,
-        "ultimos_2_anios": 0.10748,
-        "ultimos_3_anios": 0.11546
+        "ultimo_mes": 10.303,
+        "ultimos_6_meses": 8.968,
+        "anio_corrido": 9.063,
+        "ultimo_anio": 8.704,
+        "ultimos_2_anios": 10.748,
+        "ultimos_3_anios": 11.546
       },
       "volatilidad_historica": {
-        "ultimo_mes": 0.00236,
-        "ultimos_6_meses": 0.00335,
-        "anio_corrido": 0.00357,
-        "ultimo_anio": 0.00402,
-        "ultimos_2_anios": 0.00651,
-        "ultimos_3_anios": 0.00601
+        "ultimo_mes": 0.236,
+        "ultimos_6_meses": 0.335,
+        "anio_corrido": 0.357,
+        "ultimo_anio": 0.402,
+        "ultimos_2_anios": 0.651,
+        "ultimos_3_anios": 0.601
       }
     }
   ]

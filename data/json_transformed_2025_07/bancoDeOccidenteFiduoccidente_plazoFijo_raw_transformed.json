@@ -1,6 +1,6 @@
 {
   "fic": {
-    "nombre_fic": "META PLANEADA",
+    "nombre_fic": "FIC META PLANEADA",
     "gestor": "FIDUCIARIA DE OCCIDENTE S.A.",
     "custodio": "CITI TRUST COLOMBIA S.A.",
     "fecha_corte": "2025-07-31",
@@ -137,14 +137,15 @@
   },
   "caracteristicas": {
     "tipo": "Abierta Con Pacto de Permanencia",
-    "valor": 75196280.0,
+    "valor": 14343.651788,
     "fecha_inicio_operaciones": "2020-01-13",
     "no_unidades_en_circulacion": 5236773.679264
   },
   "calificacion": {
-    "calificacion": "",
+    "calificacion": "N/A",
     "fecha_ultima_calificacion": null,
-    "entidad_calificadora": ""
+    "entidad_calificadora": "N/A",
+    "entidad_calificadora_normalizada": false
   },
   "principales_inversiones": [
     {
@@ -200,12 +201,12 @@
         "ultimos_3_anios": 0.11546
       },
       "volatilidad_historica": {
-        "ultimo_mes": 0.00236,
-        "ultimos_6_meses": 0.00335,
-        "anio_corrido": 0.00357,
-        "ultimo_anio": 0.00402,
-        "ultimos_2_anios": 0.00651,
-        "ultimos_3_anios": 0.00601
+        "ultimo_mes": 0.236,
+        "ultimos_6_meses": 0.335,
+        "anio_corrido": 0.357,
+        "ultimo_anio": 0.402,
+        "ultimos_2_anios": 0.651,
+        "ultimos_3_anios": 0.601
       }
     }
   ]

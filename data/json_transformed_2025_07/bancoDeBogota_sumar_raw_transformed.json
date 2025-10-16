@@ -42,12 +42,12 @@
     ],
     "por_tipo_de_renta": [
       {
-        "tipo": "Fondos de Inversión",
-        "participacion": 0.0682
-      },
-      {
         "tipo": "UVR",
         "participacion": 0.0135
+      },
+      {
+        "tipo": "Fondos de Inversión",
+        "participacion": 0.0682
       },
       {
         "tipo": "IBR",
@@ -199,7 +199,7 @@
   ],
   "rentabilidad_volatilidad": [
     {
-      "tipo_de_participacion": "Inversionista I",
+      "tipo_de_participacion": "TP 1 Inversionista I",
       "rentabilidad_historica_ea": {
         "ultimo_mes": 0.08678,
         "ultimos_6_meses": 0.07675,
@@ -218,7 +218,7 @@
       }
     },
     {
-      "tipo_de_participacion": "Inversionista II",
+      "tipo_de_participacion": "TP 2 Inversionista II",
       "rentabilidad_historica_ea": {
         "ultimo_mes": 0.08785,
         "ultimos_6_meses": 0.07783,
@@ -237,7 +237,7 @@
       }
     },
     {
-      "tipo_de_participacion": "Inversionista III",
+      "tipo_de_participacion": "TP 3 Inversionista III",
       "rentabilidad_historica_ea": {
         "ultimo_mes": 0.08892,
         "ultimos_6_meses": 0.07888,
@@ -256,7 +256,7 @@
       }
     },
     {
-      "tipo_de_participacion": "Inversionista IV",
+      "tipo_de_participacion": "TP 4 Inversionista IV",
       "rentabilidad_historica_ea": {
         "ultimo_mes": 0.08999,
         "ultimos_6_meses": 0.08002,
@@ -275,26 +275,26 @@
       }
     },
     {
-      "tipo_de_participacion": "Inversionista V",
+      "tipo_de_participacion": "TP 5 Inversionista V",
       "rentabilidad_historica_ea": {
         "ultimo_mes": 0.09971,
         "ultimos_6_meses": 0.08957,
         "anio_corrido": 0.09153,
         "ultimo_anio": 0.09051,
-        "ultimos_2_anios": null,
-        "ultimos_3_anios": null
+        "ultimos_2_anios": 0.0,
+        "ultimos_3_anios": 0.0
       },
       "volatilidad_historica": {
         "ultimo_mes": 0.00148,
         "ultimos_6_meses": 0.00191,
         "anio_corrido": 0.00203,
         "ultimo_anio": 0.0035,
-        "ultimos_2_anios": null,
-        "ultimos_3_anios": null
+        "ultimos_2_anios": 0.0,
+        "ultimos_3_anios": 0.0
       }
     },
     {
-      "tipo_de_participacion": "Inmobiliaria",
+      "tipo_de_participacion": "TP 6 Inmobiliaria",
       "rentabilidad_historica_ea": {
         "ultimo_mes": 0.07873,
         "ultimos_6_meses": 0.0687,
@@ -313,7 +313,7 @@
       }
     },
     {
-      "tipo_de_participacion": "Administración I",
+      "tipo_de_participacion": "TP 7 Administración I",
       "rentabilidad_historica_ea": {
         "ultimo_mes": 0.08678,
         "ultimos_6_meses": 0.07675,
@@ -332,7 +332,7 @@
       }
     },
     {
-      "tipo_de_participacion": "Administración II",
+      "tipo_de_participacion": "TP 8 Administración II",
       "rentabilidad_historica_ea": {
         "ultimo_mes": 0.08838,
         "ultimos_6_meses": 0.07834,
@@ -351,7 +351,7 @@
       }
     },
     {
-      "tipo_de_participacion": "Administración III",
+      "tipo_de_participacion": "TP 9 Administración III",
       "rentabilidad_historica_ea": {
         "ultimo_mes": 0.09412,
         "ultimos_6_meses": 0.08328,
@@ -370,7 +370,7 @@
       }
     },
     {
-      "tipo_de_participacion": "Educativo",
+      "tipo_de_participacion": "TP 10 Educativo",
       "rentabilidad_historica_ea": {
         "ultimo_mes": 0.103,
         "ultimos_6_meses": 0.09282,
@@ -389,7 +389,7 @@
       }
     },
     {
-      "tipo_de_participacion": "Inversionista Profesional",
+      "tipo_de_participacion": "TP 11 Inversionista Profesional",
       "rentabilidad_historica_ea": {
         "ultimo_mes": 0.09863,
         "ultimos_6_meses": 0.08851,

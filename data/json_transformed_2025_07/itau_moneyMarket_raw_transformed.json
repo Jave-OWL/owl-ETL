@@ -1,0 +1,280 @@
+{
+  "fic": {
+    "nombre_fic": "Fondo de Inversión Colectiva Itaú Money Market",
+    "gestor": "Itaú Comisionista de Bolsa S.A.",
+    "custodio": "S3 Caceis Colombia S.A.",
+    "fecha_corte": "2025-07-31",
+    "politica_de_inversion": "El Objetivo de inversión del fondo es proporcionar a sus inversionistas un instrumento de inversión a corto plazo que cuenta con un perfil de riesgo conservador, es decir que está enfocado en disminuir la posibilidad de incurrir en pérdidas de capital en el corto plazo. El fondo da cumplimiento a los lineamientos de inversión establecidos en el Decreto 1525 de 2008 (\"Por el cual se dictan normas relacionadas con el manejo de los excedentes de liquidez de las entidades estatales del orden nacional y territorial\"), y demás normas que lo modifiquen, deroguen o complementen. EI portafolio del Fondo de Inversión Colectiva estará compuesto por los siguientes activos: 1. Títulos de Tesorería TES, Clase \"B\", tasa fija o indexados a la UVR. 2.Certificados de depósitos a término, en establecimientos bancarios vigilados por la Superintendencia Financiera de Colombia o en entidades con regímenes especiales contemplados en la parte décima del estatuto orgánico del sistema financiero.",
+    "tipo": "Renta Fija"
+  },
+  "plazo_duracion": [
+    {
+      "plazo": "1 a 180 Días",
+      "participacion": 0.4329
+    },
+    {
+      "plazo": "180 a 360 Días",
+      "participacion": 0.3207
+    },
+    {
+      "plazo": "1 a 3 Años",
+      "participacion": 0.2433
+    },
+    {
+      "plazo": "3 a 5 Años",
+      "participacion": 0.0031
+    },
+    {
+      "plazo": "Más de 5 años",
+      "participacion": 0.0
+    }
+  ],
+  "composicion_portafolio": {
+    "por_activo": [
+      {
+        "activo": "Inversiones",
+        "participacion": 0.7664
+      },
+      {
+        "activo": "Disponible",
+        "participacion": 0.2336
+      }
+    ],
+    "por_tipo_de_renta": [
+      {
+        "tipo": "IPC",
+        "participacion": 0.1387
+      },
+      {
+        "tipo": "UVR",
+        "participacion": 0.0
+      },
+      {
+        "tipo": "IB1",
+        "participacion": 0.1304
+      },
+      {
+        "tipo": "Disponible",
+        "participacion": 0.2336
+      },
+      {
+        "tipo": "FS",
+        "participacion": 0.4973
+      }
+    ],
+    "por_sector_economico": [
+      {
+        "sector": "Financiero",
+        "participacion": 0.933
+      },
+      {
+        "sector": "Nación",
+        "participacion": 0.067
+      }
+    ],
+    "por_pais_emisor": [
+      {
+        "pais": "Colombia",
+        "participacion": 1.0
+      }
+    ],
+    "por_moneda": [
+      {
+        "moneda": "COP",
+        "participacion": 1.0
+      }
+    ],
+    "por_calificacion": [
+      {
+        "calificacion": "F1+",
+        "participacion": 0.2364
+      },
+      {
+        "calificacion": "VrR1+",
+        "participacion": 0.0
+      },
+      {
+        "calificacion": "BRC1+",
+        "participacion": 0.5358
+      },
+      {
+        "calificacion": "Nación",
+        "participacion": 0.067
+      },
+      {
+        "calificacion": "AAA",
+        "participacion": 0.1608
+      }
+    ]
+  },
+  "caracteristicas": {
+    "tipo": "Fondo de Inversión Colectiva abierto sin pacto de permanencia",
+    "valor": 3523.823482,
+    "fecha_inicio_operaciones": "1992-05-14",
+    "no_unidades_en_circulacion": 385483390.697253
+  },
+  "calificacion": {
+    "calificacion": "F AAA/2+",
+    "fecha_ultima_calificacion": "2025-07-01",
+    "entidad_calificadora": "BRC",
+    "entidad_calificadora_normalizada": true
+  },
+  "principales_inversiones": [
+    {
+      "emisor": "Findeter",
+      "participacion": 0.1421
+    },
+    {
+      "emisor": "Banco Davivienda",
+      "participacion": 0.1145
+    },
+    {
+      "emisor": "Banco de Occidente",
+      "participacion": 0.1066
+    },
+    {
+      "emisor": "Banco de Bogota",
+      "participacion": 0.1061
+    },
+    {
+      "emisor": "Banco BBVA Colombia",
+      "participacion": 0.101
+    },
+    {
+      "emisor": "Banco Sudameris",
+      "participacion": 0.0866
+    },
+    {
+      "emisor": "Republica de Colombia",
+      "participacion": 0.067
+    },
+    {
+      "emisor": "Banco Popular",
+      "participacion": 0.0604
+    },
+    {
+      "emisor": "Banco Santander",
+      "participacion": 0.0581
+    },
+    {
+      "emisor": "AV Villas S.A.",
+      "participacion": 0.0424
+    }
+  ],
+  "rentabilidad_volatilidad": [
+    {
+      "tipo_de_participacion": "TP A",
+      "rentabilidad_historica_ea": {
+        "ultimo_mes": 0.09522,
+        "ultimos_6_meses": 0.08435,
+        "anio_corrido": 0.08433,
+        "ultimo_anio": 0.0831,
+        "ultimos_2_anios": 0.10209,
+        "ultimos_3_anios": 0.1133
+      },
+      "volatilidad_historica": {
+        "ultimo_mes": 0.127,
+        "ultimos_6_meses": 0.16,
+        "anio_corrido": 0.16,
+        "ultimo_anio": 0.253,
+        "ultimos_2_anios": 0.492,
+        "ultimos_3_anios": 0.488
+      }
+    },
+    {
+      "tipo_de_participacion": "TP B",
+      "rentabilidad_historica_ea": {
+        "ultimo_mes": 0.09522,
+        "ultimos_6_meses": 0.08435,
+        "anio_corrido": 0.08433,
+        "ultimo_anio": 0.0831,
+        "ultimos_2_anios": 0.10209,
+        "ultimos_3_anios": 0.1133
+      },
+      "volatilidad_historica": {
+        "ultimo_mes": 0.127,
+        "ultimos_6_meses": 0.16,
+        "anio_corrido": 0.16,
+        "ultimo_anio": 0.253,
+        "ultimos_2_anios": 0.492,
+        "ultimos_3_anios": 0.492
+      }
+    },
+    {
+      "tipo_de_participacion": "TP C",
+      "rentabilidad_historica_ea": {
+        "ultimo_mes": 0.10071,
+        "ultimos_6_meses": 0.08978,
+        "anio_corrido": 0.08977,
+        "ultimo_anio": 0.08853,
+        "ultimos_2_anios": 0.10762,
+        "ultimos_3_anios": 0.118
+      },
+      "volatilidad_historica": {
+        "ultimo_mes": 0.127,
+        "ultimos_6_meses": 0.16,
+        "anio_corrido": 0.16,
+        "ultimo_anio": 0.253,
+        "ultimos_2_anios": 0.492,
+        "ultimos_3_anios": 0.487
+      }
+    },
+    {
+      "tipo_de_participacion": "TPIOD",
+      "rentabilidad_historica_ea": {
+        "ultimo_mes": 0.10346,
+        "ultimos_6_meses": 0.09251,
+        "anio_corrido": 0.09249,
+        "ultimo_anio": 0.09125,
+        "ultimos_2_anios": 0.11039,
+        "ultimos_3_anios": 0.12079
+      },
+      "volatilidad_historica": {
+        "ultimo_mes": 0.127,
+        "ultimos_6_meses": 0.16,
+        "anio_corrido": 0.16,
+        "ultimo_anio": 0.253,
+        "ultimos_2_anios": 0.492,
+        "ultimos_3_anios": 0.487
+      }
+    },
+    {
+      "tipo_de_participacion": "TP P",
+      "rentabilidad_historica_ea": {
+        "ultimo_mes": 0.09303,
+        "ultimos_6_meses": 0.08218,
+        "anio_corrido": 0.08217,
+        "ultimo_anio": 0.08094,
+        "ultimos_2_anios": 0.09989,
+        "ultimos_3_anios": 0.1109
+      },
+      "volatilidad_historica": {
+        "ultimo_mes": 0.127,
+        "ultimos_6_meses": 0.16,
+        "anio_corrido": 0.16,
+        "ultimo_anio": 0.253,
+        "ultimos_2_anios": 0.492,
+        "ultimos_3_anios": 0.488
+      }
+    },
+    {
+      "tipo_de_participacion": "TPE",
+      "rentabilidad_historica_ea": {
+        "ultimo_mes": 0.11177,
+        "ultimos_6_meses": 0.10073,
+        "anio_corrido": 0.10072,
+        "ultimo_anio": 0.09947,
+        "ultimos_2_anios": 0.11874,
+        "ultimos_3_anios": 0.12922
+      },
+      "volatilidad_historica": {
+        "ultimo_mes": 0.127,
+        "ultimos_6_meses": 0.16,
+        "anio_corrido": 0.16,
+        "ultimo_anio": 0.253,
+        "ultimos_2_anios": 0.492,
+        "ultimos_3_anios": 0.488
+      }
+    }
+  ]
+}

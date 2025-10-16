@@ -1,4 +1,4 @@
 # Lista de archivos con fechas no coincidentes
 # Generado automáticamente desde validación de fechas
 
-progresion_GlobalVista_20250923_194408
+progresion_globalVista_raw

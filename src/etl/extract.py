@@ -1,7 +1,7 @@
 import time
 import logging
 from unstract.llmwhisperer import LLMWhispererClientV2
-from google import genai
+import google.generativeai as genai
 from src.config.settings import LLMWHISPERER_API_KEY, GEMINI_API_KEY, LLMWHISPERER_BASE_URL
 
 # crea (o recupera) un logger con el nombre del módulo actual.
@@ -13,7 +13,8 @@ whisper_client = LLMWhispererClientV2(
     api_key=LLMWHISPERER_API_KEY
 )
 
-gemini_client = genai.Client(api_key=GEMINI_API_KEY)
+# Configurar Gemini
+genai.configure(api_key=GEMINI_API_KEY)
 
 # Prompt base
 BASE_PROMPT = """
@@ -132,7 +133,7 @@ def extract_text_from_pdf(pdf_path: str, max_retries: int = 3) -> str:
 
             # Bucle para consultar el estado del procesamiento hasta que termine o se agote el tiempo
             while elapsed < max_wait:
-                #consulta el estado
+                # consulta el estado
                 status = whisper_client.whisper_status(whisper_hash=result['whisper_hash'])
 
                 if status['status'] == 'processed':
@@ -182,10 +183,7 @@ def extract_json_from_text(extracted_text: str) -> str:
         prompt = BASE_PROMPT + extracted_text
 
         # Mandar a Google Gemini y recolectar la respuesta
-        response = gemini_client.models.generate_content(
-            model="gemini-2.5-flash",
-            contents=prompt
-        )
+        response = genai.GenerativeModel('gemini-2.5-flash').generate_content(prompt)
 
         # Extraer solo el JSON de la respuesta
         json_output = response.text.strip()
