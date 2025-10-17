@@ -8,7 +8,10 @@ import logging
 logger = logging.getLogger(__name__)
 
 # PostgreSQL connection string
-DATABASE_URL = f"postgresql://{POSTGRES_USER}:{POSTGRES_PASSWORD}@{POSTGRES_HOST}:{POSTGRES_PORT}/{POSTGRES_DB}"
+#DATABASE_URL = f"postgresql://{POSTGRES_USER}:{POSTGRES_PASSWORD}@{POSTGRES_HOST}:{POSTGRES_PORT}/{POSTGRES_DB}"
+
+# URL de conexión para la BD FIC en Docker
+DATABASE_URL = "postgresql+psycopg2://fic_user:fic_password@postgres-fic:5432/fic_database"
 
 # SQLAlchemy engine
 engine = create_engine(DATABASE_URL) # el engine es objeto que (maneja conexiones, drivers, etc.).
@@ -203,14 +206,14 @@ class RawJSON(Base):
 
 
 def get_db_connection():
-    """Get a raw psycopg2 connection"""
+    """Get a raw psycopg2 connection - CORREGIDA"""
     try:
         conn = psycopg2.connect(
-            host=POSTGRES_HOST,
-            port=POSTGRES_PORT,
-            database=POSTGRES_DB,
-            user=POSTGRES_USER,
-            password=POSTGRES_PASSWORD
+            host="postgres-fic",  # CORREGIDO: usar postgres-fic en lugar de variable
+            port=5432,            # CORREGIDO: puerto fijo
+            database="fic_database",  # CORREGIDO: nombre fijo
+            user="fic_user",      # CORREGIDO: usuario fijo
+            password="fic_password"  # CORREGIDO: contraseña fija
         )
         return conn
     except Exception as e:

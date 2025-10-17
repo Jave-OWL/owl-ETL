@@ -1346,3 +1346,317 @@ connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection re
 	Is the server running on that host and accepting TCP/IP connections?
 
 (Background on this error at: https://sqlalche.me/e/14/e3q8)
+2025-10-16 20:07:50,677 - src.etl.load - ERROR - Error cargando datos a PostgreSQL: (psycopg2.errors.UndefinedTable) relation "fic" does not exist
+LINE 1: INSERT INTO fic (nombre_fic, gestor, custodio, fecha_corte, ...
+                    ^
+
+[SQL: INSERT INTO fic (nombre_fic, gestor, custodio, fecha_corte, politica_de_inversion, tipo) VALUES (%(nombre_fic)s, %(gestor)s, %(custodio)s, %(fecha_corte)s, %(politica_de_inversion)s, %(tipo)s) RETURNING fic.id]
+[parameters: {'nombre_fic': 'FONDO DE INVERSIÓN COLECTIVA ABIERTO SUMAR', 'gestor': 'Fiduciaria Bogotá S.A.', 'custodio': 'Cititrust', 'fecha_corte': '2025-07-31', 'politica_de_inversion': "Alternativa de inversión a la vista con perfil de riesgo conservador que se encuentra calificada por BRC Standar & Poor's con F AAA/2/BRC1+ por su al ... (401 characters truncated) ... as inversiones tradicionales en tasa fija. Se mantienen posiciones en TES. La mayoría de las inversiones tienen vencimiento entre 90 días y dos años.", 'tipo': 'Renta Fija'}]
+(Background on this error at: https://sqlalche.me/e/14/f405)
+2025-10-16 20:07:50,677 - src.etl.load - ERROR - Error cargando datos a PostgreSQL: (psycopg2.errors.UndefinedTable) relation "fic" does not exist
+LINE 1: INSERT INTO fic (nombre_fic, gestor, custodio, fecha_corte, ...
+                    ^
+
+[SQL: INSERT INTO fic (nombre_fic, gestor, custodio, fecha_corte, politica_de_inversion, tipo) VALUES (%(nombre_fic)s, %(gestor)s, %(custodio)s, %(fecha_corte)s, %(politica_de_inversion)s, %(tipo)s) RETURNING fic.id]
+[parameters: {'nombre_fic': 'FONDO DE INVERSIÓN COLECTIVA ABIERTO SUMAR', 'gestor': 'Fiduciaria Bogotá S.A.', 'custodio': 'Cititrust', 'fecha_corte': '2025-07-31', 'politica_de_inversion': "Alternativa de inversión a la vista con perfil de riesgo conservador que se encuentra calificada por BRC Standar & Poor's con F AAA/2/BRC1+ por su al ... (401 characters truncated) ... as inversiones tradicionales en tasa fija. Se mantienen posiciones en TES. La mayoría de las inversiones tienen vencimiento entre 90 días y dos años.", 'tipo': 'Renta Fija'}]
+(Background on this error at: https://sqlalche.me/e/14/f405)
+2025-10-16 20:07:50,748 - src.etl.load - ERROR - Error cargando datos a PostgreSQL: (psycopg2.errors.UndefinedTable) relation "fic" does not exist
+LINE 1: INSERT INTO fic (nombre_fic, gestor, custodio, fecha_corte, ...
+                    ^
+
+[SQL: INSERT INTO fic (nombre_fic, gestor, custodio, fecha_corte, politica_de_inversion, tipo) VALUES (%(nombre_fic)s, %(gestor)s, %(custodio)s, %(fecha_corte)s, %(politica_de_inversion)s, %(tipo)s) RETURNING fic.id]
+[parameters: {'nombre_fic': 'FIC META PLANEADA', 'gestor': 'FIDUCIARIA DE OCCIDENTE S.A.', 'custodio': 'CITI TRUST COLOMBIA S.A.', 'fecha_corte': '2025-07-31', 'politica_de_inversion': 'Este modelo de portafolio es apropiado para inversionistas con alta tolerancia a la volatilidad. Es un portafolio que busca apreciación del capital e ... (110 characters truncated) ... yores retornos a través de inversiones en renta variable, mayor duración de las inversiones en renta fija y oportunidades tácticas en el corto plazo.', 'tipo': 'Renta Fija'}]
+(Background on this error at: https://sqlalche.me/e/14/f405)
+2025-10-16 20:07:50,748 - src.config.settings - ERROR - Error cargando bancoDeBogota_sumar_raw_transformed.json: (psycopg2.errors.UndefinedTable) relation "fic" does not exist
+LINE 1: INSERT INTO fic (nombre_fic, gestor, custodio, fecha_corte, ...
+                    ^
+
+[SQL: INSERT INTO fic (nombre_fic, gestor, custodio, fecha_corte, politica_de_inversion, tipo) VALUES (%(nombre_fic)s, %(gestor)s, %(custodio)s, %(fecha_corte)s, %(politica_de_inversion)s, %(tipo)s) RETURNING fic.id]
+[parameters: {'nombre_fic': 'FONDO DE INVERSIÓN COLECTIVA ABIERTO SUMAR', 'gestor': 'Fiduciaria Bogotá S.A.', 'custodio': 'Cititrust', 'fecha_corte': '2025-07-31', 'politica_de_inversion': "Alternativa de inversión a la vista con perfil de riesgo conservador que se encuentra calificada por BRC Standar & Poor's con F AAA/2/BRC1+ por su al ... (401 characters truncated) ... as inversiones tradicionales en tasa fija. Se mantienen posiciones en TES. La mayoría de las inversiones tienen vencimiento entre 90 días y dos años.", 'tipo': 'Renta Fija'}]
+(Background on this error at: https://sqlalche.me/e/14/f405)
+2025-10-16 20:07:50,748 - src.etl.load - ERROR - Error cargando datos a PostgreSQL: (psycopg2.errors.UndefinedTable) relation "fic" does not exist
+LINE 1: INSERT INTO fic (nombre_fic, gestor, custodio, fecha_corte, ...
+                    ^
+
+[SQL: INSERT INTO fic (nombre_fic, gestor, custodio, fecha_corte, politica_de_inversion, tipo) VALUES (%(nombre_fic)s, %(gestor)s, %(custodio)s, %(fecha_corte)s, %(politica_de_inversion)s, %(tipo)s) RETURNING fic.id]
+[parameters: {'nombre_fic': 'FIC META PLANEADA', 'gestor': 'FIDUCIARIA DE OCCIDENTE S.A.', 'custodio': 'CITI TRUST COLOMBIA S.A.', 'fecha_corte': '2025-07-31', 'politica_de_inversion': 'Este modelo de portafolio es apropiado para inversionistas con alta tolerancia a la volatilidad. Es un portafolio que busca apreciación del capital e ... (110 characters truncated) ... yores retornos a través de inversiones en renta variable, mayor duración de las inversiones en renta fija y oportunidades tácticas en el corto plazo.', 'tipo': 'Renta Fija'}]
+(Background on this error at: https://sqlalche.me/e/14/f405)
+2025-10-16 20:07:50,748 - src.config.settings - ERROR - Error cargando bancoDeBogota_sumar_raw_transformed.json: (psycopg2.errors.UndefinedTable) relation "fic" does not exist
+LINE 1: INSERT INTO fic (nombre_fic, gestor, custodio, fecha_corte, ...
+                    ^
+
+[SQL: INSERT INTO fic (nombre_fic, gestor, custodio, fecha_corte, politica_de_inversion, tipo) VALUES (%(nombre_fic)s, %(gestor)s, %(custodio)s, %(fecha_corte)s, %(politica_de_inversion)s, %(tipo)s) RETURNING fic.id]
+[parameters: {'nombre_fic': 'FONDO DE INVERSIÓN COLECTIVA ABIERTO SUMAR', 'gestor': 'Fiduciaria Bogotá S.A.', 'custodio': 'Cititrust', 'fecha_corte': '2025-07-31', 'politica_de_inversion': "Alternativa de inversión a la vista con perfil de riesgo conservador que se encuentra calificada por BRC Standar & Poor's con F AAA/2/BRC1+ por su al ... (401 characters truncated) ... as inversiones tradicionales en tasa fija. Se mantienen posiciones en TES. La mayoría de las inversiones tienen vencimiento entre 90 días y dos años.", 'tipo': 'Renta Fija'}]
+(Background on this error at: https://sqlalche.me/e/14/f405)
+2025-10-16 20:07:50,752 - src.config.settings - ERROR - Error cargando bancoDeOccidenteFiduoccidente_plazoFijo_raw_transformed.json: (psycopg2.errors.UndefinedTable) relation "fic" does not exist
+LINE 1: INSERT INTO fic (nombre_fic, gestor, custodio, fecha_corte, ...
+                    ^
+
+[SQL: INSERT INTO fic (nombre_fic, gestor, custodio, fecha_corte, politica_de_inversion, tipo) VALUES (%(nombre_fic)s, %(gestor)s, %(custodio)s, %(fecha_corte)s, %(politica_de_inversion)s, %(tipo)s) RETURNING fic.id]
+[parameters: {'nombre_fic': 'FIC META PLANEADA', 'gestor': 'FIDUCIARIA DE OCCIDENTE S.A.', 'custodio': 'CITI TRUST COLOMBIA S.A.', 'fecha_corte': '2025-07-31', 'politica_de_inversion': 'Este modelo de portafolio es apropiado para inversionistas con alta tolerancia a la volatilidad. Es un portafolio que busca apreciación del capital e ... (110 characters truncated) ... yores retornos a través de inversiones en renta variable, mayor duración de las inversiones en renta fija y oportunidades tácticas en el corto plazo.', 'tipo': 'Renta Fija'}]
+(Background on this error at: https://sqlalche.me/e/14/f405)
+2025-10-16 20:07:50,752 - src.config.settings - ERROR - Error cargando bancoDeOccidenteFiduoccidente_plazoFijo_raw_transformed.json: (psycopg2.errors.UndefinedTable) relation "fic" does not exist
+LINE 1: INSERT INTO fic (nombre_fic, gestor, custodio, fecha_corte, ...
+                    ^
+
+[SQL: INSERT INTO fic (nombre_fic, gestor, custodio, fecha_corte, politica_de_inversion, tipo) VALUES (%(nombre_fic)s, %(gestor)s, %(custodio)s, %(fecha_corte)s, %(politica_de_inversion)s, %(tipo)s) RETURNING fic.id]
+[parameters: {'nombre_fic': 'FIC META PLANEADA', 'gestor': 'FIDUCIARIA DE OCCIDENTE S.A.', 'custodio': 'CITI TRUST COLOMBIA S.A.', 'fecha_corte': '2025-07-31', 'politica_de_inversion': 'Este modelo de portafolio es apropiado para inversionistas con alta tolerancia a la volatilidad. Es un portafolio que busca apreciación del capital e ... (110 characters truncated) ... yores retornos a través de inversiones en renta variable, mayor duración de las inversiones en renta fija y oportunidades tácticas en el corto plazo.', 'tipo': 'Renta Fija'}]
+(Background on this error at: https://sqlalche.me/e/14/f405)
+2025-10-16 20:07:50,754 - src.config.settings - ERROR - Error cargando bancoDeBogota_sumar_raw_transformed.json: (psycopg2.errors.UndefinedTable) relation "fic" does not exist
+LINE 1: INSERT INTO fic (nombre_fic, gestor, custodio, fecha_corte, ...
+                    ^
+
+[SQL: INSERT INTO fic (nombre_fic, gestor, custodio, fecha_corte, politica_de_inversion, tipo) VALUES (%(nombre_fic)s, %(gestor)s, %(custodio)s, %(fecha_corte)s, %(politica_de_inversion)s, %(tipo)s) RETURNING fic.id]
+[parameters: {'nombre_fic': 'FONDO DE INVERSIÓN COLECTIVA ABIERTO SUMAR', 'gestor': 'Fiduciaria Bogotá S.A.', 'custodio': 'Cititrust', 'fecha_corte': '2025-07-31', 'politica_de_inversion': "Alternativa de inversión a la vista con perfil de riesgo conservador que se encuentra calificada por BRC Standar & Poor's con F AAA/2/BRC1+ por su al ... (401 characters truncated) ... as inversiones tradicionales en tasa fija. Se mantienen posiciones en TES. La mayoría de las inversiones tienen vencimiento entre 90 días y dos años.", 'tipo': 'Renta Fija'}]
+(Background on this error at: https://sqlalche.me/e/14/f405)
+2025-10-16 20:07:50,754 - src.config.settings - ERROR - Error cargando bancoDeBogota_sumar_raw_transformed.json: (psycopg2.errors.UndefinedTable) relation "fic" does not exist
+LINE 1: INSERT INTO fic (nombre_fic, gestor, custodio, fecha_corte, ...
+                    ^
+
+[SQL: INSERT INTO fic (nombre_fic, gestor, custodio, fecha_corte, politica_de_inversion, tipo) VALUES (%(nombre_fic)s, %(gestor)s, %(custodio)s, %(fecha_corte)s, %(politica_de_inversion)s, %(tipo)s) RETURNING fic.id]
+[parameters: {'nombre_fic': 'FONDO DE INVERSIÓN COLECTIVA ABIERTO SUMAR', 'gestor': 'Fiduciaria Bogotá S.A.', 'custodio': 'Cititrust', 'fecha_corte': '2025-07-31', 'politica_de_inversion': "Alternativa de inversión a la vista con perfil de riesgo conservador que se encuentra calificada por BRC Standar & Poor's con F AAA/2/BRC1+ por su al ... (401 characters truncated) ... as inversiones tradicionales en tasa fija. Se mantienen posiciones en TES. La mayoría de las inversiones tienen vencimiento entre 90 días y dos años.", 'tipo': 'Renta Fija'}]
+(Background on this error at: https://sqlalche.me/e/14/f405)
+2025-10-16 20:07:50,757 - src.config.settings - ERROR - Error cargando bancoDeOccidenteFiduoccidente_plazoFijo_raw_transformed.json: (psycopg2.errors.UndefinedTable) relation "fic" does not exist
+LINE 1: INSERT INTO fic (nombre_fic, gestor, custodio, fecha_corte, ...
+                    ^
+
+[SQL: INSERT INTO fic (nombre_fic, gestor, custodio, fecha_corte, politica_de_inversion, tipo) VALUES (%(nombre_fic)s, %(gestor)s, %(custodio)s, %(fecha_corte)s, %(politica_de_inversion)s, %(tipo)s) RETURNING fic.id]
+[parameters: {'nombre_fic': 'FIC META PLANEADA', 'gestor': 'FIDUCIARIA DE OCCIDENTE S.A.', 'custodio': 'CITI TRUST COLOMBIA S.A.', 'fecha_corte': '2025-07-31', 'politica_de_inversion': 'Este modelo de portafolio es apropiado para inversionistas con alta tolerancia a la volatilidad. Es un portafolio que busca apreciación del capital e ... (110 characters truncated) ... yores retornos a través de inversiones en renta variable, mayor duración de las inversiones en renta fija y oportunidades tácticas en el corto plazo.', 'tipo': 'Renta Fija'}]
+(Background on this error at: https://sqlalche.me/e/14/f405)
+2025-10-16 20:07:50,757 - src.config.settings - ERROR - Error cargando bancoDeOccidenteFiduoccidente_plazoFijo_raw_transformed.json: (psycopg2.errors.UndefinedTable) relation "fic" does not exist
+LINE 1: INSERT INTO fic (nombre_fic, gestor, custodio, fecha_corte, ...
+                    ^
+
+[SQL: INSERT INTO fic (nombre_fic, gestor, custodio, fecha_corte, politica_de_inversion, tipo) VALUES (%(nombre_fic)s, %(gestor)s, %(custodio)s, %(fecha_corte)s, %(politica_de_inversion)s, %(tipo)s) RETURNING fic.id]
+[parameters: {'nombre_fic': 'FIC META PLANEADA', 'gestor': 'FIDUCIARIA DE OCCIDENTE S.A.', 'custodio': 'CITI TRUST COLOMBIA S.A.', 'fecha_corte': '2025-07-31', 'politica_de_inversion': 'Este modelo de portafolio es apropiado para inversionistas con alta tolerancia a la volatilidad. Es un portafolio que busca apreciación del capital e ... (110 characters truncated) ... yores retornos a través de inversiones en renta variable, mayor duración de las inversiones en renta fija y oportunidades tácticas en el corto plazo.', 'tipo': 'Renta Fija'}]
+(Background on this error at: https://sqlalche.me/e/14/f405)
+2025-10-16 20:07:50,862 - src.etl.load - ERROR - Error cargando datos a PostgreSQL: (psycopg2.errors.UndefinedTable) relation "fic" does not exist
+LINE 1: INSERT INTO fic (nombre_fic, gestor, custodio, fecha_corte, ...
+                    ^
+
+[SQL: INSERT INTO fic (nombre_fic, gestor, custodio, fecha_corte, politica_de_inversion, tipo) VALUES (%(nombre_fic)s, %(gestor)s, %(custodio)s, %(fecha_corte)s, %(politica_de_inversion)s, %(tipo)s) RETURNING fic.id]
+[parameters: {'nombre_fic': 'FONDO DE INVERSIÓN COLECTIVA RENTA FIJA MEDIANO PLAZO - MULTIESCALA', 'gestor': 'Davivienda Corredores S.A.', 'custodio': 'Cititrust Colombia S.A.', 'fecha_corte': '2025-07-31', 'politica_de_inversion': 'El objetivo del Fondo es ofrecer al público un instrumento de inversión en activos de renta fija de Colombia con estrategias de inversión consistente ... (309 characters truncated) ... s de las instituciones financieras FOGAFIN -Títulos o valores emitidos en procesos de titularización -Operaciones de derivados con fines de inversión', 'tipo': 'Renta Fija'}]
+(Background on this error at: https://sqlalche.me/e/14/f405)
+2025-10-16 20:07:50,862 - src.etl.load - ERROR - Error cargando datos a PostgreSQL: (psycopg2.errors.UndefinedTable) relation "fic" does not exist
+LINE 1: INSERT INTO fic (nombre_fic, gestor, custodio, fecha_corte, ...
+                    ^
+
+[SQL: INSERT INTO fic (nombre_fic, gestor, custodio, fecha_corte, politica_de_inversion, tipo) VALUES (%(nombre_fic)s, %(gestor)s, %(custodio)s, %(fecha_corte)s, %(politica_de_inversion)s, %(tipo)s) RETURNING fic.id]
+[parameters: {'nombre_fic': 'FONDO DE INVERSIÓN COLECTIVA RENTA FIJA MEDIANO PLAZO - MULTIESCALA', 'gestor': 'Davivienda Corredores S.A.', 'custodio': 'Cititrust Colombia S.A.', 'fecha_corte': '2025-07-31', 'politica_de_inversion': 'El objetivo del Fondo es ofrecer al público un instrumento de inversión en activos de renta fija de Colombia con estrategias de inversión consistente ... (309 characters truncated) ... s de las instituciones financieras FOGAFIN -Títulos o valores emitidos en procesos de titularización -Operaciones de derivados con fines de inversión', 'tipo': 'Renta Fija'}]
+(Background on this error at: https://sqlalche.me/e/14/f405)
+2025-10-16 20:07:50,864 - src.config.settings - ERROR - Error cargando davivienda_multiescala_raw_transformed.json: (psycopg2.errors.UndefinedTable) relation "fic" does not exist
+LINE 1: INSERT INTO fic (nombre_fic, gestor, custodio, fecha_corte, ...
+                    ^
+
+[SQL: INSERT INTO fic (nombre_fic, gestor, custodio, fecha_corte, politica_de_inversion, tipo) VALUES (%(nombre_fic)s, %(gestor)s, %(custodio)s, %(fecha_corte)s, %(politica_de_inversion)s, %(tipo)s) RETURNING fic.id]
+[parameters: {'nombre_fic': 'FONDO DE INVERSIÓN COLECTIVA RENTA FIJA MEDIANO PLAZO - MULTIESCALA', 'gestor': 'Davivienda Corredores S.A.', 'custodio': 'Cititrust Colombia S.A.', 'fecha_corte': '2025-07-31', 'politica_de_inversion': 'El objetivo del Fondo es ofrecer al público un instrumento de inversión en activos de renta fija de Colombia con estrategias de inversión consistente ... (309 characters truncated) ... s de las instituciones financieras FOGAFIN -Títulos o valores emitidos en procesos de titularización -Operaciones de derivados con fines de inversión', 'tipo': 'Renta Fija'}]
+(Background on this error at: https://sqlalche.me/e/14/f405)
+2025-10-16 20:07:50,864 - src.config.settings - ERROR - Error cargando davivienda_multiescala_raw_transformed.json: (psycopg2.errors.UndefinedTable) relation "fic" does not exist
+LINE 1: INSERT INTO fic (nombre_fic, gestor, custodio, fecha_corte, ...
+                    ^
+
+[SQL: INSERT INTO fic (nombre_fic, gestor, custodio, fecha_corte, politica_de_inversion, tipo) VALUES (%(nombre_fic)s, %(gestor)s, %(custodio)s, %(fecha_corte)s, %(politica_de_inversion)s, %(tipo)s) RETURNING fic.id]
+[parameters: {'nombre_fic': 'FONDO DE INVERSIÓN COLECTIVA RENTA FIJA MEDIANO PLAZO - MULTIESCALA', 'gestor': 'Davivienda Corredores S.A.', 'custodio': 'Cititrust Colombia S.A.', 'fecha_corte': '2025-07-31', 'politica_de_inversion': 'El objetivo del Fondo es ofrecer al público un instrumento de inversión en activos de renta fija de Colombia con estrategias de inversión consistente ... (309 characters truncated) ... s de las instituciones financieras FOGAFIN -Títulos o valores emitidos en procesos de titularización -Operaciones de derivados con fines de inversión', 'tipo': 'Renta Fija'}]
+(Background on this error at: https://sqlalche.me/e/14/f405)
+2025-10-16 20:07:50,866 - src.config.settings - ERROR - Error cargando davivienda_multiescala_raw_transformed.json: (psycopg2.errors.UndefinedTable) relation "fic" does not exist
+LINE 1: INSERT INTO fic (nombre_fic, gestor, custodio, fecha_corte, ...
+                    ^
+
+[SQL: INSERT INTO fic (nombre_fic, gestor, custodio, fecha_corte, politica_de_inversion, tipo) VALUES (%(nombre_fic)s, %(gestor)s, %(custodio)s, %(fecha_corte)s, %(politica_de_inversion)s, %(tipo)s) RETURNING fic.id]
+[parameters: {'nombre_fic': 'FONDO DE INVERSIÓN COLECTIVA RENTA FIJA MEDIANO PLAZO - MULTIESCALA', 'gestor': 'Davivienda Corredores S.A.', 'custodio': 'Cititrust Colombia S.A.', 'fecha_corte': '2025-07-31', 'politica_de_inversion': 'El objetivo del Fondo es ofrecer al público un instrumento de inversión en activos de renta fija de Colombia con estrategias de inversión consistente ... (309 characters truncated) ... s de las instituciones financieras FOGAFIN -Títulos o valores emitidos en procesos de titularización -Operaciones de derivados con fines de inversión', 'tipo': 'Renta Fija'}]
+(Background on this error at: https://sqlalche.me/e/14/f405)
+2025-10-16 20:07:50,866 - src.config.settings - ERROR - Error cargando davivienda_multiescala_raw_transformed.json: (psycopg2.errors.UndefinedTable) relation "fic" does not exist
+LINE 1: INSERT INTO fic (nombre_fic, gestor, custodio, fecha_corte, ...
+                    ^
+
+[SQL: INSERT INTO fic (nombre_fic, gestor, custodio, fecha_corte, politica_de_inversion, tipo) VALUES (%(nombre_fic)s, %(gestor)s, %(custodio)s, %(fecha_corte)s, %(politica_de_inversion)s, %(tipo)s) RETURNING fic.id]
+[parameters: {'nombre_fic': 'FONDO DE INVERSIÓN COLECTIVA RENTA FIJA MEDIANO PLAZO - MULTIESCALA', 'gestor': 'Davivienda Corredores S.A.', 'custodio': 'Cititrust Colombia S.A.', 'fecha_corte': '2025-07-31', 'politica_de_inversion': 'El objetivo del Fondo es ofrecer al público un instrumento de inversión en activos de renta fija de Colombia con estrategias de inversión consistente ... (309 characters truncated) ... s de las instituciones financieras FOGAFIN -Títulos o valores emitidos en procesos de titularización -Operaciones de derivados con fines de inversión', 'tipo': 'Renta Fija'}]
+(Background on this error at: https://sqlalche.me/e/14/f405)
+2025-10-16 20:07:50,876 - src.etl.load - ERROR - Error cargando datos a PostgreSQL: (psycopg2.errors.UndefinedTable) relation "fic" does not exist
+LINE 1: INSERT INTO fic (nombre_fic, gestor, custodio, fecha_corte, ...
+                    ^
+
+[SQL: INSERT INTO fic (nombre_fic, gestor, custodio, fecha_corte, politica_de_inversion, tipo) VALUES (%(nombre_fic)s, %(gestor)s, %(custodio)s, %(fecha_corte)s, %(politica_de_inversion)s, %(tipo)s) RETURNING fic.id]
+[parameters: {'nombre_fic': 'CREDICORP CAPITAL ALTA LIQUIDEZ', 'gestor': 'CREDICORP CAPITAL COLOMBIA S.A.', 'custodio': 'CITITRUST COLOMBIA S.A', 'fecha_corte': '2025-07-31', 'politica_de_inversion': 'Alternativa de inversion ideal para las personas que buscan una inversion conservadora y de baja volatilidad, por medio de la cual preservar el capit ... (139 characters truncated) ... lta calidad crediticia (calificacion minima grado de inversion), que tengan liquidez en el mercado secundario. Vencimiento promedio menor a 365 dias.', 'tipo': 'Renta Fija'}]
+(Background on this error at: https://sqlalche.me/e/14/f405)
+2025-10-16 20:07:50,876 - src.etl.load - ERROR - Error cargando datos a PostgreSQL: (psycopg2.errors.UndefinedTable) relation "fic" does not exist
+LINE 1: INSERT INTO fic (nombre_fic, gestor, custodio, fecha_corte, ...
+                    ^
+
+[SQL: INSERT INTO fic (nombre_fic, gestor, custodio, fecha_corte, politica_de_inversion, tipo) VALUES (%(nombre_fic)s, %(gestor)s, %(custodio)s, %(fecha_corte)s, %(politica_de_inversion)s, %(tipo)s) RETURNING fic.id]
+[parameters: {'nombre_fic': 'CREDICORP CAPITAL ALTA LIQUIDEZ', 'gestor': 'CREDICORP CAPITAL COLOMBIA S.A.', 'custodio': 'CITITRUST COLOMBIA S.A', 'fecha_corte': '2025-07-31', 'politica_de_inversion': 'Alternativa de inversion ideal para las personas que buscan una inversion conservadora y de baja volatilidad, por medio de la cual preservar el capit ... (139 characters truncated) ... lta calidad crediticia (calificacion minima grado de inversion), que tengan liquidez en el mercado secundario. Vencimiento promedio menor a 365 dias.', 'tipo': 'Renta Fija'}]
+(Background on this error at: https://sqlalche.me/e/14/f405)
+2025-10-16 20:07:50,924 - src.config.settings - ERROR - Error cargando credicorpCapital_altaLiquidez_raw_transformed.json: (psycopg2.errors.UndefinedTable) relation "fic" does not exist
+LINE 1: INSERT INTO fic (nombre_fic, gestor, custodio, fecha_corte, ...
+                    ^
+
+[SQL: INSERT INTO fic (nombre_fic, gestor, custodio, fecha_corte, politica_de_inversion, tipo) VALUES (%(nombre_fic)s, %(gestor)s, %(custodio)s, %(fecha_corte)s, %(politica_de_inversion)s, %(tipo)s) RETURNING fic.id]
+[parameters: {'nombre_fic': 'CREDICORP CAPITAL ALTA LIQUIDEZ', 'gestor': 'CREDICORP CAPITAL COLOMBIA S.A.', 'custodio': 'CITITRUST COLOMBIA S.A', 'fecha_corte': '2025-07-31', 'politica_de_inversion': 'Alternativa de inversion ideal para las personas que buscan una inversion conservadora y de baja volatilidad, por medio de la cual preservar el capit ... (139 characters truncated) ... lta calidad crediticia (calificacion minima grado de inversion), que tengan liquidez en el mercado secundario. Vencimiento promedio menor a 365 dias.', 'tipo': 'Renta Fija'}]
+(Background on this error at: https://sqlalche.me/e/14/f405)
+2025-10-16 20:07:50,924 - src.config.settings - ERROR - Error cargando credicorpCapital_altaLiquidez_raw_transformed.json: (psycopg2.errors.UndefinedTable) relation "fic" does not exist
+LINE 1: INSERT INTO fic (nombre_fic, gestor, custodio, fecha_corte, ...
+                    ^
+
+[SQL: INSERT INTO fic (nombre_fic, gestor, custodio, fecha_corte, politica_de_inversion, tipo) VALUES (%(nombre_fic)s, %(gestor)s, %(custodio)s, %(fecha_corte)s, %(politica_de_inversion)s, %(tipo)s) RETURNING fic.id]
+[parameters: {'nombre_fic': 'CREDICORP CAPITAL ALTA LIQUIDEZ', 'gestor': 'CREDICORP CAPITAL COLOMBIA S.A.', 'custodio': 'CITITRUST COLOMBIA S.A', 'fecha_corte': '2025-07-31', 'politica_de_inversion': 'Alternativa de inversion ideal para las personas que buscan una inversion conservadora y de baja volatilidad, por medio de la cual preservar el capit ... (139 characters truncated) ... lta calidad crediticia (calificacion minima grado de inversion), que tengan liquidez en el mercado secundario. Vencimiento promedio menor a 365 dias.', 'tipo': 'Renta Fija'}]
+(Background on this error at: https://sqlalche.me/e/14/f405)
+2025-10-16 20:07:50,926 - src.etl.load - ERROR - Error cargando datos a PostgreSQL: (psycopg2.errors.UndefinedTable) relation "fic" does not exist
+LINE 1: INSERT INTO fic (nombre_fic, gestor, custodio, fecha_corte, ...
+                    ^
+
+[SQL: INSERT INTO fic (nombre_fic, gestor, custodio, fecha_corte, politica_de_inversion, tipo) VALUES (%(nombre_fic)s, %(gestor)s, %(custodio)s, %(fecha_corte)s, %(politica_de_inversion)s, %(tipo)s) RETURNING fic.id]
+[parameters: {'nombre_fic': 'Fondo de Inversión Colectiva Itaú Money Market', 'gestor': 'Itaú Comisionista de Bolsa S.A.', 'custodio': 'S3 Caceis Colombia S.A.', 'fecha_corte': '2025-07-31', 'politica_de_inversion': 'El Objetivo de inversión del fondo es proporcionar a sus inversionistas un instrumento de inversión a corto plazo que cuenta con un perfil de riesgo  ... (687 characters truncated) ... endencia Financiera de Colombia o en entidades con regímenes especiales contemplados en la parte décima del estatuto orgánico del sistema financiero.', 'tipo': 'Renta Fija'}]
+(Background on this error at: https://sqlalche.me/e/14/f405)
+2025-10-16 20:07:50,926 - src.etl.load - ERROR - Error cargando datos a PostgreSQL: (psycopg2.errors.UndefinedTable) relation "fic" does not exist
+LINE 1: INSERT INTO fic (nombre_fic, gestor, custodio, fecha_corte, ...
+                    ^
+
+[SQL: INSERT INTO fic (nombre_fic, gestor, custodio, fecha_corte, politica_de_inversion, tipo) VALUES (%(nombre_fic)s, %(gestor)s, %(custodio)s, %(fecha_corte)s, %(politica_de_inversion)s, %(tipo)s) RETURNING fic.id]
+[parameters: {'nombre_fic': 'Fondo de Inversión Colectiva Itaú Money Market', 'gestor': 'Itaú Comisionista de Bolsa S.A.', 'custodio': 'S3 Caceis Colombia S.A.', 'fecha_corte': '2025-07-31', 'politica_de_inversion': 'El Objetivo de inversión del fondo es proporcionar a sus inversionistas un instrumento de inversión a corto plazo que cuenta con un perfil de riesgo  ... (687 characters truncated) ... endencia Financiera de Colombia o en entidades con regímenes especiales contemplados en la parte décima del estatuto orgánico del sistema financiero.', 'tipo': 'Renta Fija'}]
+(Background on this error at: https://sqlalche.me/e/14/f405)
+2025-10-16 20:07:50,927 - src.config.settings - ERROR - Error cargando credicorpCapital_altaLiquidez_raw_transformed.json: (psycopg2.errors.UndefinedTable) relation "fic" does not exist
+LINE 1: INSERT INTO fic (nombre_fic, gestor, custodio, fecha_corte, ...
+                    ^
+
+[SQL: INSERT INTO fic (nombre_fic, gestor, custodio, fecha_corte, politica_de_inversion, tipo) VALUES (%(nombre_fic)s, %(gestor)s, %(custodio)s, %(fecha_corte)s, %(politica_de_inversion)s, %(tipo)s) RETURNING fic.id]
+[parameters: {'nombre_fic': 'CREDICORP CAPITAL ALTA LIQUIDEZ', 'gestor': 'CREDICORP CAPITAL COLOMBIA S.A.', 'custodio': 'CITITRUST COLOMBIA S.A', 'fecha_corte': '2025-07-31', 'politica_de_inversion': 'Alternativa de inversion ideal para las personas que buscan una inversion conservadora y de baja volatilidad, por medio de la cual preservar el capit ... (139 characters truncated) ... lta calidad crediticia (calificacion minima grado de inversion), que tengan liquidez en el mercado secundario. Vencimiento promedio menor a 365 dias.', 'tipo': 'Renta Fija'}]
+(Background on this error at: https://sqlalche.me/e/14/f405)
+2025-10-16 20:07:50,927 - src.config.settings - ERROR - Error cargando credicorpCapital_altaLiquidez_raw_transformed.json: (psycopg2.errors.UndefinedTable) relation "fic" does not exist
+LINE 1: INSERT INTO fic (nombre_fic, gestor, custodio, fecha_corte, ...
+                    ^
+
+[SQL: INSERT INTO fic (nombre_fic, gestor, custodio, fecha_corte, politica_de_inversion, tipo) VALUES (%(nombre_fic)s, %(gestor)s, %(custodio)s, %(fecha_corte)s, %(politica_de_inversion)s, %(tipo)s) RETURNING fic.id]
+[parameters: {'nombre_fic': 'CREDICORP CAPITAL ALTA LIQUIDEZ', 'gestor': 'CREDICORP CAPITAL COLOMBIA S.A.', 'custodio': 'CITITRUST COLOMBIA S.A', 'fecha_corte': '2025-07-31', 'politica_de_inversion': 'Alternativa de inversion ideal para las personas que buscan una inversion conservadora y de baja volatilidad, por medio de la cual preservar el capit ... (139 characters truncated) ... lta calidad crediticia (calificacion minima grado de inversion), que tengan liquidez en el mercado secundario. Vencimiento promedio menor a 365 dias.', 'tipo': 'Renta Fija'}]
+(Background on this error at: https://sqlalche.me/e/14/f405)
+2025-10-16 20:07:50,928 - src.config.settings - ERROR - Error cargando itau_moneyMarket_raw_transformed.json: (psycopg2.errors.UndefinedTable) relation "fic" does not exist
+LINE 1: INSERT INTO fic (nombre_fic, gestor, custodio, fecha_corte, ...
+                    ^
+
+[SQL: INSERT INTO fic (nombre_fic, gestor, custodio, fecha_corte, politica_de_inversion, tipo) VALUES (%(nombre_fic)s, %(gestor)s, %(custodio)s, %(fecha_corte)s, %(politica_de_inversion)s, %(tipo)s) RETURNING fic.id]
+[parameters: {'nombre_fic': 'Fondo de Inversión Colectiva Itaú Money Market', 'gestor': 'Itaú Comisionista de Bolsa S.A.', 'custodio': 'S3 Caceis Colombia S.A.', 'fecha_corte': '2025-07-31', 'politica_de_inversion': 'El Objetivo de inversión del fondo es proporcionar a sus inversionistas un instrumento de inversión a corto plazo que cuenta con un perfil de riesgo  ... (687 characters truncated) ... endencia Financiera de Colombia o en entidades con regímenes especiales contemplados en la parte décima del estatuto orgánico del sistema financiero.', 'tipo': 'Renta Fija'}]
+(Background on this error at: https://sqlalche.me/e/14/f405)
+2025-10-16 20:07:50,928 - src.config.settings - ERROR - Error cargando itau_moneyMarket_raw_transformed.json: (psycopg2.errors.UndefinedTable) relation "fic" does not exist
+LINE 1: INSERT INTO fic (nombre_fic, gestor, custodio, fecha_corte, ...
+                    ^
+
+[SQL: INSERT INTO fic (nombre_fic, gestor, custodio, fecha_corte, politica_de_inversion, tipo) VALUES (%(nombre_fic)s, %(gestor)s, %(custodio)s, %(fecha_corte)s, %(politica_de_inversion)s, %(tipo)s) RETURNING fic.id]
+[parameters: {'nombre_fic': 'Fondo de Inversión Colectiva Itaú Money Market', 'gestor': 'Itaú Comisionista de Bolsa S.A.', 'custodio': 'S3 Caceis Colombia S.A.', 'fecha_corte': '2025-07-31', 'politica_de_inversion': 'El Objetivo de inversión del fondo es proporcionar a sus inversionistas un instrumento de inversión a corto plazo que cuenta con un perfil de riesgo  ... (687 characters truncated) ... endencia Financiera de Colombia o en entidades con regímenes especiales contemplados en la parte décima del estatuto orgánico del sistema financiero.', 'tipo': 'Renta Fija'}]
+(Background on this error at: https://sqlalche.me/e/14/f405)
+2025-10-16 20:07:50,930 - src.config.settings - ERROR - Error cargando itau_moneyMarket_raw_transformed.json: (psycopg2.errors.UndefinedTable) relation "fic" does not exist
+LINE 1: INSERT INTO fic (nombre_fic, gestor, custodio, fecha_corte, ...
+                    ^
+
+[SQL: INSERT INTO fic (nombre_fic, gestor, custodio, fecha_corte, politica_de_inversion, tipo) VALUES (%(nombre_fic)s, %(gestor)s, %(custodio)s, %(fecha_corte)s, %(politica_de_inversion)s, %(tipo)s) RETURNING fic.id]
+[parameters: {'nombre_fic': 'Fondo de Inversión Colectiva Itaú Money Market', 'gestor': 'Itaú Comisionista de Bolsa S.A.', 'custodio': 'S3 Caceis Colombia S.A.', 'fecha_corte': '2025-07-31', 'politica_de_inversion': 'El Objetivo de inversión del fondo es proporcionar a sus inversionistas un instrumento de inversión a corto plazo que cuenta con un perfil de riesgo  ... (687 characters truncated) ... endencia Financiera de Colombia o en entidades con regímenes especiales contemplados en la parte décima del estatuto orgánico del sistema financiero.', 'tipo': 'Renta Fija'}]
+(Background on this error at: https://sqlalche.me/e/14/f405)
+2025-10-16 20:07:50,930 - src.config.settings - ERROR - Error cargando itau_moneyMarket_raw_transformed.json: (psycopg2.errors.UndefinedTable) relation "fic" does not exist
+LINE 1: INSERT INTO fic (nombre_fic, gestor, custodio, fecha_corte, ...
+                    ^
+
+[SQL: INSERT INTO fic (nombre_fic, gestor, custodio, fecha_corte, politica_de_inversion, tipo) VALUES (%(nombre_fic)s, %(gestor)s, %(custodio)s, %(fecha_corte)s, %(politica_de_inversion)s, %(tipo)s) RETURNING fic.id]
+[parameters: {'nombre_fic': 'Fondo de Inversión Colectiva Itaú Money Market', 'gestor': 'Itaú Comisionista de Bolsa S.A.', 'custodio': 'S3 Caceis Colombia S.A.', 'fecha_corte': '2025-07-31', 'politica_de_inversion': 'El Objetivo de inversión del fondo es proporcionar a sus inversionistas un instrumento de inversión a corto plazo que cuenta con un perfil de riesgo  ... (687 characters truncated) ... endencia Financiera de Colombia o en entidades con regímenes especiales contemplados en la parte décima del estatuto orgánico del sistema financiero.', 'tipo': 'Renta Fija'}]
+(Background on this error at: https://sqlalche.me/e/14/f405)
+2025-10-16 20:07:50,935 - src.etl.load - ERROR - Error cargando datos a PostgreSQL: (psycopg2.errors.UndefinedTable) relation "fic" does not exist
+LINE 1: INSERT INTO fic (nombre_fic, gestor, custodio, fecha_corte, ...
+                    ^
+
+[SQL: INSERT INTO fic (nombre_fic, gestor, custodio, fecha_corte, politica_de_inversion, tipo) VALUES (%(nombre_fic)s, %(gestor)s, %(custodio)s, %(fecha_corte)s, %(politica_de_inversion)s, %(tipo)s) RETURNING fic.id]
+[parameters: {'nombre_fic': 'FIC GLOBAL VISTA', 'gestor': 'Progresión S.A. Sociedad Comisionista de Bolsa', 'custodio': 'S3 CACEIS', 'fecha_corte': '2025-01-31', 'politica_de_inversion': 'Global Vista es un tipo de fondo abierto que pretende como objetivo ofrecer al público un portafolio de inversiones en valores de renta fija que permitan una alta conservación del capital y una rentabilidad que sea consistente con un nivel de riesgo conservador.', 'tipo': 'Renta Fija'}]
+(Background on this error at: https://sqlalche.me/e/14/f405)
+2025-10-16 20:07:50,935 - src.etl.load - ERROR - Error cargando datos a PostgreSQL: (psycopg2.errors.UndefinedTable) relation "fic" does not exist
+LINE 1: INSERT INTO fic (nombre_fic, gestor, custodio, fecha_corte, ...
+                    ^
+
+[SQL: INSERT INTO fic (nombre_fic, gestor, custodio, fecha_corte, politica_de_inversion, tipo) VALUES (%(nombre_fic)s, %(gestor)s, %(custodio)s, %(fecha_corte)s, %(politica_de_inversion)s, %(tipo)s) RETURNING fic.id]
+[parameters: {'nombre_fic': 'FIC GLOBAL VISTA', 'gestor': 'Progresión S.A. Sociedad Comisionista de Bolsa', 'custodio': 'S3 CACEIS', 'fecha_corte': '2025-01-31', 'politica_de_inversion': 'Global Vista es un tipo de fondo abierto que pretende como objetivo ofrecer al público un portafolio de inversiones en valores de renta fija que permitan una alta conservación del capital y una rentabilidad que sea consistente con un nivel de riesgo conservador.', 'tipo': 'Renta Fija'}]
+(Background on this error at: https://sqlalche.me/e/14/f405)
+2025-10-16 20:07:50,937 - src.config.settings - ERROR - Error cargando progresion_globalVista_raw_transformed.json: (psycopg2.errors.UndefinedTable) relation "fic" does not exist
+LINE 1: INSERT INTO fic (nombre_fic, gestor, custodio, fecha_corte, ...
+                    ^
+
+[SQL: INSERT INTO fic (nombre_fic, gestor, custodio, fecha_corte, politica_de_inversion, tipo) VALUES (%(nombre_fic)s, %(gestor)s, %(custodio)s, %(fecha_corte)s, %(politica_de_inversion)s, %(tipo)s) RETURNING fic.id]
+[parameters: {'nombre_fic': 'FIC GLOBAL VISTA', 'gestor': 'Progresión S.A. Sociedad Comisionista de Bolsa', 'custodio': 'S3 CACEIS', 'fecha_corte': '2025-01-31', 'politica_de_inversion': 'Global Vista es un tipo de fondo abierto que pretende como objetivo ofrecer al público un portafolio de inversiones en valores de renta fija que permitan una alta conservación del capital y una rentabilidad que sea consistente con un nivel de riesgo conservador.', 'tipo': 'Renta Fija'}]
+(Background on this error at: https://sqlalche.me/e/14/f405)
+2025-10-16 20:07:50,937 - src.config.settings - ERROR - Error cargando progresion_globalVista_raw_transformed.json: (psycopg2.errors.UndefinedTable) relation "fic" does not exist
+LINE 1: INSERT INTO fic (nombre_fic, gestor, custodio, fecha_corte, ...
+                    ^
+
+[SQL: INSERT INTO fic (nombre_fic, gestor, custodio, fecha_corte, politica_de_inversion, tipo) VALUES (%(nombre_fic)s, %(gestor)s, %(custodio)s, %(fecha_corte)s, %(politica_de_inversion)s, %(tipo)s) RETURNING fic.id]
+[parameters: {'nombre_fic': 'FIC GLOBAL VISTA', 'gestor': 'Progresión S.A. Sociedad Comisionista de Bolsa', 'custodio': 'S3 CACEIS', 'fecha_corte': '2025-01-31', 'politica_de_inversion': 'Global Vista es un tipo de fondo abierto que pretende como objetivo ofrecer al público un portafolio de inversiones en valores de renta fija que permitan una alta conservación del capital y una rentabilidad que sea consistente con un nivel de riesgo conservador.', 'tipo': 'Renta Fija'}]
+(Background on this error at: https://sqlalche.me/e/14/f405)
+2025-10-16 20:07:50,939 - src.config.settings - ERROR - Error cargando progresion_globalVista_raw_transformed.json: (psycopg2.errors.UndefinedTable) relation "fic" does not exist
+LINE 1: INSERT INTO fic (nombre_fic, gestor, custodio, fecha_corte, ...
+                    ^
+
+[SQL: INSERT INTO fic (nombre_fic, gestor, custodio, fecha_corte, politica_de_inversion, tipo) VALUES (%(nombre_fic)s, %(gestor)s, %(custodio)s, %(fecha_corte)s, %(politica_de_inversion)s, %(tipo)s) RETURNING fic.id]
+[parameters: {'nombre_fic': 'FIC GLOBAL VISTA', 'gestor': 'Progresión S.A. Sociedad Comisionista de Bolsa', 'custodio': 'S3 CACEIS', 'fecha_corte': '2025-01-31', 'politica_de_inversion': 'Global Vista es un tipo de fondo abierto que pretende como objetivo ofrecer al público un portafolio de inversiones en valores de renta fija que permitan una alta conservación del capital y una rentabilidad que sea consistente con un nivel de riesgo conservador.', 'tipo': 'Renta Fija'}]
+(Background on this error at: https://sqlalche.me/e/14/f405)
+2025-10-16 20:07:50,939 - src.config.settings - ERROR - Error cargando progresion_globalVista_raw_transformed.json: (psycopg2.errors.UndefinedTable) relation "fic" does not exist
+LINE 1: INSERT INTO fic (nombre_fic, gestor, custodio, fecha_corte, ...
+                    ^
+
+[SQL: INSERT INTO fic (nombre_fic, gestor, custodio, fecha_corte, politica_de_inversion, tipo) VALUES (%(nombre_fic)s, %(gestor)s, %(custodio)s, %(fecha_corte)s, %(politica_de_inversion)s, %(tipo)s) RETURNING fic.id]
+[parameters: {'nombre_fic': 'FIC GLOBAL VISTA', 'gestor': 'Progresión S.A. Sociedad Comisionista de Bolsa', 'custodio': 'S3 CACEIS', 'fecha_corte': '2025-01-31', 'politica_de_inversion': 'Global Vista es un tipo de fondo abierto que pretende como objetivo ofrecer al público un portafolio de inversiones en valores de renta fija que permitan una alta conservación del capital y una rentabilidad que sea consistente con un nivel de riesgo conservador.', 'tipo': 'Renta Fija'}]
+(Background on this error at: https://sqlalche.me/e/14/f405)
+2025-10-16 20:07:52,340 - src.etl.load - ERROR - Error cargando datos a PostgreSQL: (psycopg2.errors.UndefinedTable) relation "fic" does not exist
+LINE 1: INSERT INTO fic (nombre_fic, gestor, custodio, fecha_corte, ...
+                    ^
+
+[SQL: INSERT INTO fic (nombre_fic, gestor, custodio, fecha_corte, politica_de_inversion, tipo) VALUES (%(nombre_fic)s, %(gestor)s, %(custodio)s, %(fecha_corte)s, %(politica_de_inversion)s, %(tipo)s) RETURNING fic.id]
+[parameters: {'nombre_fic': 'Fiducuenta', 'gestor': 'Fiduciaria Bancolombia S.A.', 'custodio': 'Cititrust Colombia S.A.', 'fecha_corte': '2025-07-31', 'politica_de_inversion': 'El objetivo del fondo de inversión colectiva es proporcionar a los inversionistas un instrumento de inversión de renta fija de baja duración, con un  ... (517 characters truncated) ... o plazo, el posicionamiento frente al riesgo de mercado se mantendrá ligeramente sobreponderado con respecto a su referente y a sus niveles actuales.', 'tipo': 'Renta Fija'}]
+(Background on this error at: https://sqlalche.me/e/14/f405)
+2025-10-16 20:07:52,340 - src.etl.load - ERROR - Error cargando datos a PostgreSQL: (psycopg2.errors.UndefinedTable) relation "fic" does not exist
+LINE 1: INSERT INTO fic (nombre_fic, gestor, custodio, fecha_corte, ...
+                    ^
+
+[SQL: INSERT INTO fic (nombre_fic, gestor, custodio, fecha_corte, politica_de_inversion, tipo) VALUES (%(nombre_fic)s, %(gestor)s, %(custodio)s, %(fecha_corte)s, %(politica_de_inversion)s, %(tipo)s) RETURNING fic.id]
+[parameters: {'nombre_fic': 'Fiducuenta', 'gestor': 'Fiduciaria Bancolombia S.A.', 'custodio': 'Cititrust Colombia S.A.', 'fecha_corte': '2025-07-31', 'politica_de_inversion': 'El objetivo del fondo de inversión colectiva es proporcionar a los inversionistas un instrumento de inversión de renta fija de baja duración, con un  ... (517 characters truncated) ... o plazo, el posicionamiento frente al riesgo de mercado se mantendrá ligeramente sobreponderado con respecto a su referente y a sus niveles actuales.', 'tipo': 'Renta Fija'}]
+(Background on this error at: https://sqlalche.me/e/14/f405)
+2025-10-16 20:07:52,342 - src.config.settings - ERROR - Error cargando bancolombia_fiducuenta_raw_transformed.json: (psycopg2.errors.UndefinedTable) relation "fic" does not exist
+LINE 1: INSERT INTO fic (nombre_fic, gestor, custodio, fecha_corte, ...
+                    ^
+
+[SQL: INSERT INTO fic (nombre_fic, gestor, custodio, fecha_corte, politica_de_inversion, tipo) VALUES (%(nombre_fic)s, %(gestor)s, %(custodio)s, %(fecha_corte)s, %(politica_de_inversion)s, %(tipo)s) RETURNING fic.id]
+[parameters: {'nombre_fic': 'Fiducuenta', 'gestor': 'Fiduciaria Bancolombia S.A.', 'custodio': 'Cititrust Colombia S.A.', 'fecha_corte': '2025-07-31', 'politica_de_inversion': 'El objetivo del fondo de inversión colectiva es proporcionar a los inversionistas un instrumento de inversión de renta fija de baja duración, con un  ... (517 characters truncated) ... o plazo, el posicionamiento frente al riesgo de mercado se mantendrá ligeramente sobreponderado con respecto a su referente y a sus niveles actuales.', 'tipo': 'Renta Fija'}]
+(Background on this error at: https://sqlalche.me/e/14/f405)
+2025-10-16 20:07:52,342 - src.config.settings - ERROR - Error cargando bancolombia_fiducuenta_raw_transformed.json: (psycopg2.errors.UndefinedTable) relation "fic" does not exist
+LINE 1: INSERT INTO fic (nombre_fic, gestor, custodio, fecha_corte, ...
+                    ^
+
+[SQL: INSERT INTO fic (nombre_fic, gestor, custodio, fecha_corte, politica_de_inversion, tipo) VALUES (%(nombre_fic)s, %(gestor)s, %(custodio)s, %(fecha_corte)s, %(politica_de_inversion)s, %(tipo)s) RETURNING fic.id]
+[parameters: {'nombre_fic': 'Fiducuenta', 'gestor': 'Fiduciaria Bancolombia S.A.', 'custodio': 'Cititrust Colombia S.A.', 'fecha_corte': '2025-07-31', 'politica_de_inversion': 'El objetivo del fondo de inversión colectiva es proporcionar a los inversionistas un instrumento de inversión de renta fija de baja duración, con un  ... (517 characters truncated) ... o plazo, el posicionamiento frente al riesgo de mercado se mantendrá ligeramente sobreponderado con respecto a su referente y a sus niveles actuales.', 'tipo': 'Renta Fija'}]
+(Background on this error at: https://sqlalche.me/e/14/f405)
+2025-10-16 20:07:52,344 - src.config.settings - ERROR - Error cargando bancolombia_fiducuenta_raw_transformed.json: (psycopg2.errors.UndefinedTable) relation "fic" does not exist
+LINE 1: INSERT INTO fic (nombre_fic, gestor, custodio, fecha_corte, ...
+                    ^
+
+[SQL: INSERT INTO fic (nombre_fic, gestor, custodio, fecha_corte, politica_de_inversion, tipo) VALUES (%(nombre_fic)s, %(gestor)s, %(custodio)s, %(fecha_corte)s, %(politica_de_inversion)s, %(tipo)s) RETURNING fic.id]
+[parameters: {'nombre_fic': 'Fiducuenta', 'gestor': 'Fiduciaria Bancolombia S.A.', 'custodio': 'Cititrust Colombia S.A.', 'fecha_corte': '2025-07-31', 'politica_de_inversion': 'El objetivo del fondo de inversión colectiva es proporcionar a los inversionistas un instrumento de inversión de renta fija de baja duración, con un  ... (517 characters truncated) ... o plazo, el posicionamiento frente al riesgo de mercado se mantendrá ligeramente sobreponderado con respecto a su referente y a sus niveles actuales.', 'tipo': 'Renta Fija'}]
+(Background on this error at: https://sqlalche.me/e/14/f405)
+2025-10-16 20:07:52,344 - src.config.settings - ERROR - Error cargando bancolombia_fiducuenta_raw_transformed.json: (psycopg2.errors.UndefinedTable) relation "fic" does not exist
+LINE 1: INSERT INTO fic (nombre_fic, gestor, custodio, fecha_corte, ...
+                    ^
+
+[SQL: INSERT INTO fic (nombre_fic, gestor, custodio, fecha_corte, politica_de_inversion, tipo) VALUES (%(nombre_fic)s, %(gestor)s, %(custodio)s, %(fecha_corte)s, %(politica_de_inversion)s, %(tipo)s) RETURNING fic.id]
+[parameters: {'nombre_fic': 'Fiducuenta', 'gestor': 'Fiduciaria Bancolombia S.A.', 'custodio': 'Cititrust Colombia S.A.', 'fecha_corte': '2025-07-31', 'politica_de_inversion': 'El objetivo del fondo de inversión colectiva es proporcionar a los inversionistas un instrumento de inversión de renta fija de baja duración, con un  ... (517 characters truncated) ... o plazo, el posicionamiento frente al riesgo de mercado se mantendrá ligeramente sobreponderado con respecto a su referente y a sus niveles actuales.', 'tipo': 'Renta Fija'}]
+(Background on this error at: https://sqlalche.me/e/14/f405)
+2025-10-16 20:35:28,160 - config.db - ERROR - Error conectando a PostgreSQL: connection to server at "localhost" (::1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+2025-10-16 20:35:28,181 - config.db - ERROR - Error conectando a PostgreSQL: connection to server at "localhost" (::1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+2025-10-16 20:38:48,214 - config.db - ERROR - Error conectando a PostgreSQL: connection to server at "localhost" (::1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+2025-10-16 20:38:48,216 - config.db - ERROR - Error conectando a PostgreSQL: connection to server at "localhost" (::1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
