@@ -25,10 +25,11 @@ def create_test_users():
         # Verificar si ya existen usuarios de prueba
         existing_admin = session.query(Usuario).filter_by(correo="admin@owl.com").first()
         existing_user = session.query(Usuario).filter_by(correo="usuario@owl.com").first()
+        existing_user_2 = session.query(Usuario).filter_by(correo="usuario2@owl.com").first()
 
-        if existing_admin and existing_user:
+        if existing_admin and existing_user and existing_user_2:
             logger.info("Usuarios de prueba ya existen en la base de datos")
-            return existing_admin.id, existing_user.id
+            return existing_admin.id, existing_user.id, existing_user_2
 
         # 1. Crear usuario administrador
         admin_user = Usuario(
@@ -36,7 +37,8 @@ def create_test_users():
             correo="admin@owl.com",
             contrasenia="admin123",  # En producción esto debería estar hasheado
             is_admin=True,
-            nivel_riesgo="moderado"
+            nivel_riesgo="",
+            fecha_nacimiento="18/10/2004"
         )
         session.add(admin_user)
 
@@ -46,14 +48,26 @@ def create_test_users():
             correo="usuario@owl.com",
             contrasenia="user123",  # En producción esto debería estar hasheado
             is_admin=False,
-            nivel_riesgo="conservador"
+            nivel_riesgo="conservador",
+            fecha_nacimiento="18/10/2005"
         )
         session.add(normal_user)
 
+        # 3. = 2.
+        normal_user_2 = Usuario(
+            nombre="Usuario Prueba 2",
+            correo="usuario2@owl.com",
+            contrasenia="user123",  # En producción esto debería estar hasheado
+            is_admin=False,
+            nivel_riesgo="conservador",
+            fecha_nacimiento="18/10/2002"
+        )
+        session.add(normal_user_2)
+
         session.commit()  # Commit para guardar los usuarios y obtener IDs
 
-        logger.info(f"Usuarios creados: Admin ID={admin_user.id}, User ID={normal_user.id}")
-        return admin_user.id, normal_user.id
+        logger.info(f"Usuarios creados: Admin ID={admin_user.id}, User ID={normal_user.id, normal_user_2.id}")
+        return admin_user.id, normal_user.id, normal_user_2.id
 
     except Exception as e:
         logger.error(f"Error creando usuarios: {e}")
@@ -71,14 +85,14 @@ def get_random_fic_ids(session, count=5):
     return [fic[0] for fic in fics]
 
 
-def create_user_favorites(admin_id, user_id):
+def create_user_favorites(admin_id, user_id, user_id_2):
     """Crear relaciones de favoritos para los usuarios"""
     session = None
     try:
         session = get_db_session()
 
         # Obtener algunos FICs existentes
-        fic_ids = get_random_fic_ids(session, 5)
+        fic_ids = get_random_fic_ids(session, 7)
 
         if not fic_ids:
             logger.warning("No hay FICs en la base de datos para crear favoritos")
@@ -113,8 +127,22 @@ def create_user_favorites(admin_id, user_id):
                 )
                 session.add(favorite)
 
+        # 2. Favoritos para el usuario normal (solo los ultimos 2 FICs)
+        for fic_id in fic_ids[2:]:
+            existing = session.query(FICRecomendado).filter_by(
+                usuario_id=user_id_2,
+                fic_id=fic_id
+            ).first()
+
+            if not existing:
+                favorite = FICRecomendado(
+                    usuario_id=user_id_2,
+                    fic_id=fic_id
+                )
+                session.add(favorite)
+
         session.commit()
-        logger.info(f"Favoritos creados: Admin={len(fic_ids)} FICs, User={len(fic_ids[:2])} FICs")
+        logger.info(f"Favoritos creados: Admin={len(fic_ids)} FICs, User={len(fic_ids[:2])} FICs, User_2={len(fic_ids[2:])} FICs")
 
     except Exception as e:
         logger.error(f"Error creando favoritos: {e}")
@@ -193,11 +221,11 @@ def main():
 
         # 2. Crear usuarios
         print("👥 Creando usuarios de prueba...")
-        admin_id, user_id = create_test_users()
+        admin_id, user_id, user_id_2= create_test_users()
 
         # 3. Crear favoritos
         print("⭐ Creando relaciones de favoritos...")
-        create_user_favorites(admin_id, user_id)
+        create_user_favorites(admin_id, user_id, user_id_2)
 
         # 4. Verificar
         print("🔍 Verificando datos creados...")

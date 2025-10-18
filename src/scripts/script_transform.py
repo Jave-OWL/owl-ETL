@@ -134,7 +134,7 @@ def transform_single_json(json_path: Path, output_dir: Path) -> dict:
 
         # 2. Aplicar transformación
         filename = json_path.stem  # Nombre sin extensión
-        transformed_data = transform_fic_data(raw_data)
+        transformed_data = transform_fic_data(raw_data, filename)
 
         # 3. Validar transformación
         if not validar_datos_transformados(transformed_data):

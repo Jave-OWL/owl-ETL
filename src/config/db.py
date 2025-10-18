@@ -1,3 +1,6 @@
+"""
+Funciones para crear las tablas en PostgreSQL
+"""
 import psycopg2
 from sqlalchemy import create_engine, MetaData, Table, Column, String, Float, Integer, DateTime, Text, Boolean, ForeignKey, UniqueConstraint
 from sqlalchemy.orm import sessionmaker, declarative_base, relationship
@@ -31,6 +34,7 @@ class Usuario(Base):
     contrasenia = Column(String(255), nullable=False)
     is_admin = Column(Boolean, default=False)
     nivel_riesgo = Column(String(50))
+    fecha_nacimiento = Column(String(10))
     created_at = Column(DateTime, server_default='NOW()')
     updated_at = Column(DateTime, server_default='NOW()', onupdate='NOW()')
 
@@ -51,6 +55,7 @@ class FIC(Base):
     fecha_corte = Column(String(10))
     politica_de_inversion = Column(Text)
     tipo = Column(String(100))
+    url = Column(Text)
     created_at = Column(DateTime, server_default='NOW()')
 
     # Relaciones - CORREGIDO: Quitado cascade de las relaciones principales
@@ -219,6 +224,22 @@ def get_db_connection():
     except Exception as e:
         logger.error(f"Error conectando a PostgreSQL: {e}")
         raise
+
+
+#def get_db_connection():
+#    """Get a raw psycopg2 connection"""
+#    try:
+#        conn = psycopg2.connect(
+#            host=POSTGRES_HOST,
+#            port=POSTGRES_PORT,
+#            database=POSTGRES_DB,
+#            user=POSTGRES_USER,
+#            password=POSTGRES_PASSWORD
+#        )
+#        return conn
+#    except Exception as e:
+#        logger.error(f"Error conectando a PostgreSQL: {e}")
+#        raise
 
 
 def get_db_session():

@@ -3718,3 +3718,362 @@ connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection re
 2025-10-17 16:30:17,070 - config.db - INFO - Tablas de PostgreSQL creadas/verificadas exitosamente
 2025-10-17 17:31:34,263 - config.db - INFO - ConexiÃ³n a PostgreSQL exitosa
 2025-10-17 17:31:34,649 - config.db - INFO - Tablas de PostgreSQL creadas/verificadas exitosamente
+2025-10-18 16:20:48,544 - config.db - ERROR - Error conectando a PostgreSQL: could not translate host name "postgres-fic" to address: Host desconocido. 
+
+2025-10-18 16:20:48,605 - config.db - ERROR - Error conectando a PostgreSQL: could not translate host name "postgres-fic" to address: Host desconocido. 
+
+2025-10-18 16:34:49,595 - config.db - ERROR - Error conectando a PostgreSQL: 'utf-8' codec can't decode byte 0xab in position 96: invalid start byte
+2025-10-18 16:34:49,595 - config.db - ERROR - Error conectando a PostgreSQL: 'utf-8' codec can't decode byte 0xab in position 96: invalid start byte
+2025-10-18 16:35:29,170 - config.db - INFO - Conexión a PostgreSQL exitosa
+2025-10-18 16:35:29,315 - config.db - INFO - Tablas de PostgreSQL creadas/verificadas exitosamente
+2025-10-18 16:35:52,874 - src.config.settings - INFO - Leídos 1 archivos para omitir de: data\json_transformed_2025_07\skip_list.txt
+2025-10-18 16:35:52,875 - src.config.settings - INFO - Iniciando carga desde: data\json_transformed_2025_07
+2025-10-18 16:35:52,876 - src.config.settings - INFO - Total de archivos a omitir: 1
+2025-10-18 16:35:52,877 - src.config.settings - INFO - Encontrados 7 JSONs transformados para cargar
+2025-10-18 16:35:52,877 - src.config.settings - INFO - Archivos a omitir: 1
+2025-10-18 16:35:52,878 - src.config.settings - INFO - Cargando: bancoDeBogota_sumar_raw_transformed.json
+2025-10-18 16:35:52,878 - src.config.settings - INFO - Cargando: bancoDeOccidenteFiduoccidente_plazoFijo_raw_transformed.json
+2025-10-18 16:35:52,879 - src.config.settings - INFO - Cargando: bancolombia_fiducuenta_raw_transformed.json
+2025-10-18 16:35:53,014 - src.etl.load - INFO - Datos cargados exitosamente a PostgreSQL - FIC ID: 1
+2025-10-18 16:35:53,014 - src.etl.load - INFO - Datos cargados exitosamente a PostgreSQL - FIC ID: 2
+2025-10-18 16:35:53,014 - src.config.settings - INFO - JSON cargado a PostgreSQL - FIC ID: 1
+2025-10-18 16:35:53,015 - src.etl.load - INFO - Datos cargados exitosamente a PostgreSQL - FIC ID: 3
+2025-10-18 16:35:53,015 - src.config.settings - INFO - JSON cargado a PostgreSQL - FIC ID: 2
+2025-10-18 16:35:53,015 - src.config.settings - INFO - Cargando: credicorpCapital_altaLiquidez_raw_transformed.json
+2025-10-18 16:35:53,015 - src.config.settings - INFO - Cargado exitosamente: bancolombia_fiducuenta_raw_transformed.json
+2025-10-18 16:35:53,016 - src.config.settings - INFO - JSON cargado a PostgreSQL - FIC ID: 3
+2025-10-18 16:35:53,016 - src.config.settings - INFO - Cargando: davivienda_multiescala_raw_transformed.json
+2025-10-18 16:35:53,017 - src.config.settings - INFO - Cargado exitosamente: bancoDeOccidenteFiduoccidente_plazoFijo_raw_transformed.json
+2025-10-18 16:35:53,017 - src.config.settings - INFO - Cargando: itau_moneyMarket_raw_transformed.json
+2025-10-18 16:35:53,018 - src.config.settings - INFO - Cargado exitosamente: bancoDeBogota_sumar_raw_transformed.json
+2025-10-18 16:35:53,034 - src.etl.load - INFO - Datos cargados exitosamente a PostgreSQL - FIC ID: 5
+2025-10-18 16:35:53,034 - src.etl.load - INFO - Datos cargados exitosamente a PostgreSQL - FIC ID: 4
+2025-10-18 16:35:53,035 - src.config.settings - INFO - JSON cargado a PostgreSQL - FIC ID: 5
+2025-10-18 16:35:53,036 - src.config.settings - INFO - JSON cargado a PostgreSQL - FIC ID: 4
+2025-10-18 16:35:53,037 - src.config.settings - INFO - Omitiendo archivo (en lista de exclusión): progresion_globalVista_raw_transformed.json
+2025-10-18 16:35:53,037 - src.config.settings - INFO - Cargado exitosamente: credicorpCapital_altaLiquidez_raw_transformed.json
+2025-10-18 16:35:53,037 - src.etl.load - INFO - Datos cargados exitosamente a PostgreSQL - FIC ID: 6
+2025-10-18 16:35:53,038 - src.config.settings - INFO - Cargado exitosamente: davivienda_multiescala_raw_transformed.json
+2025-10-18 16:35:53,038 - src.config.settings - INFO - JSON cargado a PostgreSQL - FIC ID: 6
+2025-10-18 16:35:53,039 - src.config.settings - INFO - Omitido: progresion_globalVista_raw_transformed.json
+2025-10-18 16:35:53,039 - src.config.settings - INFO - Cargado exitosamente: itau_moneyMarket_raw_transformed.json
+2025-10-18 16:38:32,281 - src.config.settings - INFO - Iniciando transformación de carpeta: data\json_raw_2025_07
+2025-10-18 16:38:32,282 - src.config.settings - INFO - Encontrados 7 JSONs para transformar
+2025-10-18 16:38:32,283 - src.config.settings - INFO - Transformando: bancoDeBogota_sumar_raw.json
+2025-10-18 16:38:32,283 - src.config.settings - INFO - Transformando: bancoDeOccidenteFiduoccidente_plazoFijo_raw.json
+2025-10-18 16:38:32,284 - src.config.settings - INFO - Transformando: bancolombia_fiducuenta_raw.json
+2025-10-18 16:38:32,318 - src.etl.transform - INFO - Iniciando transformación de datos FIC: desconocido
+2025-10-18 16:38:32,318 - src.etl.transform - INFO - Iniciando transformación de datos FIC: desconocido
+2025-10-18 16:38:32,319 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: FIC META PLANEADA | Gestor: FIDUCIARIA DE OCCIDENTE S.A. | Archivo: desconocido | Campo: principales_inversiones | Suma: 0.6803 (esperado ~1.0)
+2025-10-18 16:38:32,319 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: Fiducuenta | Gestor: Fiduciaria Bancolombia S.A. | Archivo: desconocido | Campo: por_tipo_de_renta | Suma: 0.5966 (esperado ~1.0)
+2025-10-18 16:38:32,319 - src.etl.transform - WARNING - ENTIDAD NO RECONOCIDA - FIC: FIC META PLANEADA | Gestor: FIDUCIARIA DE OCCIDENTE S.A. | Archivo: desconocido | Entidad: N/A
+2025-10-18 16:38:32,320 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: Fiducuenta | Gestor: Fiduciaria Bancolombia S.A. | Archivo: desconocido | Campo: principales_inversiones | Suma: 0.8777 (esperado ~1.0)
+2025-10-18 16:38:32,327 - src.etl.transform - INFO - Tipo detectado para FIC META PLANEADA: Renta Fija
+2025-10-18 16:38:32,327 - src.etl.transform - INFO - Tipo detectado para Fiducuenta: Renta Fija
+2025-10-18 16:38:32,327 - src.etl.transform - WARNING - No se pudo extraer nombre del banco del filename: desconocido
+2025-10-18 16:38:32,328 - src.etl.transform - WARNING - No se pudo extraer nombre del banco del filename: desconocido
+2025-10-18 16:38:32,328 - src.etl.transform - INFO - Transformación de datos completada exitosamente: desconocido
+2025-10-18 16:38:32,328 - src.etl.transform - INFO - Transformación de datos completada exitosamente: desconocido
+2025-10-18 16:38:32,329 - src.etl.transform - INFO - Iniciando transformación de datos FIC: desconocido
+2025-10-18 16:38:32,331 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: FONDO DE INVERSIÓN COLECTIVA ABIERTO SUMAR | Gestor: Fiduciaria Bogotá S.A. | Archivo: desconocido | Campo: principales_inversiones | Suma: 0.7347 (esperado ~1.0)
+2025-10-18 16:38:32,331 - src.config.settings - INFO - JSON transformado guardado: bancoDeOccidenteFiduoccidente_plazoFijo_raw_transformed.json
+2025-10-18 16:38:32,331 - src.config.settings - INFO - JSON transformado guardado: bancolombia_fiducuenta_raw_transformed.json
+2025-10-18 16:38:32,332 - src.etl.transform - INFO - Tipo detectado para FONDO DE INVERSIÓN COLECTIVA ABIERTO SUMAR: Renta Fija
+2025-10-18 16:38:32,332 - src.config.settings - INFO - Transformando: credicorpCapital_altaLiquidez_raw.json
+2025-10-18 16:38:32,332 - src.config.settings - INFO - Transformado exitosamente: bancoDeOccidenteFiduoccidente_plazoFijo_raw.json
+2025-10-18 16:38:32,332 - src.config.settings - INFO - Transformando: davivienda_multiescala_raw.json
+2025-10-18 16:38:32,333 - src.etl.transform - WARNING - No se pudo extraer nombre del banco del filename: desconocido
+2025-10-18 16:38:32,333 - src.config.settings - INFO - Transformado exitosamente: bancolombia_fiducuenta_raw.json
+2025-10-18 16:38:32,334 - src.etl.transform - INFO - Transformación de datos completada exitosamente: desconocido
+2025-10-18 16:38:32,334 - src.etl.transform - INFO - Iniciando transformación de datos FIC: desconocido
+2025-10-18 16:38:32,335 - src.etl.transform - INFO - Iniciando transformación de datos FIC: desconocido
+2025-10-18 16:38:32,336 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: CREDICORP CAPITAL ALTA LIQUIDEZ | Gestor: CREDICORP CAPITAL COLOMBIA S.A. | Archivo: desconocido | Campo: por_calificacion | Suma: 1.1000 (esperado ~1.0)
+2025-10-18 16:38:32,336 - src.config.settings - INFO - JSON transformado guardado: bancoDeBogota_sumar_raw_transformed.json
+2025-10-18 16:38:32,337 - src.etl.transform - INFO - Tipo detectado para FONDO DE INVERSIÓN COLECTIVA RENTA FIJA MEDIANO PLAZO - MULTIESCALA: Renta Fija
+2025-10-18 16:38:32,337 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: CREDICORP CAPITAL ALTA LIQUIDEZ | Gestor: CREDICORP CAPITAL COLOMBIA S.A. | Archivo: desconocido | Campo: principales_inversiones | Suma: 0.7631 (esperado ~1.0)
+2025-10-18 16:38:32,338 - src.config.settings - INFO - Transformando: itau_moneyMarket_raw.json
+2025-10-18 16:38:32,338 - src.config.settings - INFO - Transformado exitosamente: bancoDeBogota_sumar_raw.json
+2025-10-18 16:38:32,338 - src.etl.transform - WARNING - No se pudo extraer nombre del banco del filename: desconocido
+2025-10-18 16:38:32,338 - src.etl.transform - INFO - Tipo detectado para CREDICORP CAPITAL ALTA LIQUIDEZ: Renta Fija
+2025-10-18 16:38:32,339 - src.etl.transform - INFO - Transformación de datos completada exitosamente: desconocido
+2025-10-18 16:38:32,340 - src.etl.transform - WARNING - No se pudo extraer nombre del banco del filename: desconocido
+2025-10-18 16:38:32,341 - src.etl.transform - INFO - Iniciando transformación de datos FIC: desconocido
+2025-10-18 16:38:32,342 - src.etl.transform - INFO - Transformación de datos completada exitosamente: desconocido
+2025-10-18 16:38:32,342 - src.config.settings - INFO - JSON transformado guardado: davivienda_multiescala_raw_transformed.json
+2025-10-18 16:38:32,343 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: Fondo de Inversión Colectiva Itaú Money Market | Gestor: Itaú Comisionista de Bolsa S.A. | Archivo: desconocido | Campo: principales_inversiones | Suma: 0.8848 (esperado ~1.0)
+2025-10-18 16:38:32,344 - src.config.settings - INFO - Transformando: progresion_globalVista_raw.json
+2025-10-18 16:38:32,344 - src.config.settings - INFO - Transformado exitosamente: davivienda_multiescala_raw.json
+2025-10-18 16:38:32,345 - src.config.settings - INFO - JSON transformado guardado: credicorpCapital_altaLiquidez_raw_transformed.json
+2025-10-18 16:38:32,345 - src.etl.transform - INFO - Tipo detectado para Fondo de Inversión Colectiva Itaú Money Market: Renta Fija
+2025-10-18 16:38:32,346 - src.config.settings - INFO - Transformado exitosamente: credicorpCapital_altaLiquidez_raw.json
+2025-10-18 16:38:32,346 - src.etl.transform - WARNING - No se pudo extraer nombre del banco del filename: desconocido
+2025-10-18 16:38:32,347 - src.etl.transform - INFO - Iniciando transformación de datos FIC: desconocido
+2025-10-18 16:38:32,347 - src.etl.transform - INFO - Transformación de datos completada exitosamente: desconocido
+2025-10-18 16:38:32,347 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: FIC GLOBAL VISTA | Gestor: Progresión S.A. Sociedad Comisionista de Bolsa | Archivo: desconocido | Campo: principales_inversiones | Suma: 0.8268 (esperado ~1.0)
+2025-10-18 16:38:32,349 - src.etl.transform - WARNING - FECHA NO VÁLIDA - FIC: FIC GLOBAL VISTA | Gestor: Progresión S.A. Sociedad Comisionista de Bolsa | Campo: calificacion.fecha_ultima_calificacion | Valor: Julio de 2022
+2025-10-18 16:38:32,349 - src.config.settings - INFO - JSON transformado guardado: itau_moneyMarket_raw_transformed.json
+2025-10-18 16:38:32,350 - src.etl.transform - INFO - Tipo detectado para FIC GLOBAL VISTA: Renta Fija
+2025-10-18 16:38:32,350 - src.config.settings - INFO - Transformado exitosamente: itau_moneyMarket_raw.json
+2025-10-18 16:38:32,350 - src.etl.transform - WARNING - No se pudo extraer nombre del banco del filename: desconocido
+2025-10-18 16:38:32,351 - src.etl.transform - INFO - Transformación de datos completada exitosamente: desconocido
+2025-10-18 16:38:32,352 - src.config.settings - INFO - JSON transformado guardado: progresion_globalVista_raw_transformed.json
+2025-10-18 16:38:32,353 - src.config.settings - INFO - Transformado exitosamente: progresion_globalVista_raw.json
+2025-10-18 16:38:32,354 - src.config.settings - INFO - Validando 7 archivos transformados contra carpeta: json_raw_2025_07
+2025-10-18 16:38:32,356 - src.config.settings - INFO - Fecha extraída de carpeta 'json_raw_2025_07': 2025-07
+2025-10-18 16:38:32,357 - src.config.settings - INFO - Fecha extraída de carpeta 'json_raw_2025_07': 2025-07
+2025-10-18 16:38:32,357 - src.config.settings - INFO - Fechas coinciden: carpeta(2025-07) = JSON(2025-07)
+2025-10-18 16:38:32,358 - src.config.settings - INFO - Fecha extraída de carpeta 'json_raw_2025_07': 2025-07
+2025-10-18 16:38:32,358 - src.config.settings - INFO - Fechas coinciden: carpeta(2025-07) = JSON(2025-07)
+2025-10-18 16:38:32,359 - src.config.settings - INFO - Fecha extraída de carpeta 'json_raw_2025_07': 2025-07
+2025-10-18 16:38:32,360 - src.config.settings - INFO - Fechas coinciden: carpeta(2025-07) = JSON(2025-07)
+2025-10-18 16:38:32,360 - src.config.settings - INFO - Fecha extraída de carpeta 'json_raw_2025_07': 2025-07
+2025-10-18 16:38:32,361 - src.config.settings - INFO - Fechas coinciden: carpeta(2025-07) = JSON(2025-07)
+2025-10-18 16:38:32,362 - src.config.settings - INFO - Fecha extraída de carpeta 'json_raw_2025_07': 2025-07
+2025-10-18 16:38:32,362 - src.config.settings - INFO - Fechas coinciden: carpeta(2025-07) = JSON(2025-07)
+2025-10-18 16:38:32,363 - src.config.settings - INFO - Fecha extraída de carpeta 'json_raw_2025_07': 2025-07
+2025-10-18 16:38:32,363 - src.config.settings - INFO - Fechas coinciden: carpeta(2025-07) = JSON(2025-07)
+2025-10-18 16:38:32,364 - src.config.settings - INFO - Fecha extraída de carpeta 'json_raw_2025_07': 2025-07
+2025-10-18 16:38:32,365 - src.config.settings - ERROR - FECHAS NO COINCIDEN: carpeta(2025-07) vs JSON(2025-01)
+2025-10-18 16:38:32,365 - src.config.settings - INFO - Lista de exclusión creada: data\json_transformed_2025_07\skip_list.txt
+2025-10-18 16:38:32,367 - src.config.settings - INFO - Fecha extraída de carpeta 'json_raw_2025_07': 2025-07
+2025-10-18 16:55:22,343 - src.config.settings - INFO - Iniciando transformación de carpeta: data\json_raw_2025_07
+2025-10-18 16:55:22,344 - src.config.settings - INFO - Encontrados 7 JSONs para transformar
+2025-10-18 16:55:22,345 - src.config.settings - INFO - Transformando: bancoDeBogota_sumar_raw.json
+2025-10-18 16:55:22,346 - src.config.settings - INFO - Transformando: bancoDeOccidenteFiduoccidente_plazoFijo_raw.json
+2025-10-18 16:55:22,346 - src.config.settings - INFO - Transformando: bancolombia_fiducuenta_raw.json
+2025-10-18 16:55:22,347 - src.etl.transform - INFO - Iniciando transformación de datos FIC: bancoDeBogota_sumar_raw
+2025-10-18 16:55:22,348 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: FONDO DE INVERSIÓN COLECTIVA ABIERTO SUMAR | Gestor: Fiduciaria Bogotá S.A. | Archivo: bancoDeBogota_sumar_raw | Campo: principales_inversiones | Suma: 0.7347 (esperado ~1.0)
+2025-10-18 16:55:22,348 - src.etl.transform - INFO - Iniciando transformación de datos FIC: bancoDeOccidenteFiduoccidente_plazoFijo_raw
+2025-10-18 16:55:22,349 - src.etl.transform - INFO - Iniciando transformación de datos FIC: bancolombia_fiducuenta_raw
+2025-10-18 16:55:22,350 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: FIC META PLANEADA | Gestor: FIDUCIARIA DE OCCIDENTE S.A. | Archivo: bancoDeOccidenteFiduoccidente_plazoFijo_raw | Campo: principales_inversiones | Suma: 0.6803 (esperado ~1.0)
+2025-10-18 16:55:22,351 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: Fiducuenta | Gestor: Fiduciaria Bancolombia S.A. | Archivo: bancolombia_fiducuenta_raw | Campo: por_tipo_de_renta | Suma: 0.5966 (esperado ~1.0)
+2025-10-18 16:55:22,354 - src.etl.transform - INFO - Tipo detectado para FONDO DE INVERSIÓN COLECTIVA ABIERTO SUMAR: Renta Fija
+2025-10-18 16:55:22,354 - src.etl.transform - WARNING - ENTIDAD NO RECONOCIDA - FIC: FIC META PLANEADA | Gestor: FIDUCIARIA DE OCCIDENTE S.A. | Archivo: bancoDeOccidenteFiduoccidente_plazoFijo_raw | Entidad: N/A
+2025-10-18 16:55:22,354 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: Fiducuenta | Gestor: Fiduciaria Bancolombia S.A. | Archivo: bancolombia_fiducuenta_raw | Campo: principales_inversiones | Suma: 0.8777 (esperado ~1.0)
+2025-10-18 16:55:22,355 - src.etl.transform - INFO - Tipo detectado para FIC META PLANEADA: Renta Fija
+2025-10-18 16:55:22,356 - src.etl.transform - WARNING - Banco 'bancodebogota' no encontrado en fics.json. Bancos disponibles: ['bancolombia', 'bbva', 'bancoDeBogota', 'davivienda', 'progresion', 'itau', 'bancoDeOccidenteFiduoccidente', 'credicorpCapital']
+2025-10-18 16:55:22,356 - src.etl.transform - INFO - Tipo detectado para Fiducuenta: Renta Fija
+2025-10-18 16:55:22,357 - src.etl.transform - INFO - Transformación de datos completada exitosamente: bancoDeBogota_sumar_raw
+2025-10-18 16:55:22,357 - src.etl.transform - WARNING - Banco 'bancodeoccidentefiduoccidente' no encontrado en fics.json. Bancos disponibles: ['bancolombia', 'bbva', 'bancoDeBogota', 'davivienda', 'progresion', 'itau', 'bancoDeOccidenteFiduoccidente', 'credicorpCapital']
+2025-10-18 16:55:22,357 - src.etl.transform - INFO - URL agregada para Fiducuenta: https://fiduciaria.grupobancolombia.com/productos-servicios/fondos-inversion-colectiva/fichas-tecnicas
+2025-10-18 16:55:22,358 - src.etl.transform - INFO - Transformación de datos completada exitosamente: bancoDeOccidenteFiduoccidente_plazoFijo_raw
+2025-10-18 16:55:22,358 - src.etl.transform - INFO - Transformación de datos completada exitosamente: bancolombia_fiducuenta_raw
+2025-10-18 16:55:22,359 - src.config.settings - INFO - JSON transformado guardado: bancoDeBogota_sumar_raw_transformed.json
+2025-10-18 16:55:22,360 - src.config.settings - INFO - Transformando: credicorpCapital_altaLiquidez_raw.json
+2025-10-18 16:55:22,360 - src.config.settings - INFO - JSON transformado guardado: bancoDeOccidenteFiduoccidente_plazoFijo_raw_transformed.json
+2025-10-18 16:55:22,360 - src.config.settings - INFO - Transformado exitosamente: bancoDeBogota_sumar_raw.json
+2025-10-18 16:55:22,361 - src.config.settings - INFO - JSON transformado guardado: bancolombia_fiducuenta_raw_transformed.json
+2025-10-18 16:55:22,361 - src.config.settings - INFO - Transformando: davivienda_multiescala_raw.json
+2025-10-18 16:55:22,361 - src.etl.transform - INFO - Iniciando transformación de datos FIC: credicorpCapital_altaLiquidez_raw
+2025-10-18 16:55:22,361 - src.config.settings - INFO - Transformado exitosamente: bancoDeOccidenteFiduoccidente_plazoFijo_raw.json
+2025-10-18 16:55:22,362 - src.config.settings - INFO - Transformando: itau_moneyMarket_raw.json
+2025-10-18 16:55:22,362 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: CREDICORP CAPITAL ALTA LIQUIDEZ | Gestor: CREDICORP CAPITAL COLOMBIA S.A. | Archivo: credicorpCapital_altaLiquidez_raw | Campo: por_calificacion | Suma: 1.1000 (esperado ~1.0)
+2025-10-18 16:55:22,362 - src.etl.transform - INFO - Iniciando transformación de datos FIC: davivienda_multiescala_raw
+2025-10-18 16:55:22,362 - src.config.settings - INFO - Transformado exitosamente: bancolombia_fiducuenta_raw.json
+2025-10-18 16:55:22,363 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: CREDICORP CAPITAL ALTA LIQUIDEZ | Gestor: CREDICORP CAPITAL COLOMBIA S.A. | Archivo: credicorpCapital_altaLiquidez_raw | Campo: principales_inversiones | Suma: 0.7631 (esperado ~1.0)
+2025-10-18 16:55:22,363 - src.etl.transform - INFO - Iniciando transformación de datos FIC: itau_moneyMarket_raw
+2025-10-18 16:55:22,363 - src.etl.transform - INFO - Tipo detectado para FONDO DE INVERSIÓN COLECTIVA RENTA FIJA MEDIANO PLAZO - MULTIESCALA: Renta Fija
+2025-10-18 16:55:22,364 - src.etl.transform - INFO - Tipo detectado para CREDICORP CAPITAL ALTA LIQUIDEZ: Renta Fija
+2025-10-18 16:55:22,365 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: Fondo de Inversión Colectiva Itaú Money Market | Gestor: Itaú Comisionista de Bolsa S.A. | Archivo: itau_moneyMarket_raw | Campo: principales_inversiones | Suma: 0.8848 (esperado ~1.0)
+2025-10-18 16:55:22,366 - src.etl.transform - INFO - Tipo detectado para Fondo de Inversión Colectiva Itaú Money Market: Renta Fija
+2025-10-18 16:55:22,366 - src.etl.transform - INFO - URL agregada para FONDO DE INVERSIÓN COLECTIVA RENTA FIJA MEDIANO PLAZO - MULTIESCALA: https://www.daviviendacorredores.com/wps/portal/corredores/enlaces/fondos-
+2025-10-18 16:55:22,366 - src.etl.transform - WARNING - Banco 'credicorpcapital' no encontrado en fics.json. Bancos disponibles: ['bancolombia', 'bbva', 'bancoDeBogota', 'davivienda', 'progresion', 'itau', 'bancoDeOccidenteFiduoccidente', 'credicorpCapital']
+2025-10-18 16:55:22,366 - src.etl.transform - INFO - Transformación de datos completada exitosamente: davivienda_multiescala_raw
+2025-10-18 16:55:22,367 - src.etl.transform - INFO - URL agregada para Fondo de Inversión Colectiva Itaú Money Market: https://banco.itau.co/web/personas/inversiones/fondo-money-market-itau
+2025-10-18 16:55:22,367 - src.etl.transform - INFO - Transformación de datos completada exitosamente: credicorpCapital_altaLiquidez_raw
+2025-10-18 16:55:22,367 - src.etl.transform - INFO - Transformación de datos completada exitosamente: itau_moneyMarket_raw
+2025-10-18 16:55:22,368 - src.config.settings - INFO - JSON transformado guardado: davivienda_multiescala_raw_transformed.json
+2025-10-18 16:55:22,369 - src.config.settings - INFO - Transformando: progresion_globalVista_raw.json
+2025-10-18 16:55:22,370 - src.config.settings - INFO - Transformado exitosamente: davivienda_multiescala_raw.json
+2025-10-18 16:55:22,370 - src.config.settings - INFO - JSON transformado guardado: credicorpCapital_altaLiquidez_raw_transformed.json
+2025-10-18 16:55:22,370 - src.config.settings - INFO - JSON transformado guardado: itau_moneyMarket_raw_transformed.json
+2025-10-18 16:55:22,371 - src.etl.transform - INFO - Iniciando transformación de datos FIC: progresion_globalVista_raw
+2025-10-18 16:55:22,371 - src.config.settings - INFO - Transformado exitosamente: credicorpCapital_altaLiquidez_raw.json
+2025-10-18 16:55:22,371 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: FIC GLOBAL VISTA | Gestor: Progresión S.A. Sociedad Comisionista de Bolsa | Archivo: progresion_globalVista_raw | Campo: principales_inversiones | Suma: 0.8268 (esperado ~1.0)
+2025-10-18 16:55:22,372 - src.config.settings - INFO - Transformado exitosamente: itau_moneyMarket_raw.json
+2025-10-18 16:55:22,373 - src.etl.transform - WARNING - FECHA NO VÁLIDA - FIC: FIC GLOBAL VISTA | Gestor: Progresión S.A. Sociedad Comisionista de Bolsa | Campo: calificacion.fecha_ultima_calificacion | Valor: Julio de 2022
+2025-10-18 16:55:22,373 - src.etl.transform - INFO - Tipo detectado para FIC GLOBAL VISTA: Renta Fija
+2025-10-18 16:55:22,374 - src.etl.transform - INFO - URL agregada para FIC GLOBAL VISTA: https://www.progresion.com.co/fondos-de-inversion-colectiva/fondo-global-vista
+2025-10-18 16:55:22,374 - src.etl.transform - INFO - Transformación de datos completada exitosamente: progresion_globalVista_raw
+2025-10-18 16:55:22,374 - src.config.settings - INFO - JSON transformado guardado: progresion_globalVista_raw_transformed.json
+2025-10-18 16:55:22,375 - src.config.settings - INFO - Transformado exitosamente: progresion_globalVista_raw.json
+2025-10-18 16:55:22,375 - src.config.settings - INFO - Validando 7 archivos transformados contra carpeta: json_raw_2025_07
+2025-10-18 16:55:22,376 - src.config.settings - INFO - Fecha extraída de carpeta 'json_raw_2025_07': 2025-07
+2025-10-18 16:55:22,377 - src.config.settings - INFO - Fecha extraída de carpeta 'json_raw_2025_07': 2025-07
+2025-10-18 16:55:22,377 - src.config.settings - INFO - Fechas coinciden: carpeta(2025-07) = JSON(2025-07)
+2025-10-18 16:55:22,377 - src.config.settings - INFO - Fecha extraída de carpeta 'json_raw_2025_07': 2025-07
+2025-10-18 16:55:22,378 - src.config.settings - INFO - Fechas coinciden: carpeta(2025-07) = JSON(2025-07)
+2025-10-18 16:55:22,379 - src.config.settings - INFO - Fecha extraída de carpeta 'json_raw_2025_07': 2025-07
+2025-10-18 16:55:22,379 - src.config.settings - INFO - Fechas coinciden: carpeta(2025-07) = JSON(2025-07)
+2025-10-18 16:55:22,380 - src.config.settings - INFO - Fecha extraída de carpeta 'json_raw_2025_07': 2025-07
+2025-10-18 16:55:22,380 - src.config.settings - INFO - Fechas coinciden: carpeta(2025-07) = JSON(2025-07)
+2025-10-18 16:55:22,380 - src.config.settings - INFO - Fecha extraída de carpeta 'json_raw_2025_07': 2025-07
+2025-10-18 16:55:22,380 - src.config.settings - INFO - Fechas coinciden: carpeta(2025-07) = JSON(2025-07)
+2025-10-18 16:55:22,381 - src.config.settings - INFO - Fecha extraída de carpeta 'json_raw_2025_07': 2025-07
+2025-10-18 16:55:22,381 - src.config.settings - INFO - Fechas coinciden: carpeta(2025-07) = JSON(2025-07)
+2025-10-18 16:55:22,382 - src.config.settings - INFO - Fecha extraída de carpeta 'json_raw_2025_07': 2025-07
+2025-10-18 16:55:22,382 - src.config.settings - ERROR - FECHAS NO COINCIDEN: carpeta(2025-07) vs JSON(2025-01)
+2025-10-18 16:55:22,383 - src.config.settings - INFO - Lista de exclusión creada: data\json_transformed_2025_07\skip_list.txt
+2025-10-18 16:55:22,383 - src.config.settings - INFO - Fecha extraída de carpeta 'json_raw_2025_07': 2025-07
+2025-10-18 17:30:52,638 - src.config.settings - INFO - Iniciando transformación de carpeta: data\json_raw_2025_07
+2025-10-18 17:30:52,639 - src.config.settings - INFO - Encontrados 7 JSONs para transformar
+2025-10-18 17:30:52,640 - src.config.settings - INFO - Transformando: bancoDeBogota_sumar_raw.json
+2025-10-18 17:30:52,641 - src.config.settings - INFO - Transformando: bancoDeOccidenteFiduoccidente_plazoFijo_raw.json
+2025-10-18 17:30:52,641 - src.etl.transform - INFO - Iniciando transformación de datos FIC: bancoDeBogota_sumar_raw
+2025-10-18 17:30:52,641 - src.config.settings - INFO - Transformando: bancolombia_fiducuenta_raw.json
+2025-10-18 17:30:52,642 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: FONDO DE INVERSIÓN COLECTIVA ABIERTO SUMAR | Gestor: Fiduciaria Bogotá S.A. | Archivo: bancoDeBogota_sumar_raw | Campo: principales_inversiones | Suma: 0.7347 (esperado ~1.0)
+2025-10-18 17:30:52,642 - src.etl.transform - INFO - Iniciando transformación de datos FIC: bancoDeOccidenteFiduoccidente_plazoFijo_raw
+2025-10-18 17:30:52,643 - src.etl.transform - INFO - Iniciando transformación de datos FIC: bancolombia_fiducuenta_raw
+2025-10-18 17:30:52,644 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: FIC META PLANEADA | Gestor: FIDUCIARIA DE OCCIDENTE S.A. | Archivo: bancoDeOccidenteFiduoccidente_plazoFijo_raw | Campo: principales_inversiones | Suma: 0.6803 (esperado ~1.0)
+2025-10-18 17:30:52,645 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: Fiducuenta | Gestor: Fiduciaria Bancolombia S.A. | Archivo: bancolombia_fiducuenta_raw | Campo: por_tipo_de_renta | Suma: 0.5966 (esperado ~1.0)
+2025-10-18 17:30:52,645 - src.etl.transform - WARNING - ENTIDAD NO RECONOCIDA - FIC: FIC META PLANEADA | Gestor: FIDUCIARIA DE OCCIDENTE S.A. | Archivo: bancoDeOccidenteFiduoccidente_plazoFijo_raw | Entidad: N/A
+2025-10-18 17:30:52,646 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: Fiducuenta | Gestor: Fiduciaria Bancolombia S.A. | Archivo: bancolombia_fiducuenta_raw | Campo: principales_inversiones | Suma: 0.8777 (esperado ~1.0)
+2025-10-18 17:30:52,648 - src.etl.transform - INFO - Tipo detectado para FONDO DE INVERSIÓN COLECTIVA ABIERTO SUMAR: Renta Fija
+2025-10-18 17:30:52,648 - src.etl.transform - INFO - Tipo detectado para FIC META PLANEADA: Renta Fija
+2025-10-18 17:30:52,649 - src.etl.transform - INFO - Tipo detectado para Fiducuenta: Renta Fija
+2025-10-18 17:30:52,649 - src.etl.transform - INFO - URL agregada para 'FONDO DE INVERSIÓN COLECTIVA ABIERTO SUMAR' (coincidencia parcial: sumar): https://www.fidubogota.com/sumar-personas
+2025-10-18 17:30:52,650 - src.etl.transform - INFO - URL agregada para 'FIC META PLANEADA' (coincidencia exacta: metaPlaneada): https://www.fiduoccidente.com/en/personas/meta-planeada
+2025-10-18 17:30:52,650 - src.etl.transform - INFO - Transformación de datos completada exitosamente: bancoDeBogota_sumar_raw
+2025-10-18 17:30:52,650 - src.etl.transform - INFO - Transformación de datos completada exitosamente: bancoDeOccidenteFiduoccidente_plazoFijo_raw
+2025-10-18 17:30:52,650 - src.etl.transform - INFO - URL agregada para 'Fiducuenta' (coincidencia exacta: fiducuenta): https://fiduciaria.grupobancolombia.com/productos-servicios/fondos-inversion-colectiva/fichas-tecnicas
+2025-10-18 17:30:52,652 - src.etl.transform - INFO - Transformación de datos completada exitosamente: bancolombia_fiducuenta_raw
+2025-10-18 17:30:52,652 - src.config.settings - INFO - JSON transformado guardado: bancoDeBogota_sumar_raw_transformed.json
+2025-10-18 17:30:52,652 - src.config.settings - INFO - JSON transformado guardado: bancoDeOccidenteFiduoccidente_plazoFijo_raw_transformed.json
+2025-10-18 17:30:52,653 - src.config.settings - INFO - Transformando: credicorpCapital_altaLiquidez_raw.json
+2025-10-18 17:30:52,653 - src.config.settings - INFO - Transformado exitosamente: bancoDeBogota_sumar_raw.json
+2025-10-18 17:30:52,654 - src.config.settings - INFO - Transformando: davivienda_multiescala_raw.json
+2025-10-18 17:30:52,654 - src.config.settings - INFO - JSON transformado guardado: bancolombia_fiducuenta_raw_transformed.json
+2025-10-18 17:30:52,654 - src.config.settings - INFO - Transformado exitosamente: bancoDeOccidenteFiduoccidente_plazoFijo_raw.json
+2025-10-18 17:30:52,654 - src.etl.transform - INFO - Iniciando transformación de datos FIC: credicorpCapital_altaLiquidez_raw
+2025-10-18 17:30:52,654 - src.config.settings - INFO - Transformando: itau_moneyMarket_raw.json
+2025-10-18 17:30:52,655 - src.etl.transform - INFO - Iniciando transformación de datos FIC: davivienda_multiescala_raw
+2025-10-18 17:30:52,655 - src.config.settings - INFO - Transformado exitosamente: bancolombia_fiducuenta_raw.json
+2025-10-18 17:30:52,655 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: CREDICORP CAPITAL ALTA LIQUIDEZ | Gestor: CREDICORP CAPITAL COLOMBIA S.A. | Archivo: credicorpCapital_altaLiquidez_raw | Campo: por_calificacion | Suma: 1.1000 (esperado ~1.0)
+2025-10-18 17:30:52,656 - src.etl.transform - INFO - Tipo detectado para FONDO DE INVERSIÓN COLECTIVA RENTA FIJA MEDIANO PLAZO - MULTIESCALA: Renta Fija
+2025-10-18 17:30:52,656 - src.etl.transform - INFO - Iniciando transformación de datos FIC: itau_moneyMarket_raw
+2025-10-18 17:30:52,656 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: CREDICORP CAPITAL ALTA LIQUIDEZ | Gestor: CREDICORP CAPITAL COLOMBIA S.A. | Archivo: credicorpCapital_altaLiquidez_raw | Campo: principales_inversiones | Suma: 0.7631 (esperado ~1.0)
+2025-10-18 17:30:52,656 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: Fondo de Inversión Colectiva Itaú Money Market | Gestor: Itaú Comisionista de Bolsa S.A. | Archivo: itau_moneyMarket_raw | Campo: principales_inversiones | Suma: 0.8848 (esperado ~1.0)
+2025-10-18 17:30:52,657 - src.etl.transform - INFO - URL agregada para 'FONDO DE INVERSIÓN COLECTIVA RENTA FIJA MEDIANO PLAZO - MULTIESCALA' (coincidencia parcial: rentaFijaMedianoPlazoMultiescala): https://www.daviviendacorredores.com/wps/portal/corredores/enlaces/fondos-
+2025-10-18 17:30:52,657 - src.etl.transform - INFO - Tipo detectado para CREDICORP CAPITAL ALTA LIQUIDEZ: Renta Fija
+2025-10-18 17:30:52,658 - src.etl.transform - INFO - Tipo detectado para Fondo de Inversión Colectiva Itaú Money Market: Renta Fija
+2025-10-18 17:30:52,658 - src.etl.transform - INFO - Transformación de datos completada exitosamente: davivienda_multiescala_raw
+2025-10-18 17:30:52,659 - src.etl.transform - INFO - URL agregada para 'CREDICORP CAPITAL ALTA LIQUIDEZ' (coincidencia parcial: altaLiquidez): https://www.credicorpcapital.com/Colombia/Neg/GA/Paginas/CCAL.aspx?c=1
+2025-10-18 17:30:52,659 - src.etl.transform - INFO - URL agregada para 'Fondo de Inversión Colectiva Itaú Money Market' (coincidencia parcial: moneyMarket): https://banco.itau.co/web/personas/inversiones/fondo-money-market-itau
+2025-10-18 17:30:52,659 - src.config.settings - INFO - JSON transformado guardado: davivienda_multiescala_raw_transformed.json
+2025-10-18 17:30:52,660 - src.etl.transform - INFO - Transformación de datos completada exitosamente: credicorpCapital_altaLiquidez_raw
+2025-10-18 17:30:52,660 - src.etl.transform - INFO - Transformación de datos completada exitosamente: itau_moneyMarket_raw
+2025-10-18 17:30:52,660 - src.config.settings - INFO - Transformando: progresion_globalVista_raw.json
+2025-10-18 17:30:52,660 - src.config.settings - INFO - Transformado exitosamente: davivienda_multiescala_raw.json
+2025-10-18 17:30:52,662 - src.config.settings - INFO - JSON transformado guardado: itau_moneyMarket_raw_transformed.json
+2025-10-18 17:30:52,662 - src.config.settings - INFO - JSON transformado guardado: credicorpCapital_altaLiquidez_raw_transformed.json
+2025-10-18 17:30:52,662 - src.etl.transform - INFO - Iniciando transformación de datos FIC: progresion_globalVista_raw
+2025-10-18 17:30:52,662 - src.config.settings - INFO - Transformado exitosamente: itau_moneyMarket_raw.json
+2025-10-18 17:30:52,663 - src.etl.transform - WARNING - SUMA FUERA DE RANGO - FIC: FIC GLOBAL VISTA | Gestor: Progresión S.A. Sociedad Comisionista de Bolsa | Archivo: progresion_globalVista_raw | Campo: principales_inversiones | Suma: 0.8268 (esperado ~1.0)
+2025-10-18 17:30:52,663 - src.config.settings - INFO - Transformado exitosamente: credicorpCapital_altaLiquidez_raw.json
+2025-10-18 17:30:52,664 - src.etl.transform - WARNING - FECHA NO VÁLIDA - FIC: FIC GLOBAL VISTA | Gestor: Progresión S.A. Sociedad Comisionista de Bolsa | Campo: calificacion.fecha_ultima_calificacion | Valor: Julio de 2022
+2025-10-18 17:30:52,664 - src.etl.transform - INFO - Tipo detectado para FIC GLOBAL VISTA: Renta Fija
+2025-10-18 17:30:52,665 - src.etl.transform - INFO - URL agregada para 'FIC GLOBAL VISTA' (coincidencia exacta: globalVista): https://www.progresion.com.co/fondos-de-inversion-colectiva/fondo-global-vista
+2025-10-18 17:30:52,665 - src.etl.transform - INFO - Transformación de datos completada exitosamente: progresion_globalVista_raw
+2025-10-18 17:30:52,666 - src.config.settings - INFO - JSON transformado guardado: progresion_globalVista_raw_transformed.json
+2025-10-18 17:30:52,666 - src.config.settings - INFO - Transformado exitosamente: progresion_globalVista_raw.json
+2025-10-18 17:30:52,667 - src.config.settings - INFO - Validando 7 archivos transformados contra carpeta: json_raw_2025_07
+2025-10-18 17:30:52,667 - src.config.settings - INFO - Fecha extraída de carpeta 'json_raw_2025_07': 2025-07
+2025-10-18 17:30:52,668 - src.config.settings - INFO - Fecha extraída de carpeta 'json_raw_2025_07': 2025-07
+2025-10-18 17:30:52,668 - src.config.settings - INFO - Fechas coinciden: carpeta(2025-07) = JSON(2025-07)
+2025-10-18 17:30:52,668 - src.config.settings - INFO - Fecha extraída de carpeta 'json_raw_2025_07': 2025-07
+2025-10-18 17:30:52,668 - src.config.settings - INFO - Fechas coinciden: carpeta(2025-07) = JSON(2025-07)
+2025-10-18 17:30:52,669 - src.config.settings - INFO - Fecha extraída de carpeta 'json_raw_2025_07': 2025-07
+2025-10-18 17:30:52,669 - src.config.settings - INFO - Fechas coinciden: carpeta(2025-07) = JSON(2025-07)
+2025-10-18 17:30:52,669 - src.config.settings - INFO - Fecha extraída de carpeta 'json_raw_2025_07': 2025-07
+2025-10-18 17:30:52,669 - src.config.settings - INFO - Fechas coinciden: carpeta(2025-07) = JSON(2025-07)
+2025-10-18 17:30:52,670 - src.config.settings - INFO - Fecha extraída de carpeta 'json_raw_2025_07': 2025-07
+2025-10-18 17:30:52,670 - src.config.settings - INFO - Fechas coinciden: carpeta(2025-07) = JSON(2025-07)
+2025-10-18 17:30:52,671 - src.config.settings - INFO - Fecha extraída de carpeta 'json_raw_2025_07': 2025-07
+2025-10-18 17:30:52,671 - src.config.settings - INFO - Fechas coinciden: carpeta(2025-07) = JSON(2025-07)
+2025-10-18 17:30:52,672 - src.config.settings - INFO - Fecha extraída de carpeta 'json_raw_2025_07': 2025-07
+2025-10-18 17:30:52,672 - src.config.settings - ERROR - FECHAS NO COINCIDEN: carpeta(2025-07) vs JSON(2025-01)
+2025-10-18 17:30:52,672 - src.config.settings - INFO - Lista de exclusión creada: data\json_transformed_2025_07\skip_list.txt
+2025-10-18 17:30:52,673 - src.config.settings - INFO - Fecha extraída de carpeta 'json_raw_2025_07': 2025-07
+2025-10-18 17:31:22,243 - src.config.settings - INFO - Leídos 1 archivos para omitir de: data\json_transformed_2025_07\skip_list.txt
+2025-10-18 17:31:22,244 - src.config.settings - INFO - Iniciando carga desde: data\json_transformed_2025_07
+2025-10-18 17:31:22,244 - src.config.settings - INFO - Total de archivos a omitir: 1
+2025-10-18 17:31:22,245 - src.config.settings - INFO - Encontrados 7 JSONs transformados para cargar
+2025-10-18 17:31:22,245 - src.config.settings - INFO - Archivos a omitir: 1
+2025-10-18 17:31:22,246 - src.config.settings - INFO - Cargando: bancoDeBogota_sumar_raw_transformed.json
+2025-10-18 17:31:22,246 - src.config.settings - INFO - Cargando: bancoDeOccidenteFiduoccidente_plazoFijo_raw_transformed.json
+2025-10-18 17:31:22,258 - src.config.settings - INFO - Cargando: bancolombia_fiducuenta_raw_transformed.json
+2025-10-18 17:31:22,316 - src.etl.load - ERROR - Error cargando datos a PostgreSQL: (psycopg2.errors.StringDataRightTruncation) el valor es demasiado largo para el tipo character varying(100)
+
+[SQL: INSERT INTO fic (nombre_fic, gestor, custodio, fecha_corte, politica_de_inversion, tipo, url) VALUES (%(nombre_fic)s, %(gestor)s, %(custodio)s, %(fecha_corte)s, %(politica_de_inversion)s, %(tipo)s, %(url)s) RETURNING fic.id]
+[parameters: {'nombre_fic': 'Fiducuenta', 'gestor': 'Fiduciaria Bancolombia S.A.', 'custodio': 'Cititrust Colombia S.A.', 'fecha_corte': '2025-07-31', 'politica_de_inversion': 'El objetivo del fondo de inversión colectiva es proporcionar a los inversionistas un instrumento de inversión de renta fija de baja duración, con un  ... (517 characters truncated) ... o plazo, el posicionamiento frente al riesgo de mercado se mantendrá ligeramente sobreponderado con respecto a su referente y a sus niveles actuales.', 'tipo': 'Renta Fija', 'url': 'https://fiduciaria.grupobancolombia.com/productos-servicios/fondos-inversion-colectiva/fichas-tecnicas'}]
+(Background on this error at: https://sqlalche.me/e/14/9h9h)
+2025-10-18 17:31:22,318 - src.config.settings - ERROR - Error cargando bancolombia_fiducuenta_raw_transformed.json: (psycopg2.errors.StringDataRightTruncation) el valor es demasiado largo para el tipo character varying(100)
+
+[SQL: INSERT INTO fic (nombre_fic, gestor, custodio, fecha_corte, politica_de_inversion, tipo, url) VALUES (%(nombre_fic)s, %(gestor)s, %(custodio)s, %(fecha_corte)s, %(politica_de_inversion)s, %(tipo)s, %(url)s) RETURNING fic.id]
+[parameters: {'nombre_fic': 'Fiducuenta', 'gestor': 'Fiduciaria Bancolombia S.A.', 'custodio': 'Cititrust Colombia S.A.', 'fecha_corte': '2025-07-31', 'politica_de_inversion': 'El objetivo del fondo de inversión colectiva es proporcionar a los inversionistas un instrumento de inversión de renta fija de baja duración, con un  ... (517 characters truncated) ... o plazo, el posicionamiento frente al riesgo de mercado se mantendrá ligeramente sobreponderado con respecto a su referente y a sus niveles actuales.', 'tipo': 'Renta Fija', 'url': 'https://fiduciaria.grupobancolombia.com/productos-servicios/fondos-inversion-colectiva/fichas-tecnicas'}]
+(Background on this error at: https://sqlalche.me/e/14/9h9h)
+2025-10-18 17:31:22,320 - src.config.settings - INFO - Cargando: credicorpCapital_altaLiquidez_raw_transformed.json
+2025-10-18 17:31:22,321 - src.config.settings - ERROR - Error cargando bancolombia_fiducuenta_raw_transformed.json: (psycopg2.errors.StringDataRightTruncation) el valor es demasiado largo para el tipo character varying(100)
+
+[SQL: INSERT INTO fic (nombre_fic, gestor, custodio, fecha_corte, politica_de_inversion, tipo, url) VALUES (%(nombre_fic)s, %(gestor)s, %(custodio)s, %(fecha_corte)s, %(politica_de_inversion)s, %(tipo)s, %(url)s) RETURNING fic.id]
+[parameters: {'nombre_fic': 'Fiducuenta', 'gestor': 'Fiduciaria Bancolombia S.A.', 'custodio': 'Cititrust Colombia S.A.', 'fecha_corte': '2025-07-31', 'politica_de_inversion': 'El objetivo del fondo de inversión colectiva es proporcionar a los inversionistas un instrumento de inversión de renta fija de baja duración, con un  ... (517 characters truncated) ... o plazo, el posicionamiento frente al riesgo de mercado se mantendrá ligeramente sobreponderado con respecto a su referente y a sus niveles actuales.', 'tipo': 'Renta Fija', 'url': 'https://fiduciaria.grupobancolombia.com/productos-servicios/fondos-inversion-colectiva/fichas-tecnicas'}]
+(Background on this error at: https://sqlalche.me/e/14/9h9h)
+2025-10-18 17:31:22,336 - src.etl.load - INFO - Datos cargados exitosamente a PostgreSQL - FIC ID: 8
+2025-10-18 17:31:22,337 - src.config.settings - INFO - JSON cargado a PostgreSQL - FIC ID: 8
+2025-10-18 17:31:22,337 - src.etl.load - INFO - Datos cargados exitosamente a PostgreSQL - FIC ID: 7
+2025-10-18 17:31:22,337 - src.config.settings - INFO - Cargando: davivienda_multiescala_raw_transformed.json
+2025-10-18 17:31:22,338 - src.config.settings - INFO - Cargado exitosamente: bancoDeBogota_sumar_raw_transformed.json
+2025-10-18 17:31:22,338 - src.config.settings - INFO - JSON cargado a PostgreSQL - FIC ID: 7
+2025-10-18 17:31:22,339 - src.config.settings - INFO - Cargando: itau_moneyMarket_raw_transformed.json
+2025-10-18 17:31:22,339 - src.config.settings - INFO - Cargado exitosamente: bancoDeOccidenteFiduoccidente_plazoFijo_raw_transformed.json
+2025-10-18 17:31:22,346 - src.etl.load - INFO - Datos cargados exitosamente a PostgreSQL - FIC ID: 9
+2025-10-18 17:31:22,347 - src.config.settings - INFO - JSON cargado a PostgreSQL - FIC ID: 9
+2025-10-18 17:31:22,348 - src.config.settings - INFO - Omitiendo archivo (en lista de exclusión): progresion_globalVista_raw_transformed.json
+2025-10-18 17:31:22,349 - src.config.settings - INFO - Cargado exitosamente: credicorpCapital_altaLiquidez_raw_transformed.json
+2025-10-18 17:31:22,350 - src.config.settings - INFO - Omitido: progresion_globalVista_raw_transformed.json
+2025-10-18 17:31:22,353 - src.etl.load - INFO - Datos cargados exitosamente a PostgreSQL - FIC ID: 10
+2025-10-18 17:31:22,353 - src.config.settings - INFO - JSON cargado a PostgreSQL - FIC ID: 10
+2025-10-18 17:31:22,354 - src.config.settings - INFO - Cargado exitosamente: davivienda_multiescala_raw_transformed.json
+2025-10-18 17:31:22,356 - src.etl.load - INFO - Datos cargados exitosamente a PostgreSQL - FIC ID: 11
+2025-10-18 17:31:22,356 - src.config.settings - INFO - JSON cargado a PostgreSQL - FIC ID: 11
+2025-10-18 17:31:22,356 - src.config.settings - INFO - Cargado exitosamente: itau_moneyMarket_raw_transformed.json
+2025-10-18 17:39:08,100 - config.db - INFO - Conexión a PostgreSQL exitosa
+2025-10-18 17:39:08,157 - config.db - ERROR - Error creando tablas: %d format: a real number is required, not TraversibleType
+2025-10-18 17:39:54,481 - config.db - INFO - Conexión a PostgreSQL exitosa
+2025-10-18 17:39:54,548 - config.db - ERROR - Error creando tablas: %d format: a real number is required, not TraversibleType
+2025-10-18 17:40:27,456 - config.db - INFO - Conexión a PostgreSQL exitosa
+2025-10-18 17:40:27,553 - config.db - INFO - Tablas de PostgreSQL creadas/verificadas exitosamente
+2025-10-18 17:40:32,442 - src.config.settings - INFO - Leídos 1 archivos para omitir de: data\json_transformed_2025_07\skip_list.txt
+2025-10-18 17:40:32,443 - src.config.settings - INFO - Iniciando carga desde: data\json_transformed_2025_07
+2025-10-18 17:40:32,443 - src.config.settings - INFO - Total de archivos a omitir: 1
+2025-10-18 17:40:32,444 - src.config.settings - INFO - Encontrados 7 JSONs transformados para cargar
+2025-10-18 17:40:32,445 - src.config.settings - INFO - Archivos a omitir: 1
+2025-10-18 17:40:32,445 - src.config.settings - INFO - Cargando: bancoDeBogota_sumar_raw_transformed.json
+2025-10-18 17:40:32,446 - src.config.settings - INFO - Cargando: bancoDeOccidenteFiduoccidente_plazoFijo_raw_transformed.json
+2025-10-18 17:40:32,461 - src.config.settings - INFO - Cargando: bancolombia_fiducuenta_raw_transformed.json
+2025-10-18 17:40:32,535 - src.etl.load - INFO - Datos cargados exitosamente a PostgreSQL - FIC ID: 3
+2025-10-18 17:40:32,535 - src.etl.load - INFO - Datos cargados exitosamente a PostgreSQL - FIC ID: 1
+2025-10-18 17:40:32,536 - src.etl.load - INFO - Datos cargados exitosamente a PostgreSQL - FIC ID: 2
+2025-10-18 17:40:32,536 - src.config.settings - INFO - JSON cargado a PostgreSQL - FIC ID: 3
+2025-10-18 17:40:32,536 - src.config.settings - INFO - JSON cargado a PostgreSQL - FIC ID: 1
+2025-10-18 17:40:32,536 - src.config.settings - INFO - JSON cargado a PostgreSQL - FIC ID: 2
+2025-10-18 17:40:32,537 - src.config.settings - INFO - Cargando: credicorpCapital_altaLiquidez_raw_transformed.json
+2025-10-18 17:40:32,537 - src.config.settings - INFO - Cargado exitosamente: bancolombia_fiducuenta_raw_transformed.json
+2025-10-18 17:40:32,537 - src.config.settings - INFO - Cargando: davivienda_multiescala_raw_transformed.json
+2025-10-18 17:40:32,537 - src.config.settings - INFO - Cargando: itau_moneyMarket_raw_transformed.json
+2025-10-18 17:40:32,538 - src.config.settings - INFO - Cargado exitosamente: bancoDeOccidenteFiduoccidente_plazoFijo_raw_transformed.json
+2025-10-18 17:40:32,546 - src.config.settings - INFO - Cargado exitosamente: bancoDeBogota_sumar_raw_transformed.json
+2025-10-18 17:40:32,552 - src.etl.load - INFO - Datos cargados exitosamente a PostgreSQL - FIC ID: 5
+2025-10-18 17:40:32,553 - src.config.settings - INFO - JSON cargado a PostgreSQL - FIC ID: 5
+2025-10-18 17:40:32,554 - src.etl.load - INFO - Datos cargados exitosamente a PostgreSQL - FIC ID: 4
+2025-10-18 17:40:32,554 - src.config.settings - INFO - Omitiendo archivo (en lista de exclusión): progresion_globalVista_raw_transformed.json
+2025-10-18 17:40:32,554 - src.config.settings - INFO - Cargado exitosamente: davivienda_multiescala_raw_transformed.json
+2025-10-18 17:40:32,554 - src.config.settings - INFO - JSON cargado a PostgreSQL - FIC ID: 4
+2025-10-18 17:40:32,555 - src.config.settings - INFO - Omitido: progresion_globalVista_raw_transformed.json
+2025-10-18 17:40:32,556 - src.config.settings - INFO - Cargado exitosamente: credicorpCapital_altaLiquidez_raw_transformed.json
+2025-10-18 17:40:32,557 - src.etl.load - INFO - Datos cargados exitosamente a PostgreSQL - FIC ID: 6
+2025-10-18 17:40:32,557 - src.config.settings - INFO - JSON cargado a PostgreSQL - FIC ID: 6
+2025-10-18 17:40:32,557 - src.config.settings - INFO - Cargado exitosamente: itau_moneyMarket_raw_transformed.json
+2025-10-18 17:42:44,002 - src.config.settings - INFO - Usuarios creados: Admin ID=1, User ID=(2, 3)
+2025-10-18 17:42:44,017 - src.config.settings - INFO - Favoritos creados: Admin=6 FICs, User=2 FICs, User_2=4 FICs
+2025-10-18 17:42:44,024 - src.config.settings - INFO - Verificación: Admin=6 favoritos, User=2 favoritos

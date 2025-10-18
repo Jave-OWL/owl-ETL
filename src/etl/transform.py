@@ -3,6 +3,8 @@ import re
 from typing import Dict, Any, List, Optional
 from datetime import datetime
 from difflib import get_close_matches
+import json
+from pathlib import Path
 
 logger = logging.getLogger(__name__)
 
@@ -47,12 +49,15 @@ def transform_fic_data(raw_data: Dict[str, Any], filename: str = "desconocido") 
         transformed_data = _transform_valores_numericos(transformed_data)
 
         # 5. Agregar tipo fic
-        transformed_data = _transform_tipo_fic(transformed_data, fic_info)
+        transformed_data = _agregar_tipo_fic(transformed_data, fic_info)
 
-        # 6. Transformar caracteristicas valor
+        # 6. Agregar url
+        transformed_data = _agregar_url(transformed_data, fic_info)
+
+        # 7. Transformar caracteristicas valor
         # transformed_data = _transform_valores_monetarios(transformed_data, fic_info)
 
-        # 7. Validar estructura general
+        # 8. Validar estructura general
         transformed_data = _validar_estructura_general(transformed_data)
 
         logger.info(f"Transformación de datos completada exitosamente: {filename}")
@@ -124,7 +129,161 @@ def _extraer_tipo_fic(fic_data: Dict[str, Any]) -> str:
     return "Desconocido"
 
 
-def _transform_tipo_fic(data: Dict[str, Any], fic_info: Dict[str, str]) -> Dict[str, Any]:
+def _agregar_url(data: Dict[str, Any], fic_info: Dict[str, str]) -> Dict[str, Any]:
+    """
+    Agrega la URL del FIC basándose en el archivo fics.json
+    """
+    transformed = data.copy()
+
+    if 'fic' not in transformed:
+        return transformed
+
+    # Obtener información del FIC
+    nombre_fic = fic_info['nombre_fic']
+    filename = fic_info['filename']
+
+    if nombre_fic == 'Desconocido':
+        logger.warning(f"No se pudo determinar nombre_fic para buscar URL: {filename}")
+        return transformed
+
+    # Extraer nombre del banco del filename (formato: nombreBanco_nombreFic_raw.json)
+    if '_' in filename:
+        nombre_banco_raw = filename.split('_')[0].lower()
+
+        # Normalizar nombre del banco para coincidir con las claves en fics.json
+        nombre_banco_normalized = _normalizar_nombre_banco(nombre_banco_raw)
+        logger.debug(f"Banco normalizado: '{nombre_banco_raw}' -> '{nombre_banco_normalized}'")
+    else:
+        logger.warning(f"No se pudo extraer nombre del banco del filename: {filename}")
+        return transformed
+
+    try:
+        # Cargar el archivo fics.json - ruta relativa desde transform.py
+        current_dir = Path(__file__).parent
+        fics_json_path = current_dir.parent.parent / 'data' / 'fics.json'
+
+        logger.debug(f"Buscando fics.json en: {fics_json_path}")
+
+        if not fics_json_path.exists():
+            logger.warning(f"Archivo fics.json no encontrado en: {fics_json_path}")
+            return transformed
+
+        with open(fics_json_path, 'r', encoding='utf-8') as f:
+            fics_data = json.load(f)
+
+        # Buscar el banco en los datos - usar coincidencia flexible
+        banco_encontrado = _buscar_banco_coincidente(nombre_banco_normalized, fics_data.keys())
+
+        if banco_encontrado:
+            bancos_fics = fics_data[banco_encontrado]
+            logger.debug(f"FICs encontrados para banco '{banco_encontrado}': {list(bancos_fics.keys())}")
+
+            # Normalizar nombres para búsqueda
+            nombre_fic_normalized = _normalizar_nombre_fic(nombre_fic)
+
+            # Buscar coincidencia exacta o parcial
+            url_encontrada = None
+            mejor_coincidencia = None
+
+            for fic_key, url in bancos_fics.items():
+                fic_key_normalized = _normalizar_nombre_fic(fic_key)
+
+                # Coincidencia exacta
+                if fic_key_normalized == nombre_fic_normalized:
+                    url_encontrada = url
+                    mejor_coincidencia = f"exacta: {fic_key}"
+                    break
+                # Coincidencia parcial (el nombre del FIC contiene la clave o viceversa)
+                elif (fic_key_normalized in nombre_fic_normalized or
+                      nombre_fic_normalized in fic_key_normalized):
+                    # Priorizar la coincidencia más larga (más específica)
+                    if not url_encontrada or len(fic_key) > len(
+                            mejor_coincidencia.split(': ')[1] if mejor_coincidencia else ''):
+                        url_encontrada = url
+                        mejor_coincidencia = f"parcial: {fic_key}"
+
+            if url_encontrada:
+                transformed['fic']['url'] = url_encontrada
+                logger.info(f"URL agregada para '{nombre_fic}' (coincidencia {mejor_coincidencia}): {url_encontrada}")
+            else:
+                logger.warning(
+                    f"No se encontró URL para FIC '{nombre_fic}' en banco '{banco_encontrado}'. Claves disponibles: {list(bancos_fics.keys())}")
+
+        else:
+            logger.warning(
+                f"Banco '{nombre_banco_normalized}' no encontrado en fics.json. Bancos disponibles: {list(fics_data.keys())}")
+
+    except Exception as e:
+        logger.error(f"Error al cargar URL para {nombre_fic}: {str(e)}")
+
+    return transformed
+
+
+def _normalizar_nombre_banco(nombre_banco: str) -> str:
+    """
+    Normaliza el nombre del banco para coincidir con las claves en fics.json
+    """
+    # Mapeo de nombres de bancos del filename a las claves en fics.json
+    mapeo_bancos = {
+        'bancodebogota': 'bancoDeBogota',
+        'bancodeoccidentefiduoccidente': 'bancoDeOccidenteFiduoccidente',
+        'credicorpcapital': 'credicorpCapital',
+        # Agregar más mapeos según sea necesario
+    }
+
+    # Primero buscar en el mapeo
+    nombre_normalizado = nombre_banco.lower().replace(' ', '').replace('-', '').replace('_', '')
+    if nombre_normalizado in mapeo_bancos:
+        return mapeo_bancos[nombre_normalizado]
+
+    # Si no está en el mapeo, intentar coincidencia flexible
+    return nombre_banco
+
+
+def _normalizar_nombre_fic(nombre_fic: str) -> str:
+    """
+    Normaliza el nombre del FIC para búsqueda
+    """
+    return (nombre_fic.lower()
+            .replace(' ', '')
+            .replace('-', '')
+            .replace('_', '')
+            .replace('fondodeinversioncolectiva', '')
+            .replace('fic', '')
+            .replace('abierto', '')
+            .replace('cerrado', ''))
+
+
+def _buscar_banco_coincidente(nombre_banco: str, bancos_disponibles: List[str]) -> Optional[str]:
+    """
+    Busca coincidencia flexible del nombre del banco
+    """
+    nombre_banco_normalized = nombre_banco.lower().replace(' ', '').replace('-', '').replace('_', '')
+
+    for banco in bancos_disponibles:
+        banco_normalized = banco.lower().replace(' ', '').replace('-', '').replace('_', '')
+
+        # Coincidencia exacta
+        if banco_normalized == nombre_banco_normalized:
+            return banco
+
+        # Coincidencia parcial
+        if (nombre_banco_normalized in banco_normalized or
+                banco_normalized in nombre_banco_normalized):
+            return banco
+
+    # Si no hay coincidencia, buscar la más cercana con difflib
+    bancos_lista = list(bancos_disponibles)
+    coincidencias = get_close_matches(nombre_banco, bancos_lista, n=1, cutoff=0.6)
+
+    if coincidencias:
+        logger.debug(f"Coincidencia difusa encontrada: '{nombre_banco}' -> '{coincidencias[0]}'")
+        return coincidencias[0]
+
+    return None
+
+
+def _agregar_tipo_fic(data: Dict[str, Any], fic_info: Dict[str, str]) -> Dict[str, Any]:
     """
     Extrae y asigna el tipo de FIC basado en la política de inversión
     """
