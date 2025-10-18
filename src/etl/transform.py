@@ -158,6 +158,7 @@ def _agregar_url(data: Dict[str, Any], fic_info: Dict[str, str]) -> Dict[str, An
         return transformed
 
     try:
+        #TODO cambiarlo a la que es
         # Cargar el archivo fics.json - ruta relativa desde transform.py
         current_dir = Path(__file__).parent
         fics_json_path = current_dir.parent.parent / 'data' / 'fics.json'
