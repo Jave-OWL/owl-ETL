@@ -3710,3 +3710,11 @@ connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection re
 2025-10-16 20:46:01,285 - src.config.settings - INFO - Cargado exitosamente: davivienda_multiescala_raw_transformed.json
 2025-10-16 20:46:01,287 - src.config.settings - INFO - JSON cargado a PostgreSQL - FIC ID: 6
 2025-10-16 20:46:01,294 - src.config.settings - INFO - Cargado exitosamente: itau_moneyMarket_raw_transformed.json
+2025-10-17 04:41:10,197 - config.db - INFO - Conexión a PostgreSQL exitosa
+2025-10-17 04:41:10,383 - config.db - INFO - Tablas de PostgreSQL creadas/verificadas exitosamente
+2025-10-17 05:20:40,821 - config.db - INFO - Conexión a PostgreSQL exitosa
+2025-10-17 05:20:40,913 - config.db - INFO - Tablas de PostgreSQL creadas/verificadas exitosamente
+2025-10-17 16:30:17,009 - config.db - INFO - Conexión a PostgreSQL exitosa
+2025-10-17 16:30:17,070 - config.db - INFO - Tablas de PostgreSQL creadas/verificadas exitosamente
+2025-10-17 17:31:34,263 - config.db - INFO - Conexión a PostgreSQL exitosa
+2025-10-17 17:31:34,649 - config.db - INFO - Tablas de PostgreSQL creadas/verificadas exitosamente

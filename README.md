@@ -19,7 +19,7 @@ Este proyecto automatiza la extracción de información financiera de fichas té
 owl-ETL/
 ├── src/
 │ ├── config/ # Configuración y conexión a BD
-│ ├── etl/ # Módulos ETL (extract, transform, load)
+│ ├── etl/ # funciones ETL (extract, transform, load)
 │ └── scripts/ # Scripts ejecutables
 ├── data/
 │ ├── pdfs/ # PDFs originales
@@ -78,24 +78,44 @@ JSON_TRANSFORMED_PATH=./data/json_transformed
 py -m src.scripts.create_tables
 ```
 
-### 2. Pipeline completo (PDF → JSON → BD)
+### 2. Extract (ejemplo)
 ```bash
-py -m src.scripts.process_folder --folder "data/pdfs" --workers 5
+#py -m src.scripts.script_extract --folder "../owl-web-scraping/fichasTecnicas/nombreBanco_año/mes" --workers noWorwers
+py -m src.scripts.script_extract --folder "../owl-web-scraping/fichasTecnicas/bancoDeBogota_2025/07" --workers 5  
 ```
 
-### 3. Solo transformación (JSON existentes → BD)
+### 3. Transform (ejemplo)
 ```bash
-py -m src.scripts.transform_folder --input data/json_raw --output data/json_transformed --workers 5
+# py -m src.scripts.script_transform --input data/json_raw_año_mes --output data/json_transformed_año_mes
+py -m src.scripts.script_transform --input data/json_raw_2025_07 --output data/json_transformed_2025_07
 ```
+
+### 4. Load (ejemplo)
+```bash
+# py -m src.scripts.script_load  --input data/json_transformed_año_mes --skip-list data/json_transformed_año_mes/skip_list.txt
+py -m src.scripts.script_load  --input data/json_transformed_2025_07 --skip-list data/json_transformed_2025_07/skip_list.txt
+```
+
+### 5. Load - Usuarios Prueba
+```bash
+py -m src.scripts.usuarios_prueba 
+```
+
 
 ## 📊 Parámetros de los Scripts
-### process_folder.py
-- --folder, -f: Carpeta con PDFs (default: data/pdfs)
+### script_extract.py
+- --folder, -f: Carpeta con PDFs
 - --workers, -w: Número de procesos paralelos (default: 3)
 - --single, -s: Procesar un solo archivo PDF
 
-### transform_folder.py
-- --input, -i: Carpeta con JSONs originales (default: data/json_raw)
-- --output, -o: Carpeta para JSONs transformados (default: input/transformed)
+### script_transform.py
+- --input, -i: Carpeta con JSONs originales (/json_raw_año_mes)
+- --output, -o: Carpeta para JSONs transformados (/json_transformed_año_mes)
 - --workers, -w: Número de procesos paralelos (default: 3)
 - --single, -s: Transformar un solo archivo JSON
+
+### script_load.py
+- --input, -i: Carpeta con JSONs transformados
+- --workers, -w: Número de procesos paralelos (default: 3)
+- --skip-list -s: Archivo con lista de archivos a omitir (JSON, TXT o lista separada por comas)
+- --skip-files: Lista separada por comas de archivos a omitir
