@@ -1784,3 +1784,7 @@ connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection re
 (Background on this error at: https://sqlalche.me/e/14/9h9h)
 2025-10-18 17:39:08,157 - config.db - ERROR - Error creando tablas: %d format: a real number is required, not TraversibleType
 2025-10-18 17:39:54,548 - config.db - ERROR - Error creando tablas: %d format: a real number is required, not TraversibleType
+2025-10-18 20:38:00,121 - config.db - ERROR - Error conectando a PostgreSQL: could not translate host name "postgres-fic" to address: Host desconocido. 
+
+2025-10-18 20:38:00,184 - config.db - ERROR - Error conectando a PostgreSQL: could not translate host name "postgres-fic" to address: Host desconocido. 
+

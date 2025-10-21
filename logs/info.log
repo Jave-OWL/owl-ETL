@@ -4077,3 +4077,85 @@ connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection re
 2025-10-18 17:42:44,002 - src.config.settings - INFO - Usuarios creados: Admin ID=1, User ID=(2, 3)
 2025-10-18 17:42:44,017 - src.config.settings - INFO - Favoritos creados: Admin=6 FICs, User=2 FICs, User_2=4 FICs
 2025-10-18 17:42:44,024 - src.config.settings - INFO - Verificaci�n: Admin=6 favoritos, User=2 favoritos
+2025-10-18 23:26:52,494 - config.db - INFO - Conexión a PostgreSQL exitosa
+2025-10-18 23:26:52,528 - config.db - INFO - Tablas de PostgreSQL creadas/verificadas exitosamente
+2025-10-19 01:34:51,034 - config.db - INFO - Conexión a PostgreSQL exitosa
+2025-10-19 01:34:51,153 - config.db - INFO - Tablas de PostgreSQL creadas/verificadas exitosamente
+2025-10-18 20:38:00,121 - config.db - ERROR - Error conectando a PostgreSQL: could not translate host name "postgres-fic" to address: Host desconocido. 
+
+2025-10-18 20:38:00,184 - config.db - ERROR - Error conectando a PostgreSQL: could not translate host name "postgres-fic" to address: Host desconocido. 
+
+2025-10-19 01:40:03,467 - src.config.settings - INFO - Leídos 1 archivos para omitir de: data/json_transformed_2025_07/skip_list.txt
+2025-10-19 01:40:03,468 - src.config.settings - INFO - Iniciando carga desde: data/json_transformed_2025_07
+2025-10-19 01:40:03,469 - src.config.settings - INFO - Total de archivos a omitir: 1
+2025-10-19 01:40:03,474 - src.config.settings - INFO - Encontrados 7 JSONs transformados para cargar
+2025-10-19 01:40:03,474 - src.config.settings - INFO - Archivos a omitir: 1
+2025-10-19 01:40:03,475 - src.config.settings - INFO - Cargando: bancoDeBogota_sumar_raw_transformed.json
+2025-10-19 01:40:03,476 - src.config.settings - INFO - Cargando: bancoDeOccidenteFiduoccidente_plazoFijo_raw_transformed.json
+2025-10-19 01:40:03,476 - src.config.settings - INFO - Cargando: bancolombia_fiducuenta_raw_transformed.json
+2025-10-19 01:40:03,547 - src.etl.load - INFO - Datos cargados exitosamente a PostgreSQL - FIC ID: 1
+2025-10-19 01:40:03,547 - src.config.settings - INFO - JSON cargado a PostgreSQL - FIC ID: 1
+2025-10-19 01:40:03,548 - src.config.settings - INFO - Cargando: credicorpCapital_altaLiquidez_raw_transformed.json
+2025-10-19 01:40:03,548 - src.config.settings - INFO - Cargado exitosamente: bancoDeOccidenteFiduoccidente_plazoFijo_raw_transformed.json
+2025-10-19 01:40:03,606 - src.etl.load - INFO - Datos cargados exitosamente a PostgreSQL - FIC ID: 2
+2025-10-19 01:40:03,609 - src.config.settings - INFO - JSON cargado a PostgreSQL - FIC ID: 2
+2025-10-19 01:40:03,612 - src.config.settings - INFO - Cargando: davivienda_multiescala_raw_transformed.json
+2025-10-19 01:40:03,613 - src.config.settings - INFO - Cargado exitosamente: credicorpCapital_altaLiquidez_raw_transformed.json
+2025-10-19 01:40:03,617 - src.etl.load - INFO - Datos cargados exitosamente a PostgreSQL - FIC ID: 4
+2025-10-19 01:40:03,618 - src.config.settings - INFO - JSON cargado a PostgreSQL - FIC ID: 4
+2025-10-19 01:40:03,620 - src.config.settings - INFO - Cargando: itau_moneyMarket_raw_transformed.json
+2025-10-19 01:40:03,620 - src.config.settings - INFO - Cargado exitosamente: bancolombia_fiducuenta_raw_transformed.json
+2025-10-19 01:40:03,621 - src.etl.load - INFO - Datos cargados exitosamente a PostgreSQL - FIC ID: 3
+2025-10-19 01:40:03,627 - src.config.settings - INFO - JSON cargado a PostgreSQL - FIC ID: 3
+2025-10-19 01:40:03,628 - src.config.settings - INFO - Omitiendo archivo (en lista de exclusión): progresion_globalVista_raw_transformed.json
+2025-10-19 01:40:03,628 - src.config.settings - INFO - Cargado exitosamente: bancoDeBogota_sumar_raw_transformed.json
+2025-10-19 01:40:03,631 - src.config.settings - INFO - Omitido: progresion_globalVista_raw_transformed.json
+2025-10-19 01:40:03,637 - src.etl.load - INFO - Datos cargados exitosamente a PostgreSQL - FIC ID: 5
+2025-10-19 01:40:03,638 - src.config.settings - INFO - JSON cargado a PostgreSQL - FIC ID: 5
+2025-10-19 01:40:03,639 - src.config.settings - INFO - Cargado exitosamente: davivienda_multiescala_raw_transformed.json
+2025-10-19 01:40:03,656 - src.etl.load - INFO - Datos cargados exitosamente a PostgreSQL - FIC ID: 6
+2025-10-19 01:40:03,658 - src.config.settings - INFO - JSON cargado a PostgreSQL - FIC ID: 6
+2025-10-19 01:40:03,658 - src.config.settings - INFO - Cargado exitosamente: itau_moneyMarket_raw_transformed.json
+2025-10-19 01:44:03,925 - config.db - INFO - Conexión a PostgreSQL exitosa
+2025-10-19 01:44:03,941 - config.db - INFO - Tablas de PostgreSQL creadas/verificadas exitosamente
+2025-10-19 02:05:16,406 - config.db - INFO - Conexión a PostgreSQL exitosa
+2025-10-19 02:05:16,494 - config.db - INFO - Tablas de PostgreSQL creadas/verificadas exitosamente
+2025-10-19 02:11:48,588 - src.config.settings - INFO - Leídos 1 archivos para omitir de: data/json_transformed_2025_07/skip_list.txt
+2025-10-19 02:11:48,609 - src.config.settings - INFO - Iniciando carga desde: data/json_transformed_2025_07
+2025-10-19 02:11:48,610 - src.config.settings - INFO - Total de archivos a omitir: 1
+2025-10-19 02:11:48,631 - src.config.settings - INFO - Encontrados 7 JSONs transformados para cargar
+2025-10-19 02:11:48,633 - src.config.settings - INFO - Archivos a omitir: 1
+2025-10-19 02:11:48,634 - src.config.settings - INFO - Cargando: bancoDeBogota_sumar_raw_transformed.json
+2025-10-19 02:11:48,637 - src.config.settings - INFO - Cargando: bancoDeOccidenteFiduoccidente_plazoFijo_raw_transformed.json
+2025-10-19 02:11:48,638 - src.config.settings - INFO - Cargando: bancolombia_fiducuenta_raw_transformed.json
+2025-10-19 02:11:48,857 - src.etl.load - INFO - Datos cargados exitosamente a PostgreSQL - FIC ID: 3
+2025-10-19 02:11:48,858 - src.config.settings - INFO - JSON cargado a PostgreSQL - FIC ID: 3
+2025-10-19 02:11:48,859 - src.etl.load - INFO - Datos cargados exitosamente a PostgreSQL - FIC ID: 2
+2025-10-19 02:11:48,860 - src.config.settings - INFO - Cargado exitosamente: bancolombia_fiducuenta_raw_transformed.json
+2025-10-19 02:11:48,860 - src.config.settings - INFO - Cargando: credicorpCapital_altaLiquidez_raw_transformed.json
+2025-10-19 02:11:48,862 - src.config.settings - INFO - JSON cargado a PostgreSQL - FIC ID: 2
+2025-10-19 02:11:48,866 - src.config.settings - INFO - Cargando: davivienda_multiescala_raw_transformed.json
+2025-10-19 02:11:48,867 - src.config.settings - INFO - Cargado exitosamente: bancoDeBogota_sumar_raw_transformed.json
+2025-10-19 02:11:48,868 - src.etl.load - INFO - Datos cargados exitosamente a PostgreSQL - FIC ID: 1
+2025-10-19 02:11:48,870 - src.config.settings - INFO - JSON cargado a PostgreSQL - FIC ID: 1
+2025-10-19 02:11:48,871 - src.config.settings - INFO - Cargando: itau_moneyMarket_raw_transformed.json
+2025-10-19 02:11:48,871 - src.config.settings - INFO - Cargado exitosamente: bancoDeOccidenteFiduoccidente_plazoFijo_raw_transformed.json
+2025-10-19 02:11:48,915 - src.etl.load - INFO - Datos cargados exitosamente a PostgreSQL - FIC ID: 4
+2025-10-19 02:11:48,935 - src.config.settings - INFO - JSON cargado a PostgreSQL - FIC ID: 4
+2025-10-19 02:11:48,946 - src.config.settings - INFO - Omitiendo archivo (en lista de exclusión): progresion_globalVista_raw_transformed.json
+2025-10-19 02:11:48,947 - src.config.settings - INFO - Cargado exitosamente: credicorpCapital_altaLiquidez_raw_transformed.json
+2025-10-19 02:11:48,951 - src.etl.load - INFO - Datos cargados exitosamente a PostgreSQL - FIC ID: 5
+2025-10-19 02:11:48,954 - src.config.settings - INFO - Omitido: progresion_globalVista_raw_transformed.json
+2025-10-19 02:11:48,966 - src.config.settings - INFO - JSON cargado a PostgreSQL - FIC ID: 5
+2025-10-19 02:11:48,978 - src.config.settings - INFO - Cargado exitosamente: davivienda_multiescala_raw_transformed.json
+2025-10-19 02:11:48,979 - src.etl.load - INFO - Datos cargados exitosamente a PostgreSQL - FIC ID: 6
+2025-10-19 02:11:48,981 - src.config.settings - INFO - JSON cargado a PostgreSQL - FIC ID: 6
+2025-10-19 02:11:48,982 - src.config.settings - INFO - Cargado exitosamente: itau_moneyMarket_raw_transformed.json
+2025-10-19 02:12:02,295 - config.db - INFO - Conexión a PostgreSQL exitosa
+2025-10-19 02:12:02,344 - config.db - INFO - Tablas de PostgreSQL creadas/verificadas exitosamente
+2025-10-19 02:45:18,507 - config.db - INFO - Conexión a PostgreSQL exitosa
+2025-10-19 02:45:18,622 - config.db - INFO - Tablas de PostgreSQL creadas/verificadas exitosamente
+2025-10-19 03:52:36,051 - config.db - INFO - Conexión a PostgreSQL exitosa
+2025-10-19 03:52:36,627 - config.db - INFO - Tablas de PostgreSQL creadas/verificadas exitosamente
+2025-10-20 17:07:46,613 - config.db - INFO - Conexión a PostgreSQL exitosa
+2025-10-20 17:07:46,814 - config.db - INFO - Tablas de PostgreSQL creadas/verificadas exitosamente
