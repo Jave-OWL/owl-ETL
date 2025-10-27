@@ -138,24 +138,30 @@ def _agregar_url(data: Dict[str, Any], fic_info: Dict[str, str]) -> Dict[str, An
     if 'fic' not in transformed:
         return transformed
 
-    # Obtener información del FIC
-    nombre_fic = fic_info['nombre_fic']
+    # Obtener información del FIC del filename en lugar de los datos extraídos
     filename = fic_info['filename']
 
-    if nombre_fic == 'Desconocido':
-        logger.warning(f"No se pudo determinar nombre_fic para buscar URL: {filename}")
-        return transformed
-
-    # Extraer nombre del banco del filename (formato: nombreBanco_nombreFic_raw.json)
+    # Extraer nombre del FIC del filename (formato: nombreBanco_nombreFic_raw.json)
     if '_' in filename:
-        nombre_banco_raw = filename.split('_')[0].lower()
-
-        # Normalizar nombre del banco para coincidir con las claves en fics.json
-        nombre_banco_normalized = _normalizar_nombre_banco(nombre_banco_raw)
-        logger.debug(f"Banco normalizado: '{nombre_banco_raw}' -> '{nombre_banco_normalized}'")
+        # El formato es: banco_fic_raw.json, así que tomamos la parte del medio
+        parts = filename.split('_')
+        if len(parts) >= 3:
+            # Unir todas las partes excepto la primera (banco) y la última (raw.json)
+            nombre_fic_from_filename = '_'.join(parts[1:-1])
+            logger.debug(f"Nombre FIC extraído del filename: '{nombre_fic_from_filename}'")
+        else:
+            logger.warning(f"Formato de filename no esperado: {filename}")
+            return transformed
     else:
-        logger.warning(f"No se pudo extraer nombre del banco del filename: {filename}")
+        logger.warning(f"No se pudo extraer nombre del FIC del filename: {filename}")
         return transformed
+
+    # Extraer nombre del banco del filename
+    nombre_banco_raw = filename.split('_')[0].lower()
+
+    # Normalizar nombre del banco para coincidir con las claves en fics.json
+    nombre_banco_normalized = _normalizar_nombre_banco(nombre_banco_raw)
+    logger.debug(f"Banco normalizado: '{nombre_banco_raw}' -> '{nombre_banco_normalized}'")
 
     try:
         current_dir = Path(__file__).parent
@@ -177,43 +183,49 @@ def _agregar_url(data: Dict[str, Any], fic_info: Dict[str, str]) -> Dict[str, An
             bancos_fics = fics_data[banco_encontrado]
             logger.debug(f"FICs encontrados para banco '{banco_encontrado}': {list(bancos_fics.keys())}")
 
-            # Normalizar nombres para búsqueda
-            nombre_fic_normalized = _normalizar_nombre_fic(nombre_fic)
+            # Normalizar nombres para búsqueda - más agresivo
+            nombre_fic_normalized = _normalizar_nombre_fic_agresivo(nombre_fic_from_filename)
 
             # Buscar coincidencia exacta o parcial
             url_encontrada = None
             mejor_coincidencia = None
+            mejor_puntaje = 0
 
             for fic_key, url in bancos_fics.items():
-                fic_key_normalized = _normalizar_nombre_fic(fic_key)
+                fic_key_normalized = _normalizar_nombre_fic_agresivo(fic_key)
+
+                # Calcular puntaje de similitud
+                puntaje = _calcular_similitud(nombre_fic_normalized, fic_key_normalized)
 
                 # Coincidencia exacta
                 if fic_key_normalized == nombre_fic_normalized:
                     url_encontrada = url
                     mejor_coincidencia = f"exacta: {fic_key}"
+                    mejor_puntaje = puntaje
                     break
-                # Coincidencia parcial (el nombre del FIC contiene la clave o viceversa)
-                elif (fic_key_normalized in nombre_fic_normalized or
-                      nombre_fic_normalized in fic_key_normalized):
-                    # Priorizar la coincidencia más larga (más específica)
-                    if not url_encontrada or len(fic_key) > len(
-                            mejor_coincidencia.split(': ')[1] if mejor_coincidencia else ''):
-                        url_encontrada = url
-                        mejor_coincidencia = f"parcial: {fic_key}"
+                # Coincidencia con buen puntaje
+                elif puntaje > mejor_puntaje and puntaje > 0.7:
+                    url_encontrada = url
+                    mejor_coincidencia = f"parcial (puntaje {puntaje:.2f}): {fic_key}"
+                    mejor_puntaje = puntaje
 
             if url_encontrada:
                 transformed['fic']['url'] = url_encontrada
-                logger.info(f"URL agregada para '{nombre_fic}' (coincidencia {mejor_coincidencia}): {url_encontrada}")
+                logger.info(
+                    f"URL agregada para FIC '{nombre_fic_from_filename}' (coincidencia {mejor_coincidencia}): {url_encontrada}")
             else:
                 logger.warning(
-                    f"No se encontró URL para FIC '{nombre_fic}' en banco '{banco_encontrado}'. Claves disponibles: {list(bancos_fics.keys())}")
+                    f"No se encontró URL para FIC '{nombre_fic_from_filename}' (normalizado: '{nombre_fic_normalized}') "
+                    f"en banco '{banco_encontrado}'. Claves disponibles: {list(bancos_fics.keys())}"
+                )
 
         else:
             logger.warning(
-                f"Banco '{nombre_banco_normalized}' no encontrado en fics.json. Bancos disponibles: {list(fics_data.keys())}")
+                f"Banco '{nombre_banco_normalized}' no encontrado en fics.json. Bancos disponibles: {list(fics_data.keys())}"
+            )
 
     except Exception as e:
-        logger.error(f"Error al cargar URL para {nombre_fic}: {str(e)}")
+        logger.error(f"Error al cargar URL para {nombre_fic_from_filename}: {str(e)}")
 
     return transformed
 
@@ -227,6 +239,21 @@ def _normalizar_nombre_banco(nombre_banco: str) -> str:
         'bancodebogota': 'bancoDeBogota',
         'bancodeoccidentefiduoccidente': 'bancoDeOccidenteFiduoccidente',
         'credicorpcapital': 'credicorpCapital',
+        'bancolombia': 'bancolombia',
+        'bbva': 'bbva',
+        'davivienda': 'davivienda',
+        'bancoagrario': 'bancoAgrario',
+        'bancoavvillas': 'bancoAvVillas',
+        'bancocajasocial': 'bancoCajaSocial',
+        'bancoomeva': 'bancoomeva',
+        'bancoopular': 'bancoPopular',
+        'bancofinandina': 'bancolombia',  # Finandina ahora es parte de Bancolombia
+        'bancopichincha': 'bancoPichincha',
+        'bancoreservas': 'bancoDeBogota',  # Corresponde a Banco de Bogotá
+        'bancoinsa': 'insa',
+        'cititrust': 'citiTrust',
+        'gnbsudameris': 'gnbSudameris',
+        'scotiabankcolpatria': 'scotiabankColpatria',
         # Agregar más mapeos según sea necesario
     }
 
@@ -239,18 +266,54 @@ def _normalizar_nombre_banco(nombre_banco: str) -> str:
     return nombre_banco
 
 
-def _normalizar_nombre_fic(nombre_fic: str) -> str:
+def _normalizar_nombre_fic_agresivo(nombre_fic: str) -> str:
     """
-    Normaliza el nombre del FIC para búsqueda
+    Normaliza el nombre del FIC para búsqueda de manera más agresiva
     """
-    return (nombre_fic.lower()
-            .replace(' ', '')
-            .replace('-', '')
-            .replace('_', '')
-            .replace('fondodeinversioncolectiva', '')
-            .replace('fic', '')
-            .replace('abierto', '')
-            .replace('cerrado', ''))
+    # Convertir a minúsculas y eliminar espacios, guiones, underscores
+    normalizado = nombre_fic.lower()
+
+    # Eliminar caracteres especiales y palabras comunes
+    palabras_eliminar = [
+        'fondodeinversioncolectiva', 'fic', 'abierto', 'cerrado',
+        'de', 'y', 'en', 'la', 'el', 'los', 'las', 'del', 'al',
+        ' ', '-', '_', '.', ',', ';', ':', '!', '?', '(', ')', '[', ']'
+    ]
+
+    for palabra in palabras_eliminar:
+        normalizado = normalizado.replace(palabra, '')
+
+    return normalizado
+
+
+def _calcular_similitud(str1: str, str2: str) -> float:
+    """
+    Calcula similitud entre dos strings usando coincidencia de substrings
+    """
+    if not str1 or not str2:
+        return 0.0
+
+    # Coincidencia exacta
+    if str1 == str2:
+        return 1.0
+
+    # Una string contiene a la otra
+    if str1 in str2 or str2 in str1:
+        return 0.9
+
+    # Calcular similitud por longitud de substring común más largo
+    def substring_comun_mas_largo(s1, s2):
+        max_len = 0
+        for i in range(len(s1)):
+            for j in range(i + 1, len(s1) + 1):
+                if s1[i:j] in s2 and j - i > max_len:
+                    max_len = j - i
+        return max_len
+
+    max_substring = substring_comun_mas_largo(str1, str2)
+    similitud = (2.0 * max_substring) / (len(str1) + len(str2))
+
+    return similitud
 
 
 def _buscar_banco_coincidente(nombre_banco: str, bancos_disponibles: List[str]) -> Optional[str]:

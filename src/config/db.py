@@ -164,7 +164,7 @@ class RentabilidadHistorica(Base):
 
     id = Column(Integer, primary_key=True, autoincrement=True)
     fic_id = Column(Integer, ForeignKey('fic.id', ondelete='CASCADE'), nullable=False)
-    tipo_participacion = Column(String(50), nullable=False)
+    tipo_participacion = Column(String(100), nullable=False)
     ultimo_mes = Column(Float)  # Rentabilidad último mes
     ultimos_6_meses = Column(Float)  # Rentabilidad últimos 6 meses
     anio_corrido = Column(Float)  # Rentabilidad año corrido
@@ -182,7 +182,7 @@ class VolatilidadHistorica(Base):
 
     id = Column(Integer, primary_key=True, autoincrement=True)
     fic_id = Column(Integer, ForeignKey('fic.id', ondelete='CASCADE'), nullable=False)
-    tipo_participacion = Column(String(50), nullable=False)
+    tipo_participacion = Column(String(100), nullable=False)
     # Volatilidad histórica
     ultimo_mes = Column(Float)  # Volatilidad último mes
     ultimos_6_meses = Column(Float)  # Volatilidad últimos 6 meses
