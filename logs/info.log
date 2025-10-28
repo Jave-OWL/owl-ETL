@@ -11776,3 +11776,5 @@ Please retry in 43.307655788s. [violations {
 2025-10-27 14:19:15,092 - src.config.settings - INFO - Cargado exitosamente: Progresion_rentamas_raw_transformed.json
 2025-10-27 14:19:15,092 - src.config.settings - INFO - JSON cargado a PostgreSQL - FIC ID: 67
 2025-10-27 14:19:15,093 - src.config.settings - INFO - Cargado exitosamente: Progresion_rentar II_raw_transformed.json
+2025-10-27 19:49:44,006 - config.db - INFO - Conexión a PostgreSQL exitosa
+2025-10-27 19:49:44,069 - config.db - INFO - Tablas de PostgreSQL creadas/verificadas exitosamente

@@ -3,4 +3,5 @@
 #DataFolder
 /data/
 #logsFolder
-/logs/
+logs/
+__pycache__/
