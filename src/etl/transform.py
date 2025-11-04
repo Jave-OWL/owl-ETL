@@ -55,7 +55,7 @@ def transform_fic_data(raw_data: Dict[str, Any], filename: str = "desconocido") 
         transformed_data = _agregar_url(transformed_data, fic_info)
 
         # 7. Transformar caracteristicas valor
-        # transformed_data = _transform_valores_monetarios(transformed_data, fic_info)
+        transformed_data = _ajustar_valor_monetario(transformed_data, fic_info)
 
         # 8. Validar estructura general
         transformed_data = _validar_estructura_general(transformed_data)
@@ -66,6 +66,45 @@ def transform_fic_data(raw_data: Dict[str, Any], filename: str = "desconocido") 
     except Exception as e:
         logger.error(f"Error en transformación de datos [{filename}]: {str(e)}")
         raise
+
+def limpiar_valor(valor):
+    """
+    Elimina los ceros de escala innecesarios (por ejemplo: 343091170000.0 -> 343091.17)
+    y deja el número con máximo 2 decimales.
+    """
+    if not isinstance(valor, (int, float)):
+        return valor  # si no es numérico, no se toca
+
+    if valor == 0:
+        return 0.00
+
+    # Mientras el número sea muy grande, reducimos la escala
+    while valor > 1_000_000:
+        valor /= 1000
+
+    # Redondear a 2 decimales
+    return round(valor, 2)
+
+
+def _ajustar_valor_monetario(transformed_data, fic_info):
+    """
+    Ajusta el campo 'valor' dentro de transformed_data['caracteristicas'].
+    No modifica el original; devuelve una copia ajustada.
+    """
+    # Hacer una copia profunda por seguridad
+    data = transformed_data.copy()
+
+    try:
+        valor_original = data["caracteristicas"]["valor"]
+        valor_ajustado = limpiar_valor(valor_original)
+        data["caracteristicas"]["valor"] = valor_ajustado
+
+        print(f"[{fic_info}] Valor ajustado: {valor_original} -> {valor_ajustado}")
+    except KeyError:
+        print(f"[{fic_info}] No se encontró la ruta 'caracteristicas -> valor' en los datos.")
+
+    return data
+
 
 def _extraer_tipo_fic(fic_data: Dict[str, Any]) -> str:
     """
