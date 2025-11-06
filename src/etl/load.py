@@ -82,16 +82,38 @@ def load_to_database(transformed_data: Dict[str, Any], filename: str = "desconoc
         filename: Nombre del archivo original
 
     Returns:
-        ID del FIC insertado en la base de datos
+        ID del FIC insertado o actualizado en la base de datos
     """
     session = None
+    fic_id = None
+    is_update = False
+
     try:
         session = get_db_session()
 
-        # 1. Insertar datos básicos del FIC
+        fic_data = transformed_data.get('fic', {})
+        nombre_fic = fic_data.get('nombre_fic', '')
+        url = fic_data.get('url', '')
+        fecha_corte_nueva = fic_data.get('fecha_corte')
+
+        # Verificar si ya existe un FIC con la misma URL antes de insertar
+        fic_existente = session.query(FIC).filter(
+            FIC.url == url,
+            FIC.nombre_fic == nombre_fic
+        ).first()
+
+        if fic_existente and fecha_corte_nueva:
+            fecha_existente = fic_existente.fecha_corte
+            if fecha_existente and fecha_corte_nueva > fecha_existente:
+                logger.info(f"FIC existente será actualizado con fecha más reciente: {fecha_corte_nueva}")
+                is_update = True
+                # Primero eliminar datos relacionados existentes
+                _delete_related_data(session, fic_existente.id)
+
+        # 1. Insertar o actualizar datos básicos del FIC
         fic_id = _insert_fic_data(session, transformed_data, filename)
 
-        # 2. Insertar composición del portafolio
+        # 2. Insertar composición del portafolio (siempre insertar nuevos registros)
         _insert_composicion_portafolio(session, transformed_data, fic_id)
 
         # 3. Insertar plazos de duración
@@ -115,7 +137,8 @@ def load_to_database(transformed_data: Dict[str, Any], filename: str = "desconoc
         # Commit de todas las transacciones
         session.commit()
 
-        logger.info(f"Datos cargados exitosamente a PostgreSQL - FIC ID: {fic_id}")
+        action = "actualizados" if is_update else "cargados"
+        logger.info(f"Datos {action} exitosamente a PostgreSQL - FIC ID: {fic_id}")
         return fic_id
 
     except Exception as e:
@@ -128,19 +151,82 @@ def load_to_database(transformed_data: Dict[str, Any], filename: str = "desconoc
             session.close()
 
 
+def _delete_related_data(session: Session, fic_id: int):
+    """Eliminar datos relacionados de un FIC existente para actualización"""
+    try:
+        # Eliminar registros relacionados en orden para evitar problemas de FK
+        session.query(ComposicionPortafolio).filter(ComposicionPortafolio.fic_id == fic_id).delete()
+        session.query(PlazoDuracion).filter(PlazoDuracion.fic_id == fic_id).delete()
+        session.query(Caracteristicas).filter(Caracteristicas.fic_id == fic_id).delete()
+        session.query(Calificacion).filter(Calificacion.fic_id == fic_id).delete()
+        session.query(PrincipalInversion).filter(PrincipalInversion.fic_id == fic_id).delete()
+        session.query(RentabilidadHistorica).filter(RentabilidadHistorica.fic_id == fic_id).delete()
+        session.query(VolatilidadHistorica).filter(VolatilidadHistorica.fic_id == fic_id).delete()
+
+        logger.debug(f"Datos relacionados eliminados para FIC ID: {fic_id}")
+
+    except Exception as e:
+        logger.error(f"Error eliminando datos relacionados para FIC {fic_id}: {str(e)}")
+        raise
+
+
 def _insert_fic_data(session: Session, data: Dict[str, Any], filename: str) -> int:
-    """Insertar datos básicos del FIC"""
+    """Insertar datos básicos del FIC - con verificación de fecha más reciente"""
     fic_data = data.get('fic', {})
 
-    # Crear nuevo FIC
+    nombre_fic = fic_data.get('nombre_fic', '')
+    url = fic_data.get('url', '')
+    fecha_corte_nueva = fic_data.get('fecha_corte')
+
+    # Verificar si ya existe un FIC con la misma URL
+    fic_existente = session.query(FIC).filter(
+        FIC.url == url,
+        FIC.nombre_fic == nombre_fic
+    ).first()
+
+    if fic_existente:
+        # Comparar fechas de corte
+        fecha_existente = fic_existente.fecha_corte
+        fecha_nueva = fecha_corte_nueva
+
+        logger.info(f"FIC existente encontrado: {nombre_fic}")
+        logger.info(f"URL: {url}")
+        logger.info(f"Fecha existente: {fecha_existente}")
+        logger.info(f"Fecha nueva: {fecha_nueva}")
+
+        # Determinar cuál fecha es más reciente
+        if fecha_existente and fecha_nueva:
+            if fecha_nueva > fecha_existente:
+                # Actualizar el registro existente con los nuevos datos
+                logger.info(f"Actualizando FIC con fecha más reciente: {fecha_nueva} (anterior: {fecha_existente})")
+
+                # Actualizar campos
+                fic_existente.gestor = fic_data.get('gestor', fic_existente.gestor)
+                fic_existente.custodio = fic_data.get('custodio', fic_existente.custodio)
+                fic_existente.fecha_corte = fecha_nueva
+                fic_existente.politica_de_inversion = fic_data.get('politica_de_inversion',
+                                                                   fic_existente.politica_de_inversion)
+                fic_existente.tipo = fic_data.get('tipo', fic_existente.tipo)
+
+                session.flush()
+                return fic_existente.id
+            else:
+                logger.info(
+                    f"FIC existente tiene fecha más reciente ({fecha_existente}), manteniendo registro existente")
+                return fic_existente.id
+        else:
+            # Si alguna fecha es None, insertar nuevo registro por seguridad
+            logger.warning("Una de las fechas de corte es None, insertando nuevo registro")
+
+    # Crear nuevo FIC (si no existe o si hay que insertar nuevo)
     nuevo_fic = FIC(
-        nombre_fic=fic_data.get('nombre_fic', ''),
+        nombre_fic=nombre_fic,
         gestor=fic_data.get('gestor', ''),
         custodio=fic_data.get('custodio'),
-        fecha_corte=fic_data.get('fecha_corte'),
+        fecha_corte=fecha_corte_nueva,
         politica_de_inversion=fic_data.get('politica_de_inversion'),
         tipo=fic_data.get('tipo', ''),
-        url=fic_data.get('url', ''),
+        url=url,
     )
 
     session.add(nuevo_fic)
